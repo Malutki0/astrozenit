@@ -1,0 +1,6 @@
+# AstroZenit
+# Cała treść jest publiczna i nie ma tu niczego, czego nie wolno indeksować.
+User-agent: *
+Allow: /
+
+Sitemap: https://astrozenit.pl/sitemap.xml

@@ -1,0 +1,72 @@
+# Konfiguracja hostingu Netlify.
+#
+# Plik jest czytany przy każdym wdrożeniu, więc ustawienia idą razem z kodem, a nie
+# klikane w panelu. Przy projekcie prowadzonym w dwie osoby to jest różnica między
+# "wiadomo, dlaczego tak jest" a "ktoś kiedyś to ustawił".
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Aplikacja używa routingu po znaku krzyżyka (#/planety), więc serwer dostaje zawsze
+# żądanie o stronę główną i przekierowania nie są potrzebne. Reguła stoi tu mimo to,
+# na wypadek wejścia pod adres z literówką w ścieżce: bez niej Netlify pokazałby
+# własną stronę błędu zamiast aplikacji.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# ---------------------------------------------------------------- bezpieczeństwo
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Blokada osadzania strony w ramce na cudzej witrynie. Bez tego da się nałożyć
+    # na nią przezroczystą warstwę i zbierać kliknięcia użytkownika.
+    X-Frame-Options = "DENY"
+    # Przeglądarka ma trzymać się zadeklarowanego typu pliku, a nie zgadywać go
+    # z zawartości. Zgadywanie bywa drogą do wykonania obrazka jako skryptu.
+    X-Content-Type-Options = "nosniff"
+    # Adres poprzedniej strony wychodzi tylko do witryn szyfrowanych i tylko jako domena.
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # Wyłączenie uprawnień, których aplikacja nie używa. Kompas i położenie zostają,
+    # bo z nich korzysta mapa nieba. Reszta jest zamknięta.
+    Permissions-Policy = "camera=(), microphone=(), payment=(), usb=(), geolocation=(self), accelerometer=(self), gyroscope=(self), magnetometer=(self)"
+    # Wymuszenie połączenia szyfrowanego przez rok. Wpisywane dopiero, gdy domena
+    # na pewno działa po https, bo cofnięcie tego wymaga odczekania całego okresu.
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+
+# ---------------------------------------------------------------- pamięć podręczna
+
+# Pliki z odciskiem treści w nazwie (index-a1b2c3.js) nigdy nie zmieniają zawartości
+# pod tym samym adresem, więc mogą leżeć w pamięci przeglądarki dowolnie długo.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Katalog i dane, których nazwy się nie zmieniają, a treść owszem. Krótka pamięć
+# z obowiązkiem sprawdzenia u źródła: przeglądarka pyta, czy plik się zmienił,
+# i pobiera go tylko wtedy, gdy naprawdę się zmienił.
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Zdjęcia w aktualnościach mają nazwy stałe, ale zmieniają się rzadko. Doba w pamięci
+# przeglądarki i tydzień w pamięci pośredniej to rozsądny kompromis.
+[[headers]]
+  for = "/photos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+
+# Strona główna nie może leżeć w pamięci, bo to ona wskazuje na aktualne nazwy plików
+# z odciskiem. Zapamiętana odsyłałaby po wdrożeniu do plików, których już nie ma.
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

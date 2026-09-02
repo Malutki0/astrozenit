@@ -1,0 +1,17 @@
+# Przekierowanie całego ruchu do index.php.
+#
+# Bez tego serwer szukałby pliku rejestracja.php dla adresu /api/rejestracja i zwracał
+# błąd 404. Reguła przepuszcza żądania do plików, które naprawdę istnieją, a resztę
+# oddaje aplikacji.
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+
+# Ustawienia wrażliwe nie mogą być pobierane przez przeglądarkę. Gdyby serwer przestał
+# wykonywać PHP, na przykład po nieudanej aktualizacji, plik z hasłem do bazy zostałby
+# odesłany jako zwykły tekst.
+<FilesMatch "^config\.local\.php$">
+  Require all denied
+</FilesMatch>

@@ -1,0 +1,213 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin: 0 calc(var(--space-2) * -1);
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  min-height: var(--tap-min);
+  padding: var(--space-2) var(--space-2);
+  border-radius: var(--radius-md);
+  text-align: left;
+  transition:
+    background-color var(--dur-hint) var(--ease-out),
+    transform var(--dur-press) var(--ease-out);
+}
+
+.result:hover,
+.resultActive {
+  background: var(--surface-raised);
+}
+
+.result:active {
+  transform: scale(0.99);
+}
+
+.resultIcon {
+  flex: none;
+  color: var(--text-tertiary);
+}
+
+.resultMain {
+  flex: 1;
+  min-width: 0;
+}
+
+.resultName {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.resultMeta {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.match {
+  color: var(--accent);
+}
+
+/* Wskaźnik zanieczyszczenia nieba światłem. Dziewięć kresek odpowiada skali
+ * Bortle'a, a wypełnione są te do wartości danego miejsca. Im mniej, tym ciemniej. */
+.bortle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex: none;
+}
+
+.bortleBars {
+  display: flex;
+  gap: 1.5px;
+  align-items: flex-end;
+  height: 14px;
+}
+
+.bar {
+  width: 2.5px;
+  border-radius: 1px;
+  background: var(--surface-overlay);
+}
+
+.barOn {
+  background: var(--accent);
+}
+
+.barDark {
+  background: var(--signal-visible);
+}
+
+.bortleValue {
+  font-family: var(--font-mono);
+  font-size: var(--text-2xs);
+  color: var(--text-tertiary);
+  width: 1.4em;
+  text-align: right;
+}
+
+.sectionLabel {
+  font-size: var(--text-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-tertiary);
+  margin-bottom: var(--space-2);
+}
+
+.suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.suggestion {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 34px;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--hairline);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: var(--text-xs);
+  transition:
+    border-color var(--dur-hint) var(--ease-out),
+    color var(--dur-hint) var(--ease-out),
+    background-color var(--dur-hint) var(--ease-out),
+    transform var(--dur-press) var(--ease-out);
+}
+
+.suggestion:hover {
+  border-color: var(--hairline-strong);
+  color: var(--text-primary);
+  background: var(--surface-raised);
+}
+
+.suggestion:active {
+  transform: scale(0.97);
+}
+
+.suggestionDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex: none;
+}
+
+.current {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--hairline);
+  background: var(--surface-void);
+}
+
+.currentTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.currentName {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+.currentCoords {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  margin-top: 3px;
+}
+
+.currentNote {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+  gap: var(--space-3);
+}
+
+.manual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+  align-items: end;
+}
+
+.status {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+}
+
+.statusError {
+  color: var(--signal-warn);
+}

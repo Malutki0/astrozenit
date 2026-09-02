@@ -1,0 +1,199 @@
+/*
+ * Kalendarz widoczności ciał Układu Słonecznego.
+ *
+ * Układ jest siatką dwukolumnową: stała kolumna nazw i rozciągliwy tor czasu.
+ * Tło zmierzchu leży pod wszystkimi wierszami naraz, dzięki czemu pasma da się
+ * porównać jednym spojrzeniem, bez przenoszenia wzroku w pionie.
+ */
+
+.root {
+  /* Szerokość kolumny nazw. Współdzielona przez podziałkę i wykres,
+   * żeby godziny wypadały dokładnie nad odpowiadającymi im miejscami pasków. */
+  --pv-label-width: 104px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+/* --------------------------------------------------------------- podziałka */
+
+.axis {
+  position: relative;
+  height: 14px;
+  margin-left: var(--pv-label-width);
+}
+
+.axisLabel {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 10px;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}
+
+/* ------------------------------------------------------------------ wykres */
+
+/*
+ * Wykres musi mieć własne, nieprzezroczyste tło. Bez niego przez pasmo zmierzchu
+ * prześwitywałaby rozmyta mapa nieba spod szkła panelu i noc astronomiczna
+ * przestawałaby być czarna.
+ */
+.chart {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--hairline);
+  background: var(--surface-void);
+  isolation: isolate;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0 0 0 var(--pv-label-width);
+  pointer-events: none;
+}
+
+.band {
+  position: absolute;
+  inset: 0;
+}
+
+.gridLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: oklch(1 0 0 / 0.07);
+}
+
+/* Znacznik chwili, dla której narysowana jest mapa nieba. */
+.nowLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--accent);
+  opacity: 0.85;
+}
+
+.rows {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: var(--pv-label-width) 1fr;
+  align-items: center;
+  width: 100%;
+  height: 34px;
+  text-align: left;
+  transition: background-color var(--dur-hint) var(--ease-out);
+}
+
+.row:hover {
+  background: oklch(1 0 0 / 0.05);
+}
+
+.row:active {
+  background: oklch(1 0 0 / 0.08);
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding-left: var(--space-3);
+  min-width: 0;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex: none;
+  box-shadow: 0 0 0 1px oklch(0 0 0 / 0.3);
+}
+
+.name {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row:hover .name {
+  color: var(--text-primary);
+}
+
+.track {
+  position: relative;
+  height: 100%;
+}
+
+/* Pasek widoczności. Zaokrąglone końce czytają się jako odcinek czasu,
+ * a nie jako element podziału siatki. */
+.bar {
+  position: absolute;
+  top: 9px;
+  height: 5px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 0 0 1px oklch(0 0 0 / 0.35);
+}
+
+.barTime {
+  position: absolute;
+  top: 17px;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 9.5px;
+  color: oklch(1 0 0 / 0.62);
+  white-space: nowrap;
+  padding-left: 2px;
+  pointer-events: none;
+}
+
+.absent {
+  position: absolute;
+  left: var(--space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10px;
+  color: oklch(1 0 0 / 0.35);
+}
+
+.legend {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  line-height: 1.5;
+  max-width: 60ch;
+}
+
+@media (max-width: 900px) {
+  .root {
+    --pv-label-width: 84px;
+  }
+
+  .row {
+    height: 32px;
+  }
+}
+
+/* Obiekt aktualnie nad horyzontem. */
+.dotUp {
+  box-shadow:
+    0 0 0 1px oklch(0 0 0 / 0.3),
+    0 0 0 3px oklch(1 0 0 / 0.16);
+}
+
+/* Etykieta przypięta do prawej krawędzi wykresu. */
+.barTimeRight {
+  left: auto;
+  padding-left: 0;
+  padding-right: 2px;
+}

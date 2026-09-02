@@ -1,0 +1,1064 @@
+/*
+ * Powłoka aplikacji.
+ *
+ * Mapa nieba wypełnia całe okno i nigdy się nie przeładowuje. Wszystko inne
+ * unosi się nad nią jako szklane panele, które pojawiają się na żądanie.
+ * Dzięki temu obraz nieba pozostaje bohaterem, a interfejs schodzi z drogi.
+ */
+
+.shell {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.sky {
+  position: absolute;
+  inset: 0;
+  z-index: var(--z-sky);
+}
+
+/* ---------------------------------------------------------------- górny pas */
+
+.topbar {
+  position: absolute;
+  top: var(--space-3);
+  left: calc(var(--rail-width) + var(--space-3) + var(--space-3));
+  right: var(--space-3);
+  z-index: var(--z-topbar);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  height: var(--topbar-height);
+  padding: 0 var(--space-3) 0 var(--space-4);
+  border-radius: var(--radius-pill);
+  composes: surfaceThin from '../../styles/glass.module.css';
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  flex: none;
+  padding-right: var(--space-3);
+  border-right: 1px solid var(--hairline);
+  margin-right: var(--space-1);
+  height: 26px;
+}
+
+.brandName {
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  font-weight: 600;
+  letter-spacing: var(--tracking-title);
+  color: var(--text-primary);
+}
+
+.brandDot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+  align-self: center;
+}
+
+.topbarSpacer {
+  flex: 1;
+  min-width: 0;
+}
+
+.topbarGroup {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex: none;
+}
+
+/* ------------------------------------------------------------- lewa szyna */
+
+.rail {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+  bottom: var(--space-3);
+  z-index: var(--z-rail);
+  width: var(--rail-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-3) 0;
+  border-radius: var(--radius-2xl);
+  composes: surface from '../../styles/glass.module.css';
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.railItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*
+   * Bez podkreślenia. Arkusz bazowy podkreśla wszystkie odnośniki, i słusznie,
+   * bo w tekście podkreślenie jest jedynym pewnym znakiem, że coś jest odnośnikiem.
+   * W pasku zakładek pozycja jest rozpoznawalna po ikonie i po położeniu, a kreska
+   * pod każdym podpisem zamienia pasek w spis odnośników.
+   */
+  text-decoration: none;
+  gap: 3px;
+  width: 60px;
+  padding: var(--space-2) 2px;
+  border-radius: var(--radius-md);
+  color: var(--text-tertiary);
+  transition:
+    background-color var(--dur-hint) var(--ease-out),
+    color var(--dur-hint) var(--ease-out),
+    transform var(--dur-press) var(--ease-out);
+}
+
+.railItem:hover {
+  background: var(--surface-raised);
+  color: var(--text-secondary);
+}
+
+.railItem:active {
+  transform: scale(0.95);
+}
+
+.railItemActive,
+.railItemActive:hover {
+  color: var(--accent);
+  background: var(--accent-faint);
+}
+
+/*
+ * Podpis zakładki. Dziesięć pikseli i grubość Medium, czyli wymiary podpisu
+ * w pasku zakładek iOS. Wcześniej było 9,5 piksela w zwykłej grubości, co przy
+ * ciemnym tle schodzi poniżej progu, przy którym da się to przeczytać kątem oka,
+ * a właśnie tak czyta się pasek zakładek: nie patrząc wprost.
+ */
+.railLabel {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.railDivider {
+  width: 28px;
+  height: 1px;
+  background: var(--hairline);
+  margin: var(--space-2) 0;
+  flex: none;
+}
+
+/*
+ * Treść panelu stoi nad warstwami materiału. Rozmycie i pierścień siedzą na
+ * pseudoelementach o ujemnym numerze warstwy, więc wystarczy podnieść treść ponad zero.
+ */
+.topbar > *,
+.panelHeader,
+.panelBody {
+  position: relative;
+  z-index: 1;
+}
+
+/* --------------------------------------------------------- panel sekcji */
+
+.panel {
+  position: absolute;
+  top: calc(var(--topbar-height) + var(--space-3) * 2);
+  left: calc(var(--rail-width) + var(--space-3) * 2);
+  bottom: var(--space-3);
+  z-index: var(--z-panel);
+  width: var(--panel-width);
+  max-width: calc(100vw - var(--rail-width) - var(--space-3) * 3);
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-2xl);
+  composes: surfaceStrong from '../../styles/glass.module.css';
+  overflow: hidden;
+  transition:
+    transform var(--dur-panel) var(--ease-panel),
+    opacity var(--dur-panel) var(--ease-panel);
+}
+
+.panelWide {
+  width: min(760px, 62vw);
+}
+
+/*
+ * Panel jest ustawiany jako cel fokusu przy otwarciu, żeby klawiatura trafiała
+ * od razu w jego zawartość. Nie jest jednak elementem sterującym, więc nie
+ * rysujemy wokół niego obwódki: byłaby myląca, a dostępność zapewnia
+ * etykieta odczytywana przez czytnik ekranu.
+ */
+.panel:focus,
+.detail:focus,
+.panel:focus-visible,
+.detail:focus-visible {
+  outline: none;
+}
+
+.panelHeader {
+  flex: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-5) var(--space-5) var(--space-4);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.panelTitleGroup {
+  min-width: 0;
+}
+
+/*
+ * Nadtytuł. W iOS nad dużym tytułem nie stoi wersalikowa etykieta, tylko drobny
+ * podpis w kolorze drugorzędnym, i tak jest tu czytelniej: wersaliki z szerokim
+ * światłem czyta się znak po znaku, a to jest informacja do rzucenia okiem.
+ */
+.panelEyebrow {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: var(--tracking-caption);
+  color: var(--text-secondary);
+  margin-bottom: 3px;
+}
+
+.panelTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  letter-spacing: var(--tracking-display);
+  color: var(--text-primary);
+  line-height: 1.08;
+}
+
+.panelBody {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  /*
+   * Płynne przewijanie dotyczy skoków wywołanych przez stronę, na przykład przejścia
+   * do wskazanej pozycji listy. Deklaracja na html nie obejmuje tego kontenera, bo to on
+   * ma własny pasek przewijania, a nie dokument. Ruch palcem i kółkiem obsługuje system
+   * i ta reguła go nie dotyka.
+   */
+  scroll-behavior: smooth;
+  /*
+   * Rozpęd przy przewijaniu palcem. Domyślnie w kontenerze z własnym przewijaniem
+   * ruch zatrzymuje się dokładnie tam, gdzie palec opuścił ekran, i lista sprawia
+   * wrażenie ciężkiej. To ustawienie oddaje ją systemowi, który dokłada wybieg
+   * i odbicie na krańcach.
+   */
+  -webkit-overflow-scrolling: touch;
+  /*
+   * Zamknięcie przemalowań w obrębie panelu. Panel leży na tafli z filtrem tła,
+   * a bez tej deklaracji przeglądarka przy każdym przewinięciu treści uznaje,
+   * że mogło zmienić się też to, co za taflą, i przelicza filtr od nowa.
+   * Odcięcie tej zależności jest tu różnicą między listą płynną a szarpiącą.
+   */
+  contain: paint;
+  padding: var(--space-5);
+}
+
+/* ------------------------------------------------------- panel po prawej */
+
+.detail {
+  position: absolute;
+  top: calc(var(--topbar-height) + var(--space-3) * 2);
+  right: var(--space-3);
+  z-index: var(--z-panel);
+  width: 356px;
+  max-height: calc(100vh - var(--topbar-height) - var(--space-3) * 4 - 132px);
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-2xl);
+  composes: surfaceStrong from '../../styles/glass.module.css';
+  overflow: hidden;
+  transition:
+    transform var(--dur-panel) var(--ease-panel),
+    opacity var(--dur-panel) var(--ease-panel);
+}
+
+/* ------------------------------------------------------- dolne sterowanie */
+
+.dock {
+  position: absolute;
+  left: calc(var(--rail-width) + var(--space-3) * 2);
+  right: var(--space-3);
+  bottom: var(--space-3);
+  z-index: var(--z-sky-ui);
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.dock > * {
+  pointer-events: auto;
+}
+
+/* --------------------------------------------------------------- telefon */
+
+@media (max-width: 900px) {
+  .topbar {
+    left: var(--space-2);
+    right: var(--space-2);
+    top: var(--space-2);
+    padding: 0 var(--space-2) 0 var(--space-3);
+    gap: var(--space-2);
+    border-radius: var(--radius-lg);
+  }
+
+  .brand {
+    padding-right: var(--space-2);
+    margin-right: 0;
+  }
+
+  /* Szyna zamienia się w dolny pasek zakładek, w zasięgu kciuka. */
+  .rail {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: 62px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    padding: 0 var(--space-1);
+    padding-bottom: env(safe-area-inset-bottom, 0);
+    overflow-x: visible;
+    overflow-y: visible;
+  }
+
+  /*
+   * Pasek zakładek. Wzorzec z iOS: ikona nad podpisem, zakładka czynna wyróżniona
+   * wyłącznie kolorem, bez tła. Prostokątne podświetlenie pod zakładką, które tu
+   * wcześniej było, jest wzorcem z Androida i w tym otoczeniu wyglądało jak przycisk
+   * wciśnięty przez pomyłkę.
+   */
+  .railItem {
+    width: auto;
+    min-width: 56px;
+    flex: 1 0 auto;
+    gap: 4px;
+    padding: 7px 2px 4px;
+    background: none;
+  }
+
+  .railItem:hover {
+    background: none;
+  }
+
+  .railItemActive,
+  .railItemActive:hover {
+    background: none;
+    color: var(--accent);
+  }
+
+  /*
+   * Pasek zakładek jako unosząca się kapsuła, a nie belka przyklejona do krawędzi.
+   *
+   * Belka przez całą szerokość ekranu to wzorzec z czasów, gdy interfejs był siatką
+   * prostokątów. Szkło ma sens tylko wtedy, gdy widać, że coś leży na czymś, a tafla
+   * dotykająca wszystkich trzech krawędzi ekranu przestaje być obiektem i staje się
+   * ramą okna. Odsunięta od brzegów i zaokrąglona wraca do bycia przedmiotem.
+   *
+   * Szerokość wynika z treści, a nie z ekranu: pięć pozycji, każda tak szeroka,
+   * jak potrzebuje. Dzięki temu kapsuła jest wyśrodkowana i na szerszym telefonie
+   * nie rozciąga się bez powodu.
+   */
+  .rail {
+    left: 50%;
+    right: auto;
+    bottom: calc(var(--space-3) + env(safe-area-inset-bottom, 0px));
+    transform: translateX(-50%);
+    width: auto;
+    max-width: calc(100vw - var(--space-4) * 2);
+    height: auto;
+    justify-content: center;
+    gap: 2px;
+    /*
+     * Odstęp wewnętrzny większy niż grubość pierścienia załamania. Przy sześciu
+     * pikselach pierścień przechodził dokładnie przez wiersz podpisów i przecinał
+     * je jasną kreską. Dziesięć odsuwa treść poza strefę krawędziową.
+     */
+    padding: 10px 8px;
+    border-radius: var(--radius-pill);
+    overflow: visible;
+  }
+
+  .railDivider {
+    display: none;
+  }
+
+  /*
+   * Panel na telefonie zajmuje całą wolną przestrzeń: od paska górnego do paska zakładek.
+   *
+   * Wcześniej rezerwował miejsce na oś czasu i był dodatkowo przycięty do 64 procent
+   * wysokości ekranu. Oba założenia przestały być prawdziwe: oś czasu chowa się przy
+   * otwartej sekcji, a przycięcie zostawiało pod panelem sto kilkadziesiąt pikseli pustki
+   * i sprawiało, że treść wyglądała na uciętą w przypadkowym miejscu.
+   *
+   * Jednostka dvh, a nie vh, bo na telefonie pasek adresu przeglądarki chowa się przy
+   * przewijaniu i vh odnosi się do wysokości bez niego. Panel liczony w vh wystawałby
+   * wtedy pod pasek zakładek.
+   */
+  .panel,
+  .detail {
+    top: calc(var(--topbar-height) + var(--space-2) * 2);
+    left: 0;
+    right: 0;
+    /*
+     * Dolna krawędź panelu nad unoszącym się paskiem zakładek.
+     *
+     * Wcześniej było tu sześćdziesiąt dwa piksele, czyli wysokość paska przyklejonego
+     * do krawędzi ekranu. Pasek jest teraz kapsułą odsuniętą od brzegu, więc miejsca
+     * potrzeba więcej: jego własna wysokość, odstęp od krawędzi i pas bezpieczny
+     * urządzeń z zaokrąglonym ekranem. Bez tego ostatni wiersz treści chował się
+     * za paskiem i wyglądał na ucięty.
+     */
+    bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+    width: auto;
+    max-width: none;
+    max-height: none;
+    height: auto;
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    border-bottom: none;
+  }
+
+  /*
+   * Wejście od dołu, jak arkusz wysuwany znad krawędzi ekranu.
+   *
+   * Poprzednia wersja przesuwała panel o dwadzieścia cztery piksele i to było
+   * za mało, żeby ruch cokolwiek znaczył: sekcja po prostu pojawiała się
+   * z drobnym drgnięciem. Arkusz wysuwający się spod dolnej krawędzi mówi wprost,
+   * skąd przyszedł i gdzie wróci po zamknięciu, i tak samo zachowują się
+   * arkusze w systemie, więc gest jest znajomy, zanim ktokolwiek go wyjaśni.
+   *
+   * Krzywa jest ta sama, co przy przeciąganiu szuflady: szybki start i długie
+   * dochodzenie do końca, bez odbicia. Odbicie sugerowałoby sprężynę, a arkusz
+   * nie jest sprężyną, tylko czymś, co ktoś przesunął ręką i puścił.
+   */
+  @starting-style {
+    .panel,
+    .detail {
+      transform: translateY(88%);
+      opacity: 0.4;
+    }
+  }
+
+  .panel,
+  .detail {
+    transition:
+      transform var(--dur-sheet) var(--ease-panel),
+      opacity var(--dur-panel) var(--ease-panel);
+  }
+
+
+
+  .panelHeader {
+    padding: var(--space-5) var(--space-4) var(--space-4);
+  }
+
+  .panelBody {
+    padding: var(--space-4);
+  }
+
+  /* Oś czasu tuż nad paskiem zakładek, na tej samej wysokości co dolna krawędź panelu. */
+  .dock {
+    left: var(--space-2);
+    right: var(--space-2);
+    bottom: calc(94px + env(safe-area-inset-bottom, 0px));
+    z-index: var(--z-panel);
+  }
+
+  /*
+   * Przy otwartej sekcji oś czasu chowa się z drogi.
+   *
+   * Na telefonie panel sekcji zajmuje prawie cały ekran, a oś czasu leżąca nad nim
+   * zasłaniała treść i przechwytywała dotknięcia przy przewijaniu. Sekcje dotyczą
+   * wybranej chwili, więc godzina jest tam potrzebna, ale wystarczy ta w pasku górnym.
+   */
+  .dockHidden {
+    display: none;
+  }
+}
+
+/* ------------------------------------------------- przyciski górnego pasa */
+
+.topbarButton {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  height: 34px;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+  min-width: 0;
+  transition:
+    background-color var(--dur-hint) var(--ease-out),
+    color var(--dur-hint) var(--ease-out),
+    transform var(--dur-press) var(--ease-out);
+}
+
+.topbarButton:hover {
+  background: var(--surface-raised);
+  color: var(--text-primary);
+}
+
+.topbarButton:active {
+  transform: scale(0.97);
+}
+
+.topbarLabel {
+  max-width: 22ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.topbarTime {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+/*
+ * Przycisk powrotu do czasu bieżącego. Kropka pulsuje, bo to jedyny element paska,
+ * który sygnalizuje stan wymagający reakcji, a nie zwykłą informację.
+ */
+.liveButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex: none;
+  padding: 5px 11px 5px 9px;
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+  background: var(--accent-muted);
+  color: var(--accent);
+  font-size: var(--text-2xs);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition:
+    background var(--dur-hint) var(--ease-out),
+    transform var(--dur-hint) var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .liveButton:hover {
+    background: color-mix(in oklch, var(--accent) 24%, transparent);
+  }
+}
+
+.liveButton:active {
+  transform: scale(0.97);
+}
+
+.liveDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: livePulse 2s var(--ease-out) infinite;
+}
+
+@keyframes livePulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(0.82);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .liveDot {
+    animation: none;
+  }
+}
+
+.topbarBadge {
+  font-size: var(--text-2xs);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-muted);
+  border-radius: var(--radius-pill);
+  padding: 2px 7px;
+  flex: none;
+}
+
+.searchButton {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  height: 34px;
+  padding: 0 var(--space-2) 0 var(--space-3);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--hairline);
+  color: var(--text-tertiary);
+  font-size: var(--text-sm);
+  transition:
+    border-color var(--dur-hint) var(--ease-out),
+    color var(--dur-hint) var(--ease-out),
+    background-color var(--dur-hint) var(--ease-out),
+    transform var(--dur-press) var(--ease-out);
+}
+
+.searchButton:hover {
+  border-color: var(--hairline-strong);
+  color: var(--text-secondary);
+  background: var(--surface-raised);
+}
+
+.searchButton:active {
+  transform: scale(0.98);
+}
+
+.searchLabel {
+  white-space: nowrap;
+}
+
+.kbd {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.02em;
+  color: var(--text-tertiary);
+  background: var(--surface-void);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-xs);
+  padding: 2px 5px;
+  line-height: 1;
+}
+
+.searchCompact {
+  display: none;
+}
+
+@media (max-width: 1180px) {
+  .searchButton {
+    display: none;
+  }
+
+  .searchCompact {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 760px) {
+  .topbarLabel {
+    display: none;
+  }
+
+  .topbarButton {
+    padding: 0 var(--space-2);
+  }
+}
+
+/* -------------------------------------------------- pas fotograficzny sekcji */
+
+/*
+ * Zdjęcie stoi za nagłówkiem panelu, nie za całą treścią. Tło pod przewijaną
+ * listą obniżałoby czytelność wszystkiego, co po niej przejedzie, a przy przewijaniu
+ * zmuszałoby przeglądarkę do ciągłego przemalowywania dużego obrazu.
+ */
+.panelPhoto {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/*
+ * Delikatna korekta, nie przyciemnianie.
+ *
+ * Pierwsza wersja zbijała jasność do 52 procent, bo tak traktuje się zdjęcia
+ * używane jako tło. Tyle że wszystkie zdjęcia w tym zbiorze przedstawiają nocne
+ * niebo i są ciemne od początku: rój Perseidów po takim przyciemnieniu stawał się
+ * jednolitą czernią, nieodróżnialną od tła panelu. Fotografia astronomiczna
+ * potrzebuje odwrotnego traktowania niż zdjęcie krajobrazu w dzień.
+ */
+.panelPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.92) saturate(0.85) contrast(1.05);
+}
+
+/*
+ * Gradient schodzący do barwy panelu. Bez niego dolna krawędź zdjęcia byłaby
+ * ostrą poziomą kreską przez środek panelu, a jasne miejsca zdjęcia potrafiłyby
+ * zejść z kontrastem tytułu poniżej progu czytelności.
+ */
+.panelPhoto::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    oklch(0.11 0.02 265 / 0.12) 0%,
+    oklch(0.11 0.02 265 / 0.34) 44%,
+    oklch(0.11 0.02 265 / 0.82) 80%,
+    oklch(0.11 0.02 265) 100%
+  );
+}
+
+.panelPhotoCredit {
+  position: absolute;
+  right: var(--space-3);
+  bottom: var(--space-2);
+  font-size: 9px;
+  letter-spacing: 0.02em;
+  color: oklch(1 0 0 / 0.52);
+  /*
+   * Cień pod tekstem. Podpis musi być czytelny na każdym zdjęciu, a zdjęcia bywają
+   * jasne w losowych miejscach: zorza polarna potrafi wypełnić prawy dolny róg
+   * jasną zielenią i wtedy szary tekst po prostu znika. To nie jest kwestia estetyki,
+   * tylko warunku licencji, który wymaga podania autora w sposób czytelny.
+   */
+  text-shadow: 0 1px 3px oklch(0.08 0.02 265 / 0.9), 0 0 8px oklch(0.08 0.02 265 / 0.7);
+  max-width: 62%;
+  text-align: right;
+  line-height: 1.3;
+}
+
+/*
+ * Nagłówek ze zdjęciem. Kreska rozdzielająca jest zbędna, bo rozdziela już gradient,
+ * a treść musi stanąć nad zdjęciem, nie pod nim.
+ */
+.panelHeaderOverPhoto {
+  position: relative;
+  overflow: hidden;
+  border-bottom: none;
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
+}
+
+.panelHeaderOverPhoto > .panelTitleGroup,
+.panelHeaderOverPhoto > div {
+  position: relative;
+  z-index: 1;
+}
+
+/*
+ * Uchwyt arkusza. Widoczny wyłącznie na telefonie, gdzie panel wjeżdża od dołu.
+ * Na szerokim ekranie panel jest przyklejony do boku i uchwyt byłby kłamstwem
+ * o tym, jak się nim steruje.
+ */
+.panelHeaderHandle {
+  display: none;
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  width: 36px;
+  height: 4px;
+  margin-left: -18px;
+  border-radius: var(--radius-pill);
+  background: oklch(1 0 0 / 0.18);
+  z-index: 2;
+}
+
+/* Uchwyt pokazujemy tylko tam, gdzie panel naprawdę wjeżdża od dołu. */
+@media (max-width: 900px) {
+  .panelHeaderHandle {
+    display: block;
+  }
+}
+
+/* ------------------------------------------------- arkusz pozostałych sekcji */
+
+/*
+ * Tło przechwytujące dotknięcie poza arkuszem. Bez rozmycia i bez ciemnienia
+ * do czerni: mapa nieba ma pozostać widoczna, bo arkusz jest chwilowym spisem,
+ * a nie osobnym ekranem, na który się przechodzi.
+ */
+.moreScrim {
+  position: fixed;
+  inset: 0;
+  z-index: calc(var(--z-rail) - 1);
+  background: oklch(0.06 0.02 265 / 0.42);
+  border: none;
+  cursor: pointer;
+  animation: moreScrimIn var(--dur-panel) var(--ease-out) both;
+}
+
+@keyframes moreScrimIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*
+ * Arkusz wysuwany spod paska zakładek. Ta sama tafla i ten sam materiał, bo to
+ * przedłużenie paska, a nie nowy rodzaj powierzchni: pasek pokazuje pięć pozycji,
+ * arkusz resztę tego samego spisu.
+ */
+.moreSheet {
+  composes: surfaceStrong from '../../styles/glass.module.css';
+  position: fixed;
+  left: var(--space-3);
+  right: var(--space-3);
+  bottom: calc(94px + env(safe-area-inset-bottom, 0px));
+  z-index: var(--z-rail);
+  padding: var(--space-3) var(--space-3) var(--space-4);
+  border-radius: var(--radius-2xl);
+  animation: moreSheetIn var(--dur-sheet) var(--ease-panel) both;
+}
+
+@keyframes moreSheetIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.moreHandle {
+  display: block;
+  width: 36px;
+  height: 4px;
+  margin: 0 auto var(--space-3);
+  border-radius: var(--radius-pill);
+  background: oklch(1 0 0 / 0.2);
+}
+
+/*
+ * Siatka pozycji. Kolumny liczone z dostępnej szerokości, nie z góry ustalone,
+ * więc na wąskim telefonie wychodzą trzy, na szerokim cztery, a na tablecie pięć,
+ * i w żadnym z tych przypadków nie trzeba tego osobno opisywać.
+ */
+.moreGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(84px, 1fr));
+  gap: var(--space-1);
+  position: relative;
+  z-index: 1;
+}
+
+.moreGrid .railItem {
+  width: auto;
+  min-width: 0;
+  min-height: 68px;
+  gap: 6px;
+  padding: var(--space-3) var(--space-1);
+  border-radius: var(--radius-lg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .moreScrim,
+  .moreSheet {
+    animation: none;
+  }
+}
+
+/*
+ * Wjazd paneli sekcji.
+ *
+ * Panel powstaje na nowo przy każdej zmianie trasy, więc animacja odtwarza się raz,
+ * przy otwarciu, i nie trzeba do tego żadnego stanu w Reakcie.
+ *
+ * Kierunek zgadza się z miejscem, z którego panel wychodzi: sekcje wjeżdżają od lewej,
+ * czyli od szyny nawigacji, w którą przed chwilą kliknięto, a panel szczegółów obiektu
+ * od prawej, czyli od swojej krawędzi. Ruch, który zaczyna się tam, gdzie padło
+ * kliknięcie, czyta się jako następstwo tego kliknięcia, a nie jako osobne zdarzenie.
+ *
+ * Skala zaczyna się od 0.97, nie od zera. Nic w świecie fizycznym nie pojawia się
+ * z niczego, a przedmiot rosnący od punktu wygląda jak sztuczka, nie jak otwarcie.
+ *
+ * Rozmycie na starcie robi jedną rzecz, której nie da się osiągnąć samą przezroczystością:
+ * zdejmuje z panelu ostrość w chwili, gdy jeszcze się przesuwa, więc oko nie próbuje
+ * czytać treści w ruchu i nie ma wrażenia szarpania. Kończy się przed końcem ruchu.
+ */
+@keyframes panelWjazdLewy {
+  from {
+    opacity: 0;
+    transform: translate3d(-22px, 6px, 0) scale(0.97);
+    filter: blur(6px);
+  }
+  60% {
+    filter: blur(0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes panelWjazdPrawy {
+  from {
+    opacity: 0;
+    transform: translate3d(22px, 6px, 0) scale(0.97);
+    filter: blur(6px);
+  }
+  60% {
+    filter: blur(0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+    filter: blur(0);
+  }
+}
+
+/*
+ * Animacja obowiązuje wyłącznie w układzie szerokim.
+ *
+ * Poniżej 900 pikseli panel jest arkuszem wysuwanym spod dolnej krawędzi i ma własne
+ * wejście, opisane niżej. Ruch od lewej byłby tam kłamstwem o tym, skąd arkusz przyszedł,
+ * a przy zamykaniu wracałby w inne miejsce, niż z którego wyjechał.
+ */
+@media (min-width: 901px) {
+  .panel {
+    animation: panelWjazdLewy 340ms var(--ease-panel) both;
+  }
+
+  .detail {
+    animation: panelWjazdPrawy 300ms var(--ease-panel) both;
+  }
+}
+
+/*
+ * Przy zredukowanym ruchu zostaje samo pojawienie się.
+ *
+ * Ustawienie nie znaczy "bez animacji", tylko "bez ruchu". Nagłe pojawienie się panelu
+ * na pół ekranu jest samo w sobie gwałtowne, więc łagodne przejście przezroczystości
+ * pomaga także tym, którzy ruch wyłączyli. Znika przesunięcie, skala i rozmycie.
+ */
+@media (prefers-reduced-motion: reduce) {
+  @keyframes panelWjazdLewy {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes panelWjazdPrawy {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .panel,
+  .detail {
+    animation-duration: 160ms;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panelBody {
+    scroll-behavior: auto;
+  }
+}
+
+/*
+ * Pasek informacji o danych.
+ *
+ * Leży przy dolnej krawędzi, po prawej, a nie w poprzek całego ekranu. Pas na całą
+ * szerokość zasłaniałby oś czasu, czyli jedyne stałe narzędzie tej aplikacji, i przez
+ * pierwsze wejście uniemożliwiałby korzystanie z niej. Tu przykrywa fragment nieba,
+ * które i tak jest tłem.
+ */
+.cookieBar {
+  position: absolute;
+  right: var(--space-3);
+  bottom: var(--space-3);
+  z-index: var(--z-toast);
+  width: min(420px, calc(100vw - var(--rail-width) - var(--space-3) * 3));
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-4) var(--space-3);
+  border-radius: var(--radius-xl);
+  composes: surfaceStrong from '../../styles/glass.module.css';
+  animation: panelWjazdPrawy 320ms var(--ease-panel) both;
+}
+
+.cookieText {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: var(--text-sm);
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.cookieActions {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.cookieLink {
+  border: 0;
+  background: none;
+  padding: 6px 4px;
+  font: inherit;
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--dur-hint) var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .cookieLink:hover {
+    color: var(--text-primary);
+  }
+}
+
+.cookieLink:active {
+  transform: scale(0.97);
+}
+
+/*
+ * Na wąskim ekranie pasek przenosi się pod górny pasek, a nie zostaje przy dole.
+ *
+ * Wersja dolna zasłaniała oś czasu razem z przyciskami sterowania, czyli jedyne stałe
+ * narzędzie tej aplikacji, i przez pierwsze wejście uniemożliwiała korzystanie z niej.
+ * Na górze jest wolne niebo, a niebo jest tłem, więc przykrycie jego fragmentu nic
+ * nie kosztuje.
+ */
+@media (max-width: 900px) {
+  .cookieBar {
+    left: var(--space-3);
+    right: var(--space-3);
+    top: calc(var(--topbar-height) + var(--space-3) * 2);
+    bottom: auto;
+    width: auto;
+    animation: panelWjazdLewy 320ms var(--ease-panel) both;
+  }
+}

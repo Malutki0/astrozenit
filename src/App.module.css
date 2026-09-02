@@ -1,0 +1,78 @@
+/* Ekran startowy, widoczny tylko podczas wczytywania katalogu. */
+
+.boot {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: var(--surface-void);
+  padding: var(--space-6);
+}
+
+.bootInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  text-align: center;
+}
+
+/* Znak firmowy: okrąg z pojedynczym punktem w środku, jak celownik nakierowany
+ * na zenit. Delikatne tętnienie sygnalizuje, że coś się dzieje. */
+.bootMark {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid var(--hairline-strong);
+  margin-bottom: var(--space-2);
+}
+
+.bootMark::before,
+.bootMark::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+}
+
+.bootMark::before {
+  inset: 41%;
+  background: var(--accent);
+}
+
+.bootMark::after {
+  inset: -1px;
+  border: 1px solid var(--accent);
+  opacity: 0;
+  animation: pulse 2.6s var(--ease-out) infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.86);
+    opacity: 0.5;
+  }
+  70%,
+  100% {
+    transform: scale(1.28);
+    opacity: 0;
+  }
+}
+
+.bootTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--text-primary);
+}
+
+.bootBody {
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+  max-width: 42ch;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bootMark::after {
+    animation: none;
+  }
+}

@@ -1,0 +1,20 @@
+node_modules
+dist
+.DS_Store
+*.local
+.vite
+.cache
+
+# Zmienne środowiskowe. Klucze do tłumaczenia aktualności i do interfejsu NASA
+# trzymamy w sekretach GitHuba, nie w repozytorium.
+.env
+.env.*
+!.env.example
+
+# Wyniki testów i pomiarów, tworzone lokalnie.
+coverage
+*.log
+
+# Ustawienia zaplecza z hasłem do bazy. Nigdy w repozytorium: historia gita jest trwała
+# i wycofanie takiego pliku po fakcie nie usuwa go z poprzednich zapisów.
+server/php/config.local.php

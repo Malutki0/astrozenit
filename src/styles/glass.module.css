@@ -1,0 +1,311 @@
+/*
+ * MATERIAŁ SZKLANY
+ *
+ * Jedno miejsce, z którego wszystkie unoszące się powierzchnie biorą swój wygląd.
+ * Klasy stąd wciąga się przez composes, więc materiał jest opisany raz, a nie
+ * powielony w ośmiu arkuszach, w których nieuchronnie rozjechałby się po kilku
+ * poprawkach.
+ *
+ * CO ODRÓŻNIA SZKŁO OD PRZYCIEMNIONEGO PROSTOKĄTA
+ *
+ * Poprzednia wersja rozmywała tło i kładła na nim ciemne wypełnienie o krycie
+ * osiemdziesięciu ośmiu procent. Geometrycznie było to szkło, w odbiorze nie:
+ * ciemna płachta na ciemnym niebie wygląda po prostu jak ciemna płachta, bo przez
+ * dwanaście procent przezroczystości nie widać niczego, co pozwoliłoby rozpoznać,
+ * że cokolwiek jest pod spodem.
+ *
+ * Szkło rozpoznaje się po trzech rzeczach naraz i wszystkie trzy muszą być obecne.
+ *
+ * 1. WIDAĆ PRZEZ NIE. Krycie schodzi do około jednej trzeciej. Gwiazdy pod panelem
+ *    są rozmyte, ale są, i to one mówią oku, że patrzy przez taflę.
+ *
+ * 2. ZAŁAMUJE ŚWIATŁO NA KRAWĘDZI. To jest rzecz, której brakowało najbardziej.
+ *    Prawdziwa tafla ma grubość, więc przy brzegu promienie biegną przez więcej
+ *    materiału, zaginają się i zagęszczają. Odtwarzamy to pierścieniem o własnym
+ *    filtrze tła: mocniej rozjaśnionym i nasyconym niż środek. Pierścień powstaje
+ *    z maski złożonej z dwóch prostokątów, zewnętrznego i wewnętrznego, odjętych
+ *    od siebie, więc dokładnie podąża za zaokrągleniem narożników, jakiekolwiek by
+ *    nie było.
+ *
+ * 3. ODBIJA ŹRÓDŁO ŚWIATŁA. Jasna kreska u góry i ciemna u dołu, plus miękki
+ *    refleks w górnym rogu. Bez tego tafla nie ma góry ani dołu i wygląda płasko.
+ *
+ * Wszystkie trzy warstwy siedzą na pseudoelementach, więc materiał nie wymaga
+ * ani jednego dodatkowego znacznika w drzewie dokumentu.
+ */
+
+/*
+ * Materiał celowo nie ustawia position.
+ *
+ * Pierwsza wersja miała tu position: relative, żeby pseudoelementy miały się do czego
+ * odnieść, i to zepsuło szynę nawigacji: klasa wciągnięta przez composes trafia do
+ * arkusza po klasie docelowej, więc jej position: relative wygrywało z position:
+ * absolute szyny i pasek zakładek skakał pod pasek górny. Materiał ma opisywać wygląd,
+ * a nie decydować o położeniu elementu w układzie.
+ *
+ * Wymaganie jest więc takie: element z tą klasą musi być pozycjonowany. Wszystkie
+ * powierzchnie, które ją noszą, i tak są, bo unoszą się nad mapą. Jedyny wyjątek,
+ * zwinięta oś czasu, dostaje position: relative u siebie.
+ */
+.surface {
+  /*
+   * Bez isolation: isolate, i to nie jest przeoczenie.
+   *
+   * Pierwsza wersja miała tę własność, żeby pseudoelementy o ujemnym numerze warstwy
+   * nie wypadły za tafle leżące niżej. Skutek był taki, że filtr tła przestał cokolwiek
+   * robić: isolation tworzy grupę, a backdrop-filter sięga wtedy wyłącznie po to,
+   * co narysowano wewnątrz tej grupy, czyli po nic. Rozmycie i załamanie były w kodzie,
+   * ale nie na ekranie, a przezroczystość, którą widziałem, brała się z samego krycia
+   * wypełnienia.
+   *
+   * Wszystkie powierzchnie noszące tę klasę i tak mają własny numer warstwy, więc
+   * pseudoelementy zostają tam, gdzie mają być, bez wymuszania grupy.
+   */
+  /*
+   * Wypełnienie własne.
+   *
+   * Dziesięć procent czerni, od których zacząłem, dawało taflę praktycznie czystą:
+   * refrakcja i pierścień były widoczne, ale przez powierzchnię przechodziło tyle
+   * światła, że każda jaśniejsza gwiazda pod nią rozpraszała uwagę, a nad jasnym
+   * fragmentem Drogi Mlecznej tafla przestawała być rozpoznawalna jako osobny obiekt.
+   *
+   * Dwadzieścia osiem procent to punkt, w którym tafla ma już własny ciężar i widać,
+   * gdzie się kończy, a jednocześnie przez nią wciąż widać, i to widać zniekształcone,
+   * czyli tak, jak przez szkło. Powyżej mniej więcej czterdziestu procent przestaje
+   * mieć znaczenie, co jest pod spodem, i cała robota z załamaniem idzie na marne.
+   */
+  background: oklch(0.06 0.012 265 / 0.28);
+  /*
+   * Krawędź z pięciu cieni wewnętrznych zamiast obramowania.
+   *
+   * Obramowanie rysuje kreskę o jednej grubości i jednej barwie. Krawędź szkła tak
+   * nie wygląda: przy samym brzegu jest wąski jasny błysk, za nim szersza i słabsza
+   * poświata, a głębiej do środka trzy coraz szersze i coraz ciemniejsze warstwy,
+   * które budują wrażenie grubości. Pięć cieni o rosnącym rozmyciu robi dokładnie to
+   * i kosztuje tyle, co jedno malowanie.
+   */
+  box-shadow:
+    inset 0 0 2px 1px oklch(1 0 0 / 0.4),
+    inset 0 0 10px 4px oklch(1 0 0 / 0.16),
+    inset 0 4px 16px oklch(0.05 0.02 265 / 0.1),
+    inset 0 8px 24px oklch(0.05 0.02 265 / 0.1),
+    inset 0 6px 56px oklch(0.05 0.02 265 / 0.12),
+    0 16px 44px -14px oklch(0.05 0.02 265 / 0.66);
+}
+
+/*
+ * Warstwa podstawowa. Bez odwołania do filtru SVG, bo ta wersja musi działać wszędzie:
+ * samo rozmycie z podbiciem nasycenia. Tam, gdzie przeglądarka obsługuje filtry SVG
+ * w backdrop-filter, blok @supports niżej podmienia ją na prawdziwe załamanie.
+ */
+.surface::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  backdrop-filter: blur(14px) saturate(150%);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+  pointer-events: none;
+}
+
+/*
+ * Pierścień załamania. Zastępnik prawdziwej refrakcji dla Safari i Firefoksa: mocniej
+ * rozjaśnione tło w wąskim pasie przy krawędzi. Tam, gdzie działa filtr SVG, pierścień
+ * jest zbędny i blok @supports go wyłącza, bo dwa opisy tego samego zjawiska nałożone
+ * na siebie dają obwódkę, a nie szkło.
+ */
+.surface::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  padding: 11px;
+  backdrop-filter: blur(2px) brightness(1.36) saturate(1.3);
+  -webkit-backdrop-filter: blur(2px) brightness(1.36) saturate(1.3);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/*
+ * PRAWDZIWE ZAŁAMANIE
+ *
+ * Tam, gdzie przeglądarka potrafi wpiąć filtr SVG w backdrop-filter, zastępujemy
+ * zastępnik oryginałem: obraz tła jest realnie przesuwany przy krawędziach, osobno
+ * dla każdej składowej barwy. Pierścień wtedy znika, bo nie ma czego udawać.
+ */
+@supports (backdrop-filter: url(#zenit-szklo)) {
+  .surface::before {
+    backdrop-filter: url(#zenit-szklo) saturate(1.35);
+    -webkit-backdrop-filter: url(#zenit-szklo) saturate(1.35);
+  }
+
+  .surface::after {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+
+/*
+ * Wariant mocniejszy: dla powierzchni, na których stoi dużo tekstu do przeczytania.
+ *
+ * Krycie rośnie, ale nie do wartości, przy której szkło przestaje być szkłem.
+ * Trzydzieści osiem procent to granica, przy której akapit trzyma kontrast powyżej
+ * progu dostępności, a przez taflę wciąż widać, że coś za nią jest. Tafla dodatkowo
+ * przyciemnia to, co pod nią, bo każdy jasny obszar prześwitujący spod tekstu
+ * zabiera mu czytelność.
+ */
+.surfaceStrong {
+  composes: surface;
+  background: oklch(0.08 0.014 265 / 0.62);
+}
+
+.surfaceStrong::before {
+  backdrop-filter: blur(26px) saturate(125%) brightness(0.86);
+  -webkit-backdrop-filter: blur(26px) saturate(125%) brightness(0.86);
+}
+
+@supports (backdrop-filter: url(#zenit-szklo)) {
+  .surfaceStrong::before {
+    backdrop-filter: url(#zenit-szklo) blur(10px) saturate(1.1) brightness(0.86);
+    -webkit-backdrop-filter: url(#zenit-szklo) blur(10px) saturate(1.1) brightness(0.86);
+  }
+}
+
+/*
+ * Refleks powierzchni. Osobna klasa, bo pseudoelementy tafli są zajęte przez
+ * załamanie i warstwę podstawową.
+ */
+.sheen {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    radial-gradient(118% 74% at 16% -14%, oklch(1 0 0 / 0.13), transparent 56%),
+    linear-gradient(178deg, oklch(1 0 0 / 0.07) 0%, transparent 26%);
+}
+
+
+@supports not (backdrop-filter: blur(4px)) {
+  .surface,
+  .surfaceStrong {
+    background: oklch(0.16 0.02 265 / 0.96);
+  }
+}
+
+/*
+ * Wariant dla powierzchni cienkich: pasków, pigułek, przycisków.
+ *
+ * Pierścień załamania ma stałą grubość trzynastu pikseli, co na panelu o wysokości
+ * kilkuset pikseli jest wąską obwódką, ale na pasku wysokim na sześćdziesiąt zajmuje
+ * już piątą część powierzchni i zamiast krawędzi robi się z niego wypełnienie.
+ * Prawdziwa tafla też ma grubość niezależną od swojej wielkości, tyle że w naturze
+ * cienkie szkło jest po prostu cieńsze.
+ */
+/*
+ * Wariant dla powierzchni cienkich: pasków, pigułek, przycisków.
+ *
+ * Załamanie ma siłę dobraną do grubości tafli, a nie do jej wielkości, ale pasek
+ * wysoki na sześćdziesiąt pikseli przy pełnej sile załamywałby sam siebie: strefy
+ * krawędziowe z góry i z dołu spotkałyby się pośrodku i zamiast krawędzi wyszłoby
+ * zniekształcenie całej powierzchni. Dlatego osobny filtr o mniejszym przesunięciu.
+ */
+/*
+ * Wariant cienki dostaje odrobinę więcej własnego wypełnienia niż podstawowy.
+ * Paski niosą tekst, a przez zbyt czystą taflę przebija się każda
+ * jasna gwiazda, na której akurat pasek stanie. Trzydzieści osiem procent to nadal szkło,
+ * ale takie, na którym da się postawić napis i nie martwić się, co pod nim przejedzie.
+ */
+.surfaceThin {
+  composes: surface;
+  background: oklch(0.07 0.013 265 / 0.38);
+}
+
+.surfaceThin::after {
+  padding: 6px;
+  backdrop-filter: blur(2px) brightness(1.3) saturate(1.25);
+  -webkit-backdrop-filter: blur(2px) brightness(1.3) saturate(1.25);
+}
+
+@supports (backdrop-filter: url(#zenit-szklo-cienkie)) {
+  .surfaceThin::before {
+    backdrop-filter: url(#zenit-szklo-cienkie) saturate(1.3);
+    -webkit-backdrop-filter: url(#zenit-szklo-cienkie) saturate(1.3);
+  }
+
+  .surfaceThin::after {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .surface,
+  .surfaceStrong,
+  .surfaceThin {
+    background: oklch(0.15 0.018 265);
+  }
+
+  .surface::before,
+  .surfaceStrong::before,
+  .surfaceThin::before,
+  .surface::after,
+  .surfaceStrong::after,
+  .surfaceThin::after {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .surface::after,
+  .surfaceStrong::after,
+  .surfaceThin::after {
+    background: linear-gradient(180deg, oklch(1 0 0 / 0.12), transparent 60%);
+  }
+}
+
+/*
+ * PRZEŁĄCZENIE SZKŁA NA CZAS RUCHU KAMERY
+ *
+ * Filtr SVG w backdrop-filter jest najdroższą rzeczą w całej aplikacji i to nie z powodu
+ * kodu, tylko z powodu tego, co pod nim leży. Za taflą stoi mapa nieba, czyli płótno,
+ * które przy przesuwaniu kamery przerysowuje się w każdej klatce. Za każdym razem
+ * przeglądarka musi na nowo przepuścić przez mapę przemieszczeń całą powierzchnię
+ * pod szkłem, a tej jest w tym układzie około 287 tysięcy pikseli kwadratowych,
+ * rozłożonych na szynie, górnym pasku i osi czasu.
+ *
+ * Zwykłe rozmycie jest w tym samym miejscu wielokrotnie tańsze, bo przeglądarki liczą je
+ * na karcie graficznej ścieżką przygotowaną specjalnie do tego. Filtr SVG takiej ścieżki
+ * nie ma i idzie wolniejszą drogą.
+ *
+ * Stąd zamiana: przy nieruchomym niebie zostaje prawdziwe załamanie, a na czas ruchu
+ * kamery wchodzi rozmycie. Nie jest to kompromis kosztem wyglądu, tylko wykorzystanie
+ * tego, jak działa wzrok: w trakcie ruchu i tak nie da się dostrzec przesunięcia barw
+ * na krawędzi tafli, bo całe tło pod nią jedzie. Widać za to każdą zgubioną klatkę.
+ *
+ * Znacznik ustawia mapa nieba na elemencie html, więc reguła nie zależy od tego,
+ * gdzie w drzewie leży dana tafla.
+ */
+/*
+ * Każda tafla dostaje własne rozmycie zastępcze, to samo, którego używa w przeglądarkach
+ * bez filtrów SVG. Wspólna wartość dla wszystkich trzech byłaby prostsza, ale zmieniałaby
+ * w ruchu nie tylko załamanie, lecz i charakter szkła: szyna zrobiłaby się jaśniejsza,
+ * a panel straciłby przygaszenie. Znikać ma wyłącznie to, czego w ruchu i tak nie widać.
+ */
+:global(html[data-kamera='rusza']) .surface::before {
+  backdrop-filter: blur(14px) saturate(150%);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+}
+
+:global(html[data-kamera='rusza']) .surfaceStrong::before {
+  backdrop-filter: blur(26px) saturate(125%) brightness(0.86);
+  -webkit-backdrop-filter: blur(26px) saturate(125%) brightness(0.86);
+}

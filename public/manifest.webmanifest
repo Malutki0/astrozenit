@@ -1,0 +1,13 @@
+{
+  "name": "AstroZenit: mapa nocnego nieba",
+  "short_name": "AstroZenit",
+  "description": "Mapa nieba, planety, fazy Księżyca i warunki obserwacyjne.",
+  "lang": "pl",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0d14",
+  "theme_color": "#0a0d14",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

@@ -1,0 +1,264 @@
+/* AstroZenit: reset i warstwa bazowa. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/*
+ * PŁYNNE PRZEWIJANIE
+ *
+ * scroll-behavior dotyczy przewinięć wywołanych przez stronę: skoku do kotwicy,
+ * powrotu na górę listy, przejścia do zaznaczonego dnia w kalendarzu. Bez niego
+ * takie przeskoki są natychmiastowe i oko gubi, gdzie się znalazło, bo nie widziało
+ * drogi. Przewijania palcem ani kółkiem to nie dotyczy: tam płynność zapewnia system
+ * i próba dokładania jej od siebie kończy się opóźnieniem względem palca.
+ *
+ * Osoby z włączonym ograniczeniem ruchu dostają przeskok natychmiastowy, bo płynne
+ * przewijanie długiej listy jest właśnie tym rodzajem ruchu, który wywołuje mdłości.
+ */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  letter-spacing: var(--tracking-body);
+  color: var(--text-primary);
+  background: var(--surface-void);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+  /*
+   * Cyfry o stałej szerokości w całym interfejsie.
+   *
+   * Aplikacja jest pełna liczb, które się odświeżają: zegar, wysokości, azymuty,
+   * jasności. Przy zmiennej szerokości cyfr każda zmiana przesuwa sąsiednie znaki
+   * i tekst drga. Stała szerokość to zatrzymuje, a kosztuje tylko odrobinę
+   * szerszą jedynkę.
+   */
+  font-variant-numeric: tabular-nums;
+  /* Włącza kerning i ligatury standardowe. W SF poprawia pary typu Ta, Vo, Wa. */
+  font-kerning: normal;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+ * Nagłówki.
+ *
+ * Grubość 600, a nie 700, i to jest wybór, a nie przeoczenie. Duży tytuł w iOS
+ * jest złożony grubością Bold, ale przy jasnym tekście na ciemnym tle litery
+ * optycznie przybierają na wadze i pełny Bold robi się ciężki. Sześćset daje
+ * na ciemnym tle tę samą wagę, co siedemset na jasnym.
+ */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-display);
+}
+
+h3,
+h4 {
+  letter-spacing: var(--tracking-title);
+}
+
+a {
+  color: inherit;
+  text-decoration-color: var(--hairline-strong);
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  text-decoration-color: var(--accent);
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* Fokus: zawsze widoczny, zawsze w kolorze akcentu. */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-xs);
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Liczby nie skacza przy zmianie wartosci w czasie rzeczywistym. */
+.num,
+[data-num] {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum' 1;
+  letter-spacing: -0.01em;
+}
+
+/* Pasek przewijania dopasowany do ciemnej powierzchni. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: oklch(1 0 0 / 0.14) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: oklch(1 0 0 / 0.12);
+  border: 3px solid transparent;
+  background-clip: content-box;
+  border-radius: var(--radius-pill);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: oklch(1 0 0 / 0.2);
+  background-clip: content-box;
+}
+
+/* Tresc widoczna wylacznie dla czytnikow ekranu. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: fixed;
+  top: var(--space-3);
+  left: var(--space-3);
+  z-index: var(--z-tooltip);
+  padding: var(--space-3) var(--space-4);
+  background: var(--accent);
+  color: var(--text-inverse);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  transform: translateY(-200%);
+  transition: transform var(--dur-panel) var(--ease-panel);
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*
+ * Tryb czerwony.
+ *
+ * Oko przystosowuje się do ciemności dwadzieścia do trzydziestu minut, a traci to
+ * przystosowanie w kilka sekund po spojrzeniu w jasny, biały ekran. Czerwone światło
+ * o długiej fali prawie nie pobudza pręcików odpowiedzialnych za widzenie nocne,
+ * więc pozwala korzystać z aplikacji bez utraty gotowości oka.
+ *
+ * Realizacja przez filtr na całym dokumencie, a nie przez drugą paletę barw: filtr działa
+ * na wszystko naraz, także na mapę nieba rysowaną na płótnie, na kafelki mapy i na zdjęcia
+ * w artykułach, których osobna paleta nigdy by nie objęła.
+ *
+ * Kolejność ma znaczenie. Najpierw sprowadzamy obraz do szarości, potem barwimy go
+ * na czerwono przez sepię z obrotem odcienia, a na końcu przygaszamy. Odwrotna kolejność
+ * dawałaby barwne przekłamania na elementach już czerwonych.
+ */
+html[data-tryb-nocny='1'] body {
+  filter: grayscale(1) sepia(1) hue-rotate(-32deg) saturate(4.2) brightness(0.72);
+}
+
+/*
+ * Filtr tworzy nowy kontekst nakładania, przez co elementy o stałym położeniu przestają
+ * być umieszczane względem okna. Powłoka aplikacji i tak wypełnia całe okno, więc
+ * przypinamy ją jawnie i układ zostaje bez zmian.
+ */
+html[data-tryb-nocny='1'] body > * {
+  position: relative;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  html[data-tryb-nocny='1'] body {
+    filter: grayscale(1) sepia(1) hue-rotate(-32deg) saturate(4.2) brightness(0.8);
+  }
+}

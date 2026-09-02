@@ -1,0 +1,149 @@
+/*
+ * Karta wydarzenia astronomicznego.
+ *
+ * Pełnej szerokości, z ilustracją po prawej i datą nad tytułem. Tło jest jedynym
+ * miejscem w całej aplikacji, gdzie dopuszczamy gradient barwny: niesie tu informację,
+ * bo po samym kolorze da się rozpoznać rodzaj zjawiska bez czytania tytułu.
+ */
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  width: 100%;
+  min-height: 112px;
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-xl);
+  border: 1px solid oklch(1 0 0 / 0.08);
+  text-align: left;
+  overflow: hidden;
+  transition:
+    transform var(--dur-press) var(--ease-out),
+    border-color var(--dur-hint) var(--ease-out),
+    box-shadow var(--dur-hint) var(--ease-out);
+}
+
+.card::after {
+  /* Delikatne rozjaśnienie górnej krawędzi, tak jak na pozostałych powierzchniach. */
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 1px 0 oklch(1 0 0 / 0.1);
+  pointer-events: none;
+}
+
+.card:hover {
+  border-color: oklch(1 0 0 / 0.2);
+  box-shadow: 0 12px 30px -14px oklch(0.05 0.02 265 / 0.9);
+}
+
+.card:active {
+  transform: scale(0.99);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+  min-width: 0;
+}
+
+.when {
+  font-size: var(--text-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  opacity: 0.62;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+}
+
+/*
+ * Godzina i odległość w dniach. Krój tekstowy, nie maszynowy: to zdanie czytane
+ * w całości, a nie kolumna liczb do porównywania wzrokiem. Cyfry o stałej szerokości
+ * daje font-variant-numeric, więc nic nie drga i bez kroju maszynowego.
+ */
+.meta {
+  font-variant-numeric: tabular-nums;
+  font-size: var(--text-base);
+  letter-spacing: var(--tracking-body);
+  opacity: 0.62;
+  margin-top: 3px;
+}
+
+.art {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 74px;
+  height: 74px;
+}
+
+@media (max-width: 900px) {
+  .card {
+    min-height: 98px;
+    padding: var(--space-4);
+    gap: var(--space-3);
+    border-radius: var(--radius-lg);
+  }
+
+  .title {
+    font-size: var(--text-md);
+  }
+
+  .art {
+    width: 58px;
+    height: 58px;
+  }
+
+  .art > svg {
+    width: 58px;
+    height: 58px;
+  }
+}
+
+/*
+ * Zdjęcie sceny w karcie wydarzenia. Ten sam rozmiar co rysunki obok, więc karty
+ * z fotografią i karty z grafiką mają identyczną wysokość i układ.
+ */
+.artPhoto {
+  display: block;
+  width: 74px;
+  height: 74px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--glass-edge-soft);
+}
+
+/*
+ * Para ciał w karcie zbliżenia. Nakładają się rogami, tak jak zbliżają się
+ * na niebie: jedno wyżej po prawej, drugie niżej po lewej.
+ */
+.pair {
+  position: relative;
+  display: block;
+  flex: none;
+}
+
+.pairFirst,
+.pairSecond {
+  position: absolute;
+  display: block;
+}
+
+.pairFirst {
+  top: 0;
+  right: 0;
+}
+
+.pairSecond {
+  bottom: 0;
+  left: 0;
+}

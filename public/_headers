@@ -1,0 +1,30 @@
+# Nagłówki dla hostingów czytających ten format: Cloudflare Pages i Netlify.
+#
+# To samo, co w netlify.toml, tylko zapisane inaczej. Netlify czyta oba i daje
+# pierwszeństwo plikowi toml, więc te reguły są tam nadmiarowe i nieszkodliwe.
+# Ich sens jest inny: dzięki nim przeniesienie strony na Cloudflare Pages albo
+# gdziekolwiek indziej nie wymaga przepisywania konfiguracji od nowa.
+
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), payment=(), usb=(), geolocation=(self), accelerometer=(self), gyroscope=(self), magnetometer=(self)
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+# Pliki z odciskiem treści w nazwie nigdy nie zmieniają zawartości pod tym samym
+# adresem, więc mogą leżeć w pamięci przeglądarki dowolnie długo.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Nazwa stała, treść zmienna: przeglądarka ma za każdym razem zapytać, czy się zmieniło.
+/data/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/photos/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+# Strona główna wskazuje na aktualne nazwy plików z odciskiem. Zapamiętana odsyłałaby
+# po wdrożeniu do plików, których już nie ma.
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate

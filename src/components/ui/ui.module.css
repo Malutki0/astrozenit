@@ -1,0 +1,584 @@
+/* Wspólne prymitywy interfejsu. Jeden plik, bo elementy dzielą tokeny i zachowania. */
+
+/*
+ * Krawędź szklana na kontrolkach.
+ *
+ * Ten sam zabieg, co na panelach, tylko delikatniejszy: jasna linia u góry,
+ * ciemna u dołu. Na przycisku o wysokości czterdziestu pikseli pełna wersja
+ * byłaby zbyt kontrastowa i czytałaby się jako obramowanie, a nie jako grubość.
+ */
+
+/* ---------- Przycisk ---------- */
+
+/*
+ * Przycisk. Rozmiar tekstu podstawowego i grubość 590, czyli pomiędzy Medium
+ * a Semibold. Tyle waży napis na przycisku w iOS: wyraźnie cięższy od treści
+ * wokół, ale nie tak ciężki, żeby czytał się jako nagłówek.
+ */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  border-radius: var(--radius-md);
+  font-size: var(--text-md);
+  font-weight: 590;
+  letter-spacing: var(--tracking-normal);
+  white-space: nowrap;
+  border: 1px solid transparent;
+  transition:
+    background-color var(--dur-hint) var(--ease-out),
+    border-color var(--dur-hint) var(--ease-out),
+    color var(--dur-hint) var(--ease-out),
+    transform var(--dur-press) var(--ease-out),
+    opacity var(--dur-hint) var(--ease-out);
+}
+
+.button:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.button:disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+}
+
+.sizeSm {
+  min-height: 32px;
+  padding: 0 var(--space-3);
+}
+
+.sizeMd {
+  min-height: 40px;
+  padding: 0 var(--space-4);
+}
+
+.sizeLg {
+  min-height: 46px;
+  padding: 0 var(--space-5);
+  font-size: var(--text-base);
+}
+
+.primary {
+  background: var(--accent);
+  color: var(--text-inverse);
+  font-weight: 600;
+  box-shadow: inset 0 1px 0 oklch(1 0 0 / 0.22), inset 0 -1px 0 oklch(0.3 0.06 78 / 0.35);
+}
+
+.primary:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.secondary {
+  background: var(--glass-fill), var(--surface-raised);
+  border-color: var(--hairline);
+  color: var(--text-primary);
+  box-shadow: var(--glass-edge-soft);
+}
+
+.secondary:hover:not(:disabled) {
+  background: var(--glass-fill-hover), var(--surface-overlay);
+  border-color: var(--hairline-strong);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+.ghost:hover:not(:disabled) {
+  background: var(--glass-fill-hover);
+  box-shadow: var(--glass-edge-soft);
+  color: var(--text-primary);
+}
+
+.quiet {
+  background: transparent;
+  color: var(--text-tertiary);
+  padding: 0;
+  min-height: auto;
+  text-decoration: underline;
+  text-decoration-color: var(--hairline-strong);
+  text-underline-offset: 0.25em;
+}
+
+.quiet:hover:not(:disabled) {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+/* ---------- Przycisk ikonowy ---------- */
+
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  border: 1px solid transparent;
+  transition:
+    background-color var(--dur-hint) var(--ease-out),
+    color var(--dur-hint) var(--ease-out),
+    border-color var(--dur-hint) var(--ease-out),
+    transform var(--dur-press) var(--ease-out);
+}
+
+.iconButton:hover:not(:disabled) {
+  background: var(--glass-fill-hover);
+  box-shadow: var(--glass-edge-soft);
+  color: var(--text-primary);
+}
+
+.iconButton:active:not(:disabled) {
+  transform: scale(0.94);
+}
+
+.iconButton:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.iconButtonActive {
+  background: var(--accent-muted);
+  color: var(--accent);
+  box-shadow: var(--glass-edge-soft);
+}
+
+.iconButtonBordered {
+  border-color: var(--hairline);
+}
+
+/* ---------- Etykieta stanu ---------- */
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  font-size: var(--text-xs);
+  font-weight: 590;
+  letter-spacing: var(--tracking-caption);
+  /*
+   * Krótka etykieta zostaje w jednym wierszu, ale dłuższa musi móc się zawinąć.
+   * Bez tego pojedynczy dłuższy podpis rozpychał rząd poza szerokość ekranu
+   * i wymuszał przewijanie całej sekcji w bok, co na telefonie jest nie do przyjęcia.
+   */
+  max-width: 100%;
+  white-space: normal;
+  text-align: left;
+}
+
+.chipNeutral {
+  background: var(--glass-fill), var(--surface-raised);
+  color: var(--text-secondary);
+  box-shadow: var(--glass-edge-soft);
+}
+
+.chipAccent {
+  background: var(--accent-muted);
+  color: var(--accent);
+}
+
+.chipVisible {
+  background: var(--signal-visible-muted);
+  color: var(--signal-visible);
+}
+
+.chipWarn {
+  background: var(--signal-warn-muted);
+  color: var(--signal-warn);
+}
+
+.chipDown {
+  background: var(--signal-down-muted);
+  color: var(--signal-down);
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+  flex: none;
+}
+
+/* ---------- Pole formularza ---------- */
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.label {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--text-secondary);
+  letter-spacing: 0.02em;
+}
+
+.input {
+  width: 100%;
+  min-height: 40px;
+  padding: 0 var(--space-3);
+  background: var(--surface-void);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: var(--text-sm);
+  transition:
+    border-color var(--dur-hint) var(--ease-out),
+    background-color var(--dur-hint) var(--ease-out);
+}
+
+.input::placeholder {
+  color: var(--text-tertiary);
+}
+
+.input:hover {
+  border-color: var(--hairline-strong);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: var(--surface-deep);
+}
+
+.input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.hint {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+}
+
+.error {
+  font-size: var(--text-xs);
+  color: var(--signal-warn);
+}
+
+/* ---------- Przełącznik ---------- */
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  width: 100%;
+  min-height: var(--tap-min);
+  padding: var(--space-2) 0;
+  text-align: left;
+  color: var(--text-secondary);
+  transition: color var(--dur-hint) var(--ease-out);
+}
+
+.toggle:hover {
+  color: var(--text-primary);
+}
+
+.toggleLabel {
+  font-size: var(--text-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.track {
+  position: relative;
+  flex: none;
+  width: 38px;
+  height: 22px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-raised);
+  border: 1px solid var(--hairline);
+  transition:
+    background-color var(--dur-panel) var(--ease-out),
+    border-color var(--dur-panel) var(--ease-out);
+}
+
+.trackOn {
+  background: var(--accent-muted);
+  border-color: color-mix(in oklab, var(--accent) 42%, transparent);
+}
+
+.knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--text-tertiary);
+  transition:
+    transform var(--dur-panel) var(--ease-panel),
+    background-color var(--dur-panel) var(--ease-out);
+}
+
+.knobOn {
+  transform: translateX(16px);
+  background: var(--accent);
+}
+
+/* ---------- Suwak ---------- */
+
+.slider {
+  width: 100%;
+  appearance: none;
+  height: 22px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-runnable-track {
+  height: 3px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-raised);
+}
+
+.slider::-moz-range-track {
+  height: 3px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-raised);
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  margin-top: -6px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: none;
+  transition: transform var(--dur-press) var(--ease-out);
+}
+
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: none;
+}
+
+.slider:active::-webkit-slider-thumb {
+  transform: scale(1.18);
+}
+
+/* ---------- Segmenty ---------- */
+
+.segmented {
+  display: inline-flex;
+  padding: 3px;
+  gap: 2px;
+  background: var(--surface-void);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-md);
+}
+
+.segment {
+  min-height: 30px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 var(--space-3);
+  border-radius: calc(var(--radius-md) - 4px);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--text-tertiary);
+  transition:
+    background-color var(--dur-hint) var(--ease-out),
+    color var(--dur-hint) var(--ease-out);
+}
+
+.segment:hover {
+  color: var(--text-secondary);
+}
+
+.segmentActive {
+  background: var(--surface-raised);
+  color: var(--text-primary);
+}
+
+/* ---------- Wskaźniki ładowania i stany puste ---------- */
+
+.skeleton {
+  border-radius: var(--radius-sm);
+  background: linear-gradient(
+    90deg,
+    var(--surface-raised) 0%,
+    var(--surface-overlay) 45%,
+    var(--surface-raised) 90%
+  );
+  background-size: 220% 100%;
+  animation: shimmer 1.6s var(--ease-inout) infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 130% 0;
+  }
+  100% {
+    background-position: -30% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton {
+    animation: none;
+    background: var(--surface-raised);
+  }
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-6) var(--space-5);
+  border: 1px dashed var(--hairline);
+  border-radius: var(--radius-lg);
+}
+
+.emptyTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  color: var(--text-primary);
+}
+
+.emptyBody {
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+  max-width: 46ch;
+}
+
+/* ---------- Wartość opisana ---------- */
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+/*
+ * Etykieta wartości. Zdaniowa, nie wersalikowa.
+ *
+ * Wersaliki z rozstrzelonym światłem czyta się znak po znaku, a te podpisy stoją
+ * po kilka obok siebie i mają być objęte jednym spojrzeniem. iOS w tym miejscu
+ * używa zwykłego zapisu w kolorze drugorzędnym i to jest właściwy wybór:
+ * krótsze, spokojniejsze i łatwiejsze do przebiegnięcia wzrokiem.
+ */
+.statLabel {
+  font-size: var(--text-sm);
+  font-weight: 400;
+  letter-spacing: var(--tracking-body);
+  color: var(--text-tertiary);
+}
+
+/*
+ * Wartość. Krój bezszeryfowy, nie maszynowy.
+ *
+ * Cyfry o stałej szerokości włącza font-variant-numeric, więc liczby nie drgają
+ * przy odświeżaniu i bez sięgania po krój maszynowy. Krój maszynowy zostaje tam,
+ * gdzie naprawdę wnosi treść, czyli przy współrzędnych i czasach zapisanych
+ * w postaci, w której liczy się wyrównanie znak w znak.
+ */
+.statValue {
+  font-variant-numeric: tabular-nums;
+  font-size: var(--text-lg);
+  font-weight: 500;
+  color: var(--text-primary);
+  letter-spacing: var(--tracking-title);
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.statValueLarge {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  letter-spacing: var(--tracking-display);
+}
+
+/* ---------- Zdjęcie obiektu ---------- */
+
+.photoFigure {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+/*
+ * Ramka ma proporcje ustalone przed wczytaniem obrazu, więc treść pod spodem
+ * nie przeskakuje w chwili, gdy zdjęcie się pojawi.
+ */
+.photoFrame {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--surface-void);
+  border: 1px solid var(--hairline);
+  box-shadow: var(--glass-edge-soft);
+}
+
+/*
+ * Zdjęcie jest widoczne od razu, bez przejścia.
+ *
+ * Były dwie wersje z pojawianiem się i obie miały tę samą wadę: przezroczystość
+ * zależała od przejścia, a przejście może się nie odbyć. Zdarzenie wczytania nie
+ * przychodzi dla obrazu już obecnego w pamięci podręcznej, oś czasu animacji stoi
+ * w karcie przeglądarki działającej w tle, a przerwane przejście zostaje w połowie.
+ * Za każdym razem kończyło się tym samym: pustą ramką, którą użytkownik słusznie
+ * bierze za usterkę.
+ *
+ * Zdjęcie jest treścią, a nie efektem, więc nie ma prawa zależeć od tego, czy
+ * animacja doszła do końca. Ramka ma z góry ustalone proporcje, więc pojawienie
+ * się obrazu i tak niczego nie przesuwa, a to było jedyne, przed czym przejście
+ * miało chronić.
+ */
+.photoImage,
+.photoThumb {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photoThumb {
+  border-radius: inherit;
+}
+
+/*
+ * Podpis autora i licencji. Celowo drobny i wyciszony: jest wymagany prawnie,
+ * ale nie jest treścią, po którą ktoś tu przyszedł.
+ */
+.photoCredit {
+  font-size: 10px;
+  line-height: 1.4;
+  color: var(--text-tertiary);
+  letter-spacing: 0.01em;
+}
+
+.photoCredit a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--hairline-strong);
+  text-underline-offset: 0.2em;
+  transition: color var(--dur-hint) var(--ease-out);
+}
+
+.photoCredit a:hover {
+  color: var(--text-secondary);
+}
+

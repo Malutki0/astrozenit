@@ -1,0 +1,69 @@
+/*
+ * Ikona kompasu w pasku górnym. Ten sam kształt i rozmiar co pozostałe przyciski paska,
+ * bo należy do tej samej grupy: rzeczy sterujących tym, co widać na mapie.
+ */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition:
+    color var(--dur-hint) var(--ease-out),
+    background var(--dur-hint) var(--ease-out),
+    border-color var(--dur-hint) var(--ease-out),
+    transform var(--dur-hint) var(--ease-out);
+}
+
+.button:active {
+  transform: scale(0.94);
+}
+
+/*
+ * Stan włączony jest mocno zaznaczony, bo w tym trybie mapa przestaje reagować
+ * na przeciąganie palcem i użytkownik musi wiedzieć, dlaczego.
+ */
+.buttonActive {
+  color: var(--accent);
+  background: var(--accent-muted);
+  border-color: color-mix(in oklch, var(--accent) 34%, transparent);
+}
+
+/* Dymek z przyczyną. Leży pod paskiem górnym, żeby nie zasłaniał mapy w środku kadru. */
+.message {
+  position: fixed;
+  left: var(--space-3);
+  right: var(--space-3);
+  top: 76px;
+  z-index: var(--z-message);
+  margin: 0;
+  padding: var(--space-3) var(--space-5) var(--space-3) var(--space-3);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--hairline);
+  background: oklch(0.13 0.02 265 / 0.94);
+  backdrop-filter: blur(18px);
+  color: var(--text-secondary);
+  font-size: var(--text-2xs);
+  line-height: 1.5;
+  box-shadow: 0 10px 30px oklch(0.05 0.02 265 / 0.5);
+}
+
+.messageClose {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border: none;
+  background: transparent;
+  color: var(--text-tertiary);
+  cursor: pointer;
+}

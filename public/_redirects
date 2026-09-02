@@ -1,0 +1,4 @@
+# Aplikacja używa routingu po znaku krzyżyka, więc serwer dostaje zawsze żądanie
+# o stronę główną. Ta reguła obsługuje wejście pod adres z literówką w ścieżce:
+# bez niej hosting pokazałby własną stronę błędu zamiast aplikacji.
+/*  /index.html  200

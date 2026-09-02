@@ -1,0 +1,70 @@
+/*
+ * Globus planety. Poświata pod spodem daje wrażenie obiektu unoszącego się w przestrzeni,
+ * zamiast naklejki na tle panelu, i jest jedynym efektem w tym miejscu: sama kula
+ * ma już wystarczająco dużo szczegółu, żeby nie wymagać ozdób.
+ */
+/*
+ * Globus nigdy się nie ściska.
+ *
+ * Element w układzie elastycznym domyślnie wolno zwężać, a płótno ma w arkuszu
+ * bazowym max-width sto procent, więc w ciasnym wierszu kula robiła się jajem:
+ * szerokość spadała za kontenerem, wysokość zostawała. Nie da się tego naprawić
+ * po stronie rysowania, bo płótno jest kwadratowe, a psuje je dopiero skalowanie
+ * do rozmiaru na ekranie.
+ */
+.wrap {
+  position: relative;
+  margin-inline: auto;
+  display: grid;
+  place-items: center;
+  flex: none;
+  aspect-ratio: 1;
+}
+
+.wrap > canvas {
+  max-width: none;
+}
+
+.wrap::before {
+  content: '';
+  position: absolute;
+  inset: -18%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    oklch(0.72 0.09 250 / 0.14) 0%,
+    oklch(0.72 0.09 250 / 0.05) 45%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.canvas {
+  position: relative;
+  display: block;
+  cursor: grab;
+  touch-action: none;
+  filter: drop-shadow(0 12px 28px oklch(0.05 0.02 265 / 0.6));
+}
+
+.canvasDragging {
+  cursor: grabbing;
+}
+
+/* Miejsce na globus w czasie wczytywania map powierzchni, żeby układ nie skakał. */
+.placeholder {
+  margin-inline: auto;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 38% 32%,
+    var(--surface-raised) 0%,
+    var(--surface-deep) 70%
+  );
+  opacity: 0.5;
+}
+
+/* Ilustracja w spisie: nie zaprasza do przeciągania, bo się nie obraca. */
+.canvasStill {
+  cursor: default;
+  touch-action: auto;
+}

@@ -1,0 +1,1097 @@
+/* Wspólny układ dla treści sekcji. */
+
+/*
+ * MATERIAŁ SZKLANY WEWNĄTRZ SEKCJI
+ *
+ * Panele unoszące się nad mapą rozmywają to, co pod nimi, bo naprawdę mają
+ * co rozmywać. Karty wewnątrz sekcji tego nie robią, i to jest decyzja,
+ * a nie niedopatrzenie: backdrop-filter na elementach w kontenerze przewijanym
+ * zmusza przeglądarkę do przeliczania rozmycia przy każdej klatce przewijania.
+ * Przy kilkudziesięciu kartach na liście gubi to klatki nawet na komputerze,
+ * a na telefonie zamienia płynne przewijanie w szarpanie.
+ *
+ * Zamiast tego karty dostają to, co w szkle widać naprawdę: załamanie na
+ * krawędziach i pionowy spadek jasności wypełnienia. Efekt jest ten sam,
+ * bo pod kartą i tak leży jednolita powierzchnia panelu, więc rozmywanie
+ * niczego by nie ujawniło. Koszt przewijania zostaje zerowy.
+ */
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.stackTight {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.divider {
+  height: 1px;
+  background: var(--hairline);
+}
+
+.hint {
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+  line-height: var(--leading-prose);
+  letter-spacing: var(--tracking-body);
+  margin-top: var(--space-2);
+  max-width: 58ch;
+}
+
+.toggles {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.toggleHint {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  line-height: 1.45;
+  margin-top: -2px;
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--hairline);
+  max-width: 52ch;
+}
+
+.toggles > div:last-child .toggleHint {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/*
+ * Nagłówek grupy w spisie. Wzorzec z list zgrupowanych w iOS: wersaliki, drobne,
+ * w kolorze drugorzędnym. Wersaliki są tu na miejscu, bo to etykieta sekcji,
+ * a nie treść: czyta się ją raz i służy do orientacji, nie do lektury.
+ */
+.sectionTitle {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-tertiary);
+  margin-bottom: var(--space-3);
+}
+
+/*
+ * Wprowadzenie sekcji. Większe od reszty i luźniej złożone, bo to jedyny akapit,
+ * który czyta się od początku do końca, a nie przegląda wzrokiem.
+ */
+.lead {
+  font-size: var(--text-md);
+  line-height: var(--leading-prose);
+  letter-spacing: var(--tracking-body);
+  color: var(--text-secondary);
+  max-width: 62ch;
+}
+
+/* --------------------------------------------------------- lista obiektów */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 calc(var(--space-3) * -1);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  min-height: 56px;
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  text-align: left;
+  border-bottom: 1px solid var(--hairline);
+  transition:
+    background-color var(--dur-hint) var(--ease-out),
+    transform var(--dur-press) var(--ease-out);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row:hover {
+  background: var(--glass-fill-hover);
+  box-shadow: var(--glass-edge-soft);
+}
+
+.row:active {
+  transform: scale(0.995);
+}
+
+.rowSelected {
+  background: var(--accent-faint);
+  box-shadow: var(--glass-edge-soft);
+}
+
+.rowMain {
+  flex: 1;
+  min-width: 0;
+}
+
+.rowTitle {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  font-size: var(--text-md);
+  font-weight: 400;
+  letter-spacing: var(--tracking-normal);
+  color: var(--text-primary);
+  line-height: 1.25;
+}
+
+/*
+ * Druga linia wiersza. Mniejsza od nazwy, bo jest dopowiedzeniem, i w rozmiarze,
+ * przy którym mieści się gwiazdozbiór razem z jasnością.
+ *
+ * Zawija się, a nie ucina. Wcześniej miał white-space: nowrap z wielokropkiem i przy
+ * wąskim ekranie wycinało to zdecydowaną większość tekstu: w sekcji o projekcie jedenaście
+ * z szesnastu podpisów pokazywało niecałą jedną czwartą swojej treści, a akapit o tym,
+ * jakie dane trafiają do bazy, kończył się na "skrót polic". Jednowierszowy podpis ma sens
+ * przy krótkiej metryczce, na przykład przy pozycji katalogu gwiazd, i tam nadal go nie
+ * zawija, bo po prostu mieści się w jednym wierszu. Przy zdaniu ucięcie znaczy tyle,
+ * co ukrycie informacji, a wiersz, który urośnie o linijkę, nie psuje niczego.
+ */
+.rowSub {
+  display: block;
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-body);
+  color: var(--text-tertiary);
+  line-height: 1.4;
+  margin-top: 1px;
+  overflow-wrap: anywhere;
+}
+
+/*
+ * Wariant jednowierszowy, do miejsc, w których wiersz musi mieć stałą wysokość,
+ * na przykład w listach o kilkuset pozycjach rysowanych wirtualnie.
+ */
+.rowSubOneLine {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rowNumbers {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex: none;
+}
+
+.rowValue {
+  font-variant-numeric: tabular-nums;
+  font-size: var(--text-base);
+  font-weight: 500;
+  letter-spacing: var(--tracking-body);
+  color: var(--text-secondary);
+  text-align: right;
+}
+
+.rowValueMuted {
+  color: var(--text-tertiary);
+}
+
+/* Pasek oceny widoczności. Wąski, żeby nie konkurował z treścią. */
+.scoreBar {
+  width: 44px;
+  height: 3px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-overlay);
+  overflow: hidden;
+  flex: none;
+}
+
+.scoreFill {
+  display: block;
+  height: 100%;
+  border-radius: var(--radius-pill);
+  transition: width var(--dur-panel) var(--ease-out);
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--hairline);
+  margin-bottom: var(--space-2);
+}
+
+.count {
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+}
+
+/*
+ * Liczba przy etykiecie filtra. Wyraźnie lżejsza od niej, bo jest dopowiedzeniem,
+ * a nie treścią przycisku: naciska się nazwę rodzaju, nie liczbę.
+ */
+.chipButtonCount {
+  font-size: var(--text-sm);
+  font-variant-numeric: tabular-nums;
+  opacity: 0.55;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(124px, 1fr));
+  gap: var(--space-4) var(--space-3);
+}
+
+.groupTitle {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  font-size: var(--text-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-tertiary);
+  margin: var(--space-4) 0 var(--space-2);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-3);
+}
+
+.rowIcon {
+  flex: none;
+  color: var(--text-tertiary);
+}
+
+.row[aria-current] .rowIcon {
+  color: var(--accent);
+}
+
+/* --------------------------------------------------------- filtry pigułkowe */
+
+.chips {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+/*
+ * Pigułka filtra. Układ liniowy z odstępem, bo obok etykiety stoi liczba i bez
+ * odstępu skleja się z nią w jedno słowo: "Pory roku14".
+ */
+.chipButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 32px;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--hairline);
+  color: var(--text-tertiary);
+  font-size: var(--text-base);
+  font-weight: 500;
+  letter-spacing: var(--tracking-body);
+  transition:
+    color var(--dur-hint) var(--ease-out),
+    border-color var(--dur-hint) var(--ease-out),
+    background-color var(--dur-hint) var(--ease-out),
+    transform var(--dur-press) var(--ease-out);
+}
+
+.chipButton:hover {
+  color: var(--text-primary);
+  border-color: var(--hairline-strong);
+}
+
+.chipButton:active {
+  transform: scale(0.96);
+}
+
+.chipButtonActive,
+.chipButtonActive:hover {
+  color: var(--accent);
+  border-color: color-mix(in oklab, var(--accent) 45%, transparent);
+  background: var(--accent-faint);
+}
+
+/* ------------------------------------------------------------ karty figur */
+
+.figureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: var(--space-2);
+}
+
+.figureCard {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border-radius: var(--radius-lg);
+  border: 1px solid transparent;
+  text-align: left;
+  color: var(--text-secondary);
+  transition:
+    background-color var(--dur-hint) var(--ease-out),
+    border-color var(--dur-hint) var(--ease-out),
+    transform var(--dur-press) var(--ease-out);
+}
+
+.figureCard:hover {
+  background: var(--glass-fill-hover);
+  border-color: var(--hairline);
+  box-shadow: var(--glass-edge-soft);
+  color: var(--accent);
+}
+
+.figureCard:active {
+  transform: scale(0.985);
+}
+
+.figureThumbWrap {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 74px;
+  height: 74px;
+  border-radius: var(--radius-md);
+  background: var(--surface-void);
+  border: 1px solid var(--hairline);
+  box-shadow: var(--glass-edge-soft);
+  overflow: hidden;
+}
+
+.thumb {
+  display: block;
+}
+
+.figureBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+.figureName {
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.figureMeta {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* -------------------------------------------------------------- Księżyc */
+
+.moonHero {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.moonDisc {
+  display: block;
+  flex: none;
+}
+
+.moonHeroText {
+  min-width: 0;
+}
+
+.moonPercent {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  line-height: 1;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+/* Pasek faz na cały miesiąc. Zwija się w poziomo przewijalną taśmę,
+ * bo trzydzieści jeden pozycji nie zmieści się w panelu bez kompromisu. */
+/*
+ * Pasek faz na cały miesiąc.
+ *
+ * Siatka zawijana, a nie rząd przewijany w bok. Trzydzieści dni w jednej linii mieści się
+ * tylko na szerokim ekranie, a na telefonie zmuszało do przewijania sekcji w poziomie,
+ * czyli do gestu, którego w pionowo przewijanej treści nikt się nie spodziewa i który
+ * łatwo pomylić z przewijaniem strony. Siatka układa te same kafelki w tyle wierszy,
+ * ile trzeba, i mieści się wszędzie.
+ */
+.phaseStrip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  gap: 2px;
+  padding-bottom: var(--space-2);
+}
+
+.phaseDay {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  min-width: 0;
+  padding: var(--space-2) 0;
+  border-radius: var(--radius-sm);
+  transition:
+    background-color var(--dur-hint) var(--ease-out),
+    transform var(--dur-press) var(--ease-out);
+}
+
+.phaseDay:hover {
+  background: var(--glass-fill-hover);
+  box-shadow: var(--glass-edge-soft);
+}
+
+.phaseDay:active {
+  transform: scale(0.94);
+}
+
+.phaseDayNow {
+  background: var(--accent-faint);
+  box-shadow: var(--glass-edge-soft);
+}
+
+.phaseMini {
+  display: block;
+  line-height: 0;
+}
+
+.phaseNum {
+  font-variant-numeric: tabular-nums;
+  font-size: 10px;
+  color: var(--text-tertiary);
+}
+
+.phaseDayNow .phaseNum {
+  color: var(--accent);
+}
+
+.phaseMark {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+/* ---------------------------------------------------------- roje meteorów */
+
+/*
+ * Karta roju. Duży promień i szeroki oddech, jak karta w aplikacjach systemowych:
+ * to samodzielna jednostka treści, a nie wiersz spisu, więc ma prawo zajmować miejsce.
+ */
+.showerCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--hairline);
+  background: var(--glass-fill), var(--surface-void);
+  box-shadow: var(--glass-edge-soft);
+}
+
+.showerHead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.showerName {
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  color: var(--text-primary);
+  line-height: 1.15;
+}
+
+.linkButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  align-self: flex-start;
+  font-size: var(--text-xs);
+  color: var(--accent);
+  min-height: 30px;
+  transition:
+    color var(--dur-hint) var(--ease-out),
+    transform var(--dur-press) var(--ease-out);
+}
+
+.linkButton:hover {
+  color: var(--accent-hover);
+}
+
+.linkButton:active {
+  transform: scale(0.97);
+}
+
+/* ------------------------------------------------------------- kalendarz */
+
+.monthLabel {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--text-primary);
+  text-transform: capitalize;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.calendarHead {
+  font-size: var(--text-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-tertiary);
+  text-align: center;
+  padding-bottom: var(--space-2);
+}
+
+.calendarEmpty {
+  aspect-ratio: 1;
+}
+
+.calendarDay {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  aspect-ratio: 1;
+  min-height: 44px;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  transition:
+    background-color var(--dur-hint) var(--ease-out),
+    border-color var(--dur-hint) var(--ease-out),
+    transform var(--dur-press) var(--ease-out);
+}
+
+.calendarDay:hover {
+  background: var(--glass-fill-hover);
+  box-shadow: var(--glass-edge-soft);
+}
+
+.calendarDay:active {
+  transform: scale(0.95);
+}
+
+.calendarDaySelected {
+  background: var(--accent-faint);
+  border-color: color-mix(in oklab, var(--accent) 40%, transparent);
+  box-shadow: var(--glass-edge-soft);
+}
+
+.calendarDayToday .calendarNum {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.calendarNum {
+  font-variant-numeric: tabular-nums;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: 1;
+}
+
+/* Pasek fazy Księżyca: udział jasnej części odpowiada oświetleniu tarczy.
+ * Jest to jedyne miejsce, w którym pokazujemy fazę bez rysunku tarczy,
+ * więc musi być na tyle wyraźny, żeby dało się porównać kolejne dni. */
+.calendarMoon {
+  width: 22px;
+  height: 4px;
+  border-radius: var(--radius-pill);
+  border: 1px solid oklch(1 0 0 / 0.08);
+}
+
+.calendarDots {
+  display: flex;
+  gap: 2px;
+  height: 4px;
+}
+
+.calendarDot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+}
+
+.eventMarker {
+  width: 3px;
+  align-self: stretch;
+  border-radius: var(--radius-pill);
+  flex: none;
+}
+
+/* Pionowy stos kart wydarzeń. */
+.cardStack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+/* Nagłówek miesiąca w spisie wieloletnim: nazwa po lewej, liczba zjawisk po prawej. */
+.groupHead {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.groupHead .sectionTitle {
+  text-transform: capitalize;
+}
+
+/* ------------------------------------------------------------------ chmury */
+
+.chipRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.warnBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  border: 1px solid color-mix(in oklch, var(--signal-warn) 32%, transparent);
+  background: var(--glass-fill), color-mix(in oklch, var(--signal-warn) 8%, transparent);
+  box-shadow: var(--glass-edge-soft);
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+
+/*
+ * Wykres zachmurzenia w nocy. Każda godzina to osobna kolumna, a wysokość słupka
+ * odpowiada pokryciu nieba. Chmury niskie są na dole i najciemniejsze, bo to one
+ * realnie zamykają niebo; wysokie cirrusy na górze i przezroczyste.
+ */
+.cloudChart {
+  display: flex;
+  gap: 2px;
+  align-items: stretch;
+  height: 148px;
+  padding: var(--space-2);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--hairline);
+  background: var(--glass-fill), var(--surface-void);
+  box-shadow: var(--glass-edge-soft);
+  overflow-x: auto;
+}
+
+.cloudHour {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 4px;
+  background: color-mix(in oklch, var(--surface-raised) 55%, transparent);
+}
+
+/* Noc astronomiczna dostaje ciemniejsze tło, tak jak pasek na osi czasu. */
+.cloudHourDark {
+  background: color-mix(in oklch, var(--surface-void) 88%, black);
+  box-shadow: inset 0 0 0 1px oklch(1 0 0 / 0.03);
+}
+
+.cloudHourNow {
+  box-shadow: inset 0 0 0 1px color-mix(in oklch, var(--accent) 60%, transparent);
+}
+
+.cloudStack {
+  position: absolute;
+  inset: 0 0 18px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+}
+
+.cloudBand {
+  display: block;
+  width: 100%;
+  transition: height var(--dur-panel) var(--ease-out);
+}
+
+.cloudHourLabel {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: 9px;
+  color: var(--text-tertiary);
+  padding-bottom: 4px;
+  margin-top: auto;
+}
+
+/* -------------------------------------------------------- mapa zachmurzenia */
+
+
+
+
+
+
+.cloudMapControls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.cloudMapTime {
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+  flex: none;
+  min-width: 46px;
+}
+
+.cloudMapSpan {
+  font-size: var(--text-2xs);
+  color: var(--text-tertiary);
+  flex: none;
+  white-space: nowrap;
+}
+
+.cloudMapSlider {
+  flex: 1;
+  min-width: 0;
+  accent-color: var(--accent);
+  height: 22px;
+}
+
+/* Dopisek przy nazwie, na przykład numer katalogowy powtarzającego się obiektu. */
+.rowNote {
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+  font-weight: 400;
+  margin-left: 6px;
+}
+
+/* ---------------------------------------------------------- wyjaśnienia zjawisk */
+
+/*
+ * Blok opisowy w sekcji Zjawisk. Ma się czytać jak akapit z książki, a nie jak
+ * podpowiedź w interfejsie, dlatego dostaje szerszy interlinię i węższą kolumnę
+ * niż reszta panelu.
+ */
+.explain {
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--hairline);
+  background: color-mix(in oklch, var(--surface-raised) 45%, transparent);
+}
+
+.explainLead {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-base);
+  line-height: 1.55;
+  color: var(--text-primary);
+  max-width: 62ch;
+}
+
+/*
+ * Akapit opisowy. To jedyne miejsce w aplikacji z dłuższym tekstem do przeczytania,
+ * więc dostaje pełny rozmiar tekstu podstawowego i szerokość ograniczoną do 66 znaków.
+ * Powyżej siedemdziesięciu oko gubi początek następnego wiersza przy powrocie z końca
+ * poprzedniego i czytanie robi się męczące, mimo że każdy wiersz z osobna jest czytelny.
+ */
+.explainBody {
+  margin: 0 0 var(--space-4);
+  font-size: var(--text-md);
+  line-height: var(--leading-prose);
+  letter-spacing: var(--tracking-body);
+  color: var(--text-secondary);
+  max-width: 66ch;
+}
+
+.explainBody:last-child {
+  margin-bottom: 0;
+}
+
+/* Odnośnik w treści sekcji, na przykład w danych kontaktowych. */
+.link {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .link:hover {
+    text-decoration-thickness: 2px;
+  }
+}
+
+/*
+ * Miniatura zdjęcia w wierszu listy. Ma stały rozmiar, więc wiersze pozostają
+ * równej wysokości niezależnie od tego, które obiekty mają zdjęcie, a które nie.
+ */
+.rowPhoto {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--surface-void);
+  border: 1px solid var(--hairline);
+  box-shadow: var(--glass-edge-soft);
+}
+
+/*
+ * KASKADOWE WEJŚCIE POZYCJI LISTY
+ *
+ * Lista, która pojawia się w całości naraz, czyta się jako jeden blok i oko nie
+ * wie, od czego zacząć. Kolejne pozycje wchodzące z drobnym opóźnieniem prowadzą
+ * wzrok z góry na dół i przy okazji pokazują, że to lista, a nie obrazek.
+ *
+ * Opóźnienie jest krótkie i ma twardy koniec. Trzydzieści milisekund na pozycję
+ * przy ośmiu pierwszych daje ćwierć sekundy na całość, czyli mniej, niż trwa
+ * przeniesienie wzroku na ekran. Dalsze pozycje wchodzą bez opóźnienia, bo lista
+ * gwiazd bywa stupozycyjna i kaskada liczona do końca trwałaby kilka sekund,
+ * czyli zamieniłaby się z ozdoby w przeszkodę.
+ *
+ * Animujemy wyłącznie przesunięcie i przezroczystość, więc rzecz dzieje się poza
+ * układem strony i nie kosztuje przeliczania rozmiarów.
+ */
+@keyframes wejscieWiersza {
+  from {
+    opacity: 0;
+    /*
+     * Czternaście pikseli zamiast siedmiu i lekkie zmniejszenie.
+     *
+     * Przy siedmiu ruch był na granicy dostrzegalności: wiersze pojawiały się, ale nie
+     * było widać, że wjeżdżają. Przy czternastu widać kierunek, a droga jest nadal na tyle
+     * krótka, że oko nie musi za nią wodzić. Skala od 0.985 dokłada wrażenie zbliżania się
+     * do czytelnika, bez którego sam ruch w pionie wygląda jak przesuwanie kartki.
+     */
+    transform: translate3d(0, 14px, 0) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+.list > *,
+.cardStack > *,
+.figureGrid > *,
+.grid > * {
+  animation: wejscieWiersza 340ms var(--ease-out) both;
+}
+
+.list > *:nth-child(1),
+.cardStack > *:nth-child(1),
+.figureGrid > *:nth-child(1),
+.grid > *:nth-child(1) {
+  animation-delay: 0ms;
+}
+.list > *:nth-child(2),
+.cardStack > *:nth-child(2),
+.figureGrid > *:nth-child(2),
+.grid > *:nth-child(2) {
+  animation-delay: 45ms;
+}
+.list > *:nth-child(3),
+.cardStack > *:nth-child(3),
+.figureGrid > *:nth-child(3),
+.grid > *:nth-child(3) {
+  animation-delay: 90ms;
+}
+.list > *:nth-child(4),
+.cardStack > *:nth-child(4),
+.figureGrid > *:nth-child(4),
+.grid > *:nth-child(4) {
+  animation-delay: 135ms;
+}
+.list > *:nth-child(5),
+.cardStack > *:nth-child(5),
+.figureGrid > *:nth-child(5),
+.grid > *:nth-child(5) {
+  animation-delay: 180ms;
+}
+.list > *:nth-child(6),
+.cardStack > *:nth-child(6),
+.figureGrid > *:nth-child(6),
+.grid > *:nth-child(6) {
+  animation-delay: 225ms;
+}
+.list > *:nth-child(7),
+.cardStack > *:nth-child(7),
+.figureGrid > *:nth-child(7),
+.grid > *:nth-child(7) {
+  animation-delay: 270ms;
+}
+.list > *:nth-child(n + 8),
+.cardStack > *:nth-child(n + 8),
+.figureGrid > *:nth-child(n + 8),
+.grid > *:nth-child(n + 8) {
+  animation-delay: 270ms;
+}
+
+/*
+ * Osoby, które ustawiły w systemie ograniczenie ruchu, dostają tę samą treść bez
+ * przesunięcia. Nie usuwamy animacji zupełnie, bo delikatne pojawienie się nadal
+ * pomaga zauważyć, że lista się odświeżyła, a samo przesunięcie jest tym,
+ * co przy nadwrażliwości na ruch przeszkadza.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .list > *,
+  .cardStack > *,
+  .figureGrid > * {
+    animation-name: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/*
+ * Tarcza planety w wierszu spisu. Bez ramki i bez tła, bo kula ma własny brzeg
+ * i obwódka wokół niej wyglądałaby jak naklejka, a nie jak obiekt.
+ */
+.rowGlobe {
+  flex: none;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+}
+
+/* Globus Ziemi otwierający wyjaśnienie pór roku. */
+.explainGlobe {
+  display: grid;
+  place-items: center;
+  padding: var(--space-3) 0 var(--space-4);
+}
+
+/*
+ * Pole notatki przy pozycji listy obserwacyjnej. Rozwija się pod wierszem, więc
+ * zajmuje całą jego szerokość i nie ściska tego, co obok.
+ */
+.noteField {
+  flex-basis: 100%;
+  margin-top: var(--space-2);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--hairline);
+  background: var(--glass-fill), var(--surface-void);
+  box-shadow: var(--glass-edge-soft);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  resize: vertical;
+}
+
+.noteField:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+/* Wiersz listy obserwacyjnej może urosnąć o pole notatki, więc musi umieć zawijać. */
+.list .row {
+  flex-wrap: wrap;
+}
+
+/*
+ * Skala zachmurzenia na mapie regionu.
+ *
+ * Gradient odtwarza dokładnie tę samą rampę, którą rysuje warstwa chmur: od chłodnej
+ * mgły przy zachmurzeniu cienkim do bieli przy pełnym. Wartości skrajne są wypisane
+ * słowem, bo przy prognozie o rozdzielczości siedemdziesięciu kilometrów podawanie
+ * procentów przy końcach paska sugerowałoby dokładność odczytu, której tu nie ma.
+ */
+.cloudLegendBar {
+  display: block;
+  width: 104px;
+  height: 6px;
+  border-radius: 999px;
+  border: 1px solid var(--hairline);
+  background: linear-gradient(
+    90deg,
+    oklch(0.13 0.02 265 / 0) 0%,
+    rgb(158 186 218 / 0.3) 34%,
+    rgb(114 148 192 / 0.4) 66%,
+    rgb(72 110 162 / 0.48) 100%
+  );
+}
+
+.cloudLegendScale {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+
+/*
+ * Adnotacja o projekcie dokumentu.
+ *
+ * Wygląda jak ostrzeżenie, bo nim jest. Dokument prawny, w którym brakuje tożsamości
+ * administratora, nie jest dokumentem obowiązującym i czytelnik ma się o tym dowiedzieć
+ * na górze, zanim przeczyta całą resztę, a nie z przypisu na dole.
+ */
+.legalDraft {
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--hairline);
+  border-left: 2px solid var(--accent);
+  background: var(--surface-deep);
+  display: grid;
+  gap: var(--space-2);
+  max-width: 68ch;
+}
+
+.legalDraftTitle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin: 0;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.legalDraft p {
+  margin: 0;
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.legalDraft code {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  color: var(--text-primary);
+}

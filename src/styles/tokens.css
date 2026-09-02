@@ -1,0 +1,227 @@
+/*
+ * AstroZenit: warstwa tokenów.
+ * Jedno źródło prawdy dla koloru, typografii, przestrzeni, kształtu i ruchu.
+ */
+
+:root {
+  color-scheme: dark;
+
+  /* Powierzchnie. Neutrale tintowane w granat, nigdy czysta czerń. */
+  --surface-void: oklch(0.09 0.018 265);
+  --surface-deep: oklch(0.13 0.02 265);
+  --surface-raised: oklch(0.17 0.02 265);
+  --surface-overlay: oklch(0.21 0.02 265);
+  --surface-glass: oklch(0.13 0.02 265 / 0.72);
+  --surface-glass-strong: oklch(0.11 0.02 265 / 0.88);
+
+  --hairline: oklch(1 0 0 / 0.08);
+  --hairline-strong: oklch(1 0 0 / 0.14);
+  --hairline-inset: inset 0 1px 0 oklch(1 0 0 / 0.06);
+
+  /*
+   * Materiał szklany.
+   *
+   * Szkło różni się od zwykłego przezroczystego prostokąta tym, co dzieje się
+   * na jego krawędziach. Światło wchodzące w taflę załamuje się: górna krawędź
+   * jaśnieje, bo zbiera światło z góry, dolna ciemnieje, bo leży w cieniu własnej
+   * grubości. Boki są pośrodku. Bez tego materiał czyta się jako naklejka,
+   * a nie jako obiekt mający grubość.
+   *
+   * Do tego dochodzi refleks: miękka poświata w górnym rogu, w miejscu, w którym
+   * powierzchnia odbija źródło światła. Jest zawsze pod treścią, nigdy nad nią,
+   * żeby nie obniżać kontrastu tekstu.
+   */
+  --glass-edge:
+    inset 0 1px 0 oklch(1 0 0 / 0.13), inset 0 -1px 0 oklch(0.04 0.02 265 / 0.55),
+    inset 1px 0 0 oklch(1 0 0 / 0.045), inset -1px 0 0 oklch(1 0 0 / 0.045);
+
+  /* Wersja dla elementów małych, gdzie pełne załamanie byłoby zbyt kontrastowe. */
+  --glass-edge-soft: inset 0 1px 0 oklch(1 0 0 / 0.07),
+    inset 0 -1px 0 oklch(0.04 0.02 265 / 0.3);
+
+  /* Refleks powierzchni. Kładziony na pseudoelemencie pod treścią. */
+  --glass-sheen: radial-gradient(120% 78% at 14% -12%, oklch(1 0 0 / 0.075), transparent 58%),
+    linear-gradient(to bottom, oklch(1 0 0 / 0.035), transparent 32%);
+
+  /* Wypełnienie elementów wewnątrz sekcji, które nie rozmywają tła. */
+  --glass-fill: linear-gradient(
+    to bottom,
+    oklch(1 0 0 / 0.052),
+    oklch(1 0 0 / 0.014) 46%,
+    oklch(1 0 0 / 0) 100%
+  );
+  --glass-fill-hover: linear-gradient(
+    to bottom,
+    oklch(1 0 0 / 0.085),
+    oklch(1 0 0 / 0.028) 46%,
+    oklch(1 0 0 / 0.008) 100%
+  );
+
+  --glass-blur: blur(28px) saturate(150%);
+  --glass-blur-light: blur(18px) saturate(140%);
+
+  /* Tekst. */
+  --text-primary: oklch(0.96 0.005 265);
+  --text-secondary: oklch(0.72 0.012 265);
+  /*
+   * Barwa długiego tekstu do czytania.
+   *
+   * Leży między drugoplanową a pierwszoplanową. Drugoplanowa, dobrana pod podpisy i opisy
+   * w interfejsie, przy artykule na kilka tysięcy znaków męczy wzrok, bo kontrast wobec
+   * tła spada poniżej pięciu do jednego. Pierwszoplanowa z kolei jest tak jasna, że przy
+   * ciemnym tle litery zaczynają się rozmywać od nadmiaru jasności. Ta wartość daje
+   * kontrast około dwunastu do jednego i czyta się nią wygodnie przez dłuższą chwilę.
+   */
+  --text-reading: oklch(0.87 0.008 265);
+  /* Jasność 0.60 wybrana pomiarowo: daje kontrast 5.09 na panelu, 5.24 na tle
+   * aplikacji i 4.84 na kontrolce, czyli powyżej progu 4.5 wymaganego przez WCAG AA
+   * na każdej powierzchni, na której ten kolor występuje. */
+  --text-tertiary: oklch(0.6 0.014 265);
+  --text-inverse: oklch(0.14 0.02 265);
+
+  /* Akcent: bursztyn, kolor światła gwiazd typu G i K. */
+  --accent: oklch(0.82 0.115 78);
+  --accent-hover: oklch(0.87 0.12 78);
+  --accent-dim: oklch(0.68 0.1 78);
+  --accent-muted: oklch(0.82 0.115 78 / 0.14);
+  --accent-faint: oklch(0.82 0.115 78 / 0.07);
+
+  /* Sygnały stanu. Nigdy jedyny nośnik informacji. */
+  --signal-visible: oklch(0.78 0.09 210);
+  --signal-visible-muted: oklch(0.78 0.09 210 / 0.14);
+  --signal-warn: oklch(0.75 0.11 45);
+  --signal-warn-muted: oklch(0.75 0.11 45 / 0.14);
+  --signal-down: oklch(0.6 0.05 265);
+  --signal-down-muted: oklch(0.6 0.05 265 / 0.12);
+
+  /* Cienie tintowane w granat. */
+  --shadow-sm: 0 1px 2px oklch(0.05 0.02 265 / 0.4);
+  --shadow-md: 0 8px 24px -8px oklch(0.05 0.02 265 / 0.6);
+  --shadow-lg: 0 24px 60px -20px oklch(0.05 0.02 265 / 0.8);
+  --shadow-panel: var(--glass-edge), 0 24px 60px -20px oklch(0.05 0.02 265 / 0.8);
+
+  /* Typografia. */
+  /*
+   * CZCIONKI SYSTEMOWE
+   *
+   * SF Pro jest własnością Apple i nie wolno go osadzić na stronie, ale na iPhonie,
+   * iPadzie i Macu przeglądarka udostępnia go jako czcionkę systemową. Zapis
+   * -apple-system i BlinkMacSystemFont sięga po nią wprost, a przeglądarka sama
+   * wybiera odmianę Display dla dużych rozmiarów i Text dla małych, bo tak działa
+   * SF: to jedna rodzina o dwóch optycznych wariantach, przełączanych przy 20 punktach.
+   *
+   * Na pozostałych systemach schodzimy do ich własnych czcionek interfejsu: Segoe
+   * na Windowsie, Roboto na Androidzie. Wszystkie trzy są bezszeryfowymi krojami
+   * o zbliżonych proporcjach i wysokości x, więc układ nie skacze przy zmianie systemu.
+   *
+   * Nie pobieramy żadnego kroju z sieci i to jest tu drugą korzyścią: interfejs
+   * rysuje się od pierwszej klatki, bez chwili z zastępczą czcionką i bez skoku
+   * układu, gdy właściwa się dociągnie.
+   */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text',
+    'Segoe UI Variable Display', 'Segoe UI', Roboto, system-ui, sans-serif;
+  /*
+   * Nagłówki to ta sama rodzina, tylko cięższa i ciaśniej złożona. Tak robi iOS:
+   * duży tytuł nie zmienia kroju, zmienia grubość i światło między znakami.
+   */
+  --font-display: var(--font-sans);
+  --font-mono: ui-monospace, 'SF Mono', 'SFMono-Regular', Menlo, 'JetBrains Mono', monospace;
+
+  --text-2xs: 0.6875rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-md: 1.0625rem;
+  --text-lg: 1.3125rem;
+  --text-xl: 1.75rem;
+  --text-2xl: clamp(2rem, 1.4rem + 2vw, 2.75rem);
+  --text-3xl: clamp(2.5rem, 1.6rem + 3.4vw, 4rem);
+
+  /*
+   * Interlinia i światło międzyliterowe.
+   *
+   * SF zmienia światło razem z rozmiarem: duży tytuł składa się ciaśniej, bo przy
+   * dużych literach odstępy optycznie rosną, a drobny podpis luźniej, bo przy małych
+   * znakach zlewają się w plamę. Apple podaje te wartości w wytycznych i tutaj są
+   * przeliczone na jednostki względne, żeby działały przy dowolnym rozmiarze bazowym.
+   */
+  --leading-tight: 1.08;
+  --leading-snug: 1.25;
+  --leading-normal: 1.47;
+  /* Interlinia dla dłuższych akapitów, w których czyta się zdanie po zdaniu. */
+  --leading-prose: 1.55;
+
+  --tracking-display: -0.022em;
+  --tracking-title: -0.014em;
+  --tracking-tight: -0.014em;
+  --tracking-normal: -0.006em;
+  --tracking-body: -0.004em;
+  --tracking-caption: 0.006em;
+  --tracking-wide: 0.06em;
+
+  /* Przestrzeń: skala 4 px z rytmem, nie liniowa. */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+
+  /* Kształt: promienie koncentryczne. */
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 28px;
+  --radius-pill: 999px;
+
+  /* Ruch. */
+  --ease-panel: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-inout: cubic-bezier(0.77, 0, 0.175, 1);
+  --dur-press: 140ms;
+  --dur-hint: 180ms;
+  --dur-panel: 220ms;
+  --dur-sheet: 280ms;
+
+  /* Układ. */
+  --rail-width: 76px;
+  --topbar-height: 60px;
+  --panel-width: 384px;
+  --content-max: 1120px;
+  --tap-min: 44px;
+  --timeline-compact: 0px;
+
+  /* Warstwy. */
+  --z-sky: 0;
+  --z-sky-ui: 10;
+  /* Szyna leży nad panelami i podstronami, bo nawigacja musi być zawsze dostępna. */
+  --z-rail: 32;
+  /*
+   * Warstwy powiadomień, dopisane po tym, jak baner o danych zasłonił na telefonie
+   * komunikat kompasu. Baner jest bierny i pojawia się sam, więc stoi niżej. Komunikat
+   * jest odpowiedzią na naciśnięcie przycisku, więc musi być widoczny zawsze, także
+   * wtedy, gdy coś już leży na ekranie.
+   */
+  --z-toast: 60;
+  --z-message: 70;
+  --z-topbar: 25;
+  --z-panel: 30;
+  --z-sheet: 40;
+  --z-command: 50;
+  --z-tooltip: 60;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --rail-width: 0px;
+    --panel-width: 100%;
+    --topbar-height: 56px;
+    /* Wysokość zwiniętej osi czasu, o którą podnoszą się panele. */
+    --timeline-compact: 84px;
+  }
+}

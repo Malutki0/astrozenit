@@ -1,0 +1,859 @@
+/*
+ * Strona aktualności.
+ *
+ * W odróżnieniu od pozostałych sekcji nie jest panelem nad mapą, tylko pełną
+ * podstroną z własnym tłem i przewijaniem. Treść do czytania potrzebuje szerokości
+ * i spokoju, a nie szklanej płyty nad ruchomym niebem.
+ */
+
+.page {
+  position: absolute;
+  inset: 0;
+  /* Podstrona przykrywa mapę i górny pas, ale zostaje pod szyną nawigacji. */
+  z-index: var(--z-panel);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--surface-void);
+}
+
+/* Delikatna poświata u góry, żeby strona nie zaczynała się płaską czernią. */
+.page::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 420px;
+  background: radial-gradient(
+    120% 100% at 50% 0%,
+    oklch(0.17 0.035 265) 0%,
+    oklch(0.09 0.018 265) 70%
+  );
+  pointer-events: none;
+}
+
+.inner {
+  position: relative;
+  max-width: calc(var(--content-max) + var(--rail-width));
+  margin: 0 auto;
+  padding: var(--space-7) var(--space-6) var(--space-9);
+  padding-left: calc(var(--rail-width) + var(--space-6));
+}
+
+.top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.eyebrow {
+  display: block;
+  font-size: var(--text-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--text-tertiary);
+  margin-bottom: var(--space-3);
+}
+
+.pageTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  line-height: 1;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+}
+
+.lede {
+  font-size: var(--text-md);
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 58ch;
+  margin-top: var(--space-4);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-2);
+  flex: none;
+}
+
+/* ------------------------------------------------------------------ filtry */
+
+.filters {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  margin: var(--space-6) 0 var(--space-5);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--hairline);
+}
+
+.filter {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 32px;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--hairline);
+  color: var(--text-tertiary);
+  font-size: var(--text-xs);
+  transition:
+    color var(--dur-hint) var(--ease-out),
+    border-color var(--dur-hint) var(--ease-out),
+    background-color var(--dur-hint) var(--ease-out),
+    transform var(--dur-press) var(--ease-out);
+}
+
+.filter:hover {
+  color: var(--text-primary);
+  border-color: var(--hairline-strong);
+}
+
+.filter:active {
+  transform: scale(0.97);
+}
+
+.filterActive,
+.filterActive:hover {
+  color: var(--text-primary);
+  background: var(--surface-raised);
+  border-color: var(--hairline-strong);
+}
+
+.filterDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex: none;
+}
+
+/* -------------------------------------------------------------------- lista */
+
+.list {
+  display: grid;
+  gap: var(--space-4);
+}
+
+/* Pierwszy wpis dostaje pełną szerokość i większy krój, reszta układa się w dwie kolumny. */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-4);
+}
+
+/*
+ * Karta wpisu. Materiał szklany, jak wszystko inne w aplikacji: krawędź z załamaniem
+ * światła i pionowy spadek jasności wypełnienia. Wcześniej było płaskie wypełnienie
+ * jednym kolorem, przez co spis wyglądał jak lista odnośników, a nie jak zestaw kart.
+ */
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border-radius: var(--radius-2xl);
+  border: 1px solid var(--hairline);
+  background: var(--glass-fill), var(--surface-deep);
+  box-shadow: var(--glass-edge-soft);
+  text-align: left;
+  transition:
+    border-color var(--dur-hint) var(--ease-out),
+    background-color var(--dur-hint) var(--ease-out),
+    transform var(--dur-press) var(--ease-out);
+}
+
+.item:hover {
+  border-color: var(--hairline-strong);
+  background: var(--glass-fill-hover), var(--surface-raised);
+}
+
+.item:active {
+  transform: scale(0.995);
+}
+
+.itemLead {
+  padding: var(--space-6);
+  gap: var(--space-4);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+}
+
+.category {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.sample {
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--hairline);
+  color: var(--text-tertiary);
+  letter-spacing: 0.06em;
+}
+
+.itemTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: var(--tracking-title);
+  color: var(--text-primary);
+}
+
+.itemLead .itemTitle {
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: var(--tracking-display);
+}
+
+.itemBody {
+  font-size: var(--text-base);
+  line-height: var(--leading-prose);
+  letter-spacing: var(--tracking-body);
+  color: var(--text-secondary);
+  max-width: 62ch;
+}
+
+.itemFoot {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: auto;
+  padding-top: var(--space-2);
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--accent);
+}
+
+/* ------------------------------------------------------------------ artykuł */
+
+/*
+ * Szerokość kolumny tekstu.
+ *
+ * Zmierzone na artykule przed poprawką: wiersz miał 86 znaków. To o dwadzieścia za dużo.
+ * Przy tak długim wierszu oko gubi początek następnego przy powrocie z końca poprzedniego
+ * i czytanie zaczyna wymagać wysiłku, choć nic w tekście się nie zmieniło. Miara 62ch
+ * przy powiększonym stopniu pisma daje około 66 znaków, czyli tyle, ile w składzie
+ * książkowym uchodzi za optimum.
+ */
+.article {
+  max-width: 62ch;
+}
+
+.articleTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  line-height: 1.03;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+  margin: var(--space-4) 0;
+}
+
+.articleLead {
+  font-size: var(--text-md);
+  line-height: 1.6;
+  color: var(--text-secondary);
+  padding-bottom: var(--space-5);
+  border-bottom: 1px solid var(--hairline);
+}
+
+/*
+ * Skład tekstu artykułu.
+ *
+ * Trzy wartości dobrane pod czytanie ciągiem, a nie pod przeglądanie interfejsu:
+ * stopień pisma podniesiony z 15 na 17 pikseli, barwa rozjaśniona do osobnego tokenu
+ * i odstęp między akapitami wyraźnie większy od interlinii, żeby akapit czytał się
+ * jako całość, a nie jako fragment jednolitej ściany tekstu.
+ */
+.prose {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  margin-top: var(--space-5);
+}
+
+.prose p {
+  font-size: var(--text-md);
+  line-height: 1.7;
+  color: var(--text-reading);
+  /* Wyrównanie łamania na końcu akapitu, żeby ostatni wiersz nie zostawał z jednym wyrazem. */
+  text-wrap: pretty;
+}
+
+/*
+ * Dzielenie wyrazów tylko na wąskim ekranie.
+ *
+ * Włączone na szerokim wyglądało źle: przy 69 znakach w wierszu polszczyzna łamie się
+ * sama, a automat i tak dzielił co drugi wiersz, przez co tekst wyglądał na posiekany
+ * („jedno-cześnie”, „sy-gnałom”, „na ja-kiś”). Poniżej 480 pikseli wiersz ma około
+ * 35 znaków i wtedy bez dzielenia robią się w nim białe dziury, więc tam automat pomaga.
+ */
+@media (max-width: 480px) {
+  .prose p {
+    hyphens: auto;
+  }
+}
+
+.sourceLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-6);
+  font-size: var(--text-sm);
+  color: var(--accent);
+}
+
+/* ------------------------------------------------------- panel redakcyjny */
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  max-width: 760px;
+}
+
+.editorRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: var(--space-3);
+  background: var(--surface-void);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  resize: vertical;
+  transition: border-color var(--dur-hint) var(--ease-out);
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.textareaTall {
+  min-height: 260px;
+}
+
+.select {
+  width: 100%;
+  min-height: 40px;
+  padding: 0 var(--space-3);
+  background: var(--surface-void);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: var(--text-sm);
+}
+
+.editorList {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--hairline);
+}
+
+.editorItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.editorItemMain {
+  flex: 1;
+  min-width: 0;
+}
+
+.editorItemTitle {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.editorItemMeta {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+}
+
+.note {
+  font-size: var(--text-xs);
+  line-height: 1.6;
+  color: var(--text-tertiary);
+  max-width: 62ch;
+  padding: var(--space-4);
+  border: 1px dashed var(--hairline);
+  border-radius: var(--radius-lg);
+}
+
+@media (max-width: 900px) {
+  .inner {
+    padding: var(--space-5) var(--space-4) 84px;
+    padding-left: var(--space-4);
+    max-width: none;
+  }
+
+  /*
+   * Na wąskim ekranie przyciski wędrują nad nagłówek i trzymają się prawej krawędzi.
+   * Ustawienie ich pod zapowiedzią zostawiało samotny przycisk zamknięcia w środku
+   * strony, daleko od miejsca, w którym kciuk go szuka.
+   */
+  .top {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: var(--space-4);
+  }
+
+  .top .actions {
+    justify-content: flex-end;
+  }
+
+  .pageTitle,
+  .articleTitle {
+    font-size: var(--text-xl);
+  }
+
+  .itemLead .itemTitle {
+    font-size: var(--text-lg);
+  }
+
+  .item {
+    padding: var(--space-4);
+  }
+
+  .itemLead {
+    padding: var(--space-4);
+  }
+
+  .editorRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ------------------------------------------------------------------- konto */
+
+.notice {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--signal-warn-muted);
+  background: color-mix(in oklab, var(--signal-warn) 6%, var(--surface-deep));
+  max-width: 68ch;
+}
+
+.noticeTitle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--signal-warn);
+}
+
+.notice p {
+  font-size: var(--text-xs);
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+.notice code {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  padding: 1px 5px;
+  border-radius: var(--radius-xs);
+  background: var(--surface-void);
+  color: var(--text-primary);
+}
+
+.noteError {
+  font-size: var(--text-xs);
+  line-height: 1.6;
+  color: var(--signal-warn);
+  padding: var(--space-4);
+  border: 1px dashed var(--signal-warn-muted);
+  border-radius: var(--radius-lg);
+  max-width: 62ch;
+}
+
+.accountCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--hairline);
+  background: var(--surface-deep);
+}
+
+.accountRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.accountAvatar {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--accent-muted);
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+}
+
+.accountName {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+.accountMeta {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  line-height: 1.5;
+}
+
+/* --------------------------------------------------------------- zdjęcia */
+
+.cover {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--hairline);
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--surface-raised);
+}
+
+.coverLead {
+  aspect-ratio: 21 / 9;
+}
+
+.figure {
+  margin: var(--space-3) 0;
+}
+
+.figure img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--hairline);
+  display: block;
+}
+
+.figcaption {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  margin-top: var(--space-2);
+  line-height: 1.5;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: var(--space-2);
+}
+
+.galleryItem {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--hairline);
+  aspect-ratio: 4 / 3;
+  background: var(--surface-void);
+  padding: 0;
+  transition: border-color var(--dur-hint) var(--ease-out);
+}
+
+.galleryItem:hover {
+  border-color: var(--hairline-strong);
+}
+
+.galleryItemActive {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.galleryItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.galleryBadge {
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  padding: 2px 6px;
+  border-radius: var(--radius-pill);
+  background: oklch(0.09 0.018 265 / 0.82);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 9px;
+}
+
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border: 1px dashed var(--hairline-strong);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--dur-hint) var(--ease-out), background-color var(--dur-hint) var(--ease-out);
+}
+
+.dropzoneActive {
+  border-color: var(--accent);
+  background: var(--accent-faint);
+}
+
+/*
+ * Wiadomości pobrane z cudzych serwisów.
+ *
+ * Wydzielone w osobną sekcję i inaczej oznaczone niż wpisy własne, bo prowadzą poza
+ * aplikację. Czytelnik ma wiedzieć przed kliknięciem, że wychodzi do wydawcy, a nie
+ * otwiera kolejny nasz tekst. Stąd nazwa serwisu przy dacie i podpis "Czytaj u wydawcy".
+ */
+.feed {
+  margin-top: var(--space-9);
+  padding-top: var(--space-7);
+  border-top: 1px solid var(--hairline);
+}
+
+.feedHead {
+  display: grid;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+  max-width: 62ch;
+}
+
+.feedTitle {
+  margin: 0;
+  font-size: var(--text-lg);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.feedNote {
+  margin: 0;
+  font-size: var(--text-sm);
+  line-height: 1.55;
+  color: var(--text-tertiary);
+}
+
+.itemExternal {
+  text-decoration: none;
+}
+
+.feedMeta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  font-size: var(--text-2xs);
+}
+
+.feedSource {
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.feedDate {
+  color: var(--text-tertiary);
+}
+
+/* Znacznik języka. Zajawka nieprzetłumaczona jest nadal warta pokazania, ale czytelnik
+ * ma o tym wiedzieć, zanim kliknie, a nie po otwarciu strony po angielsku. */
+.feedLang {
+  padding: 1px 5px;
+  border: 1px solid var(--hairline);
+  border-radius: 4px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--text-tertiary);
+}
+
+/*
+ * Pasek pochodzenia nad tekstem pobranym.
+ *
+ * Mówi wprost, czyj to materiał i czy przeszedł przez tłumaczenie maszynowe. Stoi nad
+ * tekstem, a nie pod nim, bo informacja "czytasz cudzy tekst w przekładzie maszynowym"
+ * zmienia sposób czytania i musi dotrzeć przed lekturą, a nie po niej.
+ */
+.feedBadge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--hairline);
+  font-size: var(--text-2xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+
+.feedCover {
+  display: block;
+  width: 100%;
+  max-width: 68ch;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-6);
+}
+
+.feedFoot {
+  display: grid;
+  gap: var(--space-3);
+  margin-top: var(--space-7);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--hairline);
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+}
+
+.feedFoot p {
+  margin: 0;
+  line-height: 1.55;
+  max-width: 62ch;
+}
+
+.feedFoot a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  justify-self: start;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .feedFoot a:hover {
+    text-decoration: underline;
+  }
+}
+
+/*
+ * Przełącznik logowania i rejestracji.
+ *
+ * Dwa przyciski w jednej ramce, ten czynny wypełniony. Świadomie nie są to zakładki
+ * przewijające zawartość, tylko przełącznik zmieniający pola w tym samym formularzu:
+ * różnica między jednym trybem a drugim to dwa pola, więc przenoszenie użytkownika
+ * na osobny ekran byłoby wysiłkiem nieproporcjonalnym do zmiany.
+ */
+.authTabs {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-sm);
+  background: var(--surface-deep);
+  align-self: start;
+}
+
+.authTab {
+  padding: 7px 14px;
+  border: 0;
+  border-radius: calc(var(--radius-sm) - 3px);
+  background: transparent;
+  color: var(--text-tertiary);
+  font: inherit;
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition:
+    background var(--dur-hint) var(--ease-out),
+    color var(--dur-hint) var(--ease-out),
+    transform var(--dur-hint) var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .authTab:hover {
+    color: var(--text-secondary);
+  }
+}
+
+.authTab:active {
+  transform: scale(0.97);
+}
+
+.authTabActive {
+  background: var(--surface-raised);
+  color: var(--text-primary);
+}
+
+.authOk {
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--signal-visible);
+}
+
+/*
+ * Ostrzeżenie o koncie lokalnym.
+ *
+ * Bursztynowy pasek przy krawędzi zamiast drobnego druku pod przyciskiem. Informacja,
+ * że konto zniknie razem z danymi przeglądarki, jest dla użytkownika ważniejsza niż
+ * cokolwiek innego na tym formularzu, więc ma wyglądać jak ostrzeżenie, a nie jak stopka.
+ */
+/*
+ * Krótka nota pod formularzem rejestracji. Zwykły tekst drugoplanowy, bez ramki
+ * i bez bursztynowego paska: to jest informacja, a nie ostrzeżenie o zagrożeniu,
+ * a poprzednia oprawa przyciągała więcej uwagi niż sam formularz.
+ */
+.authNote {
+  margin: 0;
+  font-size: var(--text-sm);
+  line-height: 1.55;
+  color: var(--text-tertiary);
+  max-width: 58ch;
+}
+
+.authWarn {
+  margin: 0;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--hairline);
+  border-left: 2px solid var(--accent);
+  background: var(--surface-deep);
+  font-size: var(--text-sm);
+  line-height: 1.55;
+  color: var(--text-secondary);
+  max-width: 62ch;
+}

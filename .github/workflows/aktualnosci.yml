@@ -1,0 +1,57 @@
+# Dobowe odświeżanie aktualności astronomicznych.
+#
+# Raz na dobę uruchamia scripts/fetch-news.mjs, a jeżeli wyszedł z tego inny plik
+# niż poprzednio, zapisuje go w repozytorium. Hosting podpięty pod gałąź główną
+# widzi nowy commit i przebudowuje stronę sam, więc nie trzeba nic klikać.
+#
+# Godzina wybrana na 5:20 czasu uniwersalnego, czyli około 7:20 w Polsce. Kanał NASA
+# publikuje wpisy późnym popołudniem czasu waszyngtońskiego, a AstroNET rano, więc
+# o tej porze świeże jest jedno i drugie. Minuta jest nierówna celowo: GitHub kolejkuje
+# zadania rozpisane na pełne godziny i potrafi je opóźnić o kilkanaście minut.
+#
+# workflow_dispatch zostawia możliwość uruchomienia ręcznego, przyciskiem w zakładce
+# Actions, bez czekania na następną dobę.
+
+name: Aktualnosci
+
+on:
+  schedule:
+    - cron: '20 5 * * *'
+  workflow_dispatch:
+
+# Zadanie zapisuje w repozytorium, więc potrzebuje prawa zapisu. Domyślnie GitHub
+# daje żetonowi wyłącznie odczyt.
+permissions:
+  contents: write
+
+jobs:
+  pobierz:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Pobranie wiadomosci
+        env:
+          # Klucz do tlumaczenia na polski. Bez niego wpisy NASA zostaja po angielsku,
+          # ale pobieranie i tak sie konczy powodzeniem.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Wlasny klucz NASA zdejmuje limit dziesieciu zapytan na godzine z DEMO_KEY.
+          # Przy jednym uruchomieniu na dobe nie jest potrzebny.
+          NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
+        run: node scripts/fetch-news.mjs
+
+      - name: Zapis zmian
+        run: |
+          if git diff --quiet public/data/news.json; then
+            echo "Bez zmian, nie ma czego zapisywac."
+            exit 0
+          fi
+          git config user.name "AstroZenit"
+          git config user.email "piotrek.banach@vp.pl"
+          git add public/data/news.json
+          git commit -m "Aktualnosci: odswiezenie $(date -u +%Y-%m-%d)"
+          git push

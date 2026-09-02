@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0d14" />
+    <meta name="color-scheme" content="dark" />
+
+    <title>AstroZenit: mapa nocnego nieba</title>
+    <meta
+      name="description"
+      content="Interaktywna mapa nieba, położenia planet, fazy Księżyca, przeloty satelitów, kalendarz zjawisk i prognoza zachmurzenia dla Twojego miejsca obserwacji."
+    />
+    <link rel="canonical" href="https://astrozenit.pl/" />
+
+    <!--
+      Znaczniki dla serwisów, które pokazują podgląd odnośnika: komunikatorów, portali
+      społecznościowych i wyszukiwarek. Bez nich udostępniony odnośnik wygląda jak goły
+      adres, a strona astronomiczna bez obrazu w podglądzie traci to, co ma najlepszego.
+      Obraz podglądu musi być bezwzględny, bo pobiera go serwer, a nie przeglądarka
+      użytkownika, i adres względny nie ma dla niego żadnego znaczenia.
+    -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AstroZenit" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:title" content="AstroZenit: mapa nocnego nieba" />
+    <meta
+      property="og:description"
+      content="Zobacz, co widać dziś na niebie z Twojego miejsca: planety, fazy Księżyca, przeloty satelitów i prognozę zachmurzenia."
+    />
+    <meta property="og:url" content="https://astrozenit.pl/" />
+    <meta property="og:image" content="https://astrozenit.pl/podglad.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!--
+      Wcześniejsze nawiązanie połączenia z serwisami, z których aplikacja pobiera dane
+      w trakcie działania. Uzgodnienie szyfrowania trwa kilkaset milisekund i bez tej
+      podpowiedzi zaczyna się dopiero w chwili, gdy dane są już potrzebne.
+    -->
+    <link rel="preconnect" href="https://api.open-meteo.com" crossorigin />
+    <link rel="preconnect" href="https://a.tile.openstreetmap.org" crossorigin />
+  </head>
+  <body>
+    <div id="root"></div>
+    <!--
+      Komunikat dla przeglądarek z wyłączoną obsługą skryptów. Cała aplikacja liczy
+      położenia ciał niebieskich w przeglądarce, więc bez skryptów nie ma czego pokazać
+      i uczciwiej powiedzieć to wprost niż zostawić pustą stronę.
+    -->
+    <noscript>
+      <div style="padding: 2rem; font-family: system-ui, sans-serif; color: #e8eaf0">
+        <h1>AstroZenit</h1>
+        <p>
+          Ta strona liczy położenia ciał niebieskich w Twojej przeglądarce, więc do działania
+          potrzebuje włączonej obsługi JavaScriptu. Nic nie jest liczone na serwerze, bo nie
+          ma tu serwera, który mógłby to zrobić.
+        </p>
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

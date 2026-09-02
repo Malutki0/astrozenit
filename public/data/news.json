@@ -1,0 +1,153 @@
+{
+  "updated": "2026-09-02T15:04:56.814Z",
+  "sources": [
+    {
+      "label": "NASA Science",
+      "url": "https://science.nasa.gov/",
+      "note": "teksty w domenie publicznej"
+    },
+    {
+      "label": "NASA APOD",
+      "url": "https://apod.nasa.gov/apod/",
+      "note": "opis NASA, zdjęcia często autorskie"
+    },
+    {
+      "label": "AstroNET",
+      "url": "https://astronet.pl/",
+      "note": "tytuły i zajawki, treść u wydawcy"
+    }
+  ],
+  "posts": [
+    {
+      "id": "nasa-1725q5l",
+      "title": "Rakieta NASA po raz pierwszy zajrzała naraz w kilka miejsc chmury zakłócającej radio",
+      "lead": "Wysoko nad Ziemią dryfują cienkie zasłony metalicznej mgiełki, powstałe z pyłu spalonych meteorów. Rakieta z pięcioma czujnikami pokazała po raz pierwszy, że taka warstwa jest znacznie bardziej poszarpana, niż zakładano.",
+      "date": "2026-09-02T14:53:54.000Z",
+      "category": "sprzet",
+      "source": "https://science.nasa.gov/science-research/heliophysics/nasa-rocket-takes-first-multi-point-look-inside-radio-disrupting-clouds/",
+      "sourceLabel": "NASA Science",
+      "language": "pl",
+      "image": "https://science.nasa.gov/wp-content/uploads/2026/09/img-4981-1.webp?w=1200&fit=clip",
+      "body": "Wysoko nad Ziemią, na skraju przestrzeni kosmicznej, dryfują cienkie zasłony metalicznej mgiełki. Nazywa się je sporadycznymi warstwami E, bo powstają w warstwie jonosfery oznaczanej literą E, a materiał na nie daje pył meteorów, które spłonęły w atmosferze. Nazwę zawdzięczają temu, że pojawiają się i znikają w sposób nieprzewidywalny. Właśnie ogłoszono wyniki lotu rakiety badawczej NASA, która przeniosła przez taką warstwę pięć czujników jednocześnie, i po raz pierwszy widać w niej złożoność, której się nie spodziewano.\n\nSporadycznych warstw E nie widać gołym okiem, ale dają o sobie znać sygnałom radiowym, na których opiera się łączność dalekiego zasięgu. Kiedy się pojawią, potrafią odbijać te sygnały w nieoczekiwanych kierunkach i na jakiś czas czynią całą technikę zawodną.\n\nNaukowcy od dawna chcieli je poznać dokładniej, ale do niedawna mierzyli je tylko wzdłuż jednej wąskiej linii naraz. Rakieta o nazwie sporadic E Electrodynamics Demonstration, w skrócie SpEED Demon, wystartowała z ośrodka lotów NASA Wallops w Wirginii 24 sierpnia 2022 roku i dała pierwszy jednoczesny obraz wnętrza warstwy z kilku punktów. Wyniki zespołu kierowanego przez Embry-Riddle Aeronautical University opisano w nowej pracy w Journal of Geophysical Research: Space Physics.\n\nSporadyczne warstwy E powstają w jonosferze, obszarze górnej atmosfery zaczynającym się około 60 kilometrów nad powierzchnią, gdzie gazy obojętne zaczynają się zamieniać w plazmę, czyli gaz zjonizowany. Jonosferę dzieli się na piętra oznaczone kolejnymi literami, D, E i F, i to od środkowego z nich pochodzi nazwa tych warstw. Część tamtejszych cząstek pochodzi z meteorów, które spalają się i zostawiają po sobie ślady żelaza, magnezu i innych metali. Metale te zbijają się czasem w gęste warstwy przypominające chmury i te warstwy odbijają fale radiowe.\n\n„Sporadyczne warstwy E są w pewnym sensie wielkimi lustrami fal radiowych zawieszonymi na niebie”, mówi Aroh Barjatya, kierownik naukowy misji i profesor fizyki technicznej w Embry-Riddle w Daytona Beach na Florydzie.\n\nKiedy taka warstwa się uformuje, sygnały mające polecieć w kosmos potrafią wrócić rykoszetem ku ziemi. Kontrolerzy ruchu lotniczego i użytkownicy radia morskiego odbierają wtedy odległe transmisje tak, jakby nadawano je z bliska, a radary patrzące za horyzont rejestrują tak zwane duchy, czyli cele, których nie ma. Skutki sięgają też sprzętu codziennego użytku.\n\n„Największym źródłem błędu w GPS w twoim telefonie jest plazma w jonosferze, a sporadyczne warstwy E mają w tej niepewności swój udział”, mówi Henry Valentine, pierwszy autor pracy, który prowadził badania w Embry-Riddle, a obecnie pracuje w Laboratorium Badawczym Marynarki Wojennej Stanów Zjednoczonych.\n\nSporadyczne warstwy E utrzymują się na wysokości około 100 kilometrów, czyli za wysoko dla balonów meteorologicznych i za nisko dla satelitów, a do tego powstają i znikają bez ostrzeżenia. Od dawna są więc domeną rakiet badawczych, które można wystrzelić na krótkie powiadomienie i złapać zjawisko na gorącym uczynku. Pojedyncza rakieta leci jednak jednym torem i mierzy tylko wzdłuż linii. Barjatya porównuje to do oglądania sceny przez szczelinę w murze: widać wyłącznie to, co dzieje się w wąskim pasku, a to, co po lewej i po prawej, pozostaje nieznane.\n\nMisja SpEED Demon to zmieniła. Po raz pierwszy wpuszczono do wnętrza warstwy odrzucane sondy, tak zwane dropsondy. Rakieta uwolniła cztery takie sondy, które odleciały od ładunku głównego i od siebie nawzajem, a każda mierzyła plazmę wzdłuż własnego toru i odsyłała pomiary do stacji naziemnych. Razem z ładunkiem głównym dało to pomiar warstwy w pięciu miejscach w tej samej chwili.\n\n„Teraz, mając kilka czujników, zamieniliśmy tę szczelinę w płot ze sztachet”, mówi Barjatya.\n\nDane pokazały we wnętrzu warstwy zaskakującą złożoność. Zamiast gładkiego, gęstego naleśnika z cząstek metalu, warstwa, przez którą przeleciał SpEED Demon, okazała się nierówna i uformowana przez turbulentne wiatry przepływające przez otaczające ją obojętne powietrze.\n\n„Zwykle myśli się o sporadycznej warstwie E jak o jednej ostrej warstwie gęstości, a my zobaczyliśmy, że oddziałuje ona z wiatrem obojętnym i z tymi wirującymi turbulencjami atmosfery”, mówi Valentine. „Zamiast płaskiego naleśnika wychodzi z tego coś bliższego cynamonowej bułce.”\n\nPodczas opadania warstwa rozdzieliła się nawet na dwa wyraźne maksima. Zespół stwierdził, że taki kształt zgadza się z modulacją przez fale Kelvina i Helmholtza, czyli tę zawijającą się niestabilność, która w zwykłych chmurach tworzy wzory przypominające załamujące się fale. Ponieważ podczas lotu nie dało się zmierzyć wprost miejscowych wiatrów i pól elektrycznych, badacze ostrożnie nazywają to wyjaśnienie prawdopodobnym, a nie potwierdzonym.\n\nMisję SpEED Demon zaplanowano jako pokaz techniki, czyli sprawdzenie, czy metoda z dropsondami w ogóle zadziała. Zadziałała, a zespół szybko sięgnął po nią ponownie. Grupa Barjatyi użyła podobnej strategii z wieloma sondami, wysyłając rakiety w pas zaćmienia obrączkowego z października 2023 roku i całkowitego zaćmienia Słońca z kwietnia 2024 roku, żeby zbadać, jak nagła ciemność zaburza górną atmosferę. W czerwcu 2025 roku wysłali najbliższego potomka SpEED Demona, misję Sporadic-E ElectroDynamics (SEED), w sporadyczne warstwy E nad atolem Kwajalein na Wyspach Marshalla, badając je na niższych szerokościach geograficznych. Prace z tych misji są w przygotowaniu.\n\nPo latach badań sporadyczne warstwy E nie są już tak nieprzewidywalne jak kiedyś. „Mają swoją sezonowość, a najczęściej pojawiają się miejscowym latem”, mówi Barjatya.\n\nPytania o to, jak i kiedy powstają, są coraz bardziej szczegółowe. Nowa metoda pomiaru z rakiety w wielu punktach naraz, razem z pomiarami naziemnymi, prawdopodobnie domknie ten obraz. „Środowisko naukowe jest już na ostatniej prostej do pełnego zrozumienia tych wielkich radiowych luster na niebie”, mówi Barjatya.",
+      "translated": true
+    },
+    {
+      "id": "astronet-1aagn2u",
+      "title": "Debiut rakiety Pallas-1 chińskiej firmy Galactic Energy",
+      "lead": "Loty rakiet, które niegdyś były rzadkością, dziś coraz częściej przechodzą do codzienności. Szczególnie przy coraz większym wkładzie prywatnych firm w rozwój sektora kosmicznego.",
+      "date": "2026-09-02T08:30:19.000Z",
+      "category": "sprzet",
+      "source": "https://astronet.pl/astronautyka/debiut-rakiety-pallas-1-chinskiej-firmy-galactic-energy/",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "apod-2026-09-02",
+      "title": "Zaćmienia Słońca i kultura",
+      "lead": "Wyobraź sobie, że nigdy nie słyszałeś o zaćmieniu Słońca. Przez całe życie zachowywało się ono przewidywalnie. Aż pewnego dnia widzisz, jak niebo zmienia się tak, jak na dzisiejszym zdjęciu z zaćmienia 12 sierpnia 2026 roku.",
+      "body": "Wyobraź sobie, że nigdy nie słyszałeś o zaćmieniu Słońca. Przez całe życie zachowywało się ono przewidywalnie. Aż pewnego dnia widzisz, jak niebo zmienia się tak, jak na dzisiejszym zdjęciu, złożonym z dwóch godzin zaćmienia Słońca z 12 sierpnia 2026 roku. Słońce znika, a po nim zostaje jasny, pusty pierścień. Co byś sobie pomyślał? Ludzie tłumaczyli sobie zaćmienia na niezliczone sposoby i wpisywali w kulturę wyobrażenia o więzi, odrodzeniu albo zagrożeniu. Słowo „eclipse” pochodzi od greckiego „ékleipsis”, czyli „porzucenie”. W starożytnej Grecji zaćmienie Słońca oznaczało gniew bogów i Słońce porzucające ludzkość. Dla ludu Diné takie ustawienie ciał niebieskich jest czasem odnowy. Z szacunku, a także by uniknąć niebezpieczeństwa płynącego ze światła słonecznego, Diné pozostają w domach, dopóki Słońce i Księżyc się nie rozdzielą. Lud Batammariba z Beninu i Togo wierzy, że podczas zaćmienia Słońce i Księżyc walczą ze sobą, więc społeczność zachęca się wtedy wzajemnie do zgody. Zaćmienia są przykładem odwiecznego związku między astronomią a życiem społecznym.",
+      "date": "2026-09-02T04:05:00.000Z",
+      "category": "wydarzenie",
+      "source": "https://apod.nasa.gov/apod/ap260902.html",
+      "sourceLabel": "NASA APOD",
+      "language": "pl",
+      "credit": "Javier Castro Text: Keighley Rockcliffe (NASA GSFC, UMBC CSST, CRESST II)",
+      "translated": true
+    },
+    {
+      "id": "nasa-461dbm",
+      "title": "Blue Origin zbuduje dla NASA sieć łączności z Marsem",
+      "lead": "NASA podpisała z Blue Origin kontrakt o wartości do 700 milionów dolarów na orbiter telekomunikacyjny, który od 2030 roku ma obsługiwać łączność i nawigację misji marsjańskich.",
+      "date": "2026-09-01T21:08:37.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/news-release/nasa-selects-blue-origin-as-mars-telecommunications-network-provider/",
+      "sourceLabel": "NASA Science",
+      "language": "pl",
+      "body": "NASA przyznała we wtorek firmie Blue Origin kontrakt na zbudowanie agencyjnej sieci łączności z Marsem (Mars Telecommunications Network), czyli systemu nowej generacji, który ma zapewnić niezawodną łączność o dużej przepustowości oraz usługi nawigacyjne obecnym i przyszłym misjom marsjańskim.\n\nKontrakt o stałej cenie ma maksymalną wartość około 700 milionów dolarów. W jego ramach NASA ma otrzymać wydajny orbiter telekomunikacyjny nie później niż 31 grudnia 2028 roku.\n\nBlue Origin zaprojektuje, zbuduje, zintegruje, wyniesie i będzie obsługiwać tę sieć jako część szerszej infrastruktury łączności i nawigacji kosmicznej agencji. Rozwiązanie ma się opierać na wydajnym statku telekomunikacyjnym krążącym wokół Marsa, który będzie przesyłał dane naukowe, obrazy, informacje nawigacyjne oraz krytyczną łączność misji dla pojazdów pracujących na planecie i wokół niej.\n\nKontrakt jest kamieniem milowym w strategii NASA rozszerzania usług łączności i nawigacji poza Ziemię i Księżyc. Ma stworzyć podstawę pod trwałą eksplorację Marsa w najbliższych dekadach.\n\nW ramach programu Artemis NASA wysyła astronautów na Księżyc i przygotowuje się do misji na Marsa. Drogę człowiekowi na Czerwoną Planetę torują misje bezzałogowe, a wraz z ich rozwojem rosnąć będzie zapotrzebowanie na przesył danych. Dlatego agencja buduje sieć zaprojektowaną specjalnie do tego celu, zdolną obsłużyć rosnącą liczbę misji i dającą większą przepustowość, niezawodność oraz swobodę działania.\n\nWybór wykonawcy jest następstwem zapytania ofertowego ogłoszonego w maju. NASA coraz częściej sięga po partnerów komercyjnych przy transporcie i łączności na orbicie okołoziemskiej oraz przy budowie bazy księżycowej. Sieć łączności z Marsem idzie tym samym torem: ma wykorzystać możliwości sektora prywatnego, a agencji pozwolić skupić się na eksploracji i badaniach naukowych.\n\nSieć, którą zarządza program NASA do spraw łączności i nawigacji kosmicznej, ma zacząć działać przy Marsie do 2030 roku i obsługiwać zarówno obecne, jak i przyszłe misje na Czerwoną Planetę, w miarę jak agencja wypuszcza się coraz dalej w przestrzeń.",
+      "translated": true
+    },
+    {
+      "id": "nasa-1l0c3iw",
+      "title": "Astronautki ESA i NASA zakończyły spacer kosmiczny przy stacji",
+      "lead": "Jessica Meir i Sophie Adenot spędziły na zewnątrz Międzynarodowej Stacji Kosmicznej 6 godzin i 49 minut. Zamontowały reflektor wspomagający nawigację przy dokowaniu i wymieniły kamerę na kratownicy.",
+      "date": "2026-09-01T19:58:25.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/09/01/esa-nasa-astronauts-complete-navigation-and-science-spacewalk-outside-station/",
+      "sourceLabel": "NASA Science",
+      "language": "pl",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/08/blog-useva99-090126f.jpg?w=1200&fit=clip",
+      "body": "Astronautka NASA Jessica Meir i astronautka Europejskiej Agencji Kosmicznej (ESA) Sophie Adenot zakończyły spacer kosmiczny na zewnątrz Międzynarodowej Stacji Kosmicznej o godzinie 15:29 czasu wschodniego.\n\nPodczas trwającego 6 godzin i 49 minut wyjścia Meir i Adenot zamontowały nowy reflektor na przednim porcie modułu Harmony, który ma wspomagać nawigację statków przy zbliżaniu się i dokowaniu. Wymieniły też kamerę wysokiej rozdzielczości na kratownicy stacji i pobrały wymaz z jej poszycia zewnętrznego w poszukiwaniu mikroorganizmów. Częściowo wykonały również montaż przewodów łączących instalacji elektrycznej i rozpoczęły przygotowania do wymiany radiatora spektrometru Alpha Magnetic Spectrometer, która odbędzie się podczas jednego z kolejnych spacerów.\n\nCentrum kontroli lotu odłożyło montaż pozostałych kołków prowadzących pod nowy radiator spektrometru, żeby inżynierowie mogli opracować plan dokończenia tej pracy przy następnym wyjściu. Ponieważ załoga zaczęła się opóźniać wobec harmonogramu, kontrola lotu przesunęła na później także dokończenie przewodów łączących i inne zadania niekrytyczne.\n\nW trakcie spaceru Adenot miała kłopot z ruchomością lewego ramienia. Meir obejrzała jej skafander i uznała, że najpewniej zaczepia się wiązka grzałki rękawicy, co ogranicza ruch w lewym stawie barkowym. Rozpięcie stawu zdawało się rozwiązać problem, zanim załoga weszła do śluzy.\n\nAmerykański spacer kosmiczny numer 99 był siódmym w karierze Meir i trzecim w karierze Adenot. Meir zajmuje teraz trzecie miejsce w historii wśród kobiet NASA pod względem liczby spacerów, za Peggy Whitson (10) i Suni Williams (9). Był to zarazem 284. spacer kosmiczny wykonany przy montażu, obsłudze i modernizacji stacji.",
+      "translated": true
+    },
+    {
+      "id": "astronet-1etc9zx",
+      "title": "Kosmiczny przegląd miesiąca AstroNETu – sierpień 2026 roku",
+      "lead": "W sierpniu zdaje się, że organizacje kosmiczne były na wakacjach - albo przykładowo ich pracownicy pełnili funkcję kadry na obozach astronomicznych. Wobec tego wyróżnionych wydarzeń w tym miesiącu nie ma wiele.",
+      "date": "2026-09-01T12:00:27.000Z",
+      "category": "wydarzenie",
+      "source": "https://astronet.pl/astronautyka/podsumowania/kosmiczny-przeglad-miesiaca-astronetu-sierpien-2026-roku/",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "astronet-1hnvj7a",
+      "title": "Kształt Deimosa wyjaśniony przez zderzenie z asteroidą",
+      "lead": "Deimos to mniej więcej elipsoidalny, naturalny satelita Marsa. Ma 12 kilometrów średnicy co czyni co mniej więcej rozmiaru Luksemburga. Krąży w odległości około 24 000 kilometrów od powierzchni planety.",
+      "date": "2026-09-01T06:00:12.000Z",
+      "category": "odkrycie",
+      "source": "https://astronet.pl/astronomia/ksztalt-deimosa-wyjasniony-przez-zderzenie-z-asteroida/",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "astronet-3mzy5p",
+      "title": "Recenzja gry „Occupy Mars: The Game”",
+      "lead": "Obrazek wyróżniający: Epic Games, Pyramid games Mars – w ostatnim czasie coraz częściej mówi się o nim zarówno w świecie realnym, jak i Sci-Fi. SpaceX opowiada o planach kolonizacji Czerwonej Planety, a film pt.",
+      "date": "2026-08-31T16:01:11.000Z",
+      "category": "odkrycie",
+      "source": "https://astronet.pl/recenzje/gra/recenzja-gry-occupy-mars-the-game/",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "astronet-1gts76z",
+      "title": "Niebo we wrześniu 2026 roku",
+      "lead": "Wrzesień to miesiąc wyraźnego przełomu na niebie, kiedy nocy przybywa w szybkim tempie, a warunki do obserwacji zaczynają robić się coraz lepsze.",
+      "date": "2026-08-31T05:00:04.000Z",
+      "category": "wydarzenie",
+      "source": "https://astronet.pl/obserwacje/na-niebie/niebo-we-wrzesniu-2026-roku/",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "astronet-1sseref",
+      "title": "Kosmiczny Teleskop Roman wystartował",
+      "lead": "Dziś (30.08.2026) o godzinie 13:26 czasu polskiego Dr Denton Gibson, kierownik NASA ds. startów, dał pozwolenie na rozpoczęcie misji Nancy Grace Roman Space Telescope (NGRST).",
+      "date": "2026-08-30T17:51:34.000Z",
+      "category": "teleskop",
+      "source": "https://astronet.pl/astronautyka/kosmiczny-teleskop-roman-wystartowal/",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "astronet-1l7rcc1",
+      "title": "Jak ustawić orientację statku kosmicznego?",
+      "lead": "Do sukcesu każdej misji niezbędne jest odpowiednie ułożenie statku kosmicznego. Aspekt ten jest najistotniejszy w przypadku obiektów służących do wykonywania obserwacji, na przykład orbitalnych teleskopów.",
+      "date": "2026-08-29T10:03:18.000Z",
+      "category": "sprzet",
+      "source": "https://astronet.pl/astronautyka/jak-ustawic-orientacje-statku-kosmicznego/",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "astronet-1v7u1ff",
+      "title": "Jak sfotografować zaćmienie Księżyca 28 sierpnia 2026 roku?",
+      "lead": "28 sierpnia nad ranem Księżyc niemal całkowicie zanurzy się w cieniu Ziemi. To będzie jedno z najciekawszych zaćmień Księżyca w najbliższych latach.",
+      "date": "2026-08-27T08:37:07.000Z",
+      "category": "wydarzenie",
+      "source": "https://astronet.pl/obserwacje/jak-sfotografowac-zacmienie-ksiezyca-28-sierpnia-2026-roku/",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    }
+  ]
+}
