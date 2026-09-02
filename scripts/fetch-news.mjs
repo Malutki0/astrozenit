@@ -44,7 +44,7 @@ const WYJSCIE = resolve(KATALOG, 'public/data/news.json');
 
 /* Serwisy proszą w regulaminach o przedstawienie się. Adres pozwala się z nami skontaktować,
  * gdyby pobieranie komuś przeszkadzało, zamiast po prostu blokować nieznanego klienta. */
-const UA = 'AstroZenit/1.0 (aplikacja astronomiczna; kontakt: piotrek.banach@vp.pl)';
+const UA = 'AstroZenit/1.0 (aplikacja astronomiczna; kontakt: kontakt@astrozenit.pl)';
 
 /** Ile wpisów zostawiamy w pliku. Więcej nikt nie przewinie, a plik rośnie. */
 const LIMIT = 24;

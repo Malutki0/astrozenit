@@ -51,7 +51,7 @@ jobs:
             exit 0
           fi
           git config user.name "AstroZenit"
-          git config user.email "piotrek.banach@vp.pl"
+          git config user.email "kontakt@astrozenit.pl"
           git add public/data/news.json
           git commit -m "Aktualnosci: odswiezenie $(date -u +%Y-%m-%d)"
           git push
