@@ -295,17 +295,38 @@
  * gdzie w drzewie leży dana tafla.
  */
 /*
- * Każda tafla dostaje własne rozmycie zastępcze, to samo, którego używa w przeglądarkach
- * bez filtrów SVG. Wspólna wartość dla wszystkich trzech byłaby prostsza, ale zmieniałaby
- * w ruchu nie tylko załamanie, lecz i charakter szkła: szyna zrobiłaby się jaśniejsza,
- * a panel straciłby przygaszenie. Znikać ma wyłącznie to, czego w ruchu i tak nie widać.
+ * Zamiennik musi rozmywać dokładnie tyle samo, co filtr, który zastępuje.
+ *
+ * Pierwsze podejście sięgało po rozmycie zastępcze z przeglądarek bez filtrów SVG,
+ * czyli czternaście i dwadzieścia sześć pikseli. To był błąd, bo tam ta wartość niesie
+ * cały wygląd szkła sama, a tutaj ma tylko zastąpić rozmycie ukryte w środku filtra.
+ * Filtr rozprasza obraz o stdDeviation sześć, panel dokłada do niego dziesięć pikseli
+ * w CSS, a rozmycia gaussowskie składają się pitagorejsko, więc razem wychodzi około
+ * dwunastu. Zamiennik dawał ponad dwa razy więcej i podnosił jeszcze nasycenie.
+ *
+ * Efekt był widoczny natychmiast: przy każdym chwyceniu mapy tafle zachodziły mgłą,
+ * a po zatrzymaniu wracały do ostrości. Najmocniej na osi czasu, bo to największa
+ * tafla w kadrze i leży tam, gdzie ląduje kursor. Założenie z komentarza powyżej,
+ * że zamiany nie da się dostrzec, dotyczyło samego załamania i było słuszne. Nie
+ * obejmowało dosypania rozmycia, którego wcześniej nie było.
+ *
+ * Teraz zostaje jedno i to samo rozproszenie, a w ruchu odpada wyłącznie przesunięcie
+ * składowych barwy przy krawędzi, czyli to, czego przy jadącym tle naprawdę nie widać.
+ * Wartości trzymamy zgodne ze stałymi ROZPROSZENIE i ROZPROSZENIE_CIENKIE
+ * w GlassFilter.tsx: zmiana tam wymaga zmiany tutaj.
+ *
+ * Reguła stoi w tym samym @supports co filtr. Przeglądarka bez filtrów SVG nie ma
+ * czego przełączać, bo jej szkło od początku stoi na tanim rozmyciu, i nie wolno jej
+ * tego rozmycia w ruchu odbierać.
  */
-:global(html[data-kamera='rusza']) .surface::before {
-  backdrop-filter: blur(14px) saturate(150%);
-  -webkit-backdrop-filter: blur(14px) saturate(150%);
-}
+@supports (backdrop-filter: url(#zenit-szklo)) {
+  :global(html[data-kamera='rusza']) .surface::before {
+    backdrop-filter: blur(6px) saturate(1.35);
+    -webkit-backdrop-filter: blur(6px) saturate(1.35);
+  }
 
-:global(html[data-kamera='rusza']) .surfaceStrong::before {
-  backdrop-filter: blur(26px) saturate(125%) brightness(0.86);
-  -webkit-backdrop-filter: blur(26px) saturate(125%) brightness(0.86);
+  :global(html[data-kamera='rusza']) .surfaceStrong::before {
+    backdrop-filter: blur(12px) saturate(1.1) brightness(0.86);
+    -webkit-backdrop-filter: blur(12px) saturate(1.1) brightness(0.86);
+  }
 }

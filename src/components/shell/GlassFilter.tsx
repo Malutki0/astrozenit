@@ -88,6 +88,11 @@ const SILA_CIENKA = { r: -8, g: -9, b: -10 };
  * Sześć pikseli dla tafli grubych, cztery dla cienkich. Więcej zaciera samo załamanie,
  * bo rozmycie działa po przesunięciu i zjada różnicę między kanałami, na której
  * cały efekt się opiera.
+ *
+ * Uwaga przy zmianie: na czas ruchu kamery glass.module.css podmienia ten filtr na
+ * zwykłe rozmycie i musi wtedy rozmywać dokładnie tyle samo, inaczej tafle zachodzą
+ * mgłą przy każdym chwyceniu mapy. Wartości tam są przepisane z tych stałych, więc
+ * zmiana w tym miejscu wymaga zmiany również tam.
  */
 const ROZPROSZENIE = 6;
 const ROZPROSZENIE_CIENKIE = 4;
