@@ -62,6 +62,13 @@ const MAX_DPR = 2;
  */
 const MGLA_PRZY_HORYZONCIE = 0.66;
 const MGLA_KRZYWA = 1.5;
+
+/*
+ * Jasność nieba przy horyzoncie, przy której mgła działa z pełną siłą. Odpowiada
+ * dniowi. Wszystko ciemniejsze osłabia ją proporcjonalnie, aż do nocy, gdy rozpraszać
+ * nie ma już czego.
+ */
+const LUMA_PELNEJ_MGLY = 160;
 /* Ile razy mniejszy jest bufor pomocniczy Drogi Mlecznej od obszaru rysowania. */
 /*
  * Docelowa szerokość bufora Drogi Mlecznej w pikselach.
@@ -1490,6 +1497,35 @@ export class SkyRenderer {
    * a w nocy jest ciemna, więc wszystkie plany schodzą do czerni i teren przestaje
    * przeszkadzać w obserwacji, tak jak w rzeczywistości.
    */
+  /*
+   * Ile w ogóle jest światła, które mgła mogłaby rozproszyć.
+   *
+   * Mgła powietrzna nie jest własnością powietrza, tylko światła, które się w nim
+   * rozprasza. W dzień słońce oświetla całą warstwę między obserwatorem a grzbietem,
+   * więc daleki plan tonie w jasnej zawiesinie. W nocy oświetlać nie ma czym i te
+   * same kilometry powietrza nic nie rozjaśniają: góry stoją wtedy jako czarna,
+   * ostro odcięta sylwetka na tle nieba, co widać na każdym zdjęciu krajobrazu
+   * po zmierzchu.
+   *
+   * Poprzednia wersja nakładała mgłę tak samo o każdej porze doby i to był błąd,
+   * najdotkliwszy właśnie w nocy, czyli wtedy, kiedy z tej mapy się korzysta.
+   * Między barwą gruntu a barwą nocnego nieba przy horyzoncie leży wtedy tylko
+   * kilkanaście poziomów jasności, więc mieszanie w dwóch trzecich zostawiało
+   * grzbiet ciemniejszy od nieba o trzy do pięciu poziomów. Poniżej progu widzenia.
+   * Horyzont nie miał krawędzi, a ziemia czytała się jako rozmyta smuga, po której
+   * poznawało się tylko to, że gwiazdy się urywają.
+   *
+   * Siłę mgły bierzemy więc wprost z jasności nieba przy horyzoncie, bo to ta sama
+   * wielkość: im jaśniejsze niebo, tym więcej światła w powietrzu. Nie jest to
+   * przypadek szczególny dla nocy, tylko usunięcie założenia, że światła jest
+   * zawsze tyle samo.
+   */
+  private swiatloPowietrzne(): number {
+    const h = this.tint.horizon;
+    const luma = 0.2126 * h[0] + 0.7152 * h[1] + 0.0722 * h[2];
+    return Math.min(1, luma / LUMA_PELNEJ_MGLY);
+  }
+
   private ridgeFill(ridge: Ridge): string {
     const g = this.tint.ground;
     const h = this.tint.horizon;
@@ -1520,7 +1556,7 @@ export class SkyRenderer {
      * W nocy nic to nie psuje: barwa nieba przy horyzoncie jest wtedy ciemna, więc
      * wszystkie plany i tak schodzą do czerni i teren nie przeszkadza w obserwacji.
      */
-    const mix = MGLA_PRZY_HORYZONCIE * Math.pow(1 - ridge.distance, MGLA_KRZYWA);
+    const mix = MGLA_PRZY_HORYZONCIE * this.swiatloPowietrzne() * Math.pow(1 - ridge.distance, MGLA_KRZYWA);
     /*
      * Odchylenie ku błękitowi. Teren nie świeci własnym światłem, tylko odbija to,
      * które spada na niego z nieba, a niebo jest niebieskie. Roślinność i gleba
