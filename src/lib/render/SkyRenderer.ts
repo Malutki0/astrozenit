@@ -53,6 +53,15 @@ import {
 import type { HitTarget, SkyObjectRef, SkyRenderInput } from './types';
 
 const MAX_DPR = 2;
+
+/*
+ * Mgła powietrzna na planach terenu. Sufit to udział barwy nieba w planie najdalszym,
+ * krzywa mówi, jak szybko ten udział opada w stronę obserwatora. Wykładnik większy
+ * od jedynki zagęszcza różnice przy horyzoncie, czyli tam, gdzie w kadrze widać góry.
+ * Dobierane razem: podniesienie sufitu bez podniesienia wykładnika spłaszcza sylwetki.
+ */
+const MGLA_PRZY_HORYZONCIE = 0.66;
+const MGLA_KRZYWA = 1.5;
 /* Ile razy mniejszy jest bufor pomocniczy Drogi Mlecznej od obszaru rysowania. */
 /*
  * Docelowa szerokość bufora Drogi Mlecznej w pikselach.
@@ -1485,11 +1494,33 @@ export class SkyRenderer {
     const g = this.tint.ground;
     const h = this.tint.horizon;
     /*
-     * Od 0,82 dla planu najdalszego do 0,14 dla ziemi pod nogami. Rozpiętość jest
-     * duża celowo: to ona niesie całą informację o głębi, bo kształt profili sam
-     * z siebie nie mówi oku, co jest bliżej.
+     * Ile barwy nieba wchodzi w dany plan, czyli jak gęsta jest nad nim mgła.
+     *
+     * Pierwsza wersja szła liniowo od 0,82 do 0,14 i to był błąd, choć rozpiętość
+     * miała słuszną. Przy jedenastu planach krok wychodził 0,068, a że między barwą
+     * gruntu a barwą nieba przy horyzoncie jest w dzień około stu pięćdziesięciu
+     * poziomów, sąsiednie grzbiety różniły się o dziesięć poziomów na dwieście
+     * pięćdziesiąt pięć. Cztery procent kontrastu. Oko tego nie rozdziela, więc
+     * jedenaście nachodzących na siebie sylwetek czytało się jako jedna miękka
+     * mgła, a nie jako góry. Do tego plan najdalszy przy 0,82 leżał tak blisko
+     * barwy nieba, że w ogóle przestawał być grzbietem.
+     *
+     * Mgła nie przybywa liniowo z odległością. Najszybciej gęstnieje na pierwszym
+     * odcinku, potem coraz wolniej, bo kolejne warstwy powietrza dokładają się do
+     * czegoś, co już jest rozjaśnione. Stąd krzywa zamiast prostej: różnice między
+     * planami bliskimi horyzontu rosną, a to właśnie one są w kadrze widoczne jako
+     * góry. Plany najgłębsze schodzą za to do czystej barwy gruntu, co jest
+     * poprawne, bo ziemi pod nogami nie ogląda się przez kilometr powietrza.
+     *
+     * Sufit zszedł z 0,82 na 0,66. Najdalszy grzbiet odcina się teraz od nieba
+     * o około pięćdziesiąt siedem poziomów zamiast trzydziestu ośmiu, a sąsiednie
+     * plany przy horyzoncie o czternaście zamiast dziesięciu. Zapas na głębię
+     * zostaje, bo pełna rozpiętość to nadal od 0,66 do zera.
+     *
+     * W nocy nic to nie psuje: barwa nieba przy horyzoncie jest wtedy ciemna, więc
+     * wszystkie plany i tak schodzą do czerni i teren nie przeszkadza w obserwacji.
      */
-    const mix = 0.82 - 0.68 * ridge.distance;
+    const mix = MGLA_PRZY_HORYZONCIE * Math.pow(1 - ridge.distance, MGLA_KRZYWA);
     /*
      * Odchylenie ku błękitowi. Teren nie świeci własnym światłem, tylko odbija to,
      * które spada na niego z nieba, a niebo jest niebieskie. Roślinność i gleba
