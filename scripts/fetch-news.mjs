@@ -514,6 +514,23 @@ async function zrodlo({ nazwa, url, etykieta, jezyk, zdjecia, pelnaTresc }) {
   return dobre;
 }
 
+/*
+ * Zabezpieczenie przed angielszczyzną na polskiej stronie.
+ *
+ * Aplikacja rozpoznaje wpis własny po tym, że ma treść: wtedy podpisuje go "Czytaj dalej"
+ * i otwiera u nas. Kiedy tłumaczenie nie doszło do skutku, bo zabrakło klucza albo model
+ * nie odpowiedział, wpis zostawał po angielsku i mimo to trafiał na stronę jako nasz tekst.
+ * Czytelnik dostawał wtedy polską zapowiedź i angielski artykuł pod spodem.
+ *
+ * Dlatego nieprzełożonemu wpisowi zabieramy treść. Nic nie ginie: pozycja nadal jest na
+ * liście, tylko z podpisem "Czytaj u wydawcy" i odnośnikiem do NASA, gdzie angielski jest
+ * na miejscu. Kiedy klucz wróci, następne pobranie przełoży wpis i treść wraca sama.
+ */
+function doWydawcyGdyNieprzelozony(wpis) {
+  if (wpis.language === 'pl' || !wpis.body) return wpis;
+  return { ...wpis, body: '' };
+}
+
 async function main() {
   console.log('Pobieranie aktualności astronomicznych\n');
 
@@ -558,6 +575,7 @@ async function main() {
   });
 
   const wszystkie = [...apod, ...nasa, ...astronet]
+    .map(doWydawcyGdyNieprzelozony)
     .sort((a, b) => b.date.localeCompare(a.date))
     .slice(0, LIMIT);
 
