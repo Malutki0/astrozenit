@@ -930,7 +930,7 @@ export class SkyRenderer {
           x,
           y,
           radius: Math.max(r, 8 * this.dpr),
-          label: named?.name ?? `HIP ${hip}`,
+          label: named?.name ?? (hip ? `HIP ${hip}` : 'Gwiazda bez oznaczenia'),
           priority: 1,
         });
       }

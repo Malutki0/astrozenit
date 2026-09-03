@@ -64,6 +64,21 @@ function starDesignation(star: NamedStar): string | null {
   return parts.length ? parts.join(' , ') : null;
 }
 
+/*
+ * Nazwa gwiazdy, która nie ma żadnego oznaczenia.
+ *
+ * Katalog binarny sięga do jasności 6,5 magnitudo i większość tych gwiazd nie ma ani
+ * nazwy własnej, ani liter Bayera, ani numeru Hipparcosa. Wcześniej ostatnia deska
+ * ratunku sklejała napis z pustej wartości i w panelu pojawiało się "HIP null".
+ *
+ * Numer katalogowy podajemy tylko wtedy, gdy istnieje. W przeciwnym razie mówimy wprost,
+ * że gwiazda nie ma oznaczenia: reszta panelu i tak niesie to, co obserwatorowi potrzebne,
+ * czyli położenie, jasność i warunki.
+ */
+function starFallbackName(star: NamedStar): string {
+  return star.hip ? `HIP ${star.hip}` : 'Gwiazda bez oznaczenia';
+}
+
 export interface ResolveContext {
   catalog: CatalogBundle;
   date: Date;
@@ -144,7 +159,7 @@ export function resolveStar(star: NamedStar, ctx: ResolveContext): ObjectDetail 
 
   return {
     ref: { kind: 'star', hip: star.hip ?? 0, index: -1 },
-    name: star.name ?? starDesignation(star) ?? `HIP ${star.hip}`,
+    name: star.name ?? starDesignation(star) ?? starFallbackName(star),
     subtitle: star.name ? starDesignation(star) : null,
     kind: 'gwiazda',
     constellation: star.conPl,
