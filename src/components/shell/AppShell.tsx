@@ -173,6 +173,12 @@ function TopBar({ onSearch }: { onSearch: () => void }) {
         type="button"
         className={styles.topbarButton}
         onClick={() => navigate('/lokalizacja')}
+        /*
+         * Podpis obok ikony chowa się w układzie telefonu, więc bez aria-label zostawał
+         * tam przycisk bez nazwy. Nazwa niesie miejsce, bo sam atrybut title czytniki
+         * ekranu traktują różnie i nie można na nim opierać nazwy dostępnej.
+         */
+        aria-label={`Miejsce obserwacji: ${location.label}. Skala Bortle'a ${location.bortle}: ${info.label}. Zmień miejsce`}
         title={`Skala Bortle'a ${location.bortle}: ${info.label}`}
       >
         <Icon name="location" size={15} />
@@ -184,6 +190,7 @@ function TopBar({ onSearch }: { onSearch: () => void }) {
           type="button"
           className={styles.topbarButton}
           onClick={() => navigate('/')}
+          aria-label={`Godzina na mapie: ${formatTime(date)}. ${live ? 'Czas bieżący' : 'Czas ustawiony ręcznie'}. Przejdź do mapy`}
           title={live ? 'Czas bieżący' : 'Czas ustawiony ręcznie'}
         >
           <Icon name="clock" size={15} />
