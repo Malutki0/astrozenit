@@ -129,6 +129,12 @@ export function FavouritesSection({ onClose }: SectionProps) {
           type="button"
           className={styles.chipButton}
           onClick={() => setObserved(item.ref, item.observedAt === null)}
+          aria-label={
+            item.observedAt
+              ? `Cofnij oznaczenie zaobserwowania: ${item.label}`
+              : `Oznacz jako zaobserwowane: ${item.label}`
+          }
+          aria-pressed={item.observedAt !== null}
           title={item.observedAt ? 'Cofnij oznaczenie' : 'Oznacz jako zaobserwowane'}
         >
           <Icon name={item.observedAt ? 'check' : 'eye'} size={15} />
@@ -137,6 +143,8 @@ export function FavouritesSection({ onClose }: SectionProps) {
           type="button"
           className={styles.chipButton}
           onClick={() => setEdytowana(edytowana === item.ref ? null : item.ref)}
+          aria-label={`Notatka: ${item.label}`}
+          aria-expanded={edytowana === item.ref}
           title="Notatka"
         >
           <Icon name="info" size={15} />
@@ -145,6 +153,7 @@ export function FavouritesSection({ onClose }: SectionProps) {
           type="button"
           className={styles.chipButton}
           onClick={() => remove(item.ref)}
+          aria-label={`Usuń z listy: ${item.label}`}
           title="Usuń z listy"
         >
           <Icon name="close" size={15} />
