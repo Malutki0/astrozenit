@@ -9,6 +9,7 @@ import {
 import type { BodyKey } from '@/lib/astro/types';
 
 import styles from './PlanetGlobe.module.css';
+import { przechwycWskaznik } from '../../lib/wskaznik';
 
 /*
  * Obracany globus planety.
@@ -459,7 +460,7 @@ export function PlanetGlobe({
   }, [atlas, rings, body, illumination, waxing, locked, still, size]);
 
   const onDown = (event: React.PointerEvent<HTMLCanvasElement>) => {
-    (event.target as HTMLElement).setPointerCapture(event.pointerId);
+    przechwycWskaznik(event.target as HTMLElement, event.pointerId);
     drag.current = { x: event.clientX, y: event.clientY };
     setDragging(true);
   };

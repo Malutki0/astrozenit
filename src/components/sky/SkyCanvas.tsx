@@ -9,6 +9,7 @@ import { emitPreciseTime, useSkyStore } from '@/state/useSkyStore';
 import { usePrefersReducedMotion } from '@/state/usePrefersReducedMotion';
 
 import styles from './SkyCanvas.module.css';
+import { przechwycWskaznik } from '../../lib/wskaznik';
 
 interface Props {
   catalog: CatalogBundle;
@@ -395,7 +396,7 @@ export function SkyCanvas({ catalog, onRendererReady }: Props) {
   const onPointerDown = (event: React.PointerEvent<HTMLCanvasElement>) => {
     const { x, y } = relative(event);
     pointers.current.set(event.pointerId, { x, y });
-    event.currentTarget.setPointerCapture(event.pointerId);
+    przechwycWskaznik(event.currentTarget, event.pointerId);
 
     if (pointers.current.size === 2) {
       const [a, b] = [...pointers.current.values()];

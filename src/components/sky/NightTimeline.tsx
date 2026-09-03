@@ -9,6 +9,7 @@ import { nightKey, useNightWindow } from '@/state/useNight';
 import { onPreciseTime, useSkyStore } from '@/state/useSkyStore';
 
 import styles from './NightTimeline.module.css';
+import { przechwycWskaznik } from '../../lib/wskaznik';
 
 type Mode = 'night' | 'day';
 
@@ -187,7 +188,7 @@ export function NightTimeline() {
 
   const onPointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
     draggingRef.current = true;
-    event.currentTarget.setPointerCapture(event.pointerId);
+    przechwycWskaznik(event.currentTarget, event.pointerId);
     setFromRatio(ratioFromEvent(event.clientX));
   };
 

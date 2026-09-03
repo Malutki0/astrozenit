@@ -11,6 +11,7 @@ import {
 } from '@/lib/map/mercator';
 
 import styles from './TileMap.module.css';
+import { przechwycWskaznik } from '../../lib/wskaznik';
 
 /*
  * Mapa kafelkowa na płótnie.
@@ -393,7 +394,7 @@ export function TileMap({
   };
 
   const onPointerDown = (event: React.PointerEvent<HTMLCanvasElement>) => {
-    (event.target as HTMLElement).setPointerCapture(event.pointerId);
+    przechwycWskaznik(event.target as HTMLElement, event.pointerId);
     pointers.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
     if (pointers.current.size === 1) {
       dragRef.current = { x: event.clientX, y: event.clientY, moved: 0 };
