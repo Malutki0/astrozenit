@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
 
 import { SkyCanvas } from '@/components/sky/SkyCanvas';
@@ -83,9 +83,34 @@ function Rail() {
   const waski = useCompactLayout();
   const [wiecej, setWiecej] = useState(false);
   const routerLocation = useLocation();
+  const przyciskWiecej = useRef<HTMLButtonElement>(null);
 
   /* Zamknięcie po przejściu do sekcji: arkusz zrobił swoje i ma zejść z drogi. */
   useEffect(() => setWiecej(false), [routerLocation.pathname]);
+
+  /*
+   * Zamknięcie bez przechodzenia dalej, czyli klawiszem Escape albo dotknięciem obok.
+   * Fokus wraca na przycisk, który arkusz otworzył. Bez tego osoba na klawiaturze
+   * po zamknięciu lądowała na początku dokumentu i musiała przechodzić tabulatorem
+   * przez cały interfejs, żeby wrócić w to samo miejsce. Przy przejściu do sekcji
+   * fokusu nie ruszamy, bo uwaga ma zostać na nowej treści.
+   */
+  const zamknijArkusz = useCallback(() => {
+    setWiecej(false);
+    przyciskWiecej.current?.focus();
+  }, []);
+
+  useEffect(() => {
+    if (!wiecej) return undefined;
+    const naKlawisz = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape') return;
+      event.stopPropagation();
+      zamknijArkusz();
+    };
+    /* Nasłuch w fazie przechwytywania, żeby Escape zamknął arkusz, a nie panel pod nim. */
+    window.addEventListener('keydown', naKlawisz, true);
+    return () => window.removeEventListener('keydown', naKlawisz, true);
+  }, [wiecej, zamknijArkusz]);
 
   const render = (item: SectionRoute) => (
     <NavLink
@@ -124,6 +149,7 @@ function Rail() {
         {glowne.map(render)}
         <button
           type="button"
+          ref={przyciskWiecej}
           className={`${styles.railItem} ${wiecej || wResztcie ? styles.railItemActive : ''}`}
           onClick={() => setWiecej((v) => !v)}
           aria-expanded={wiecej}
@@ -141,7 +167,7 @@ function Rail() {
           <button
             type="button"
             className={styles.moreScrim}
-            onClick={() => setWiecej(false)}
+            onClick={zamknijArkusz}
             aria-label="Zamknij spis sekcji"
           />
           <nav className={styles.moreSheet} aria-label="Pozostałe sekcje">
