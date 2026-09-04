@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03T09:54:39.426Z",
+  "updated": "2026-09-04T09:43:08.134Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,6 +19,49 @@
   ],
   "posts": [
     {
+      "id": "apod-2026-09-04",
+      "title": "Nā ʻUhane Māhoe Huki Pū i ke Ola",
+      "lead": "Nā ʻUhane Māhoe Huki Pū i ke Ola, is the Hawaiian name given to this image of a pair of spiral galaxies locked in a mutual gravitational embrace.",
+      "body": "",
+      "date": "2026-09-04T04:05:00.000Z",
+      "category": "wydarzenie",
+      "source": "https://apod.nasa.gov/apod/ap260904.html",
+      "sourceLabel": "NASA APOD",
+      "language": "en",
+      "image": "https://apod.nasa.gov/apod/image/2609/noirlab2621a_1024.jpg",
+      "credit": "NASA"
+    },
+    {
+      "id": "astronet-hhpbux",
+      "title": "Komercyjnie dostępna kamera może pomóc naukowcom wykrywać więcej kolizji czarnych dziur",
+      "lead": "Naprawa defektu wewnątrz jednego z najbardziej zaawansowanych obserwatoriów naukowych może wydawać się niesamowicie droga lub wymagająca nowych rewolucyjnych systemów i rozwiązań.",
+      "date": "2026-09-03T17:58:58.000Z",
+      "category": "odkrycie",
+      "source": "https://astronet.pl/astronomia/komercyjnie-dostepna-kamera-moze-pomoc-naukowcom-wykrywac-wiecej-kolizji-czarnych-dziur/",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "astronet-on8onx",
+      "title": "Nowy krater na Księżycu: efekt nieplanowanego uderzenia części rakiety Falcon 9",
+      "lead": "Piątego sierpnia bieżącego roku doszło do nieplanowanego uderzenia zużytego górnego członu rakiety SpaceX Falcon 9, które doprowadziło do uformowania się nowego krateru na powierzchni Księżyca.",
+      "date": "2026-09-03T17:44:32.000Z",
+      "category": "sprzet",
+      "source": "https://astronet.pl/astronautyka/nowy-krater-na-ksiezycu-efekt-nieplanowanego-uderzenia-czesci-rakiety-falcon-9/",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "astronet-c4ivbl",
+      "title": "Spotkaj ekspertkę: Efekty misji IGNIS – Odporność w kosmosie",
+      "lead": "Co dzieje się z układem odpornościowym człowieka podczas lotu kosmicznego? Jak mikrograwitacja i inne czynniki związane z pobytem na orbicie wpływają na komórki odpornościowe?",
+      "date": "2026-09-03T17:08:07.000Z",
+      "category": "misja",
+      "source": "https://astronet.pl/wydarzenia/spotkaj-ekspertke-efekty-misji-ignis-odpornosc-w-kosmosie/",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
       "id": "astronet-1vhjk8d",
       "title": "IFT-14 coraz bliżej: czym zajmuje się teraz SpaceX?",
       "lead": "Obrazek wyróżniający: SpaceX W SpaceX intensywnie trwają przygotowania do czternastego lotu testowego systemu Starship – pierwszego, który ma wejść na orbitę.",
@@ -27,66 +70,6 @@
       "source": "https://astronet.pl/astronautyka/ift-14-coraz-blizej-czym-zajmuje-sie-teraz-spacex/",
       "sourceLabel": "AstroNET",
       "language": "pl"
-    },
-    {
-      "id": "apod-2026-09-03",
-      "title": "The Eclipse and the Stork",
-      "lead": "How do animals react to a total solar eclipse? The featured image shows a stork roosting on her nest in Poland at a partial phase of the recent total solar eclipse.",
-      "body": "",
-      "date": "2026-09-03T04:05:00.000Z",
-      "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap260903.html",
-      "sourceLabel": "NASA APOD",
-      "language": "en",
-      "credit": "Włodzimierz Bubak Text: Cecilia Chirenti (NASA GSFC, UMCP, CRESST II)"
-    },
-    {
-      "id": "nasa-1b3vvy9",
-      "title": "NASA’s HASP Scientific Balloon Launches from Fort Sumner",
-      "lead": "The HASP mission was launched on a scientific balloon from NASA’s launch facility in Fort Sumner, New Mexico, at 8:05 a.m. MDT (10:05 a.m. EDT).",
-      "date": "2026-09-02T21:41:20.000Z",
-      "category": "odkrycie",
-      "source": "https://www.nasa.gov/blogs/wallops/2026/09/02/nasas-hasp-scientific-balloon-launches-from-fort-sumner/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "body": ""
-    },
-    {
-      "id": "nasa-rhitmi",
-      "title": "NASA’s Dragonfly Gets Wired Up While Titan Landing Area Is Named",
-      "lead": "Peeking into the clean room at the Johns Hopkins Applied Physics Laboratory (APL) in Laurel, Maryland, it might be one of the first things you notice about NASA’s Dragonfly: the dozens of silver cables snaking around and through the structu...",
-      "date": "2026-09-02T19:46:48.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/blogs/dragonfly/2026/09/02/nasas-dragonfly-gets-wired-up-while-titan-landing-area-is-named/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/dragonfly/Harness1_SM.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-8c750d",
-      "title": "NASA’s Hubble Tracks New Decagon Encircling Saturn’s South Pole",
-      "lead": "NASA's Hubble Space Telescope observes a giant, evolving, 10-sided atmospheric wave encircling Saturn's south pole.",
-      "date": "2026-09-02T18:00:37.000Z",
-      "category": "teleskop",
-      "source": "https://science.nasa.gov/missions/hubble/nasas-hubble-tracks-new-decagon-encircling-saturns-south-pole/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/releases/2026/09/STScI-01M0T8BARTCFQW684XQ932TNNM.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1725q5l",
-      "title": "Rakieta NASA po raz pierwszy zajrzała naraz w kilka miejsc chmury zakłócającej radio",
-      "lead": "Wysoko nad Ziemią dryfują cienkie zasłony metalicznej mgiełki, powstałe z pyłu spalonych meteorów. Rakieta z pięcioma czujnikami pokazała po raz pierwszy, że taka warstwa jest znacznie bardziej poszarpana, niż zakładano.",
-      "date": "2026-09-02T14:53:54.000Z",
-      "category": "sprzet",
-      "source": "https://science.nasa.gov/science-research/heliophysics/nasa-rocket-takes-first-multi-point-look-inside-radio-disrupting-clouds/",
-      "sourceLabel": "NASA Science",
-      "language": "pl",
-      "image": "https://science.nasa.gov/wp-content/uploads/2026/09/img-4981-1.webp?w=1200&fit=clip",
-      "body": "Wysoko nad Ziemią, na skraju przestrzeni kosmicznej, dryfują cienkie zasłony metalicznej mgiełki. Nazywa się je sporadycznymi warstwami E, bo powstają w warstwie jonosfery oznaczanej literą E, a materiał na nie daje pył meteorów, które spłonęły w atmosferze. Nazwę zawdzięczają temu, że pojawiają się i znikają w sposób nieprzewidywalny. Właśnie ogłoszono wyniki lotu rakiety badawczej NASA, która przeniosła przez taką warstwę pięć czujników jednocześnie, i po raz pierwszy widać w niej złożoność, której się nie spodziewano.\n\nSporadycznych warstw E nie widać gołym okiem, ale dają o sobie znać sygnałom radiowym, na których opiera się łączność dalekiego zasięgu. Kiedy się pojawią, potrafią odbijać te sygnały w nieoczekiwanych kierunkach i na jakiś czas czynią całą technikę zawodną.\n\nNaukowcy od dawna chcieli je poznać dokładniej, ale do niedawna mierzyli je tylko wzdłuż jednej wąskiej linii naraz. Rakieta o nazwie sporadic E Electrodynamics Demonstration, w skrócie SpEED Demon, wystartowała z ośrodka lotów NASA Wallops w Wirginii 24 sierpnia 2022 roku i dała pierwszy jednoczesny obraz wnętrza warstwy z kilku punktów. Wyniki zespołu kierowanego przez Embry-Riddle Aeronautical University opisano w nowej pracy w Journal of Geophysical Research: Space Physics.\n\nSporadyczne warstwy E powstają w jonosferze, obszarze górnej atmosfery zaczynającym się około 60 kilometrów nad powierzchnią, gdzie gazy obojętne zaczynają się zamieniać w plazmę, czyli gaz zjonizowany. Jonosferę dzieli się na piętra oznaczone kolejnymi literami, D, E i F, i to od środkowego z nich pochodzi nazwa tych warstw. Część tamtejszych cząstek pochodzi z meteorów, które spalają się i zostawiają po sobie ślady żelaza, magnezu i innych metali. Metale te zbijają się czasem w gęste warstwy przypominające chmury i te warstwy odbijają fale radiowe.\n\n„Sporadyczne warstwy E są w pewnym sensie wielkimi lustrami fal radiowych zawieszonymi na niebie”, mówi Aroh Barjatya, kierownik naukowy misji i profesor fizyki technicznej w Embry-Riddle w Daytona Beach na Florydzie.\n\nKiedy taka warstwa się uformuje, sygnały mające polecieć w kosmos potrafią wrócić rykoszetem ku ziemi. Kontrolerzy ruchu lotniczego i użytkownicy radia morskiego odbierają wtedy odległe transmisje tak, jakby nadawano je z bliska, a radary patrzące za horyzont rejestrują tak zwane duchy, czyli cele, których nie ma. Skutki sięgają też sprzętu codziennego użytku.\n\n„Największym źródłem błędu w GPS w twoim telefonie jest plazma w jonosferze, a sporadyczne warstwy E mają w tej niepewności swój udział”, mówi Henry Valentine, pierwszy autor pracy, który prowadził badania w Embry-Riddle, a obecnie pracuje w Laboratorium Badawczym Marynarki Wojennej Stanów Zjednoczonych.\n\nSporadyczne warstwy E utrzymują się na wysokości około 100 kilometrów, czyli za wysoko dla balonów meteorologicznych i za nisko dla satelitów, a do tego powstają i znikają bez ostrzeżenia. Od dawna są więc domeną rakiet badawczych, które można wystrzelić na krótkie powiadomienie i złapać zjawisko na gorącym uczynku. Pojedyncza rakieta leci jednak jednym torem i mierzy tylko wzdłuż linii. Barjatya porównuje to do oglądania sceny przez szczelinę w murze: widać wyłącznie to, co dzieje się w wąskim pasku, a to, co po lewej i po prawej, pozostaje nieznane.\n\nMisja SpEED Demon to zmieniła. Po raz pierwszy wpuszczono do wnętrza warstwy odrzucane sondy, tak zwane dropsondy. Rakieta uwolniła cztery takie sondy, które odleciały od ładunku głównego i od siebie nawzajem, a każda mierzyła plazmę wzdłuż własnego toru i odsyłała pomiary do stacji naziemnych. Razem z ładunkiem głównym dało to pomiar warstwy w pięciu miejscach w tej samej chwili.\n\n„Teraz, mając kilka czujników, zamieniliśmy tę szczelinę w płot ze sztachet”, mówi Barjatya.\n\nDane pokazały we wnętrzu warstwy zaskakującą złożoność. Zamiast gładkiego, gęstego naleśnika z cząstek metalu, warstwa, przez którą przeleciał SpEED Demon, okazała się nierówna i uformowana przez turbulentne wiatry przepływające przez otaczające ją obojętne powietrze.\n\n„Zwykle myśli się o sporadycznej warstwie E jak o jednej ostrej warstwie gęstości, a my zobaczyliśmy, że oddziałuje ona z wiatrem obojętnym i z tymi wirującymi turbulencjami atmosfery”, mówi Valentine. „Zamiast płaskiego naleśnika wychodzi z tego coś bliższego cynamonowej bułce.”\n\nPodczas opadania warstwa rozdzieliła się nawet na dwa wyraźne maksima. Zespół stwierdził, że taki kształt zgadza się z modulacją przez fale Kelvina i Helmholtza, czyli tę zawijającą się niestabilność, która w zwykłych chmurach tworzy wzory przypominające załamujące się fale. Ponieważ podczas lotu nie dało się zmierzyć wprost miejscowych wiatrów i pól elektrycznych, badacze ostrożnie nazywają to wyjaśnienie prawdopodobnym, a nie potwierdzonym.\n\nMisję SpEED Demon zaplanowano jako pokaz techniki, czyli sprawdzenie, czy metoda z dropsondami w ogóle zadziała. Zadziałała, a zespół szybko sięgnął po nią ponownie. Grupa Barjatyi użyła podobnej strategii z wieloma sondami, wysyłając rakiety w pas zaćmienia obrączkowego z października 2023 roku i całkowitego zaćmienia Słońca z kwietnia 2024 roku, żeby zbadać, jak nagła ciemność zaburza górną atmosferę. W czerwcu 2025 roku wysłali najbliższego potomka SpEED Demona, misję Sporadic-E ElectroDynamics (SEED), w sporadyczne warstwy E nad atolem Kwajalein na Wyspach Marshalla, badając je na niższych szerokościach geograficznych. Prace z tych misji są w przygotowaniu.\n\nPo latach badań sporadyczne warstwy E nie są już tak nieprzewidywalne jak kiedyś. „Mają swoją sezonowość, a najczęściej pojawiają się miejscowym latem”, mówi Barjatya.\n\nPytania o to, jak i kiedy powstają, są coraz bardziej szczegółowe. Nowa metoda pomiaru z rakiety w wielu punktach naraz, razem z pomiarami naziemnymi, prawdopodobnie domknie ten obraz. „Środowisko naukowe jest już na ostatniej prostej do pełnego zrozumienia tych wielkich radiowych luster na niebie”, mówi Barjatya.",
-      "translated": true
     },
     {
       "id": "astronet-1aagn2u",
@@ -115,36 +98,6 @@
       "date": "2026-09-01T06:00:12.000Z",
       "category": "odkrycie",
       "source": "https://astronet.pl/astronomia/ksztalt-deimosa-wyjasniony-przez-zderzenie-z-asteroida/",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-3mzy5p",
-      "title": "Recenzja gry „Occupy Mars: The Game”",
-      "lead": "Obrazek wyróżniający: Epic Games, Pyramid games Mars – w ostatnim czasie coraz częściej mówi się o nim zarówno w świecie realnym, jak i Sci-Fi. SpaceX opowiada o planach kolonizacji Czerwonej Planety, a film pt.",
-      "date": "2026-08-31T16:01:11.000Z",
-      "category": "odkrycie",
-      "source": "https://astronet.pl/recenzje/gra/recenzja-gry-occupy-mars-the-game/",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-1gts76z",
-      "title": "Niebo we wrześniu 2026 roku",
-      "lead": "Wrzesień to miesiąc wyraźnego przełomu na niebie, kiedy nocy przybywa w szybkim tempie, a warunki do obserwacji zaczynają robić się coraz lepsze.",
-      "date": "2026-08-31T05:00:04.000Z",
-      "category": "wydarzenie",
-      "source": "https://astronet.pl/obserwacje/na-niebie/niebo-we-wrzesniu-2026-roku/",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-1sseref",
-      "title": "Kosmiczny Teleskop Roman wystartował",
-      "lead": "Dziś (30.08.2026) o godzinie 13:26 czasu polskiego Dr Denton Gibson, kierownik NASA ds. startów, dał pozwolenie na rozpoczęcie misji Nancy Grace Roman Space Telescope (NGRST).",
-      "date": "2026-08-30T17:51:34.000Z",
-      "category": "teleskop",
-      "source": "https://astronet.pl/astronautyka/kosmiczny-teleskop-roman-wystartowal/",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
