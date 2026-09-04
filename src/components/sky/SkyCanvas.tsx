@@ -50,49 +50,6 @@ export function SkyCanvas({ catalog, onRendererReady }: Props) {
    */
   const wybiegRef = useRef({ az: 0, alt: 0, czas: 0 });
 
-  /*
-   * Znacznik ruchu kamery, wystawiany na elemencie html.
-   *
-   * Arkusz szkła podmienia pod nim kosztowny filtr SVG na zwykłe rozmycie, bo w czasie
-   * ruchu i tak nie widać różnicy, a widać każdą zgubioną klatkę. Trzymamy chwilę,
-   * do której ruch uznajemy za trwający, a nie zwykłą flagę: dzięki temu wybieg
-   * i pojedyncze stuknięcia strzałką nie migają szkłem w tę i z powrotem.
-   */
-  const ruchDoRef = useRef(0);
-
-  /*
-   * Zapalenie znacznika następuje od razu przy geście, a nie w pętli klatek.
-   *
-   * Pierwsza wersja ustawiała go dopiero w pętli i przez to tania wersja szkła wchodziła
-   * o klatkę za późno, czyli dokładnie wtedy, gdy najbardziej zależy na jej obecności:
-   * przy pierwszym ruchu palca. Gaszenie zostaje w pętli, bo tam wiadomo, że ruch ustał.
-   */
-  const gasnieRef = useRef(0);
-  /* Pętla klatek powstaje raz i nie ma w zależnościach funkcji z ciała komponentu.
-   * Referencja daje jej dostęp do aktualnej wersji bez przebudowywania całego efektu. */
-  const zaznaczRuchRef = useRef<(naDlugo?: number) => void>(() => {});
-
-  const zaznaczRuch = (naDlugo = 160) => {
-    ruchDoRef.current = performance.now() + naDlugo;
-    if (document.documentElement.dataset.kamera !== 'rusza') {
-      document.documentElement.dataset.kamera = 'rusza';
-    }
-    /*
-     * Gaszenie na liczniku, a nie w pętli klatek.
-     *
-     * Pętla stoi, gdy karta jest w tle, bo przeglądarka wstrzymuje wtedy klatki zupełnie.
-     * Sprawdzone: w ukrytym dokumencie requestAnimationFrame nie odpala się ani razu przez
-     * dwie sekundy. Gaszenie oparte na pętli zostawiałoby więc tańsze szkło na stałe
-     * u każdego, kto przełączył kartę w trakcie przesuwania mapy. Licznik chodzi
-     * niezależnie od klatek, więc znacznik gaśnie zawsze.
-     */
-    window.clearTimeout(gasnieRef.current);
-    gasnieRef.current = window.setTimeout(() => {
-      if (dragRef.current) return;
-      delete document.documentElement.dataset.kamera;
-    }, naDlugo);
-  };
-  zaznaczRuchRef.current = zaznaczRuch;
 
   /* Renderer tworzymy raz. Kolejne zmiany stanu wpychamy do niego w pętli klatek,
    * dzięki czemu przesuwanie mapy nie powoduje przerysowania drzewa Reacta. */
@@ -195,8 +152,6 @@ export function SkyCanvas({ catalog, onRendererReady }: Props) {
         if (Math.abs(w.az) > 0.00004 || Math.abs(w.alt) > 0.00004) {
           const zanik = Math.pow(0.9965, delta);
           useSkyStore.getState().panBy(w.az * delta, w.alt * delta);
-          /* Wybieg też jest ruchem kamery, więc odnawia znacznik i jego licznik. */
-          zaznaczRuchRef.current(160);
           w.az *= zanik;
           w.alt *= zanik;
         } else if (w.az !== 0 || w.alt !== 0) {
@@ -323,10 +278,6 @@ export function SkyCanvas({ catalog, onRendererReady }: Props) {
     return () => {
       cancelAnimationFrame(frame);
       observer.disconnect();
-      window.clearTimeout(gasnieRef.current);
-      /* Mapa znika, więc znacznik ruchu nie ma prawa zostać na dokumencie i trzymać
-       * tańszego szkła w sekcjach otwartych po jej zamknięciu. */
-      delete document.documentElement.dataset.kamera;
     };
   }, [catalog, reducedMotion, onRendererReady]);
 
@@ -429,7 +380,6 @@ export function SkyCanvas({ catalog, onRendererReady }: Props) {
         useSkyStore.getState().setView({
           fov: clampFov((pinchRef.current.fov * pinchRef.current.distance) / distance),
         });
-        zaznaczRuch();
       }
       return;
     }
@@ -450,7 +400,6 @@ export function SkyCanvas({ catalog, onRendererReady }: Props) {
       const dAz = (-dx * degPerPixel) / cos;
       const dAlt = dy * degPerPixel;
       store.panBy(dAz, dAlt);
-      zaznaczRuch();
 
       /*
        * Prędkość liczona z ostatniego ruchu, wygładzona średnią ważoną.
@@ -527,9 +476,6 @@ export function SkyCanvas({ catalog, onRendererReady }: Props) {
   const onWheel = (event: React.WheelEvent<HTMLCanvasElement>) => {
     const { x, y } = relative(event);
     const factor = Math.exp(event.deltaY * 0.0016);
-    /* Kółko myszy daje serię zdarzeń, więc znacznik trzymamy nieco dłużej: inaczej
-     * gasłby i zapalał się między jednym obrotem a drugim. */
-    zaznaczRuch(260);
     zoomAt(factor, x, y);
   };
 
@@ -566,7 +512,6 @@ export function SkyCanvas({ catalog, onRendererReady }: Props) {
       const w = wybiegRef.current;
       w.az = Math.max(-maks, Math.min(maks, w.az + az / 160));
       w.alt = Math.max(-maks, Math.min(maks, w.alt + alt / 160));
-      zaznaczRuch();
     };
 
     switch (event.key) {

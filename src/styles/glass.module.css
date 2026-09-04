@@ -273,60 +273,16 @@
 }
 
 /*
- * PRZEŁĄCZENIE SZKŁA NA CZAS RUCHU KAMERY
+ * Szkło jest jedno i to samo, także w ruchu.
  *
- * Filtr SVG w backdrop-filter jest najdroższą rzeczą w całej aplikacji i to nie z powodu
- * kodu, tylko z powodu tego, co pod nim leży. Za taflą stoi mapa nieba, czyli płótno,
- * które przy przesuwaniu kamery przerysowuje się w każdej klatce. Za każdym razem
- * przeglądarka musi na nowo przepuścić przez mapę przemieszczeń całą powierzchnię
- * pod szkłem, a tej jest w tym układzie około 287 tysięcy pikseli kwadratowych,
- * rozłożonych na szynie, górnym pasku i osi czasu.
+ * Wcześniej na czas przesuwania mapy filtr SVG ustępował zwykłemu rozmyciu, bo filtr
+ * jest tu najdroższy, a pod taflami leży płótno przerysowywane w każdej klatce.
+ * Pomysł był słuszny w rachunku, ale fałszywy w skutku: przy każdym chwyceniu mapy
+ * tafle widocznie zmieniały materiał i wracały do siebie po zatrzymaniu. Dopasowanie
+ * rozproszenia co do piksela tego nie usunęło, bo zamiana i tak zostawia ślad.
  *
- * Zwykłe rozmycie jest w tym samym miejscu wielokrotnie tańsze, bo przeglądarki liczą je
- * na karcie graficznej ścieżką przygotowaną specjalnie do tego. Filtr SVG takiej ścieżki
- * nie ma i idzie wolniejszą drogą.
- *
- * Stąd zamiana: przy nieruchomym niebie zostaje prawdziwe załamanie, a na czas ruchu
- * kamery wchodzi rozmycie. Nie jest to kompromis kosztem wyglądu, tylko wykorzystanie
- * tego, jak działa wzrok: w trakcie ruchu i tak nie da się dostrzec przesunięcia barw
- * na krawędzi tafli, bo całe tło pod nią jedzie. Widać za to każdą zgubioną klatkę.
- *
- * Znacznik ustawia mapa nieba na elemencie html, więc reguła nie zależy od tego,
- * gdzie w drzewie leży dana tafla.
+ * Przesuwanie mapy to najczęstszy gest w całej aplikacji. Migotanie w nim kosztuje
+ * więcej niż kilka klatek, których nikt nie zgłosił. Dlatego przełączania nie ma:
+ * szkło wygląda tak samo w spoczynku i w ruchu.
  */
-/*
- * Zamiennik musi rozmywać dokładnie tyle samo, co filtr, który zastępuje.
- *
- * Pierwsze podejście sięgało po rozmycie zastępcze z przeglądarek bez filtrów SVG,
- * czyli czternaście i dwadzieścia sześć pikseli. To był błąd, bo tam ta wartość niesie
- * cały wygląd szkła sama, a tutaj ma tylko zastąpić rozmycie ukryte w środku filtra.
- * Filtr rozprasza obraz o stdDeviation sześć, panel dokłada do niego dziesięć pikseli
- * w CSS, a rozmycia gaussowskie składają się pitagorejsko, więc razem wychodzi około
- * dwunastu. Zamiennik dawał ponad dwa razy więcej i podnosił jeszcze nasycenie.
- *
- * Efekt był widoczny natychmiast: przy każdym chwyceniu mapy tafle zachodziły mgłą,
- * a po zatrzymaniu wracały do ostrości. Najmocniej na osi czasu, bo to największa
- * tafla w kadrze i leży tam, gdzie ląduje kursor. Założenie z komentarza powyżej,
- * że zamiany nie da się dostrzec, dotyczyło samego załamania i było słuszne. Nie
- * obejmowało dosypania rozmycia, którego wcześniej nie było.
- *
- * Teraz zostaje jedno i to samo rozproszenie, a w ruchu odpada wyłącznie przesunięcie
- * składowych barwy przy krawędzi, czyli to, czego przy jadącym tle naprawdę nie widać.
- * Wartości trzymamy zgodne ze stałymi ROZPROSZENIE i ROZPROSZENIE_CIENKIE
- * w GlassFilter.tsx: zmiana tam wymaga zmiany tutaj.
- *
- * Reguła stoi w tym samym @supports co filtr. Przeglądarka bez filtrów SVG nie ma
- * czego przełączać, bo jej szkło od początku stoi na tanim rozmyciu, i nie wolno jej
- * tego rozmycia w ruchu odbierać.
- */
-@supports (backdrop-filter: url(#zenit-szklo)) {
-  :global(html[data-kamera='rusza']) .surface::before {
-    backdrop-filter: blur(6px) saturate(1.35);
-    -webkit-backdrop-filter: blur(6px) saturate(1.35);
-  }
 
-  :global(html[data-kamera='rusza']) .surfaceStrong::before {
-    backdrop-filter: blur(12px) saturate(1.1) brightness(0.86);
-    -webkit-backdrop-filter: blur(12px) saturate(1.1) brightness(0.86);
-  }
-}
