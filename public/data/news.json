@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04T09:43:08.134Z",
+  "updated": "2026-09-05T09:08:12.653Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,17 +19,111 @@
   ],
   "posts": [
     {
-      "id": "apod-2026-09-04",
-      "title": "Nā ʻUhane Māhoe Huki Pū i ke Ola",
-      "lead": "Nā ʻUhane Māhoe Huki Pū i ke Ola, is the Hawaiian name given to this image of a pair of spiral galaxies locked in a mutual gravitational embrace.",
+      "id": "astronet-17j1erx",
+      "title": "Jak działają najprostsze silniki rakietowe?",
+      "lead": "W większości dwuskładnikowych silników ciśnieniowych korzysta się z paliw hipergolicznych, czyli takich, które zapalają się samorzutnie przy kontakcie paliwa z utleniaczem.",
+      "date": "2026-09-05T06:30:27.000Z",
+      "category": "sprzet",
+      "source": "https://astronet.pl/astronautyka/jak-dzialaja-najprostsze-silniki-rakietowe/",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "apod-2026-09-05",
+      "title": "Chasing the Moon's Shadow",
+      "lead": "Chasing the shadow of a New Moon, NASA’s WB-57F high altitude research aircraft took to the skies off the coast of Iceland on August 12 to observe a total solar eclipse.",
       "body": "",
-      "date": "2026-09-04T04:05:00.000Z",
+      "date": "2026-09-05T04:05:00.000Z",
       "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap260904.html",
+      "source": "https://apod.nasa.gov/apod/ap260905.html",
       "sourceLabel": "NASA APOD",
       "language": "en",
-      "image": "https://apod.nasa.gov/apod/image/2609/noirlab2621a_1024.jpg",
+      "image": "https://apod.nasa.gov/apod/image/2609/2026Eclipse_WB57GoPro_Totality_H264_1024.jpg",
       "credit": "NASA"
+    },
+    {
+      "id": "nasa-1c62doy",
+      "title": "KMT-2025-BLG-0975L b",
+      "lead": "KMT-2025-BLG-0975L b is a Neptune-like exoplanet that orbits a Unknown-type star. Its mass is 29.8 Earths, it takes 2.3 years to complete one orbit of its star, and is 0.81 AU from its star. Its discovery was announced in 2026.",
+      "date": "2026-09-04T18:21:36.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/exoplanet-catalog/kmt-2025-blg-0975l-b/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-u1u1l1",
+      "title": "KMT-2025-BLG-1160L b",
+      "lead": "KMT-2025-BLG-1160L b is a Neptune-like exoplanet that orbits a Unknown-type star. Its mass is 25.36 Earths, it takes 5.4 years to complete one orbit of its star, and is 2.56 AU from its star. Its discovery was announced in 2026.",
+      "date": "2026-09-04T18:21:36.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/exoplanet-catalog/kmt-2025-blg-1160l-b/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-kvu38u",
+      "title": "TOI-4409 b",
+      "lead": "TOI-4409 b is a Neptune-like exoplanet that orbits a K-type star. Its mass is 14.93793513 Earths, it takes 92.5 days to complete one orbit of its star, and is 0.36574503670244 AU from its star. Its discovery was announced in 2026.",
+      "date": "2026-09-04T18:21:34.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/exoplanet-catalog/toi-4409-b/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-5d6hef",
+      "title": "TOI-3278 b",
+      "lead": "TOI-3278 b is a gas giant exoplanet that orbits a G-type star. Its mass is 0.3 Jupiters, it takes 3.2 days to complete one orbit of its star, and is 0.043 AU from its star. Its discovery was announced in 2026.",
+      "date": "2026-09-04T18:21:30.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/exoplanet-catalog/toi-3278-b/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-4dwgho",
+      "title": "TOI-3053 b",
+      "lead": "TOI-3053 b is a gas giant exoplanet that orbits a G-type star. Its mass is 0.85 Jupiters, it takes 3 days to complete one orbit of its star, and is 0.039 AU from its star. Its discovery was announced in 2026.",
+      "date": "2026-09-04T18:21:23.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/exoplanet-catalog/toi-3053-b/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-z684od",
+      "title": "HD 50554 c",
+      "lead": "HD 50554 c is a super Earth exoplanet that orbits a F-type star. Its mass is 5.3 Earths, it takes 6 days to complete one orbit of its star, and is 0.0652 AU from its star. Its discovery was announced in 2026.",
+      "date": "2026-09-04T18:21:23.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/exoplanet-catalog/hd-50554-c/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-z684p8",
+      "title": "HD 50554 d",
+      "lead": "HD 50554 d is a super Earth exoplanet that orbits a F-type star. Its mass is 10.4 Earths, it takes 28.1 days to complete one orbit of its star, and is 0.1831 AU from its star. Its discovery was announced in 2026.",
+      "date": "2026-09-04T18:21:23.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/exoplanet-catalog/hd-50554-d/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
+      "body": ""
     },
     {
       "id": "astronet-hhpbux",
@@ -88,16 +182,6 @@
       "date": "2026-09-01T12:00:27.000Z",
       "category": "wydarzenie",
       "source": "https://astronet.pl/astronautyka/podsumowania/kosmiczny-przeglad-miesiaca-astronetu-sierpien-2026-roku/",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-1hnvj7a",
-      "title": "Kształt Deimosa wyjaśniony przez zderzenie z asteroidą",
-      "lead": "Deimos to mniej więcej elipsoidalny, naturalny satelita Marsa. Ma 12 kilometrów średnicy co czyni co mniej więcej rozmiaru Luksemburga. Krąży w odległości około 24 000 kilometrów od powierzchni planety.",
-      "date": "2026-09-01T06:00:12.000Z",
-      "category": "odkrycie",
-      "source": "https://astronet.pl/astronomia/ksztalt-deimosa-wyjasniony-przez-zderzenie-z-asteroida/",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
