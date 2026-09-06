@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T09:08:12.653Z",
+  "updated": "2026-09-06T09:29:56.328Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,6 +19,41 @@
   ],
   "posts": [
     {
+      "id": "apod-2026-09-06",
+      "title": "Pluto in Enhanced Color",
+      "lead": "Pluto is more colorful than we can see. Color data and high-resolution images of our Solar System's most famous dwarf planet, taken by the robotic New Horizons spacecraft during its flyby in 2015 July, have been digitally combined to give a...",
+      "body": "",
+      "date": "2026-09-06T04:05:00.000Z",
+      "category": "wydarzenie",
+      "source": "https://apod.nasa.gov/apod/ap260906.html",
+      "sourceLabel": "NASA APOD",
+      "language": "en",
+      "image": "https://apod.nasa.gov/apod/image/2609/PlutoEnhancedHiRes_NewHorizons_960.jpg",
+      "credit": "NASA"
+    },
+    {
+      "id": "nasa-1bjvrws",
+      "title": "Roman Series: Liftoff!",
+      "lead": "NASA’s Nancy Grace Roman Space Telescope is in space, taking its first steps to explore the cosmos. Relive Roman’s launch—and the emotion that goes along with the roar of a rocket—with NASA experts who worked on the telescope for years.",
+      "date": "2026-09-05T12:35:13.000Z",
+      "category": "teleskop",
+      "source": "https://www.nasa.gov/podcasts/curious-universe/roman-launch-podcast/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/08/roman-curious-universe-horizontal-hero-16-9.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "astronet-10lg6nz",
+      "title": "Poradnik OA. Mechanika nieba 1: Grawitacja",
+      "lead": "[latexpage] Mechanika nieba to gałąź astronomii zajmująca się opisem ruchów i oddziaływań ciał niebieskich na gruncie mechaniki klasycznej zaproponowanej przez sir Izaaka Newtona.",
+      "date": "2026-09-05T12:02:25.000Z",
+      "category": "odkrycie",
+      "source": "https://astronet.pl/oa/poradnik-oa-mechanika-nieba-1-grawitacja/",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
       "id": "astronet-17j1erx",
       "title": "Jak działają najprostsze silniki rakietowe?",
       "lead": "W większości dwuskładnikowych silników ciśnieniowych korzysta się z paliw hipergolicznych, czyli takich, które zapalają się samorzutnie przy kontakcie paliwa z utleniaczem.",
@@ -27,19 +62,6 @@
       "source": "https://astronet.pl/astronautyka/jak-dzialaja-najprostsze-silniki-rakietowe/",
       "sourceLabel": "AstroNET",
       "language": "pl"
-    },
-    {
-      "id": "apod-2026-09-05",
-      "title": "Chasing the Moon's Shadow",
-      "lead": "Chasing the shadow of a New Moon, NASA’s WB-57F high altitude research aircraft took to the skies off the coast of Iceland on August 12 to observe a total solar eclipse.",
-      "body": "",
-      "date": "2026-09-05T04:05:00.000Z",
-      "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap260905.html",
-      "sourceLabel": "NASA APOD",
-      "language": "en",
-      "image": "https://apod.nasa.gov/apod/image/2609/2026Eclipse_WB57GoPro_Totality_H264_1024.jpg",
-      "credit": "NASA"
     },
     {
       "id": "nasa-1c62doy",
@@ -102,30 +124,6 @@
       "body": ""
     },
     {
-      "id": "nasa-z684od",
-      "title": "HD 50554 c",
-      "lead": "HD 50554 c is a super Earth exoplanet that orbits a F-type star. Its mass is 5.3 Earths, it takes 6 days to complete one orbit of its star, and is 0.0652 AU from its star. Its discovery was announced in 2026.",
-      "date": "2026-09-04T18:21:23.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/exoplanet-catalog/hd-50554-c/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-z684p8",
-      "title": "HD 50554 d",
-      "lead": "HD 50554 d is a super Earth exoplanet that orbits a F-type star. Its mass is 10.4 Earths, it takes 28.1 days to complete one orbit of its star, and is 0.1831 AU from its star. Its discovery was announced in 2026.",
-      "date": "2026-09-04T18:21:23.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/exoplanet-catalog/hd-50554-d/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
       "id": "astronet-hhpbux",
       "title": "Komercyjnie dostępna kamera może pomóc naukowcom wykrywać więcej kolizji czarnych dziur",
       "lead": "Naprawa defektu wewnątrz jednego z najbardziej zaawansowanych obserwatoriów naukowych może wydawać się niesamowicie droga lub wymagająca nowych rewolucyjnych systemów i rozwiązań.",
@@ -172,16 +170,6 @@
       "date": "2026-09-02T08:30:19.000Z",
       "category": "sprzet",
       "source": "https://astronet.pl/astronautyka/debiut-rakiety-pallas-1-chinskiej-firmy-galactic-energy/",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-1etc9zx",
-      "title": "Kosmiczny przegląd miesiąca AstroNETu – sierpień 2026 roku",
-      "lead": "W sierpniu zdaje się, że organizacje kosmiczne były na wakacjach - albo przykładowo ich pracownicy pełnili funkcję kadry na obozach astronomicznych. Wobec tego wyróżnionych wydarzeń w tym miesiącu nie ma wiele.",
-      "date": "2026-09-01T12:00:27.000Z",
-      "category": "wydarzenie",
-      "source": "https://astronet.pl/astronautyka/podsumowania/kosmiczny-przeglad-miesiaca-astronetu-sierpien-2026-roku/",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
