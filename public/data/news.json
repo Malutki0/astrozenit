@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06T09:29:56.328Z",
+  "updated": "2026-09-07T10:26:31.051Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,17 +19,46 @@
   ],
   "posts": [
     {
-      "id": "apod-2026-09-06",
-      "title": "Pluto in Enhanced Color",
-      "lead": "Pluto is more colorful than we can see. Color data and high-resolution images of our Solar System's most famous dwarf planet, taken by the robotic New Horizons spacecraft during its flyby in 2015 July, have been digitally combined to give a...",
+      "id": "apod-2026-09-07",
+      "title": "The Pelican Nebula in Gas, Dust, and Stars",
+      "lead": "The Pelican Nebula is slowly being transformed. IC 5070 (an official designation) is divided from the larger North America Nebula by a molecular cloud filled with dark dust.",
       "body": "",
-      "date": "2026-09-06T04:05:00.000Z",
+      "date": "2026-09-07T04:05:00.000Z",
       "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap260906.html",
+      "source": "https://apod.nasa.gov/apod/ap260907.html",
       "sourceLabel": "NASA APOD",
       "language": "en",
-      "image": "https://apod.nasa.gov/apod/image/2609/PlutoEnhancedHiRes_NewHorizons_960.jpg",
-      "credit": "NASA"
+      "credit": "Mark Killion"
+    },
+    {
+      "id": "astronet-6ummi4",
+      "title": "Dziesięciokątna fala wokół południowego bieguna Saturna",
+      "lead": "Północny biegun Saturna posiada unikalną cechę atmosferyczną w Układzie Słonecznym: trwałą falę heksagonalną z potężnym wirem w centrum. Do tej pory nie zaobserwowano podobnej fali w innych rejonach planety.",
+      "date": "2026-09-06T17:55:26.000Z",
+      "category": "odkrycie",
+      "source": "https://astronet.pl/astronomia/dziesieciokatna-fala-wokol-poludniowego-bieguna-saturna/",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "astronet-rmj9r8",
+      "title": "Pierwsza europejska prywatna rakieta na orbicie. Udany drugi lot Spectrum",
+      "lead": "Historia widziała wiele przypadków szybkich zwrotów losów o 180 stopni. Natomiast dopracowanie rakiety orbitalnej w taki sposób, że w w ramach drugiego lotu dociera na orbitę, kiedy pierwszy zakończył się po 40 sekundach - to nowość.",
+      "date": "2026-09-06T10:54:51.000Z",
+      "category": "sprzet",
+      "source": "https://astronet.pl/astronautyka/pierwsza-europejska-prywatna-rakieta-na-orbicie-udany-drugi-lot-spectrum/",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "astronet-16rdjck",
+      "title": "Płynna woda na Marsie mogła występować później, niż myśleliśmy",
+      "lead": "Chiński łazik Zhurong prawdopodobnie natknął się na dowód występowania wody na Marsie znacznie później, niż do tej pory uważano.",
+      "date": "2026-09-06T09:31:49.000Z",
+      "category": "misja",
+      "source": "https://astronet.pl/astronomia/plynna-woda-na-marsie-mogla-wystepowac-pozniej-niz-myslelismy/",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
     },
     {
       "id": "nasa-1bjvrws",
@@ -100,30 +129,6 @@
       "body": ""
     },
     {
-      "id": "nasa-5d6hef",
-      "title": "TOI-3278 b",
-      "lead": "TOI-3278 b is a gas giant exoplanet that orbits a G-type star. Its mass is 0.3 Jupiters, it takes 3.2 days to complete one orbit of its star, and is 0.043 AU from its star. Its discovery was announced in 2026.",
-      "date": "2026-09-04T18:21:30.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/exoplanet-catalog/toi-3278-b/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-4dwgho",
-      "title": "TOI-3053 b",
-      "lead": "TOI-3053 b is a gas giant exoplanet that orbits a G-type star. Its mass is 0.85 Jupiters, it takes 3 days to complete one orbit of its star, and is 0.039 AU from its star. Its discovery was announced in 2026.",
-      "date": "2026-09-04T18:21:23.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/exoplanet-catalog/toi-3053-b/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
       "id": "astronet-hhpbux",
       "title": "Komercyjnie dostępna kamera może pomóc naukowcom wykrywać więcej kolizji czarnych dziur",
       "lead": "Naprawa defektu wewnątrz jednego z najbardziej zaawansowanych obserwatoriów naukowych może wydawać się niesamowicie droga lub wymagająca nowych rewolucyjnych systemów i rozwiązań.",
@@ -160,16 +165,6 @@
       "date": "2026-09-03T09:37:53.000Z",
       "category": "misja",
       "source": "https://astronet.pl/astronautyka/ift-14-coraz-blizej-czym-zajmuje-sie-teraz-spacex/",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-1aagn2u",
-      "title": "Debiut rakiety Pallas-1 chińskiej firmy Galactic Energy",
-      "lead": "Loty rakiet, które niegdyś były rzadkością, dziś coraz częściej przechodzą do codzienności. Szczególnie przy coraz większym wkładzie prywatnych firm w rozwój sektora kosmicznego.",
-      "date": "2026-09-02T08:30:19.000Z",
-      "category": "sprzet",
-      "source": "https://astronet.pl/astronautyka/debiut-rakiety-pallas-1-chinskiej-firmy-galactic-energy/",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
