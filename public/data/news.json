@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07T10:26:31.051Z",
+  "updated": "2026-09-08T09:47:25.017Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,16 +19,27 @@
   ],
   "posts": [
     {
-      "id": "apod-2026-09-07",
-      "title": "The Pelican Nebula in Gas, Dust, and Stars",
-      "lead": "The Pelican Nebula is slowly being transformed. IC 5070 (an official designation) is divided from the larger North America Nebula by a molecular cloud filled with dark dust.",
+      "id": "apod-2026-09-08",
+      "title": "Hubble: Decagon Around Saturn's South Pole",
+      "lead": "Why are Saturn’s poles geometric? Saturn’s North Pole has been known to be surrounded by a hexagonal (6 sides) cloud since discovery in 1987 in data taken by NASA’s Voyager spacecrafts, which quickly flew past the ringed world in the early...",
       "body": "",
-      "date": "2026-09-07T04:05:00.000Z",
+      "date": "2026-09-08T04:05:00.000Z",
       "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap260907.html",
+      "source": "https://apod.nasa.gov/apod/ap260908.html",
       "sourceLabel": "NASA APOD",
       "language": "en",
-      "credit": "Mark Killion"
+      "image": "https://apod.nasa.gov/apod/image/2609/SaturnDecagon_Hubble_960.jpg",
+      "credit": "NASA"
+    },
+    {
+      "id": "astronet-1s2kto4",
+      "title": "Czy nowy kosmiczny teleskop zastąpi Hubble’a? – Cel misji Nancy Grace Roman",
+      "lead": "Kosmiczny Teleskop Nancy Grace Roman (NGRST), wyniesiony na orbitę przez rakietę Falcon Heavy, obecnie zmierza do punktu L2, aby rozpocząć tam obserwacje i wykonywanie zdjęć.",
+      "date": "2026-09-07T17:06:26.000Z",
+      "category": "teleskop",
+      "source": "https://astronet.pl/astronautyka/czy-nowy-kosmiczny-teleskop-zastapi-hubblea-cel-misji-nancy-grace-roman/",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
     },
     {
       "id": "astronet-6ummi4",
@@ -99,30 +110,6 @@
       "date": "2026-09-04T18:21:36.000Z",
       "category": "odkrycie",
       "source": "https://science.nasa.gov/exoplanet-catalog/kmt-2025-blg-0975l-b/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-u1u1l1",
-      "title": "KMT-2025-BLG-1160L b",
-      "lead": "KMT-2025-BLG-1160L b is a Neptune-like exoplanet that orbits a Unknown-type star. Its mass is 25.36 Earths, it takes 5.4 years to complete one orbit of its star, and is 2.56 AU from its star. Its discovery was announced in 2026.",
-      "date": "2026-09-04T18:21:36.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/exoplanet-catalog/kmt-2025-blg-1160l-b/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-kvu38u",
-      "title": "TOI-4409 b",
-      "lead": "TOI-4409 b is a Neptune-like exoplanet that orbits a K-type star. Its mass is 14.93793513 Earths, it takes 92.5 days to complete one orbit of its star, and is 0.36574503670244 AU from its star. Its discovery was announced in 2026.",
-      "date": "2026-09-04T18:21:34.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/exoplanet-catalog/toi-4409-b/",
       "sourceLabel": "NASA Science",
       "language": "en",
       "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
