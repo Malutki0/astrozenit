@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08T09:47:25.017Z",
+  "updated": "2026-09-09T09:50:57.026Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,141 +19,52 @@
   ],
   "posts": [
     {
-      "id": "apod-2026-09-08",
-      "title": "Hubble: Decagon Around Saturn's South Pole",
-      "lead": "Why are Saturn’s poles geometric? Saturn’s North Pole has been known to be surrounded by a hexagonal (6 sides) cloud since discovery in 1987 in data taken by NASA’s Voyager spacecrafts, which quickly flew past the ringed world in the early...",
+      "id": "nasa-11h0m0b",
+      "title": "Curiosity Blog, Sols 4995-5001: 5,000 (Martian) Days on Mars",
+      "lead": "Written by William Farrand, Senior Research Scientist, Space Science Institute Earth planning date: Friday, Aug. 28, 2026 The span of sols spanned by this blog post is noteworthy in several ways.",
+      "date": "2026-09-09T06:20:49.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/blog/curiosity-blog-sols-4995-5001-5000-martian-days-on-mars/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/msl/2026/curiosity-rover-updates/august/https___mars.nasa.gov_msl-raw-images_proj_msl_redops_ods_surface_sol_04998_opgs_edr_ncam_NRB_841193197EDR_F1241978NCAM00296M_.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "apod-2026-09-09",
+      "title": "Witness XZ Andromedae Wink",
+      "lead": "Is this star winking at us? The central object in today’s animation is not one but two stars. XZ Andromedae, indicated by the bold lines, is an Algol-type eclipsing binary with a nearly edge-on orbit from Earth’s perspective.",
       "body": "",
-      "date": "2026-09-08T04:05:00.000Z",
+      "date": "2026-09-09T04:05:00.000Z",
       "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap260908.html",
+      "source": "https://apod.nasa.gov/apod/ap260909.html",
       "sourceLabel": "NASA APOD",
       "language": "en",
-      "image": "https://apod.nasa.gov/apod/image/2609/SaturnDecagon_Hubble_960.jpg",
       "credit": "NASA"
     },
     {
-      "id": "astronet-1s2kto4",
-      "title": "Czy nowy kosmiczny teleskop zastąpi Hubble’a? – Cel misji Nancy Grace Roman",
-      "lead": "Kosmiczny Teleskop Nancy Grace Roman (NGRST), wyniesiony na orbitę przez rakietę Falcon Heavy, obecnie zmierza do punktu L2, aby rozpocząć tam obserwacje i wykonywanie zdjęć.",
-      "date": "2026-09-07T17:06:26.000Z",
-      "category": "teleskop",
-      "source": "https://astronet.pl/astronautyka/czy-nowy-kosmiczny-teleskop-zastapi-hubblea-cel-misji-nancy-grace-roman/",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-6ummi4",
-      "title": "Dziesięciokątna fala wokół południowego bieguna Saturna",
-      "lead": "Północny biegun Saturna posiada unikalną cechę atmosferyczną w Układzie Słonecznym: trwałą falę heksagonalną z potężnym wirem w centrum. Do tej pory nie zaobserwowano podobnej fali w innych rejonach planety.",
-      "date": "2026-09-06T17:55:26.000Z",
-      "category": "odkrycie",
-      "source": "https://astronet.pl/astronomia/dziesieciokatna-fala-wokol-poludniowego-bieguna-saturna/",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-rmj9r8",
-      "title": "Pierwsza europejska prywatna rakieta na orbicie. Udany drugi lot Spectrum",
-      "lead": "Historia widziała wiele przypadków szybkich zwrotów losów o 180 stopni. Natomiast dopracowanie rakiety orbitalnej w taki sposób, że w w ramach drugiego lotu dociera na orbitę, kiedy pierwszy zakończył się po 40 sekundach - to nowość.",
-      "date": "2026-09-06T10:54:51.000Z",
-      "category": "sprzet",
-      "source": "https://astronet.pl/astronautyka/pierwsza-europejska-prywatna-rakieta-na-orbicie-udany-drugi-lot-spectrum/",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-16rdjck",
-      "title": "Płynna woda na Marsie mogła występować później, niż myśleliśmy",
-      "lead": "Chiński łazik Zhurong prawdopodobnie natknął się na dowód występowania wody na Marsie znacznie później, niż do tej pory uważano.",
-      "date": "2026-09-06T09:31:49.000Z",
+      "id": "nasa-ojkr1l",
+      "title": "Astronaut Health, Lunar and Earth Photography Fill Crew’s Research Schedule",
+      "lead": "Exploring astronaut health and photographing the Moon and Earth topped the research schedule for the Expedition 75 crew aboard the International Space Station on Tuesday.",
+      "date": "2026-09-08T17:42:32.000Z",
       "category": "misja",
-      "source": "https://astronet.pl/astronomia/plynna-woda-na-marsie-mogla-wystepowac-pozniej-niz-myslelismy/",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "nasa-1bjvrws",
-      "title": "Roman Series: Liftoff!",
-      "lead": "NASA’s Nancy Grace Roman Space Telescope is in space, taking its first steps to explore the cosmos. Relive Roman’s launch—and the emotion that goes along with the roar of a rocket—with NASA experts who worked on the telescope for years.",
-      "date": "2026-09-05T12:35:13.000Z",
-      "category": "teleskop",
-      "source": "https://www.nasa.gov/podcasts/curious-universe/roman-launch-podcast/",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/09/08/astronaut-health-lunar-and-earth-photography-fill-crews-research-schedule/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/08/roman-curious-universe-horizontal-hero-16-9.png?w=1200&fit=clip",
+      "image": "https://images-assets.nasa.gov/image/iss075e0085685/iss075e0085685~large.jpg?w=1200&fit=clip",
       "body": ""
     },
     {
-      "id": "astronet-10lg6nz",
-      "title": "Poradnik OA. Mechanika nieba 1: Grawitacja",
-      "lead": "[latexpage] Mechanika nieba to gałąź astronomii zajmująca się opisem ruchów i oddziaływań ciał niebieskich na gruncie mechaniki klasycznej zaproponowanej przez sir Izaaka Newtona.",
-      "date": "2026-09-05T12:02:25.000Z",
+      "id": "nasa-1d89rap",
+      "title": "Superbubble in the Large Magellanic Cloud",
+      "lead": "NASA’s Hubble Space Telescope captures a photogenic nebula, N44, in the Large Magellanic Cloud in this Sept. 3, 2026, image. N44 is dominated by two features: a vast central void and a shell of dense, dusty gas.",
+      "date": "2026-09-08T16:49:15.000Z",
       "category": "odkrycie",
-      "source": "https://astronet.pl/oa/poradnik-oa-mechanika-nieba-1-grawitacja/",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-17j1erx",
-      "title": "Jak działają najprostsze silniki rakietowe?",
-      "lead": "W większości dwuskładnikowych silników ciśnieniowych korzysta się z paliw hipergolicznych, czyli takich, które zapalają się samorzutnie przy kontakcie paliwa z utleniaczem.",
-      "date": "2026-09-05T06:30:27.000Z",
-      "category": "sprzet",
-      "source": "https://astronet.pl/astronautyka/jak-dzialaja-najprostsze-silniki-rakietowe/",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "nasa-1c62doy",
-      "title": "KMT-2025-BLG-0975L b",
-      "lead": "KMT-2025-BLG-0975L b is a Neptune-like exoplanet that orbits a Unknown-type star. Its mass is 29.8 Earths, it takes 2.3 years to complete one orbit of its star, and is 0.81 AU from its star. Its discovery was announced in 2026.",
-      "date": "2026-09-04T18:21:36.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/exoplanet-catalog/kmt-2025-blg-0975l-b/",
+      "source": "https://www.nasa.gov/image-article/superbubble-in-the-large-magellanic-cloud/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/hubble-n44-wfc3-large.jpg?w=1200&fit=clip",
       "body": ""
-    },
-    {
-      "id": "astronet-hhpbux",
-      "title": "Komercyjnie dostępna kamera może pomóc naukowcom wykrywać więcej kolizji czarnych dziur",
-      "lead": "Naprawa defektu wewnątrz jednego z najbardziej zaawansowanych obserwatoriów naukowych może wydawać się niesamowicie droga lub wymagająca nowych rewolucyjnych systemów i rozwiązań.",
-      "date": "2026-09-03T17:58:58.000Z",
-      "category": "odkrycie",
-      "source": "https://astronet.pl/astronomia/komercyjnie-dostepna-kamera-moze-pomoc-naukowcom-wykrywac-wiecej-kolizji-czarnych-dziur/",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-on8onx",
-      "title": "Nowy krater na Księżycu: efekt nieplanowanego uderzenia części rakiety Falcon 9",
-      "lead": "Piątego sierpnia bieżącego roku doszło do nieplanowanego uderzenia zużytego górnego członu rakiety SpaceX Falcon 9, które doprowadziło do uformowania się nowego krateru na powierzchni Księżyca.",
-      "date": "2026-09-03T17:44:32.000Z",
-      "category": "sprzet",
-      "source": "https://astronet.pl/astronautyka/nowy-krater-na-ksiezycu-efekt-nieplanowanego-uderzenia-czesci-rakiety-falcon-9/",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-c4ivbl",
-      "title": "Spotkaj ekspertkę: Efekty misji IGNIS – Odporność w kosmosie",
-      "lead": "Co dzieje się z układem odpornościowym człowieka podczas lotu kosmicznego? Jak mikrograwitacja i inne czynniki związane z pobytem na orbicie wpływają na komórki odpornościowe?",
-      "date": "2026-09-03T17:08:07.000Z",
-      "category": "misja",
-      "source": "https://astronet.pl/wydarzenia/spotkaj-ekspertke-efekty-misji-ignis-odpornosc-w-kosmosie/",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-1vhjk8d",
-      "title": "IFT-14 coraz bliżej: czym zajmuje się teraz SpaceX?",
-      "lead": "Obrazek wyróżniający: SpaceX W SpaceX intensywnie trwają przygotowania do czternastego lotu testowego systemu Starship – pierwszego, który ma wejść na orbitę.",
-      "date": "2026-09-03T09:37:53.000Z",
-      "category": "misja",
-      "source": "https://astronet.pl/astronautyka/ift-14-coraz-blizej-czym-zajmuje-sie-teraz-spacex/",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
     }
   ]
 }
