@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-09T09:50:57.026Z",
+  "updated": "2026-09-10T09:49:01.975Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,51 +19,50 @@
   ],
   "posts": [
     {
-      "id": "nasa-11h0m0b",
-      "title": "Curiosity Blog, Sols 4995-5001: 5,000 (Martian) Days on Mars",
-      "lead": "Written by William Farrand, Senior Research Scientist, Space Science Institute Earth planning date: Friday, Aug. 28, 2026 The span of sols spanned by this blog post is noteworthy in several ways.",
-      "date": "2026-09-09T06:20:49.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/blog/curiosity-blog-sols-4995-5001-5000-martian-days-on-mars/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/msl/2026/curiosity-rover-updates/august/https___mars.nasa.gov_msl-raw-images_proj_msl_redops_ods_surface_sol_04998_opgs_edr_ncam_NRB_841193197EDR_F1241978NCAM00296M_.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "apod-2026-09-09",
-      "title": "Witness XZ Andromedae Wink",
-      "lead": "Is this star winking at us? The central object in today’s animation is not one but two stars. XZ Andromedae, indicated by the bold lines, is an Algol-type eclipsing binary with a nearly edge-on orbit from Earth’s perspective.",
+      "id": "apod-2026-09-10",
+      "title": "LDN 1295: The Giraffe Nebula",
+      "lead": "What does this image look like to you? Many see a giraffe facing right, with neck stretched high and long legs mid-stride (but some may see a squirrel instead).",
       "body": "",
-      "date": "2026-09-09T04:05:00.000Z",
+      "date": "2026-09-10T04:05:00.000Z",
       "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap260909.html",
+      "source": "https://apod.nasa.gov/apod/ap260910.html",
       "sourceLabel": "NASA APOD",
       "language": "en",
-      "credit": "NASA"
+      "credit": "Alessandro Merga Text: Cecilia Chirenti (NASA GSFC, UMCP, CRESST II)"
     },
     {
-      "id": "nasa-ojkr1l",
-      "title": "Astronaut Health, Lunar and Earth Photography Fill Crew’s Research Schedule",
-      "lead": "Exploring astronaut health and photographing the Moon and Earth topped the research schedule for the Expedition 75 crew aboard the International Space Station on Tuesday.",
-      "date": "2026-09-08T17:42:32.000Z",
+      "id": "nasa-1x3ylin",
+      "title": "NASA Adds Relativity Space’s Terran R to Launch Services Contract",
+      "lead": "A NASA Launch Services (NLS) II contract has been awarded by the agency to Relativity Space Inc., and its Terran R launch service in accordance with the contract’s on-ramp provision.",
+      "date": "2026-09-09T20:11:58.000Z",
       "category": "misja",
-      "source": "https://www.nasa.gov/blogs/spacestation/2026/09/08/astronaut-health-lunar-and-earth-photography-fill-crews-research-schedule/",
+      "source": "https://www.nasa.gov/news-release/nasa-adds-relativity-spaces-terran-r-to-launch-services-contract/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://images-assets.nasa.gov/image/iss075e0085685/iss075e0085685~large.jpg?w=1200&fit=clip",
       "body": ""
     },
     {
-      "id": "nasa-1d89rap",
-      "title": "Superbubble in the Large Magellanic Cloud",
-      "lead": "NASA’s Hubble Space Telescope captures a photogenic nebula, N44, in the Large Magellanic Cloud in this Sept. 3, 2026, image. N44 is dominated by two features: a vast central void and a shell of dense, dusty gas.",
-      "date": "2026-09-08T16:49:15.000Z",
-      "category": "odkrycie",
-      "source": "https://www.nasa.gov/image-article/superbubble-in-the-large-magellanic-cloud/",
+      "id": "nasa-1snzoid",
+      "title": "NASA’s Chandra Unveils Mysterious X-Ray Objects",
+      "lead": "Using NASA’s Chandra X-ray Observatory, scientists have discovered a new class of objects behaving unlike any they have seen before.",
+      "date": "2026-09-09T18:11:24.000Z",
+      "category": "teleskop",
+      "source": "https://science.nasa.gov/missions/chandra/nasas-chandra-unveils-mysterious-x-ray-objects/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/hubble-n44-wfc3-large.jpg?w=1200&fit=clip",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/chandra/2026/m101.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1fbwykz",
+      "title": "Crew Studies Medicine and Physics, Works on Spacesuits and Earth Photo Gear",
+      "lead": "Vein scans, ultra-hot physics, and Earth observations were the main research activities aboard the International Space Station on Wednesday.",
+      "date": "2026-09-09T17:38:23.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/09/09/crew-studies-medicine-and-physics-works-on-spacesuits-and-earth-photo-gear/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://images-assets.nasa.gov/image/iss075e0085520/iss075e0085520~large.jpg?w=1200&fit=clip",
       "body": ""
     }
   ]
