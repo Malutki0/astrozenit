@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-13T10:21:12.920Z",
+  "updated": "2026-09-14T10:45:19.684Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,16 +19,28 @@
   ],
   "posts": [
     {
-      "id": "apod-2026-09-13",
-      "title": "Comet NEOWISE Rising over the Adriatic Sea",
-      "lead": "This sight was worth getting out of bed early. Just over four years ago, Comet C/2020 F3 (NEOWISE) rose before dawn to the delight of northern sky enthusiasts awake that early.",
+      "id": "apod-2026-09-14",
+      "title": "Where Your Elements Came From",
+      "lead": "The hydrogen in your body and present in every molecule of water came from the Big Bang. There are no other appreciable sources of hydrogen in the universe.",
       "body": "",
-      "date": "2026-09-13T04:05:00.000Z",
+      "date": "2026-09-14T04:05:00.000Z",
       "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap260913.html",
+      "source": "https://apod.nasa.gov/apod/ap260914.html",
       "sourceLabel": "NASA APOD",
       "language": "en",
-      "credit": "Paolo Girotti"
+      "image": "https://apod.nasa.gov/apod/image/2609/ElementOrigins2_svs_1080.jpg",
+      "credit": "NASA"
+    },
+    {
+      "id": "nasa-o5hvjn",
+      "title": "Fourth Balloon of NASA Scientific Balloon Campaign Launches",
+      "lead": "The BOOP! mission was launched on a scientific balloon from NASA’s launch facility in Fort Sumner, New Mexico, at 8:03 a.m. MDT (10:03 a.m. EDT) on Sept. 13, 2026.",
+      "date": "2026-09-13T20:09:27.000Z",
+      "category": "odkrycie",
+      "source": "https://www.nasa.gov/blogs/wallops/2026/09/13/fourth-balloon-of-nasa-scientific-balloon-campaign-launches/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "body": ""
     },
     {
       "id": "nasa-1js1m9b",
@@ -85,18 +97,6 @@
       "date": "2026-09-12T18:44:22.000Z",
       "category": "odkrycie",
       "source": "https://science.nasa.gov/exoplanet-catalog/hd-715-b/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-58azmz",
-      "title": "HD 278555 b",
-      "lead": "HD 278555 b is a gas giant exoplanet that orbits a F-type star. Its mass is 0.84 Jupiters, it takes 28.8 days to complete one orbit of its star, and is 0.1985 AU from its star. Its discovery was announced in 2026.",
-      "date": "2026-09-12T18:44:14.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/exoplanet-catalog/hd-278555-b/",
       "sourceLabel": "NASA Science",
       "language": "en",
       "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
