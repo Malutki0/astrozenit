@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-17T10:03:31.030Z",
+  "updated": "2026-09-18T09:50:37.020Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,50 +19,27 @@
   ],
   "posts": [
     {
-      "id": "apod-2026-09-17",
-      "title": "A Treasure Chest in the Carina Nebula",
-      "lead": "This treasure chest is full of stars. The featured image was obtained with NASA's James Webb Space Telescope and shows a dust pilar in the Carina Nebula inside our Galaxy, roughly 7500 light-years away.",
+      "id": "apod-2026-09-18",
+      "title": "Messier 33: The Triangulum Galaxy",
+      "lead": "The small, northern constellation Triangulum harbors this magnificent face-on spiral galaxy, Messier 33. Its popular names include the Pinwheel Galaxy or just the Triangulum Galaxy.",
       "body": "",
-      "date": "2026-09-17T04:05:00.000Z",
+      "date": "2026-09-18T04:05:00.000Z",
       "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap260917.html",
+      "source": "https://apod.nasa.gov/apod/ap260918.html",
       "sourceLabel": "NASA APOD",
       "language": "en",
-      "credit": "ESA/Webb, NASA & CSA, M. Reiter; Acknowledgement: M. H. Özsaraç Text: Cecilia Chirenti (NASA GSFC, UMCP, CRESST II)"
+      "credit": "George Chatzifrantzis"
     },
     {
-      "id": "nasa-gzxb6d",
-      "title": "Cargo Mission and Crew-13 Updates; Station Research, Maintenance Continue",
-      "lead": "New supplies are on their way to the International Space Station after launching aboard a Progress 96 cargo spacecraft at 9:33 a.m. EDT on Wednesday.",
-      "date": "2026-09-16T19:40:43.000Z",
+      "id": "nasa-1sq0cfw",
+      "title": "NASA, SpaceX Continue Crew‑13 Prep as Crew Enters Quarantine",
+      "lead": "The crew of NASA’s SpaceX Crew-13 mission entered quarantine late Thursday at the agency’s Johnson Space Center in Houston. Mission preparations continue as NASA and SpaceX target an early October launch to the International Space Station.",
+      "date": "2026-09-17T22:02:19.000Z",
       "category": "misja",
-      "source": "https://www.nasa.gov/blogs/spacestation/2026/09/16/cargo-mission-and-crew-13-updates-station-research-maintenance-continue/",
+      "source": "https://www.nasa.gov/blogs/commercialcrew/2026/09/17/nasa-spacex-continue-crew-13-prep-as-crew-enters-quarantine/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/blog-crew12-newsconf-091626e.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-viq9oj",
-      "title": "Educator’s Guide – Exploring Magnetism",
-      "lead": "In this teacher’s magnetism activity guide, “Exploring Magnetism,” students are given the opportunity to act as scientists discovering magnetic fields and electromagnetism through inquiry and measurement.",
-      "date": "2026-09-16T18:07:25.000Z",
-      "category": "teleskop",
-      "source": "https://science.nasa.gov/learn/heat/resource/educators-guide-exploring-magnetism/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "body": ""
-    },
-    {
-      "id": "nasa-pqxycq",
-      "title": "NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater",
-      "lead": "It started as a routine data-quality check. But as Robert Wagner, a scientist with NASA’s Lunar Reconnaissance Orbiter (LRO), scanned a giant Moon map on his computer screen, an unusually large bright spot circled by a dark halo caught his...",
-      "date": "2026-09-16T18:06:35.000Z",
-      "category": "misja",
-      "source": "https://science.nasa.gov/solar-system/moon/nasas-moon-orbiter-spots-new-once-in-century-moon-crater/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/lro/McGetchin_Discovery_Reenactment.png?w=1200&fit=clip",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/crew-13-jsc2026e406103.jpg?w=1200&fit=clip",
       "body": ""
     }
   ]
