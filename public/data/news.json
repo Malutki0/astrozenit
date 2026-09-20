@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-19T09:34:49.167Z",
+  "updated": "2026-09-20T09:51:43.168Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,16 +19,28 @@
   ],
   "posts": [
     {
-      "id": "apod-2026-09-19",
-      "title": "A Zodiacal Night",
-      "lead": "Also known as the false dawn, a luminous band of zodiacal light is captured in this dark night skyscape. The serene view was recorded just before the beginning of astronomical twilight during September's star party at the remote Hanle Dark...",
-      "body": "",
-      "date": "2026-09-19T04:05:00.000Z",
-      "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap260919.html",
-      "sourceLabel": "NASA APOD",
+      "id": "nasa-ubjh92",
+      "title": "Progress 96 Cargo Spacecraft Docks to Station to Resupply Crew",
+      "lead": "The Roscosmos Progress 96 spacecraft docked to the space-facing port of the International Space Station’s Poisk module at 9:44 a.m. EDT Saturday.",
+      "date": "2026-09-19T13:48:49.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/09/19/progress-96-cargo-spacecraft-docks-to-station-to-resupply-crew/",
+      "sourceLabel": "NASA Science",
       "language": "en",
-      "credit": "Neelam and Ajay Talwar"
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/blog-96p-dock-091926.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-9j2cgf",
+      "title": "Progress 96 Cargo Spacecraft Approaching Station for Docking",
+      "lead": "NASA is streaming live rendezvous and docking coverage as the Roscosmos Progress 96 cargo spacecraft makes its way to the International Space Station. Watch online at: https://www.nasa.gov/live",
+      "date": "2026-09-19T13:03:31.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/09/19/progress-96-cargo-spacecraft-approaching-station-for-docking/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://images-assets.nasa.gov/image/iss073e0698630/iss073e0698630~large.jpg?w=1200&fit=clip",
+      "body": ""
     },
     {
       "id": "nasa-rg5qby",
@@ -87,18 +99,6 @@
       "sourceLabel": "NASA Science",
       "language": "en",
       "image": "https://www.nasa.gov/wp-content/uploads/2026/09/cosi-2026july-01.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1vyzr4q",
-      "title": "NASA’s Hubble Spots an Out-of-Sync Galaxy",
-      "lead": "Though the spiral galaxy in this new image from the NASA/ESA Hubble Space Telescope seems serene, it hides a chaotic secret. This galaxy is NGC 4698, and it lies about 55 million light-years away in the constellation Virgo.",
-      "date": "2026-09-18T13:38:12.000Z",
-      "category": "teleskop",
-      "source": "https://science.nasa.gov/uncategorized/nasas-hubble-spots-an-out-of-sync-galaxy/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://science.nasa.gov/wp-content/uploads/2026/09/potm2609a.jpg?w=1200&fit=clip",
       "body": ""
     }
   ]
