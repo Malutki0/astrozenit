@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20T09:51:43.168Z",
+  "updated": "2026-09-21T10:48:30.820Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -18,6 +18,18 @@
     }
   ],
   "posts": [
+    {
+      "id": "apod-2026-09-21",
+      "title": "Cocoon Nebula Wide Field",
+      "lead": "When does a nebula look like a comet? In this crowded starfield covering over two degrees within the high-flying constellation of the Swan (Cygnus), the eye is drawn to the Cocoon Nebula.",
+      "body": "",
+      "date": "2026-09-21T04:05:00.000Z",
+      "category": "wydarzenie",
+      "source": "https://apod.nasa.gov/apod/ap260921.html",
+      "sourceLabel": "NASA APOD",
+      "language": "en",
+      "credit": "Piotr Czerski"
+    },
     {
       "id": "nasa-ubjh92",
       "title": "Progress 96 Cargo Spacecraft Docks to Station to Resupply Crew",
@@ -87,18 +99,6 @@
       "sourceLabel": "NASA Science",
       "language": "en",
       "image": "https://www.nasa.gov/wp-content/uploads/2026/01/54387592956-0d0c5c9258-o.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-11al664",
-      "title": "COSI Telescope Comes Together",
-      "lead": "UC Berkeley engineers and managers watch as the COSI (Compton Spectrometer and Imager) detector assembly is slowly raised from a table in this July 8, 2026, image.",
-      "date": "2026-09-18T15:45:03.000Z",
-      "category": "teleskop",
-      "source": "https://www.nasa.gov/image-article/cosi-telescope-comes-together/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/cosi-2026july-01.jpg?w=1200&fit=clip",
       "body": ""
     }
   ]
