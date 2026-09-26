@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-25T10:15:20.103Z",
+  "updated": "2026-09-26T09:56:02.705Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,63 +19,126 @@
   ],
   "posts": [
     {
-      "id": "apod-2026-09-25",
-      "title": "Globular Cluster Omega Centauri",
-      "lead": "Globular star cluster Omega Centauri packs about 10 million stars much older than the Sun into a volume some 150 light-years in diameter.",
+      "id": "apod-2026-09-26",
+      "title": "Mirrored Meteor and Milky Way",
+      "lead": "On August 15, this perseid meteor streaked through night skies over the Observatorio del Roque de los Muchachos at La Palma, Canary Islands, Spain.",
       "body": "",
-      "date": "2026-09-25T04:05:00.000Z",
+      "date": "2026-09-26T04:05:00.000Z",
       "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap260925.html",
+      "source": "https://apod.nasa.gov/apod/ap260926.html",
       "sourceLabel": "NASA APOD",
       "language": "en",
-      "credit": "Javier O. Cadenas Parra"
+      "credit": "Jeff Dai"
     },
     {
-      "id": "nasa-araav8",
-      "title": "NASA Shares SpaceX Crew-14 Assignments for Space Station Mission",
-      "lead": "Four crew members from three space agencies will launch to the International Space Station no earlier than spring 2027 for a long-duration science expedition as part of NASA’s SpaceX Crew-14 mission.",
-      "date": "2026-09-24T21:32:01.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/blogs/commercialcrew/2026/09/24/nasa-shares-spacex-crew-14-assignments-for-space-station-mission/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/crew14.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-121m0xt",
-      "title": "NASA Welcomes Côte d’Ivoire as Newest Artemis Accords Signatory",
-      "lead": "Côte d’Ivoire signed the Artemis Accords on Thursday, becoming the 75th signatory and marking a major milestone for this growing coalition.",
-      "date": "2026-09-24T21:27:17.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/organizations/oiir/nasa-welcomes-cote-divoire-as-newest-artemis-accords-signatory/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/artemis-accords-cote-divoire-75-092426.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-s0vvwg",
-      "title": "NASA Shares SpaceX Crew-14 Assignments for Space Station Mission",
-      "lead": "Four crew members from three space agencies will launch to the International Space Station no earlier than spring 2027 for a long-duration science expedition as part of NASA’s SpaceX Crew-14 mission.",
-      "date": "2026-09-24T21:15:46.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/news-release/nasa-shares-spacex-crew-14-assignments-for-space-station-mission/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/20260724-crew-14-groupphoto-crop-1.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-785d0b",
-      "title": "Jill Tarter",
-      "lead": "Director: Center for SETI ResearchSETI Institute, 1984 – 2012Emeritus Chair for SETI Research How will humanity first discover ET Life?Best guess: TechnosignaturesWhile the astronomical community is planning for large telescopes, or robotic...",
-      "date": "2026-09-24T19:46:38.000Z",
+      "id": "nasa-q8od0u",
+      "title": "Circling the Black Hole at the Photon Sphere",
+      "lead": "You currently sit at the black hole’s photon sphere, where light can travel endlessly in a circle due to the star’s great gravitational pull.",
+      "date": "2026-09-25T22:08:54.000Z",
       "category": "wydarzenie",
-      "source": "https://science.nasa.gov/apod/jill-tarter/",
+      "source": "https://science.nasa.gov/apod/circling-the-black-hole-at-the-photon-sphere/",
       "sourceLabel": "NASA Science",
       "language": "en",
       "body": ""
+    },
+    {
+      "id": "nasa-1a3s0cs",
+      "title": "NASA, Boeing to Provide Update on Starliner Development",
+      "lead": "During a news conference at 3 p.m. EDT on Monday, Sept. 28, NASA and Boeing leadership will discuss Starliner’s development and plans for regular crew flights to and from the International Space Station.",
+      "date": "2026-09-25T22:06:50.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/news-release/nasa-boeing-to-provide-update-on-starliner-development/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/starliner.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1cn000m",
+      "title": "Approaching the Photon Sphere",
+      "lead": "As before, from this orientation, the black hole’s enormous gravity bends light to make two discernible images of the constellation Orion. You now descend to the photon sphere.",
+      "date": "2026-09-25T22:04:05.000Z",
+      "category": "wydarzenie",
+      "source": "https://science.nasa.gov/apod/approaching-the-photon-sphere/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "body": ""
+    },
+    {
+      "id": "nasa-1g1ps6t",
+      "title": "Looking Up at the Photon Sphere",
+      "lead": "The first frame is dark as you peer into the black hole itself. You begin to look up and stars come back into view. Now the stars are more blue than ever before as starlight that has fallen into the black hole to reach you has become more e...",
+      "date": "2026-09-25T21:57:42.000Z",
+      "category": "wydarzenie",
+      "source": "https://science.nasa.gov/apod/looking-up-at-the-photon-sphere/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "body": ""
+    },
+    {
+      "id": "nasa-1u0qihn",
+      "title": "Circling the Black Hole",
+      "lead": "The first frame shows a background sky highly distorted by the black hole in the center. The gravity of the black hole is so great that it actually deflects the background starlight.",
+      "date": "2026-09-25T21:53:34.000Z",
+      "category": "wydarzenie",
+      "source": "https://science.nasa.gov/apod/circling-the-black-hole/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "body": ""
+    },
+    {
+      "id": "nasa-fowuzg",
+      "title": "Approaching the Black Hole",
+      "lead": "The first frame depicts the observer in empty space looking toward the constellation Orion. The three stars in Orion’s belt are visible to the right of the center of the screen.",
+      "date": "2026-09-25T21:46:24.000Z",
+      "category": "wydarzenie",
+      "source": "https://science.nasa.gov/apod/approaching-the-black-hole/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "body": ""
+    },
+    {
+      "id": "nasa-14zmtgw",
+      "title": "NASA’s SpaceX Crew-13 Set for Saturday Arrival at NASA Kennedy",
+      "lead": "The crew members of NASA’s SpaceX Crew‑13 mission are set to touch down at the agency’s Kennedy Space Center at approximately 1 p.m. EDT on Saturday, Sept.",
+      "date": "2026-09-25T20:35:55.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/commercialcrew/2026/09/25/nasas-spacex-crew-13-set-for-saturday-arrival-at-nasa-kennedy/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://images-assets.nasa.gov/image/jsc2026e406664/jsc2026e406664~large.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "astronet-1bq2l9b",
+      "title": "Cykl otwarty a zamknięty – jak napędzane są najpotężniejsze rakiety?",
+      "lead": "W poprzednim artykule omówiłam podstawowe cykle pracy silnika. Większość z nich opierała się na wykorzystaniu naturalnej tendencji płynów do poruszania się w kierunku niższego ciśnienia, ale, jak wspomniałam, niesie to ze sobą poważne ogran...",
+      "date": "2026-09-25T20:24:34.000Z",
+      "category": "sprzet",
+      "source": "https://astronet.pl/astronautyka/cykl-otwarty-a-zamkniety-jak-napedzane-sa-najpotezniejsze-rakiety/?utm_source=rss&utm_medium=rss&utm_campaign=cykl-otwarty-a-zamkniety-jak-napedzane-sa-najpotezniejsze-rakiety",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "nasa-1hb7nej",
+      "title": "The Nature of the Universe Great Debate in 1998: Program",
+      "lead": "The Nature of the Universe Debate:Cosmology Solved? Peebles – Turner Baird AuditoriumThe Smithsonian InstitutionNational Museum of Natural History 1998 October 4; Debate Program 1 – 4:30 pm Sponsors: Smithsonian National Museum of Natural H...",
+      "date": "2026-09-25T20:14:38.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/apod/the-nature-of-the-universe-great-debate-in-1998-program/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "body": ""
+    },
+    {
+      "id": "astronet-9pv6sl",
+      "title": "Polska rakieta znów startuje. Jak Gdynia buduje kosmiczną i obronną przyszłość Polski",
+      "lead": "Obrazek wyróżniający: SpaceForest Czy wiedzieliście, że w Polsce prężnie rozwija się przemysł rakietowy? Zaledwie kilka dni temu wiceminister obrony narodowej Cezary Tomczyk opublikował na X nagranie z poligonu w Ustce, przedstawiające kole...",
+      "date": "2026-09-25T19:01:45.000Z",
+      "category": "wydarzenie",
+      "source": "https://astronet.pl/inne/polska-rakieta-znow-startuje-jak-gdynia-buduje-kosmiczna-i-obronna-przyszlosc-polski/?utm_source=rss&utm_medium=rss&utm_campaign=polska-rakieta-znow-startuje-jak-gdynia-buduje-kosmiczna-i-obronna-przyszlosc-polski",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
     },
     {
       "id": "astronet-9l4f3j",
@@ -154,26 +217,6 @@
       "date": "2026-09-03T17:44:32.000Z",
       "category": "sprzet",
       "source": "https://astronet.pl/astronautyka/nowy-krater-na-ksiezycu-efekt-nieplanowanego-uderzenia-czesci-rakiety-falcon-9/?utm_source=rss&utm_medium=rss&utm_campaign=nowy-krater-na-ksiezycu-efekt-nieplanowanego-uderzenia-czesci-rakiety-falcon-9",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-oi68vf",
-      "title": "Spotkaj ekspertkę: Efekty misji IGNIS – Odporność w kosmosie",
-      "lead": "Co dzieje się z układem odpornościowym człowieka podczas lotu kosmicznego? Jak mikrograwitacja i inne czynniki związane z pobytem na orbicie wpływają na komórki odpornościowe?",
-      "date": "2026-09-03T17:08:07.000Z",
-      "category": "misja",
-      "source": "https://astronet.pl/wydarzenia/spotkaj-ekspertke-efekty-misji-ignis-odpornosc-w-kosmosie/?utm_source=rss&utm_medium=rss&utm_campaign=spotkaj-ekspertke-efekty-misji-ignis-odpornosc-w-kosmosie",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-10ti3gd",
-      "title": "IFT-14 coraz bliżej: czym zajmuje się teraz SpaceX?",
-      "lead": "Obrazek wyróżniający: SpaceX W SpaceX intensywnie trwają przygotowania do czternastego lotu testowego systemu Starship – pierwszego, który ma wejść na orbitę.",
-      "date": "2026-09-03T09:37:53.000Z",
-      "category": "misja",
-      "source": "https://astronet.pl/astronautyka/ift-14-coraz-blizej-czym-zajmuje-sie-teraz-spacex/?utm_source=rss&utm_medium=rss&utm_campaign=ift-14-coraz-blizej-czym-zajmuje-sie-teraz-spacex",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
