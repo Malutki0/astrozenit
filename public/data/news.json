@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-26T09:56:02.705Z",
+  "updated": "2026-09-27T10:35:45.360Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,94 +19,50 @@
   ],
   "posts": [
     {
-      "id": "apod-2026-09-26",
-      "title": "Mirrored Meteor and Milky Way",
-      "lead": "On August 15, this perseid meteor streaked through night skies over the Observatorio del Roque de los Muchachos at La Palma, Canary Islands, Spain.",
+      "id": "apod-2026-09-27",
+      "title": "Andromeda before Photoshop",
+      "lead": "What does the Andromeda galaxy really look like? The featured image shows how our Milky Way Galaxy's closest major galactic neighbor really appears in a long exposure through Earth's busy skies and with a digital camera that introduces norm...",
       "body": "",
-      "date": "2026-09-26T04:05:00.000Z",
+      "date": "2026-09-27T04:05:00.000Z",
       "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap260926.html",
+      "source": "https://apod.nasa.gov/apod/ap260927.html",
       "sourceLabel": "NASA APOD",
       "language": "en",
-      "credit": "Jeff Dai"
+      "image": "https://apod.nasa.gov/apod/image/2609/M31Before_Scherer_960.jpg",
+      "credit": "NASA"
     },
     {
-      "id": "nasa-q8od0u",
-      "title": "Circling the Black Hole at the Photon Sphere",
-      "lead": "You currently sit at the black hole’s photon sphere, where light can travel endlessly in a circle due to the star’s great gravitational pull.",
-      "date": "2026-09-25T22:08:54.000Z",
-      "category": "wydarzenie",
-      "source": "https://science.nasa.gov/apod/circling-the-black-hole-at-the-photon-sphere/",
+      "id": "nasa-1w8dj2o",
+      "title": "MVP-Plant-02",
+      "lead": "",
+      "date": "2026-09-27T00:10:38.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/mvp-plant-02/",
       "sourceLabel": "NASA Science",
-      "language": "en",
-      "body": ""
+      "language": "en"
     },
     {
-      "id": "nasa-1a3s0cs",
-      "title": "NASA, Boeing to Provide Update on Starliner Development",
-      "lead": "During a news conference at 3 p.m. EDT on Monday, Sept. 28, NASA and Boeing leadership will discuss Starliner’s development and plans for regular crew flights to and from the International Space Station.",
-      "date": "2026-09-25T22:06:50.000Z",
+      "id": "nasa-1w0dilq",
+      "title": "NASA’s SpaceX Crew-13 Lands at NASA Kennedy",
+      "lead": "NASA astronauts Jessica Watkins and Luke Delaney, CSA (Canadian Space Agency) astronaut Joshua Kutryk, and Roscosmos cosmonaut Sergey Teteryatnikov touched down at NASA’s Kennedy Space Center in Florida, at 12:56 p.m.",
+      "date": "2026-09-26T17:08:42.000Z",
       "category": "misja",
-      "source": "https://www.nasa.gov/news-release/nasa-boeing-to-provide-update-on-starliner-development/",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/09/26/nasas-spacex-crew-13-lands-at-nasa-kennedy/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/starliner.jpg?w=1200&fit=clip",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/ksc-20260926-ph-kls01-0023.jpg?w=1200&fit=clip",
       "body": ""
     },
     {
-      "id": "nasa-1cn000m",
-      "title": "Approaching the Photon Sphere",
-      "lead": "As before, from this orientation, the black hole’s enormous gravity bends light to make two discernible images of the constellation Orion. You now descend to the photon sphere.",
-      "date": "2026-09-25T22:04:05.000Z",
-      "category": "wydarzenie",
-      "source": "https://science.nasa.gov/apod/approaching-the-photon-sphere/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "body": ""
-    },
-    {
-      "id": "nasa-1g1ps6t",
-      "title": "Looking Up at the Photon Sphere",
-      "lead": "The first frame is dark as you peer into the black hole itself. You begin to look up and stars come back into view. Now the stars are more blue than ever before as starlight that has fallen into the black hole to reach you has become more e...",
-      "date": "2026-09-25T21:57:42.000Z",
-      "category": "wydarzenie",
-      "source": "https://science.nasa.gov/apod/looking-up-at-the-photon-sphere/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "body": ""
-    },
-    {
-      "id": "nasa-1u0qihn",
-      "title": "Circling the Black Hole",
-      "lead": "The first frame shows a background sky highly distorted by the black hole in the center. The gravity of the black hole is so great that it actually deflects the background starlight.",
-      "date": "2026-09-25T21:53:34.000Z",
-      "category": "wydarzenie",
-      "source": "https://science.nasa.gov/apod/circling-the-black-hole/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "body": ""
-    },
-    {
-      "id": "nasa-fowuzg",
-      "title": "Approaching the Black Hole",
-      "lead": "The first frame depicts the observer in empty space looking toward the constellation Orion. The three stars in Orion’s belt are visible to the right of the center of the screen.",
-      "date": "2026-09-25T21:46:24.000Z",
-      "category": "wydarzenie",
-      "source": "https://science.nasa.gov/apod/approaching-the-black-hole/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "body": ""
-    },
-    {
-      "id": "nasa-14zmtgw",
-      "title": "NASA’s SpaceX Crew-13 Set for Saturday Arrival at NASA Kennedy",
-      "lead": "The crew members of NASA’s SpaceX Crew‑13 mission are set to touch down at the agency’s Kennedy Space Center at approximately 1 p.m. EDT on Saturday, Sept.",
-      "date": "2026-09-25T20:35:55.000Z",
+      "id": "nasa-1kt4syo",
+      "title": "NASA’s SpaceX Crew-13 On Way to Kennedy",
+      "lead": "NASA’s SpaceX Crew-13 crew members are on their way to NASA’s Kennedy Space Center in Florida to prepare for launch to the International Space Station.",
+      "date": "2026-09-26T15:02:44.000Z",
       "category": "misja",
-      "source": "https://www.nasa.gov/blogs/commercialcrew/2026/09/25/nasas-spacex-crew-13-set-for-saturday-arrival-at-nasa-kennedy/",
+      "source": "https://www.nasa.gov/blogs/commercialcrew/2026/09/26/nasas-spacex-crew-13-on-way-to-kennedy/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://images-assets.nasa.gov/image/jsc2026e406664/jsc2026e406664~large.jpg?w=1200&fit=clip",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/crew-13-collage.jpg?w=1200&fit=clip",
       "body": ""
     },
     {
@@ -118,17 +74,6 @@
       "source": "https://astronet.pl/astronautyka/cykl-otwarty-a-zamkniety-jak-napedzane-sa-najpotezniejsze-rakiety/?utm_source=rss&utm_medium=rss&utm_campaign=cykl-otwarty-a-zamkniety-jak-napedzane-sa-najpotezniejsze-rakiety",
       "sourceLabel": "AstroNET",
       "language": "pl"
-    },
-    {
-      "id": "nasa-1hb7nej",
-      "title": "The Nature of the Universe Great Debate in 1998: Program",
-      "lead": "The Nature of the Universe Debate:Cosmology Solved? Peebles – Turner Baird AuditoriumThe Smithsonian InstitutionNational Museum of Natural History 1998 October 4; Debate Program 1 – 4:30 pm Sponsors: Smithsonian National Museum of Natural H...",
-      "date": "2026-09-25T20:14:38.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/apod/the-nature-of-the-universe-great-debate-in-1998-program/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "body": ""
     },
     {
       "id": "astronet-9pv6sl",
