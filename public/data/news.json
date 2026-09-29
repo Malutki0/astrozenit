@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-28T11:45:52.986Z",
+  "updated": "2026-09-29T11:24:36.680Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,89 +19,142 @@
   ],
   "posts": [
     {
-      "id": "nasa-1b05m1i",
-      "title": "Harlow Shapley Project",
-      "lead": "APOD Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss",
-      "date": "2026-09-28T10:25:22.000Z",
-      "category": "wydarzenie",
-      "source": "https://science.nasa.gov/apod/2020-shapley-100-debate/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/debate/2020/shapley100th/Slide1.JPG?w=1200&fit=clip",
-      "body": ""
+      "id": "astronet-1dhms9z",
+      "title": "Full flow, tap-off i ekspanderowy – rzadko spotykane cykle pracy silników rakietowych",
+      "lead": "Po omówieniu najprostszych silników rakietowych oraz cykli otwartych i zamkniętych czas na coś jeszcze innego. W tym artykule omówię pozostałe rodzaje silników rakietowych, które łączą cechy poznanych cykli pracy lub oferują zupełnie inne p...",
+      "date": "2026-09-29T05:00:18.000Z",
+      "category": "sprzet",
+      "source": "https://astronet.pl/astronautyka/full-flow-tap-off-i-ekspanderowy-rzadko-spotykane-cykle-pracy-silnikow-rakietowych/?utm_source=rss&utm_medium=rss&utm_campaign=full-flow-tap-off-i-ekspanderowy-rzadko-spotykane-cykle-pracy-silnikow-rakietowych",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
     },
     {
-      "id": "nasa-1hjvn78",
-      "title": "AI/ML STIG Lecture Series, 28 Sept 2026",
-      "lead": "Hands-On Session II: Agentic Coding and Research Tools. Speaker: Serat Saad, The Ohio State University",
-      "date": "2026-09-28T10:13:06.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-28-sept-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1bntt5q",
-      "title": "IR STIG PRIMA Seminar, 28 Sept 2026",
-      "lead": "Time Domain in the Thermal Infrared: NEOWISE, NEO Surveyor, and the Hunt for Hazardous Asteroids. Speaker: Joseph Masiero (California Institute of Technology / IPAC) Exploring the Synergies Between PRIMA and JWST: A Study of PAHs Across Cos...",
-      "date": "2026-09-28T10:12:55.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ir-stig-prima-seminar-28-sept-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1ekicqh",
-      "title": "Galaxies SIG Seminar, 6 Oct 2026",
-      "lead": "A Galaxy Doesn’t Forget: Why You Should Trust Your Resolved SFHs from Photometric Observations. Speaker: Charlotte Olsen (CUNY City Tech)",
-      "date": "2026-09-28T10:12:39.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/galaxies-sig-seminar-6-oct-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-u1r4r2",
-      "title": "TDAMM SIG Seminar, 22 October 2026",
-      "lead": "The UltraViolet EXplorer (UVEX). Speakers: Dan Weisz (UCB) and Suvi Gezari (UMD)",
-      "date": "2026-09-28T10:11:50.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/tdamm-sig-seminar-22-october-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1sf6m9i",
-      "title": "Astronomy’s Great Remembrance",
-      "lead": "APOD Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss",
-      "date": "2026-09-28T10:06:15.000Z",
-      "category": "wydarzenie",
-      "source": "https://science.nasa.gov/apod/astronomys-great-remembrance-crandall-100/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/debate/2020/crandall100th/Slide1.JPG?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "apod-2026-09-28",
-      "title": "Cosmic Latte: The Average Color of the Universe",
-      "lead": "What color is the universe? More precisely, if the entire sky were smeared out, what color would the final mix be? This whimsical question came up when trying to determine what stars are commonplace in nearby galaxies.",
+      "id": "apod-2026-09-29",
+      "title": "Sh2-188: The Shrimp Nebula",
+      "lead": "What causes the swirl in the Shrimp Nebula? Its high speed is likely. What is sure is that Sh2-188 is one of the larger planetary nebulas on the night sky, by angular size, spanning about half the diameter of the Moon.",
       "body": "",
-      "date": "2026-09-28T04:05:00.000Z",
+      "date": "2026-09-29T04:05:00.000Z",
       "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap260928.html",
+      "source": "https://apod.nasa.gov/apod/ap260929.html",
       "sourceLabel": "NASA APOD",
       "language": "en",
-      "image": "https://apod.nasa.gov/apod/image/2609/CosmicLatte_jhu_960_annotated.jpg",
-      "credit": "NASA"
+      "credit": "Pawel Piechnik"
+    },
+    {
+      "id": "nasa-1kzz8iq",
+      "title": "Mars Has Its Charmes",
+      "lead": "Written by Athanasios (Thanos) Klidaras, Ph.D. candidate at Purdue University Sept. 21, 2026 After a long hiatus, the Perseverance rover updates page is back.",
+      "date": "2026-09-29T01:27:52.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/blog/mars-has-its-charmes/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/mars2020/2026/perseverance-rover-updates/Mars_Perseverance_SIF_1967_0841573976_050EBY_N0910806SRLC08063_0000LMJ.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-kj2ff9",
+      "title": "October’s Night Sky Notes: Spooky Stargazing",
+      "lead": "The Ghoul Located within the constellation Perseus lies a star called Algol, also known as ‘Demon Star’ or ‘The Ghoul’. You can spot this star during the autumn months, along with Cassiopeia and Andromeda in the northeastern sky, beginning...",
+      "date": "2026-09-28T22:48:56.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/spooky-stargazing/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/nightsky/articles/2026-10_Algol%20TESS%20Lightcurve.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1g68i9e",
+      "title": "NASA, Boeing Share Update on Commercial Starliner Development Plans",
+      "lead": "On Monday, NASA and Boeing provided an update on the company’s Starliner spacecraft, including adding additional crew missions and certifying a new rocket for crew transportation to low Earth orbit.",
+      "date": "2026-09-28T19:26:57.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/news-release/nasa-boeing-share-update-on-commercial-starliner-development-plans/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/starliner-update-sept-28.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-xb6h70",
+      "title": "NASA Armstrong Celebrates 80 Years of Flight Innovation",
+      "lead": "On Sept. 30, 1946, five National Advisory Committee of Aeronautics (NACA) engineers arrived at Muroc Army Airfield in California’s high desert to achieve supersonic flight for the first time.",
+      "date": "2026-09-28T19:20:01.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/news-release/nasa-armstrong-celebrates-80-years-of-flight-innovation/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://images-assets.nasa.gov/image/933/933~large.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "astronet-19okxwx",
+      "title": "G. A. Polia – polskie projekty dla pasjonatów astronomii",
+      "lead": "Od 2023 roku polska grupa miłośników nocnego nieba rozwija portal Polia, czyli zestaw darmowych projektów dla astroamatorów i osób zainteresowanych lotnictwem.",
+      "date": "2026-09-28T18:36:21.000Z",
+      "category": "odkrycie",
+      "source": "https://astronet.pl/wydarzenia/g-a-polia-polskie-projekty-dla-pasjonatow-astronomii/?utm_source=rss&utm_medium=rss&utm_campaign=g-a-polia-polskie-projekty-dla-pasjonatow-astronomii",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "nasa-z6ysff",
+      "title": "Advanced Health Research Begins Week as Station Awaits Crew-13 Mission",
+      "lead": "Expedition 75 began the week scanning veins, checking out space workout gear, and testing specialized suits to ease the adjustment to Earth’s gravity. Back on Earth, NASA’s SpaceX Crew-13 members are counting down to a launch on Oct. 1.",
+      "date": "2026-09-28T17:54:36.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/09/28/advanced-health-research-begins-week-as-station-awaits-crew-13-mission/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://images-assets.nasa.gov/image/iss075e0121412/iss075e0121412~large.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-rzpzx9",
+      "title": "NASA Highlights Lessons Learned From Swift Boost Mission",
+      "lead": "A commercial mission to boost NASA’s Swift observatory concluded without raising the spacecraft’s orbit, but the agency and industry vendor gained valuable experience that will benefit future in-space servicing programs.",
+      "date": "2026-09-28T17:44:33.000Z",
+      "category": "teleskop",
+      "source": "https://science.nasa.gov/missions/swift/nasa-highlights-lessons-learned-from-swift-boost-mission/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/swift-observatory/misc--spacecraft-art/Swift_in_space_09.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "astronet-1i1titn",
+      "title": "Poradnik OA. Mechanika nieba 2: Prawa Keplera i równanie vis-viva",
+      "lead": "[latexpage] Johannes Kepler (1571-1630) to niemiecki matematyk i astronom. Jako asystent Tychona Brahe dostał za zadanie wytłumaczenie zasad, według których Mars porusza się po swojej orbicie.",
+      "date": "2026-09-28T17:42:02.000Z",
+      "category": "teleskop",
+      "source": "https://astronet.pl/oa/mechanika-nieba-3-prawa-keplera-i-rownanie-vis-viva/?utm_source=rss&utm_medium=rss&utm_campaign=mechanika-nieba-3-prawa-keplera-i-rownanie-vis-viva",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "nasa-a36o8u",
+      "title": "NASA Celebrates as Artemis Accords Surpasses 75 Signatories",
+      "lead": "Marking a significant expansion in the number of signatories to the Artemis Accords, NASA welcomed Albania, Croatia, Côte d’Ivoire, and San Marino, bringing total participation to 76 countries.",
+      "date": "2026-09-28T16:26:45.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/news-release/nasa-celebrates-as-artemis-accords-surpasses-75-signatories/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/artemis-accords-san-marino-76-092526.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1usy91o",
+      "title": "Meet NASA’s Artemis II Crew During Houston Public Event",
+      "lead": "Editor’s Note: This advisory was updated on Sept. 28, 2026, with ticketing information for the public. The four astronauts of NASA’s Artemis II mission will participate in an event hosted by industry and community partners at the University...",
+      "date": "2026-09-28T16:16:40.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/news-release/meet-nasas-artemis-ii-crew-during-houston-public-event/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/artemis-ii-crew.jpg?w=1200&fit=clip",
+      "body": ""
     },
     {
       "id": "astronet-1bq2l9b",
@@ -170,36 +223,6 @@
       "date": "2026-09-05T12:02:25.000Z",
       "category": "odkrycie",
       "source": "https://astronet.pl/oa/poradnik-oa-mechanika-nieba-1-grawitacja/?utm_source=rss&utm_medium=rss&utm_campaign=poradnik-oa-mechanika-nieba-1-grawitacja",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-13zmfaf",
-      "title": "Jak działają najprostsze silniki rakietowe?",
-      "lead": "W większości dwuskładnikowych silników ciśnieniowych korzysta się z paliw hipergolicznych, czyli takich, które zapalają się samorzutnie przy kontakcie paliwa z utleniaczem.",
-      "date": "2026-09-05T06:30:27.000Z",
-      "category": "sprzet",
-      "source": "https://astronet.pl/astronautyka/jak-dzialaja-najprostsze-silniki-rakietowe/?utm_source=rss&utm_medium=rss&utm_campaign=jak-dzialaja-najprostsze-silniki-rakietowe",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-l8iie6",
-      "title": "Komercyjnie dostępna kamera może pomóc naukowcom wykrywać więcej kolizji czarnych dziur",
-      "lead": "Naprawa defektu wewnątrz jednego z najbardziej zaawansowanych obserwatoriów naukowych może wydawać się niesamowicie droga lub wymagająca nowych rewolucyjnych systemów i rozwiązań.",
-      "date": "2026-09-03T17:58:58.000Z",
-      "category": "odkrycie",
-      "source": "https://astronet.pl/astronomia/komercyjnie-dostepna-kamera-moze-pomoc-naukowcom-wykrywac-wiecej-kolizji-czarnych-dziur/?utm_source=rss&utm_medium=rss&utm_campaign=komercyjnie-dostepna-kamera-moze-pomoc-naukowcom-wykrywac-wiecej-kolizji-czarnych-dziur",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-5jrucn",
-      "title": "Nowy krater na Księżycu: efekt nieplanowanego uderzenia części rakiety Falcon 9",
-      "lead": "Piątego sierpnia bieżącego roku doszło do nieplanowanego uderzenia zużytego górnego członu rakiety SpaceX Falcon 9, które doprowadziło do uformowania się nowego krateru na powierzchni Księżyca.",
-      "date": "2026-09-03T17:44:32.000Z",
-      "category": "sprzet",
-      "source": "https://astronet.pl/astronautyka/nowy-krater-na-ksiezycu-efekt-nieplanowanego-uderzenia-czesci-rakiety-falcon-9/?utm_source=rss&utm_medium=rss&utm_campaign=nowy-krater-na-ksiezycu-efekt-nieplanowanego-uderzenia-czesci-rakiety-falcon-9",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
