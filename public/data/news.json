@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29T11:24:36.680Z",
+  "updated": "2026-09-30T11:12:38.380Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,6 +19,108 @@
   ],
   "posts": [
     {
+      "id": "astronet-igryz3",
+      "title": "Niebo w październiku 2026 roku",
+      "lead": "Październik przynosi ze sobą odczuwalną zmianę rytmu; po jesiennej równonocy noce stają się wyraźnie dłuższe, a chłodny powiew nieuchronnie przybliża nas do zimy.",
+      "date": "2026-09-30T05:00:22.000Z",
+      "category": "wydarzenie",
+      "source": "https://astronet.pl/obserwacje/na-niebie/niebo-w-pazdzierniku-2026-roku/?utm_source=rss&utm_medium=rss&utm_campaign=niebo-w-pazdzierniku-2026-roku",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "nasa-6e53z2",
+      "title": "NASA Opens 2027 Human Lander Challenge for Lunar Communications",
+      "lead": "NASA’s 2027 Human Lander Challenge is seeking ideas from college and university students to help address one of the most critical needs for sustained lunar exploration: reliable communications.",
+      "date": "2026-09-29T21:27:56.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/directorates/esdmd/artemis-campaign-development-division/human-landing-system-program/nasa-opens-2027-human-lander-challenge-for-lunar-communications/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/2027-hulc-graphic-header-conceptual-lunar-communications-and-navigation-orbiter.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1tg2p3j",
+      "title": "AGN Coffee, 1 October 2026",
+      "lead": "AGN Coffee is designed to be a monthly, low-pressure, informal environment where early-career astronomers can discuss recent AGN papers, research ideas, and broader developments in the field.",
+      "date": "2026-09-29T20:50:08.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/agn-coffee-1-october-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1ojulof",
+      "title": "AI/ML STIG Lecture Series, 5 Oct 2026",
+      "lead": "Cosmic Origins &hellip; Cosmic Origins Community AI/ML STIG Lecture Series, 5… About Community Executive Committee Science Groups Conferences Cosmic Pathfinders Early Career Workshop Opportunities Missions Studies News & Events Resources AI...",
+      "date": "2026-09-29T20:49:55.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-5-oct-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1ekicqh",
+      "title": "Galaxies SIG Seminar, 6 Oct 2026",
+      "lead": "A Galaxy Doesn’t Forget: Why You Should Trust Your Resolved SFHs from Photometric Observations. Speaker: Charlotte Olsen (CUNY City Tech)",
+      "date": "2026-09-29T20:48:28.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/galaxies-sig-seminar-6-oct-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1qoqorm",
+      "title": "IR STIG Seminar, 13 Oct 2026",
+      "lead": "Infrared Science and Technology Interest Group (IR STIG) Seminar",
+      "date": "2026-09-29T20:47:50.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ir-stig-seminar-13-oct-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-u1r4r2",
+      "title": "TDAMM SIG Seminar, 22 October 2026",
+      "lead": "The UltraViolet EXplorer (UVEX). Speakers: Dan Weisz (UCB) and Suvi Gezari (UMD)",
+      "date": "2026-09-29T20:46:47.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/tdamm-sig-seminar-22-october-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "astronet-3prvkl",
+      "title": "Misja BepiColombo coraz bliżej celu",
+      "lead": "Od ostatnich 8 lat przez układ Słoneczny leci misja BepiColombo. Jest to wspólna misja Europejskiej Agencji Kosmicznej (ESA) oraz Japońskiej Agencji Eksploracji Aerokosmicznej (JAXA).",
+      "date": "2026-09-29T17:02:20.000Z",
+      "category": "misja",
+      "source": "https://astronet.pl/astronautyka/misja-bepicolombo-coraz-blizej-celu/?utm_source=rss&utm_medium=rss&utm_campaign=misja-bepicolombo-coraz-blizej-celu",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "astronet-42yqiv",
+      "title": "14 lot Starshipa. Pierwsza podróż na orbitę",
+      "lead": "Start rakiety Starship odbył się w poniedziałek 28 września o godzinie 7:48 czasu lokalnego (o 14:48 czasu polskiego). Jest to pierwszy lot, który wysłał Starshipa wraz z rakietą nośną Super Heavy firmy SpaceX na orbitę.",
+      "date": "2026-09-29T14:55:58.000Z",
+      "category": "misja",
+      "source": "https://astronet.pl/astronautyka/14-lot-starshipa-pierwsza-podroz-na-orbite/?utm_source=rss&utm_medium=rss&utm_campaign=14-lot-starshipa-pierwsza-podroz-na-orbite",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
       "id": "astronet-1dhms9z",
       "title": "Full flow, tap-off i ekspanderowy – rzadko spotykane cykle pracy silników rakietowych",
       "lead": "Po omówieniu najprostszych silników rakietowych oraz cykli otwartych i zamkniętych czas na coś jeszcze innego. W tym artykule omówię pozostałe rodzaje silników rakietowych, które łączą cechy poznanych cykli pracy lub oferują zupełnie inne p...",
@@ -27,66 +129,6 @@
       "source": "https://astronet.pl/astronautyka/full-flow-tap-off-i-ekspanderowy-rzadko-spotykane-cykle-pracy-silnikow-rakietowych/?utm_source=rss&utm_medium=rss&utm_campaign=full-flow-tap-off-i-ekspanderowy-rzadko-spotykane-cykle-pracy-silnikow-rakietowych",
       "sourceLabel": "AstroNET",
       "language": "pl"
-    },
-    {
-      "id": "apod-2026-09-29",
-      "title": "Sh2-188: The Shrimp Nebula",
-      "lead": "What causes the swirl in the Shrimp Nebula? Its high speed is likely. What is sure is that Sh2-188 is one of the larger planetary nebulas on the night sky, by angular size, spanning about half the diameter of the Moon.",
-      "body": "",
-      "date": "2026-09-29T04:05:00.000Z",
-      "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap260929.html",
-      "sourceLabel": "NASA APOD",
-      "language": "en",
-      "credit": "Pawel Piechnik"
-    },
-    {
-      "id": "nasa-1kzz8iq",
-      "title": "Mars Has Its Charmes",
-      "lead": "Written by Athanasios (Thanos) Klidaras, Ph.D. candidate at Purdue University Sept. 21, 2026 After a long hiatus, the Perseverance rover updates page is back.",
-      "date": "2026-09-29T01:27:52.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/blog/mars-has-its-charmes/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/mars2020/2026/perseverance-rover-updates/Mars_Perseverance_SIF_1967_0841573976_050EBY_N0910806SRLC08063_0000LMJ.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-kj2ff9",
-      "title": "October’s Night Sky Notes: Spooky Stargazing",
-      "lead": "The Ghoul Located within the constellation Perseus lies a star called Algol, also known as ‘Demon Star’ or ‘The Ghoul’. You can spot this star during the autumn months, along with Cassiopeia and Andromeda in the northeastern sky, beginning...",
-      "date": "2026-09-28T22:48:56.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/spooky-stargazing/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/nightsky/articles/2026-10_Algol%20TESS%20Lightcurve.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1g68i9e",
-      "title": "NASA, Boeing Share Update on Commercial Starliner Development Plans",
-      "lead": "On Monday, NASA and Boeing provided an update on the company’s Starliner spacecraft, including adding additional crew missions and certifying a new rocket for crew transportation to low Earth orbit.",
-      "date": "2026-09-28T19:26:57.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/news-release/nasa-boeing-share-update-on-commercial-starliner-development-plans/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/starliner-update-sept-28.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-xb6h70",
-      "title": "NASA Armstrong Celebrates 80 Years of Flight Innovation",
-      "lead": "On Sept. 30, 1946, five National Advisory Committee of Aeronautics (NACA) engineers arrived at Muroc Army Airfield in California’s high desert to achieve supersonic flight for the first time.",
-      "date": "2026-09-28T19:20:01.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/news-release/nasa-armstrong-celebrates-80-years-of-flight-innovation/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://images-assets.nasa.gov/image/933/933~large.jpg?w=1200&fit=clip",
-      "body": ""
     },
     {
       "id": "astronet-19okxwx",
@@ -99,30 +141,6 @@
       "language": "pl"
     },
     {
-      "id": "nasa-z6ysff",
-      "title": "Advanced Health Research Begins Week as Station Awaits Crew-13 Mission",
-      "lead": "Expedition 75 began the week scanning veins, checking out space workout gear, and testing specialized suits to ease the adjustment to Earth’s gravity. Back on Earth, NASA’s SpaceX Crew-13 members are counting down to a launch on Oct. 1.",
-      "date": "2026-09-28T17:54:36.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/blogs/spacestation/2026/09/28/advanced-health-research-begins-week-as-station-awaits-crew-13-mission/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://images-assets.nasa.gov/image/iss075e0121412/iss075e0121412~large.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-rzpzx9",
-      "title": "NASA Highlights Lessons Learned From Swift Boost Mission",
-      "lead": "A commercial mission to boost NASA’s Swift observatory concluded without raising the spacecraft’s orbit, but the agency and industry vendor gained valuable experience that will benefit future in-space servicing programs.",
-      "date": "2026-09-28T17:44:33.000Z",
-      "category": "teleskop",
-      "source": "https://science.nasa.gov/missions/swift/nasa-highlights-lessons-learned-from-swift-boost-mission/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/swift-observatory/misc--spacecraft-art/Swift_in_space_09.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
       "id": "astronet-1i1titn",
       "title": "Poradnik OA. Mechanika nieba 2: Prawa Keplera i równanie vis-viva",
       "lead": "[latexpage] Johannes Kepler (1571-1630) to niemiecki matematyk i astronom. Jako asystent Tychona Brahe dostał za zadanie wytłumaczenie zasad, według których Mars porusza się po swojej orbicie.",
@@ -131,30 +149,6 @@
       "source": "https://astronet.pl/oa/mechanika-nieba-3-prawa-keplera-i-rownanie-vis-viva/?utm_source=rss&utm_medium=rss&utm_campaign=mechanika-nieba-3-prawa-keplera-i-rownanie-vis-viva",
       "sourceLabel": "AstroNET",
       "language": "pl"
-    },
-    {
-      "id": "nasa-a36o8u",
-      "title": "NASA Celebrates as Artemis Accords Surpasses 75 Signatories",
-      "lead": "Marking a significant expansion in the number of signatories to the Artemis Accords, NASA welcomed Albania, Croatia, Côte d’Ivoire, and San Marino, bringing total participation to 76 countries.",
-      "date": "2026-09-28T16:26:45.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/news-release/nasa-celebrates-as-artemis-accords-surpasses-75-signatories/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/artemis-accords-san-marino-76-092526.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1usy91o",
-      "title": "Meet NASA’s Artemis II Crew During Houston Public Event",
-      "lead": "Editor’s Note: This advisory was updated on Sept. 28, 2026, with ticketing information for the public. The four astronauts of NASA’s Artemis II mission will participate in an event hosted by industry and community partners at the University...",
-      "date": "2026-09-28T16:16:40.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/news-release/meet-nasas-artemis-ii-crew-during-houston-public-event/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/artemis-ii-crew.jpg?w=1200&fit=clip",
-      "body": ""
     },
     {
       "id": "astronet-1bq2l9b",
@@ -183,46 +177,6 @@
       "date": "2026-09-07T17:06:26.000Z",
       "category": "teleskop",
       "source": "https://astronet.pl/astronautyka/czy-nowy-kosmiczny-teleskop-zastapi-hubblea-cel-misji-nancy-grace-roman/?utm_source=rss&utm_medium=rss&utm_campaign=czy-nowy-kosmiczny-teleskop-zastapi-hubblea-cel-misji-nancy-grace-roman",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-9fh3bs",
-      "title": "Dziesięciokątna fala wokół południowego bieguna Saturna",
-      "lead": "Północny biegun Saturna posiada unikalną cechę atmosferyczną w Układzie Słonecznym: trwałą falę heksagonalną z potężnym wirem w centrum. Do tej pory nie zaobserwowano podobnej fali w innych rejonach planety.",
-      "date": "2026-09-06T17:55:26.000Z",
-      "category": "odkrycie",
-      "source": "https://astronet.pl/astronomia/dziesieciokatna-fala-wokol-poludniowego-bieguna-saturna/?utm_source=rss&utm_medium=rss&utm_campaign=dziesieciokatna-fala-wokol-poludniowego-bieguna-saturna",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-v2qbif",
-      "title": "Pierwsza europejska prywatna rakieta na orbicie. Udany drugi lot Spectrum",
-      "lead": "Historia widziała wiele przypadków szybkich zwrotów losów o 180 stopni. Natomiast dopracowanie rakiety orbitalnej w taki sposób, że w w ramach drugiego lotu dociera na orbitę, kiedy pierwszy zakończył się po 40 sekundach - to nowość.",
-      "date": "2026-09-06T10:54:51.000Z",
-      "category": "sprzet",
-      "source": "https://astronet.pl/astronautyka/pierwsza-europejska-prywatna-rakieta-na-orbicie-udany-drugi-lot-spectrum/?utm_source=rss&utm_medium=rss&utm_campaign=pierwsza-europejska-prywatna-rakieta-na-orbicie-udany-drugi-lot-spectrum",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-1dcm4lk",
-      "title": "Płynna woda na Marsie mogła występować później, niż myśleliśmy",
-      "lead": "Chiński łazik Zhurong prawdopodobnie natknął się na dowód występowania wody na Marsie znacznie później, niż do tej pory uważano.",
-      "date": "2026-09-06T09:31:49.000Z",
-      "category": "misja",
-      "source": "https://astronet.pl/astronomia/plynna-woda-na-marsie-mogla-wystepowac-pozniej-niz-myslelismy/?utm_source=rss&utm_medium=rss&utm_campaign=plynna-woda-na-marsie-mogla-wystepowac-pozniej-niz-myslelismy",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-1gac0m3",
-      "title": "Poradnik OA. Mechanika nieba 1: Grawitacja",
-      "lead": "[latexpage] Mechanika nieba to gałąź astronomii zajmująca się opisem ruchów i oddziaływań ciał niebieskich na gruncie mechaniki klasycznej zaproponowanej przez sir Izaaka Newtona.",
-      "date": "2026-09-05T12:02:25.000Z",
-      "category": "odkrycie",
-      "source": "https://astronet.pl/oa/poradnik-oa-mechanika-nieba-1-grawitacja/?utm_source=rss&utm_medium=rss&utm_campaign=poradnik-oa-mechanika-nieba-1-grawitacja",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
