@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T11:12:38.380Z",
+  "updated": "2026-10-01T11:40:00.400Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,6 +19,132 @@
   ],
   "posts": [
     {
+      "id": "astronet-1vh5lcb",
+      "title": "ESERO, CNK zachęca: Zaproś eksperta na lekcje online o Kosmosie",
+      "lead": "Projekt Lekcje nie z tej Ziemi! jest skierowany do nauczycieli i edukatorów szkół podstawowych (klasy 4-8) oraz ponadpodstawowych (liceum, technikum, szkoły branżowe), by przybliżać uczniom wiedzę o misjach i badaniach Kosmosu, a zaintereso...",
+      "date": "2026-10-01T11:37:44.000Z",
+      "category": "odkrycie",
+      "source": "https://astronet.pl/wydarzenia/esero-cnk-zacheca-zapros-eksperta-na-lekcje-online-o-kosmosie/?utm_source=rss&utm_medium=rss&utm_campaign=esero-cnk-zacheca-zapros-eksperta-na-lekcje-online-o-kosmosie",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "nasa-q576dc",
+      "title": "Launch Day for NASA’s SpaceX Crew-13 Mission",
+      "lead": "About 4.5 hours from now, NASA’s SpaceX Crew-13 mission carrying NASA astronauts Jessica Watkins and Luke Delaney, CSA (Canadian Space Agency) astronaut Joshua Kutryk, and Roscosmos cosmonaut Sergey Teteryatnikov to the International Space...",
+      "date": "2026-10-01T10:49:05.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/launch-day-for-nasas-spacex-crew-13-mission/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/crew-13-on-pad.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "astronet-1ei393z",
+      "title": "Relacja z obozu dla młodszych 2026",
+      "lead": "W dniach od 25 lipca do 8 sierpnia 2026 r. odbył się obóz astronomiczny dla młodszych, organizowany przez Klub Astronomiczny Almukantarat. W obozie uczestniczyli absolwenci szkół podstawowych, zamierzający podjąć naukę w szkole średniej.",
+      "date": "2026-10-01T08:28:49.000Z",
+      "category": "odkrycie",
+      "source": "https://astronet.pl/wydarzenia/almukantarat/relacja-z-obozu-dla-mlodszych-2026/?utm_source=rss&utm_medium=rss&utm_campaign=relacja-z-obozu-dla-mlodszych-2026",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "astronet-1arxebq",
+      "title": "Nowe szacunki rozkładu mas gwiazd we wczesnych galaktykach – dodatkowa masa ukryta w małomasywnych gwiazdach",
+      "lead": "Dokonano pomiarów dolnego rozkładu rozkładu mas gwiazd na próbie masywnych galaktyk w stanie spoczynku położonych poza bliskim wszechświatem.",
+      "date": "2026-10-01T05:00:11.000Z",
+      "category": "teleskop",
+      "source": "https://astronet.pl/astronomia/nowe-szacunki-rozkladu-mas-wczesnych-galaktyk-dodatkowa-masa-ukryta-w-malomasywnych-gwiazdach/?utm_source=rss&utm_medium=rss&utm_campaign=nowe-szacunki-rozkladu-mas-wczesnych-galaktyk-dodatkowa-masa-ukryta-w-malomasywnych-gwiazdach",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "apod-2026-10-01",
+      "title": "NASA Science",
+      "lead": "Have you ever seen the full moon rise? This colorful image was photographed last weekend in Sicily, just outside the town of Nicosia, in Italy. It is a composite photograph that shows the Moon rising as the sky turns darker.",
+      "body": "",
+      "date": "2026-10-01T04:05:00.000Z",
+      "category": "wydarzenie",
+      "source": "https://apod.nasa.gov/apod/ap261001.html",
+      "sourceLabel": "NASA APOD",
+      "language": "en",
+      "image": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+      "credit": "NASA"
+    },
+    {
+      "id": "nasa-1cy2z35",
+      "title": "Moon Base Learning Resources",
+      "lead": "Discover the wonders of the Moon and the future Moon Base with this collection of NASA learning resources.",
+      "date": "2026-09-30T22:27:31.000Z",
+      "category": "odkrycie",
+      "source": "https://www.nasa.gov/moon-base-learning-resources/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/nasa-lunar-outpost-concept-grace-weisner.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1wj4jbr",
+      "title": "Help Overlap Zoo Reveal Cosmic Dust",
+      "lead": "Galaxies, vast collections of billions of stars, gas, and dust held together by gravity, are scattered across the immensity of space.",
+      "date": "2026-09-30T21:19:33.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/get-involved/citizen-science/help-overlap-zoo-reveal-cosmic-dust/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/citizen-science/highlights/2026/STScI-01GE08RNPH8RBMMGMC52JD3R93-Trevor_Butrum.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1a829hv",
+      "title": "NASA Adds New Science Investigations for Moon Base",
+      "lead": "Editor’s note: This release was updated on Sept. 30, 2026, to correct the name of the DISCO payload. NASA selected three new scientific investigations and their payload suites to advance our knowledge of the Moon and help pave the way for b...",
+      "date": "2026-09-30T21:11:23.000Z",
+      "category": "sprzet",
+      "source": "https://www.nasa.gov/news-release/nasa-adds-new-science-investigations-for-moon-base/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/stmd-exteriorlunarbase-hdlandscapeversion-2026-0521-1.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1n1pc4p",
+      "title": "NASA Awards Contract to Develop 5G Communications for Moon",
+      "lead": "NASA has awarded Modulate Space Corporation a contract to develop key elements of a 5G communications system for use on the lunar surface with built-in Wi-Fi 6, for NASA’s Glenn Research Center in Cleveland.",
+      "date": "2026-09-30T20:41:26.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/news-release/nasa-awards-contract-to-develop-5g-communications-for-moon/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "body": ""
+    },
+    {
+      "id": "nasa-lrnsjz",
+      "title": "NASA, SpaceX Conclude Review, Crew-13 ‘Go’ for Launch",
+      "lead": "NASA, SpaceX, and international partner teams completed the Launch Readiness Review for the agency’s Crew-13 mission to the International Space Station, with mission leaders polling “go” to proceed into the launch count.",
+      "date": "2026-09-30T19:51:33.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/commercialcrew/2026/09/30/nasa-spacex-conclude-review-crew-13-go-for-launch/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://images-assets.nasa.gov/image/KSC-20260927-PH-SPX01_0008/KSC-20260927-PH-SPX01_0008~orig.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-16rcsmq",
+      "title": "Station Prepares to Welcome Crew-13 while Continuing Space Research",
+      "lead": "Expedition 75 is getting the International Space Station ready for the arrival of NASA’s SpaceX Crew-13 mission scheduled to launch and dock to the orbital outpost on Thursday, Oct. 1.",
+      "date": "2026-09-30T18:42:52.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/09/30/station-prepares-to-welcome-crew-13-while-continuing-space-research/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://images-assets.nasa.gov/image/iss075e0144725/iss075e0144725~large.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
       "id": "astronet-igryz3",
       "title": "Niebo w październiku 2026 roku",
       "lead": "Październik przynosi ze sobą odczuwalną zmianę rytmu; po jesiennej równonocy noce stają się wyraźnie dłuższe, a chłodny powiew nieuchronnie przybliża nas do zimy.",
@@ -27,78 +153,6 @@
       "source": "https://astronet.pl/obserwacje/na-niebie/niebo-w-pazdzierniku-2026-roku/?utm_source=rss&utm_medium=rss&utm_campaign=niebo-w-pazdzierniku-2026-roku",
       "sourceLabel": "AstroNET",
       "language": "pl"
-    },
-    {
-      "id": "nasa-6e53z2",
-      "title": "NASA Opens 2027 Human Lander Challenge for Lunar Communications",
-      "lead": "NASA’s 2027 Human Lander Challenge is seeking ideas from college and university students to help address one of the most critical needs for sustained lunar exploration: reliable communications.",
-      "date": "2026-09-29T21:27:56.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/directorates/esdmd/artemis-campaign-development-division/human-landing-system-program/nasa-opens-2027-human-lander-challenge-for-lunar-communications/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/2027-hulc-graphic-header-conceptual-lunar-communications-and-navigation-orbiter.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1tg2p3j",
-      "title": "AGN Coffee, 1 October 2026",
-      "lead": "AGN Coffee is designed to be a monthly, low-pressure, informal environment where early-career astronomers can discuss recent AGN papers, research ideas, and broader developments in the field.",
-      "date": "2026-09-29T20:50:08.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/agn-coffee-1-october-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1ojulof",
-      "title": "AI/ML STIG Lecture Series, 5 Oct 2026",
-      "lead": "Cosmic Origins &hellip; Cosmic Origins Community AI/ML STIG Lecture Series, 5… About Community Executive Committee Science Groups Conferences Cosmic Pathfinders Early Career Workshop Opportunities Missions Studies News & Events Resources AI...",
-      "date": "2026-09-29T20:49:55.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-5-oct-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1ekicqh",
-      "title": "Galaxies SIG Seminar, 6 Oct 2026",
-      "lead": "A Galaxy Doesn’t Forget: Why You Should Trust Your Resolved SFHs from Photometric Observations. Speaker: Charlotte Olsen (CUNY City Tech)",
-      "date": "2026-09-29T20:48:28.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/galaxies-sig-seminar-6-oct-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1qoqorm",
-      "title": "IR STIG Seminar, 13 Oct 2026",
-      "lead": "Infrared Science and Technology Interest Group (IR STIG) Seminar",
-      "date": "2026-09-29T20:47:50.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ir-stig-seminar-13-oct-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-u1r4r2",
-      "title": "TDAMM SIG Seminar, 22 October 2026",
-      "lead": "The UltraViolet EXplorer (UVEX). Speakers: Dan Weisz (UCB) and Suvi Gezari (UMD)",
-      "date": "2026-09-29T20:46:47.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/tdamm-sig-seminar-22-october-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
     },
     {
       "id": "astronet-3prvkl",
@@ -147,36 +201,6 @@
       "date": "2026-09-28T17:42:02.000Z",
       "category": "teleskop",
       "source": "https://astronet.pl/oa/mechanika-nieba-3-prawa-keplera-i-rownanie-vis-viva/?utm_source=rss&utm_medium=rss&utm_campaign=mechanika-nieba-3-prawa-keplera-i-rownanie-vis-viva",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-1bq2l9b",
-      "title": "Cykl otwarty a zamknięty – jak napędzane są najpotężniejsze rakiety?",
-      "lead": "W poprzednim artykule omówiłam podstawowe cykle pracy silnika. Większość z nich opierała się na wykorzystaniu naturalnej tendencji płynów do poruszania się w kierunku niższego ciśnienia, ale, jak wspomniałam, niesie to ze sobą poważne ogran...",
-      "date": "2026-09-25T20:24:34.000Z",
-      "category": "sprzet",
-      "source": "https://astronet.pl/astronautyka/cykl-otwarty-a-zamkniety-jak-napedzane-sa-najpotezniejsze-rakiety/?utm_source=rss&utm_medium=rss&utm_campaign=cykl-otwarty-a-zamkniety-jak-napedzane-sa-najpotezniejsze-rakiety",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-9pv6sl",
-      "title": "Polska rakieta znów startuje. Jak Gdynia buduje kosmiczną i obronną przyszłość Polski",
-      "lead": "Obrazek wyróżniający: SpaceForest Czy wiedzieliście, że w Polsce prężnie rozwija się przemysł rakietowy? Zaledwie kilka dni temu wiceminister obrony narodowej Cezary Tomczyk opublikował na X nagranie z poligonu w Ustce, przedstawiające kole...",
-      "date": "2026-09-25T19:01:45.000Z",
-      "category": "wydarzenie",
-      "source": "https://astronet.pl/inne/polska-rakieta-znow-startuje-jak-gdynia-buduje-kosmiczna-i-obronna-przyszlosc-polski/?utm_source=rss&utm_medium=rss&utm_campaign=polska-rakieta-znow-startuje-jak-gdynia-buduje-kosmiczna-i-obronna-przyszlosc-polski",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-9l4f3j",
-      "title": "Czy nowy kosmiczny teleskop zastąpi Hubble’a? – Cel misji Nancy Grace Roman",
-      "lead": "Kosmiczny Teleskop Nancy Grace Roman (NGRST), wyniesiony na orbitę przez rakietę Falcon Heavy, obecnie zmierza do punktu L2, aby rozpocząć tam obserwacje i wykonywanie zdjęć.",
-      "date": "2026-09-07T17:06:26.000Z",
-      "category": "teleskop",
-      "source": "https://astronet.pl/astronautyka/czy-nowy-kosmiczny-teleskop-zastapi-hubblea-cel-misji-nancy-grace-roman/?utm_source=rss&utm_medium=rss&utm_campaign=czy-nowy-kosmiczny-teleskop-zastapi-hubblea-cel-misji-nancy-grace-roman",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
