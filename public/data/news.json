@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-04T11:09:08.215Z",
+  "updated": "2026-10-05T12:21:04.432Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,6 +19,88 @@
   ],
   "posts": [
     {
+      "id": "nasa-1ojulof",
+      "title": "AI/ML STIG Lecture Series, 5 Oct 2026",
+      "lead": "Transformers, Attention, and Pre-Training. Speaker: Josh Nguyen, University of Pennsylvania",
+      "date": "2026-10-05T10:19:54.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-5-oct-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1ekicqh",
+      "title": "Galaxies SIG Seminar, 6 Oct 2026",
+      "lead": "A Galaxy Doesn’t Forget: Why You Should Trust Your Resolved SFHs from Photometric Observations. Speaker: Charlotte Olsen (CUNY City Tech)",
+      "date": "2026-10-05T10:19:32.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/galaxies-sig-seminar-6-oct-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1qoqorm",
+      "title": "IR STIG Seminar, 13 Oct 2026",
+      "lead": "Infrared Science and Technology Interest Group (IR STIG) Seminar",
+      "date": "2026-10-05T10:19:21.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ir-stig-seminar-13-oct-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1vkz9ak",
+      "title": "DGCE SIG Seminar, 22 Oct 2026",
+      "lead": "Pioneering Emission Mapping of the CGM with Aspera: The Path to Launch. Speaker: Dr. Carlos Varga, University of Arizona & Steward Observatory",
+      "date": "2026-10-05T10:18:38.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/dgce-sig-seminar-22-oct-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-u1r4r2",
+      "title": "TDAMM SIG Seminar, 22 October 2026",
+      "lead": "The UltraViolet EXplorer (UVEX). Speakers: Dan Weisz (UCB) and Suvi Gezari (UMD)",
+      "date": "2026-10-05T10:18:25.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/tdamm-sig-seminar-22-october-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-olpykl",
+      "title": "HWO SIG Seminar, 28 Oct 2026",
+      "lead": "Cosmic Origins &hellip; Cosmic Origins Community HWO SIG Seminar, 28… About Community Executive Committee Science Groups Conferences Cosmic Pathfinders Early Career Workshops Opportunities Missions Studies News & Events Resources HWO SIG Se...",
+      "date": "2026-10-05T10:18:05.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/hwo-sig-seminar-28-oct-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "astronet-tfsfwx",
+      "title": "Złoty medal dla Polaka na Międzynarodowej Olimpiadzie z Astronomii i Astrofizyki!",
+      "lead": "Polska reprezentacja zdobyła cztery medale podczas 19. Międzynarodowej Olimpiady z Astronomii i Astrofizyki (IOAA 2026), która w tym roku odbywała się w Wietnamie. Złoty medal wywalczył Dawid Chudzik z XIV Liceum Ogólnokształcącego im.",
+      "date": "2026-10-04T18:17:08.000Z",
+      "category": "odkrycie",
+      "source": "https://astronet.pl/wydarzenia/zloty-medal-dla-polaka-na-miedzynarodowej-olimpiadzie-z-astronomii-i-astrofizyki/?utm_source=rss&utm_medium=rss&utm_campaign=zloty-medal-dla-polaka-na-miedzynarodowej-olimpiadzie-z-astronomii-i-astrofizyki",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
       "id": "astronet-fa9t97",
       "title": "Poradnik OA. Mechanika nieba 3: Orbity zamknięte i parametry orbitalne",
       "lead": "Z pierwszego prawa Keplera wiemy już doskonale, że planety poruszają się po elipsach oraz że można opisać ich kształt za pomocą półosi wielkiej i ekscentryczności.",
@@ -27,66 +109,6 @@
       "source": "https://astronet.pl/oa/mechanika-nieba-3-orbity-zamkniete-i-parametry-orbitalne/?utm_source=rss&utm_medium=rss&utm_campaign=mechanika-nieba-3-orbity-zamkniete-i-parametry-orbitalne",
       "sourceLabel": "AstroNET",
       "language": "pl"
-    },
-    {
-      "id": "nasa-1vrzh16",
-      "title": "NASA, SpaceX Set No Earlier Than Oct. 7 for Crew-12 Departure",
-      "lead": "Following a review weather and splashdown conditions off the coast of California, NASA and SpaceX are targeting no earlier than 1:05 a.m. EDT, Wednesday, Oct.",
-      "date": "2026-10-03T19:19:36.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/blogs/commercialcrew/2026/10/03/nasa-spacex-set-no-earlier-than-oct-7-for-crew-12-departure/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://images-assets.nasa.gov/image/jsc2026e004045/jsc2026e004045~large.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1md53jh",
-      "title": "NASA Astronaut Christina Koch to Join NFL Fans in Philadelphia",
-      "lead": "As part of NASA’s ongoing Inspiration Tour, NASA astronaut Christina Koch will highlight America’s strengths in space exploration and aeronautics innovation at the Philadelphia Eagles vs.",
-      "date": "2026-10-02T19:54:54.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/news-release/nasa-astronaut-christina-koch-to-join-nfl-fans-in-philadelphia/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/nhq20260828-admin-0031large.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1g3mmyj",
-      "title": "NASA’s DAVINCI Probe Can Stand the Heat",
-      "lead": "The engineering development unit for NASA’s DAVINCI (Deep Atmosphere Venus Investigation of Noble gases, Chemistry, and Imaging) probe is photographed prior to a major thermal evaluation.",
-      "date": "2026-10-02T19:00:36.000Z",
-      "category": "odkrycie",
-      "source": "https://www.nasa.gov/image-article/nasas-davinci-probe-can-stand-the-heat/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/davinci-heat-test-1.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-13p98st",
-      "title": "Station Crew Expands as NASA’s SpaceX Crew-12 Prepares to Depart",
-      "lead": "The Expedition 75 crew slept in Friday and spent the rest of the day relaxing following the Oct. 1 arrival of NASA’s SpaceX Crew-13 mission.",
-      "date": "2026-10-02T18:14:13.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/blogs/spacestation/2026/10/02/station-crew-expands-as-nasas-spacex-crew-12-prepares-to-depart/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://images-assets.nasa.gov/image/iss075e0144512/iss075e0144512~large.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1bde4dh",
-      "title": "NASA’s X-59 Completes Record Six Flights in One Week",
-      "lead": "NASA’s X-59 quiet supersonic aircraft had its busiest week yet, setting its record for flights completed in a single week while continuing to demonstrate its ability to maneuver at a range of speeds and altitudes.",
-      "date": "2026-10-02T17:58:03.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/blogs/quesst/2026/10/02/nasas-x-59-completes-record-six-flights-in-one-week/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/x-59-at-mach-1-53.png?w=1200&fit=clip",
-      "body": ""
     },
     {
       "id": "astronet-1j850r2",
@@ -155,16 +177,6 @@
       "date": "2026-09-29T17:02:20.000Z",
       "category": "misja",
       "source": "https://astronet.pl/astronautyka/misja-bepicolombo-coraz-blizej-celu/?utm_source=rss&utm_medium=rss&utm_campaign=misja-bepicolombo-coraz-blizej-celu",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-42yqiv",
-      "title": "14 lot Starshipa. Pierwsza podróż na orbitę",
-      "lead": "Start rakiety Starship odbył się w poniedziałek 28 września o godzinie 7:48 czasu lokalnego (o 14:48 czasu polskiego). Jest to pierwszy lot, który wysłał Starshipa wraz z rakietą nośną Super Heavy firmy SpaceX na orbitę.",
-      "date": "2026-09-29T14:55:58.000Z",
-      "category": "misja",
-      "source": "https://astronet.pl/astronautyka/14-lot-starshipa-pierwsza-podroz-na-orbite/?utm_source=rss&utm_medium=rss&utm_campaign=14-lot-starshipa-pierwsza-podroz-na-orbite",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
