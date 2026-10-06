@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05T12:21:04.432Z",
+  "updated": "2026-10-06T12:04:31.362Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,22 +19,10 @@
   ],
   "posts": [
     {
-      "id": "nasa-1ojulof",
-      "title": "AI/ML STIG Lecture Series, 5 Oct 2026",
-      "lead": "Transformers, Attention, and Pre-Training. Speaker: Josh Nguyen, University of Pennsylvania",
-      "date": "2026-10-05T10:19:54.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-5-oct-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
       "id": "nasa-1ekicqh",
       "title": "Galaxies SIG Seminar, 6 Oct 2026",
       "lead": "A Galaxy Doesn’t Forget: Why You Should Trust Your Resolved SFHs from Photometric Observations. Speaker: Charlotte Olsen (CUNY City Tech)",
-      "date": "2026-10-05T10:19:32.000Z",
+      "date": "2026-10-06T11:38:59.000Z",
       "category": "odkrycie",
       "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/galaxies-sig-seminar-6-oct-2026/",
       "sourceLabel": "NASA Science",
@@ -46,7 +34,7 @@
       "id": "nasa-1qoqorm",
       "title": "IR STIG Seminar, 13 Oct 2026",
       "lead": "Infrared Science and Technology Interest Group (IR STIG) Seminar",
-      "date": "2026-10-05T10:19:21.000Z",
+      "date": "2026-10-06T11:38:34.000Z",
       "category": "odkrycie",
       "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ir-stig-seminar-13-oct-2026/",
       "sourceLabel": "NASA Science",
@@ -58,7 +46,7 @@
       "id": "nasa-1vkz9ak",
       "title": "DGCE SIG Seminar, 22 Oct 2026",
       "lead": "Pioneering Emission Mapping of the CGM with Aspera: The Path to Launch. Speaker: Dr. Carlos Varga, University of Arizona & Steward Observatory",
-      "date": "2026-10-05T10:18:38.000Z",
+      "date": "2026-10-06T11:37:48.000Z",
       "category": "odkrycie",
       "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/dgce-sig-seminar-22-oct-2026/",
       "sourceLabel": "NASA Science",
@@ -70,7 +58,7 @@
       "id": "nasa-u1r4r2",
       "title": "TDAMM SIG Seminar, 22 October 2026",
       "lead": "The UltraViolet EXplorer (UVEX). Speakers: Dan Weisz (UCB) and Suvi Gezari (UMD)",
-      "date": "2026-10-05T10:18:25.000Z",
+      "date": "2026-10-06T11:37:37.000Z",
       "category": "odkrycie",
       "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/tdamm-sig-seminar-22-october-2026/",
       "sourceLabel": "NASA Science",
@@ -82,13 +70,47 @@
       "id": "nasa-olpykl",
       "title": "HWO SIG Seminar, 28 Oct 2026",
       "lead": "Cosmic Origins &hellip; Cosmic Origins Community HWO SIG Seminar, 28… About Community Executive Committee Science Groups Conferences Cosmic Pathfinders Early Career Workshops Opportunities Missions Studies News & Events Resources HWO SIG Se...",
-      "date": "2026-10-05T10:18:05.000Z",
+      "date": "2026-10-06T11:37:23.000Z",
       "category": "odkrycie",
       "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/hwo-sig-seminar-28-oct-2026/",
       "sourceLabel": "NASA Science",
       "language": "en",
       "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
       "body": ""
+    },
+    {
+      "id": "nasa-12y9m04",
+      "title": "Habitable Worlds Observatory SIG Seminar, 28 Oct 2026",
+      "lead": "Cosmic Origins &hellip; Physics of the Cosmos Community Habitable Worlds Observatory… About Community Executive Committee Science Groups Conferences Cosmic Pathfinders Early Career Workshops Opportunities Missions Studies News & Events Reso...",
+      "date": "2026-10-06T11:33:28.000Z",
+      "category": "teleskop",
+      "source": "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/habitable-worlds-observatory-sig-seminar-28-oct-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "body": ""
+    },
+    {
+      "id": "apod-2026-10-06",
+      "title": "NASA Science",
+      "lead": "Have you ever seen a complete auroral oval? You can't see one from the ground because it makes too large a circle around one of Earth's magnetic poles. But spacecraft high above the Earth can see them.",
+      "body": "",
+      "date": "2026-10-06T04:05:00.000Z",
+      "category": "wydarzenie",
+      "source": "https://apod.nasa.gov/apod/ap261006.html",
+      "sourceLabel": "NASA APOD",
+      "language": "en",
+      "image": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+      "credit": "NASA"
+    },
+    {
+      "id": "astronet-7d7q0j",
+      "title": "Rozpoczyna się III Olimpiada Astronomiczna Juniorów",
+      "lead": "Ruszyły zapisy na trzecią edycję Olimpiady Astronomicznej Juniorów – interdyscyplinarną olimpiadę skierowaną do uczniów szkół podstawowych z całej Polski.",
+      "date": "2026-10-05T13:43:55.000Z",
+      "category": "odkrycie",
+      "source": "https://astronet.pl/wydarzenia/rozpoczyna-sie-iii-olimpiada-astronomiczna-juniorow/?utm_source=rss&utm_medium=rss&utm_campaign=rozpoczyna-sie-iii-olimpiada-astronomiczna-juniorow",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
     },
     {
       "id": "astronet-tfsfwx",
@@ -167,16 +189,6 @@
       "date": "2026-09-30T05:00:22.000Z",
       "category": "wydarzenie",
       "source": "https://astronet.pl/obserwacje/na-niebie/niebo-w-pazdzierniku-2026-roku/?utm_source=rss&utm_medium=rss&utm_campaign=niebo-w-pazdzierniku-2026-roku",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-3prvkl",
-      "title": "Misja BepiColombo coraz bliżej celu",
-      "lead": "Od ostatnich 8 lat przez układ Słoneczny leci misja BepiColombo. Jest to wspólna misja Europejskiej Agencji Kosmicznej (ESA) oraz Japońskiej Agencji Eksploracji Aerokosmicznej (JAXA).",
-      "date": "2026-09-29T17:02:20.000Z",
-      "category": "misja",
-      "source": "https://astronet.pl/astronautyka/misja-bepicolombo-coraz-blizej-celu/?utm_source=rss&utm_medium=rss&utm_campaign=misja-bepicolombo-coraz-blizej-celu",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
