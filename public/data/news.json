@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07T11:50:07.979Z",
+  "updated": "2026-10-08T12:05:11.894Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,6 +19,100 @@
   ],
   "posts": [
     {
+      "id": "nasa-12y9m04",
+      "title": "Habitable Worlds Observatory SIG Seminar, 28 Oct 2026",
+      "lead": "Cosmic Origins &hellip; Physics of the Cosmos Community Habitable Worlds Observatory… About Community Executive Committee Science Groups Conferences Cosmic Pathfinders Early Career Workshops Opportunities Missions Studies News & Events Reso...",
+      "date": "2026-10-08T10:18:02.000Z",
+      "category": "teleskop",
+      "source": "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/habitable-worlds-observatory-sig-seminar-28-oct-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "body": ""
+    },
+    {
+      "id": "nasa-1qoqorm",
+      "title": "IR STIG Seminar, 13 Oct 2026",
+      "lead": "The Dark Energy Spectroscopic Instrument. Speaker: Kelly Douglass, University of Rochester",
+      "date": "2026-10-08T10:10:08.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ir-stig-seminar-13-oct-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1yppdpg",
+      "title": "AI/ML STIG Lecture Series, 19 Oct 2026",
+      "lead": "Finetuning and Reinforcement Learning. Speaker: Moritz Münchmeyer, University of Wisconsin, Madison",
+      "date": "2026-10-08T10:09:52.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-19-oct-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1vkz9ak",
+      "title": "DGCE SIG Seminar, 22 Oct 2026",
+      "lead": "Pioneering Emission Mapping of the CGM with Aspera: The Path to Launch. Speaker: Dr. Carlos Varga, University of Arizona & Steward Observatory",
+      "date": "2026-10-08T10:07:25.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/dgce-sig-seminar-22-oct-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-u1r4r2",
+      "title": "TDAMM SIG Seminar, 22 October 2026",
+      "lead": "The UltraViolet EXplorer (UVEX). Speakers: Dan Weisz (UCB) and Suvi Gezari (UMD)",
+      "date": "2026-10-08T10:05:49.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/tdamm-sig-seminar-22-october-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-olpykl",
+      "title": "HWO SIG Seminar, 28 Oct 2026",
+      "lead": "Cosmic Origins &hellip; Cosmic Origins Community HWO SIG Seminar, 28… About Community Executive Committee Science Groups Conferences Cosmic Pathfinders Early Career Workshops Opportunities Missions Studies News & Events Resources HWO SIG Se...",
+      "date": "2026-10-08T10:04:33.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/hwo-sig-seminar-28-oct-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "apod-2026-10-08",
+      "title": "NASA Science",
+      "lead": "How was the Saturn system imaged so clearly? Astrophotographer Tom Williams captured such exquisite details due to one night of exceptional atmospheric conditions above the United Kingdom. This means more than a cloudless sky.",
+      "body": "",
+      "date": "2026-10-08T04:05:00.000Z",
+      "category": "wydarzenie",
+      "source": "https://apod.nasa.gov/apod/ap261008.html",
+      "sourceLabel": "NASA APOD",
+      "language": "en",
+      "image": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+      "credit": "NASA"
+    },
+    {
+      "id": "astronet-191s7ev",
+      "title": "Konstelacja polskich satelitów Mikroglob ukończona",
+      "lead": "Obrazek wyróżniający: Creotech Instruments Wojsko Polskie zyskało kolejne przyrządy na orbicie – tym razem w postaci satelitów Mikroglob-2, Mikroglob-3 oraz Mikroglob-4 – tym sposobem kompletując konstelację.",
+      "date": "2026-10-07T14:05:33.000Z",
+      "category": "misja",
+      "source": "https://astronet.pl/astronautyka/konstelacja-polskich-satelitow-mikroglob-ukonczona/?utm_source=rss&utm_medium=rss&utm_campaign=konstelacja-polskich-satelitow-mikroglob-ukonczona",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
       "id": "astronet-1xzk0ry",
       "title": "Wskaźnik formacji gwiazd znaleziony tam, gdzie miał być nieobecny",
       "lead": "Wielopierścieniowe węglowodory aromatyczne (PAH, ang. polycyclic aromatic hydrocarbons) to związki organiczne, które często odgrywają rolę wskaźnika aktywnej formacji gwiazd.",
@@ -29,30 +123,6 @@
       "language": "pl"
     },
     {
-      "id": "nasa-1cxoyhd",
-      "title": "NASA’s SpaceX Crew-12 Closes Dragon Hatch, Preps for Departure",
-      "lead": "At 9:20 a.m. EDT, the hatch closed between the SpaceX Dragon spacecraft and the International Space Station, marking the start of NASA’s SpaceX Crew-12 return operations.",
-      "date": "2026-10-07T10:21:00.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/blogs/spacestation/2026/10/07/nasas-spacex-crew-12-closes-dragon-hatch-preps-for-departure/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/blog-crew12-100726b.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1wic0ly",
-      "title": "NASA’s SpaceX Crew-12 Saying Farewell, Closing Dragon Hatch Soon",
-      "lead": "NASA astronauts Jessica Meir and Jack Hathaway, ESA (European Space Agency) astronaut Sophie Adenot, and Roscosmos cosmonaut Andrey Fedyaev will close the hatch at approximately 6:20 a.m.",
-      "date": "2026-10-07T10:01:13.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/blogs/spacestation/2026/10/07/nasas-spacex-crew-12-saying-farewell-closing-dragon-hatch-soon/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/blog-crew12-preview-100726.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
       "id": "astronet-1k3hbt3",
       "title": "Początek misji SpaceX Crew-13. Rekordowo krótki lot",
       "lead": "Obrazek wyróżniający: NASA/Joel Kowsky Kolejna podróż na Międzynarodową Stację Kosmiczną zakończyła się sukcesem. Tym samym oficjalnie rozpoczęła się misja SpaceX Crew-13, która już teraz zapowiada się na wyjątkową.",
@@ -61,31 +131,6 @@
       "source": "https://astronet.pl/astronautyka/poczatek-misji-spacex-crew-13-rekordowo-krotki-lot/?utm_source=rss&utm_medium=rss&utm_campaign=poczatek-misji-spacex-crew-13-rekordowo-krotki-lot",
       "sourceLabel": "AstroNET",
       "language": "pl"
-    },
-    {
-      "id": "apod-2026-10-07",
-      "title": "NASA Science",
-      "lead": "\"Happy New Year!\" No, wait, this is not a fireworks display. This image shows Nebula Pa 30, observed with the Gemini North Telescope in Hawai'i.",
-      "body": "",
-      "date": "2026-10-07T04:05:00.000Z",
-      "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap261007.html",
-      "sourceLabel": "NASA APOD",
-      "language": "en",
-      "image": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-      "credit": "NASA"
-    },
-    {
-      "id": "nasa-r9pkx7",
-      "title": "NASA to Cover Northrop Grumman CRS-24 Spacecraft Departure",
-      "lead": "After delivering more than 11,000 pounds of supplies, science experiments, and other cargo to the International Space Station for NASA, Northrop Grumman’s Cygnus XL spacecraft is scheduled to depart Friday, Oct.",
-      "date": "2026-10-06T18:31:40.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/news-release/nasa-to-cover-northrop-grumman-crs-24-spacecraft-departure/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://images-assets.nasa.gov/image/iss074e0458241/iss074e0458241~large.jpg?w=1200&fit=clip",
-      "body": ""
     },
     {
       "id": "astronet-1i89gkg",
@@ -144,16 +189,6 @@
       "date": "2026-10-04T09:30:05.000Z",
       "category": "odkrycie",
       "source": "https://astronet.pl/oa/mechanika-nieba-3-orbity-zamkniete-i-parametry-orbitalne/?utm_source=rss&utm_medium=rss&utm_campaign=mechanika-nieba-3-orbity-zamkniete-i-parametry-orbitalne",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-1j850r2",
-      "title": "Kometa 2I/Borisov – kolejny gość w Układzie Słonecznym",
-      "lead": "30 sierpnia 2019 roku krymski amator astronomii – Gennadiy Borisov zaobserwował przez swój teleskop pewien obiekt, który szybko okazał się być pierwszą odnotowaną kometą pochodzącą spoza Układu Słonecznego.",
-      "date": "2026-10-01T19:24:53.000Z",
-      "category": "wydarzenie",
-      "source": "https://astronet.pl/astronomia/kometa-2i-borisov-kolejny-gosc-w-ukladzie-slonecznym/?utm_source=rss&utm_medium=rss&utm_campaign=kometa-2i-borisov-kolejny-gosc-w-ukladzie-slonecznym",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
