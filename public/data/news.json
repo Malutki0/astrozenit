@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12T13:15:24.473Z",
+  "updated": "2026-10-13T12:46:08.656Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -18,6 +18,75 @@
     }
   ],
   "posts": [
+    {
+      "id": "nasa-j7cvxh",
+      "title": "NASA Science, Cargo Launch on 35th SpaceX Resupply Mission to Station",
+      "lead": "NASA’s SpaceX 35th commercial resupply mission lifted off at 6:33 a.m. EDT Tuesday aboard a Falcon 9 rocket from Space Launch Complex 40 at Cape Canaveral Space Force Station in Florida, carrying more than 6,300 pounds of supplies and hardw...",
+      "date": "2026-10-13T11:12:18.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/news-release/nasa-science-cargo-launch-on-35th-spacex-resupply-mission-to-station/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/nasa-spacex-35th-commercial-resupply-services-launch.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-psf3jg",
+      "title": "SpaceX Dragon Lifts Off for Thursday Cargo Delivery",
+      "lead": "At 6:33 a.m. EDT, more than 6,300 pounds of scientific investigations and cargo launched to the International Space Station aboard a SpaceX Dragon spacecraft as part of the company’s 35th commercial resupply services mission for NASA.",
+      "date": "2026-10-13T10:54:27.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/10/13/spacex-dragon-lifts-off-for-thursday-cargo-delivery/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/blog-crs35-launch-101326.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-358nbt",
+      "title": "SpaceX Dragon Counts Down to Launch for Station Resupply Mission",
+      "lead": "NASA is streaming live coverage as it prepares for the launch of the 35th SpaceX commercial resupply services mission to the International Space Station for the agency.",
+      "date": "2026-10-13T10:18:15.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/10/13/spacex-dragon-counts-down-to-launch-for-station-resupply-mission/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/05/ksc-20260515-ph-spx01-0002update-crs34-release.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-c1bz4l",
+      "title": "NASA’s Perseverance Sets Off-World Record for Total Distance Driven",
+      "lead": "NASA’s Perseverance Mars rover has driven farther than any vehicle ever has on the surface of another world. On Oct. 11, the rover’s odometer reached 28.10 miles (45.22 kilometers), eclipsing the record of 28.06 miles (45.16 kilometers) set...",
+      "date": "2026-10-12T21:20:34.000Z",
+      "category": "misja",
+      "source": "https://science.nasa.gov/blogs/perseverance-mars-rover/2026/10/12/nasas-perseverance-sets-off-world-record-for-total-distance-driven/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/mars2020/2026/perseverance-rover-updates/e1%20-%20PIA26812%20-%20NAVCAM%20record.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1ovtal8",
+      "title": "NASA’s SpaceX CRS-35 Mission to Launch Health Research",
+      "lead": "NASA experiments focused on human and plant health and drug-resistant organisms will travel to the International Space Station aboard SpaceX’s 35th Commercial Resupply Services mission for the agency from Cape Canaveral Space Force Station...",
+      "date": "2026-10-12T17:45:27.000Z",
+      "category": "misja",
+      "source": "https://science.nasa.gov/missions/station/nasas-spacex-crs-35-mission-to-launch-health-research/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "body": ""
+    },
+    {
+      "id": "astronet-1o3g0nv",
+      "title": "Poradnik OA. Mechanika nieba 4: Orbity otwarte",
+      "lead": "[latexpage] Pierwsze prawo Keplera w jego unowocześnionej wersji dopuszcza istnienie takich orbit, choć bardziej odpowiednie byłoby tu określenie trajektorii lotu, które nie są okresowe.",
+      "date": "2026-10-12T14:36:04.000Z",
+      "category": "odkrycie",
+      "source": "https://astronet.pl/oa/poradnik-oa-mechanika-nieba-4-orbity-otwarte/?utm_source=rss&utm_medium=rss&utm_campaign=poradnik-oa-mechanika-nieba-4-orbity-otwarte",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
     {
       "id": "nasa-1qoqorm",
       "title": "IR STIG Seminar, 13 Oct 2026",
@@ -40,65 +109,6 @@
       "sourceLabel": "NASA Science",
       "language": "en",
       "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-w4n3qe",
-      "title": "AGN SIG Vision Series Seminar, 20 Oct 2026",
-      "lead": "AGN Science with the Roman EXtreme Deep Field (RXDF) and Other Large Surveys in the Roman Era. Speaker: Dr. Anton Koekemoer (STScI)",
-      "date": "2026-10-12T13:11:27.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/agn-sig-vision-series-seminar-20-oct-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1vkz9ak",
-      "title": "DGCE SIG Seminar, 22 Oct 2026",
-      "lead": "Pioneering Emission Mapping of the CGM with Aspera: The Path to Launch. Speaker: Dr. Carlos Varga, University of Arizona & Steward Observatory",
-      "date": "2026-10-12T13:10:38.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/dgce-sig-seminar-22-oct-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-u1r4r2",
-      "title": "TDAMM SIG Seminar, 22 October 2026",
-      "lead": "The UltraViolet EXplorer (UVEX). Speakers: Dan Weisz (UCB) and Suvi Gezari (UMD)",
-      "date": "2026-10-12T13:10:19.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/tdamm-sig-seminar-22-october-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-olpykl",
-      "title": "HWO SIG Seminar, 28 Oct 2026",
-      "lead": "Cosmic Origins &hellip; Cosmic Origins Community HWO SIG Seminar, 28… About Community Executive Committee Science Groups Conferences Cosmic Pathfinders Early Career Workshops Opportunities Missions Studies News & Events Resources HWO SIG Se...",
-      "date": "2026-10-12T13:08:44.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/hwo-sig-seminar-28-oct-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-12y9m04",
-      "title": "Habitable Worlds Observatory SIG Seminar, 28 Oct 2026",
-      "lead": "Cosmic Origins &hellip; Physics of the Cosmos Community Habitable Worlds Observatory… About Community Executive Committee Science Groups Conferences Cosmic Pathfinders Early Career Workshops Opportunities Missions Studies News & Events Reso...",
-      "date": "2026-10-12T13:05:30.000Z",
-      "category": "teleskop",
-      "source": "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/habitable-worlds-observatory-sig-seminar-28-oct-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
       "body": ""
     },
     {
@@ -178,16 +188,6 @@
       "date": "2026-10-04T18:17:08.000Z",
       "category": "odkrycie",
       "source": "https://astronet.pl/wydarzenia/zloty-medal-dla-polaka-na-miedzynarodowej-olimpiadzie-z-astronomii-i-astrofizyki/?utm_source=rss&utm_medium=rss&utm_campaign=zloty-medal-dla-polaka-na-miedzynarodowej-olimpiadzie-z-astronomii-i-astrofizyki",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-fa9t97",
-      "title": "Poradnik OA. Mechanika nieba 3: Orbity zamknięte i parametry orbitalne",
-      "lead": "Z pierwszego prawa Keplera wiemy już doskonale, że planety poruszają się po elipsach oraz że można opisać ich kształt za pomocą półosi wielkiej i ekscentryczności.",
-      "date": "2026-10-04T09:30:05.000Z",
-      "category": "odkrycie",
-      "source": "https://astronet.pl/oa/mechanika-nieba-3-orbity-zamkniete-i-parametry-orbitalne/?utm_source=rss&utm_medium=rss&utm_campaign=mechanika-nieba-3-orbity-zamkniete-i-parametry-orbitalne",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
