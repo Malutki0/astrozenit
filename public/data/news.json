@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T09:54:42.413Z",
+  "updated": "2026-10-17T09:27:38.604Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,75 +19,27 @@
   ],
   "posts": [
     {
-      "id": "nasa-y61cl9",
-      "title": "TOI-5120 b",
-      "lead": "TOI-5120 b is a gas giant exoplanet that orbits a -type star. Its mass is 1.23 Jupiters, it takes 24.9 days to complete one orbit of its star, and is 0.172 AU from its star. Its discovery was announced in 2026.",
-      "date": "2026-10-15T20:15:11.000Z",
+      "id": "nasa-i45jr1",
+      "title": "NASA Names Stephen Cash Marshall Space Flight Center Director",
+      "lead": "NASA Administrator Jared Isaacman has named Stephen Cash director of the agency’s Marshall Space Flight Center in Huntsville, Alabama, effective Monday, Oct. 19.",
+      "date": "2026-10-16T20:14:39.000Z",
       "category": "odkrycie",
-      "source": "https://science.nasa.gov/exoplanet-catalog/toi-5120-b/",
+      "source": "https://www.nasa.gov/news-release/nasa-names-stephen-cash-marshall-space-flight-center-director/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/steve-cash-photo.jpg?w=1200&fit=clip",
       "body": ""
     },
     {
-      "id": "nasa-10n9rli",
-      "title": "TOI-5699 b",
-      "lead": "TOI-5699 b is a gas giant exoplanet that orbits a -type star. Its mass is 0.25 Jupiters, it takes 22 days to complete one orbit of its star, and is 0.16 AU from its star. Its discovery was announced in 2026.",
-      "date": "2026-10-15T20:15:11.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/exoplanet-catalog/toi-5699-b/",
+      "id": "nasa-7h2o1v",
+      "title": "Brent Barbee",
+      "lead": "Brent Barbee is the Planetary Defense Officer for NASA’s Planetary Defense Coordination Office. He previously served as the NASA Goddard Space Flight Center’s Lead Planetary Defense Application Scientist and Community Liaison.",
+      "date": "2026-10-16T18:00:38.000Z",
+      "category": "misja",
+      "source": "https://science.nasa.gov/people/brent-barbee/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-a8njum",
-      "title": "TIC 219893931 b",
-      "lead": "TIC 219893931 b is a Neptune-like exoplanet that orbits a -type star. Its mass is 8.85 Earths, it takes 6.4 days to complete one orbit of its star, and is 0.070549295657556 AU from its star. Its discovery was announced in 2026.",
-      "date": "2026-10-15T20:15:10.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/exoplanet-catalog/tic-219893931-b/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-xqijfs",
-      "title": "TIC 237254473 b",
-      "lead": "TIC 237254473 b is a Neptune-like exoplanet that orbits a -type star. Its mass is 10.9 Earths, it takes 10.1 days to complete one orbit of its star, and is 0.09507406701269 AU from its star. Its discovery was announced in 2026.",
-      "date": "2026-10-15T20:15:10.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/exoplanet-catalog/tic-237254473-b/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1p7r1lg",
-      "title": "TOI-2158 c",
-      "lead": "TOI-2158 c is a gas giant exoplanet that orbits a G-type star. Its mass is 1.62 Jupiters, it takes 414.5 days to complete one orbit of its star, and is 1.1298579339801 AU from its star. Its discovery was announced in 2026.",
-      "date": "2026-10-15T20:15:09.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/exoplanet-catalog/toi-2158-c/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-67e6gw",
-      "title": "Elias 2-24 b",
-      "lead": "Elias 2-24 b is a gas giant exoplanet that orbits a -type star. Its mass is 2.95 Jupiters, it takes 460.8 years to complete one orbit of its star, and is 54.9 AU from its star. Its discovery was announced in 2026.",
-      "date": "2026-10-15T20:15:09.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/exoplanet-catalog/elias-2-24-b/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
+      "image": "https://assets.science.nasa.gov/content/dam/science/psd/planetary-defense/brent-barbee.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg?w=1200&fit=clip",
       "body": ""
     },
     {
