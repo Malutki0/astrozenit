@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18T09:41:24.603Z",
+  "updated": "2026-10-19T10:52:10.047Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,28 +19,85 @@
   ],
   "posts": [
     {
-      "id": "nasa-i45jr1",
-      "title": "NASA Names Stephen Cash Marshall Space Flight Center Director",
-      "lead": "NASA Administrator Jared Isaacman has named Stephen Cash director of the agency’s Marshall Space Flight Center in Huntsville, Alabama, effective Monday, Oct. 19.",
-      "date": "2026-10-16T20:14:39.000Z",
-      "category": "odkrycie",
-      "source": "https://www.nasa.gov/news-release/nasa-names-stephen-cash-marshall-space-flight-center-director/",
+      "id": "nasa-12y9m04",
+      "title": "Habitable Worlds Observatory SIG Seminar, 28 Oct 2026",
+      "lead": "Cosmic Origins &hellip; Physics of the Cosmos Community Habitable Worlds Observatory… About Community Executive Committee Science Groups Conferences Cosmic Pathfinders Early Career Workshops Opportunities Missions Studies News & Events Reso...",
+      "date": "2026-10-19T10:38:09.000Z",
+      "category": "teleskop",
+      "source": "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/habitable-worlds-observatory-sig-seminar-28-oct-2026/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/steve-cash-photo.jpg?w=1200&fit=clip",
       "body": ""
     },
     {
-      "id": "nasa-7h2o1v",
-      "title": "Brent Barbee",
-      "lead": "Brent Barbee is the Planetary Defense Officer for NASA’s Planetary Defense Coordination Office. He previously served as the NASA Goddard Space Flight Center’s Lead Planetary Defense Application Scientist and Community Liaison.",
-      "date": "2026-10-16T18:00:38.000Z",
-      "category": "misja",
-      "source": "https://science.nasa.gov/people/brent-barbee/",
+      "id": "nasa-1yppdpg",
+      "title": "AI/ML STIG Lecture Series, 19 Oct 2026",
+      "lead": "Fine-Tuning, Reinforcement Learning, and Self-Learning. Speaker: Moritz Münchmeyer, University of Wisconsin, Madison",
+      "date": "2026-10-19T10:23:24.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-19-oct-2026/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://assets.science.nasa.gov/content/dam/science/psd/planetary-defense/brent-barbee.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg?w=1200&fit=clip",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
       "body": ""
+    },
+    {
+      "id": "nasa-w4n3qe",
+      "title": "AGN SIG Vision Series Seminar, 20 Oct 2026",
+      "lead": "AGN Science with the Roman EXtreme Deep Field (RXDF) and Other Large Surveys in the Roman Era. Speaker: Dr. Anton Koekemoer (STScI)",
+      "date": "2026-10-19T10:23:12.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/agn-sig-vision-series-seminar-20-oct-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1vkz9ak",
+      "title": "DGCE SIG Seminar, 22 Oct 2026",
+      "lead": "Pioneering Emission Mapping of the CGM with Aspera: The Path to Launch. Speaker: Dr. Carlos J. Vargas, University of Arizona & Steward Observatory",
+      "date": "2026-10-19T10:22:45.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/dgce-sig-seminar-22-oct-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-u1r4r2",
+      "title": "TDAMM SIG Seminar, 22 October 2026",
+      "lead": "The UltraViolet EXplorer (UVEX). Speakers: Dan Weisz (UCB) and Suvi Gezari (UMD)",
+      "date": "2026-10-19T10:22:28.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/tdamm-sig-seminar-22-october-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-jxwo8w",
+      "title": "AI/ML STIG Lecture Series, 26 Oct 2026",
+      "lead": "Retrieval and Memory (RAG and Beyond). Speaker: Kartheik lyer (U of Hawaii, Manoa)",
+      "date": "2026-10-19T10:22:04.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-26-oct-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "astronet-1kkinqz",
+      "title": "Poradnik OA. Mechanika nieba 5: Równanie Keplera",
+      "lead": "Początek XVII wieku był czasem rewolucji. Dzięki ogromnej precyzji obserwacji orbity Marsa przeprowadzonych przez Tychona Brahe, Johannes Kepler został zmuszony do porzucenia dogmatu idealnych okręgów.",
+      "date": "2026-10-18T12:12:55.000Z",
+      "category": "teleskop",
+      "source": "https://astronet.pl/oa/poradnik-oa-mechanika-nieba-5-rownanie-keplera/?utm_source=rss&utm_medium=rss&utm_campaign=poradnik-oa-mechanika-nieba-5-rownanie-keplera",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
     },
     {
       "id": "astronet-98hnet",
@@ -119,16 +176,6 @@
       "date": "2026-10-06T15:00:54.000Z",
       "category": "sprzet",
       "source": "https://astronet.pl/astronautyka/podzial-rakiet-na-stopnie-dlaczego-i-jak-to-dziala/?utm_source=rss&utm_medium=rss&utm_campaign=podzial-rakiet-na-stopnie-dlaczego-i-jak-to-dziala",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-7d7q0j",
-      "title": "Rozpoczyna się III Olimpiada Astronomiczna Juniorów",
-      "lead": "Ruszyły zapisy na trzecią edycję Olimpiady Astronomicznej Juniorów – interdyscyplinarną olimpiadę skierowaną do uczniów szkół podstawowych z całej Polski.",
-      "date": "2026-10-05T13:43:55.000Z",
-      "category": "odkrycie",
-      "source": "https://astronet.pl/wydarzenia/rozpoczyna-sie-iii-olimpiada-astronomiczna-juniorow/?utm_source=rss&utm_medium=rss&utm_campaign=rozpoczyna-sie-iii-olimpiada-astronomiczna-juniorow",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
