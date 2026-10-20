@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19T10:52:10.047Z",
+  "updated": "2026-10-20T10:08:35.846Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,33 +19,10 @@
   ],
   "posts": [
     {
-      "id": "nasa-12y9m04",
-      "title": "Habitable Worlds Observatory SIG Seminar, 28 Oct 2026",
-      "lead": "Cosmic Origins &hellip; Physics of the Cosmos Community Habitable Worlds Observatory… About Community Executive Committee Science Groups Conferences Cosmic Pathfinders Early Career Workshops Opportunities Missions Studies News & Events Reso...",
-      "date": "2026-10-19T10:38:09.000Z",
-      "category": "teleskop",
-      "source": "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/habitable-worlds-observatory-sig-seminar-28-oct-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "body": ""
-    },
-    {
-      "id": "nasa-1yppdpg",
-      "title": "AI/ML STIG Lecture Series, 19 Oct 2026",
-      "lead": "Fine-Tuning, Reinforcement Learning, and Self-Learning. Speaker: Moritz Münchmeyer, University of Wisconsin, Madison",
-      "date": "2026-10-19T10:23:24.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-19-oct-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
       "id": "nasa-w4n3qe",
       "title": "AGN SIG Vision Series Seminar, 20 Oct 2026",
       "lead": "AGN Science with the Roman EXtreme Deep Field (RXDF) and Other Large Surveys in the Roman Era. Speaker: Dr. Anton Koekemoer (STScI)",
-      "date": "2026-10-19T10:23:12.000Z",
+      "date": "2026-10-20T10:04:31.000Z",
       "category": "odkrycie",
       "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/agn-sig-vision-series-seminar-20-oct-2026/",
       "sourceLabel": "NASA Science",
@@ -57,7 +34,7 @@
       "id": "nasa-1vkz9ak",
       "title": "DGCE SIG Seminar, 22 Oct 2026",
       "lead": "Pioneering Emission Mapping of the CGM with Aspera: The Path to Launch. Speaker: Dr. Carlos J. Vargas, University of Arizona & Steward Observatory",
-      "date": "2026-10-19T10:22:45.000Z",
+      "date": "2026-10-20T10:04:14.000Z",
       "category": "odkrycie",
       "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/dgce-sig-seminar-22-oct-2026/",
       "sourceLabel": "NASA Science",
@@ -69,7 +46,7 @@
       "id": "nasa-u1r4r2",
       "title": "TDAMM SIG Seminar, 22 October 2026",
       "lead": "The UltraViolet EXplorer (UVEX). Speakers: Dan Weisz (UCB) and Suvi Gezari (UMD)",
-      "date": "2026-10-19T10:22:28.000Z",
+      "date": "2026-10-20T10:03:56.000Z",
       "category": "odkrycie",
       "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/tdamm-sig-seminar-22-october-2026/",
       "sourceLabel": "NASA Science",
@@ -81,13 +58,58 @@
       "id": "nasa-jxwo8w",
       "title": "AI/ML STIG Lecture Series, 26 Oct 2026",
       "lead": "Retrieval and Memory (RAG and Beyond). Speaker: Kartheik lyer (U of Hawaii, Manoa)",
-      "date": "2026-10-19T10:22:04.000Z",
+      "date": "2026-10-20T10:03:20.000Z",
       "category": "odkrycie",
       "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-26-oct-2026/",
       "sourceLabel": "NASA Science",
       "language": "en",
       "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
       "body": ""
+    },
+    {
+      "id": "nasa-olpykl",
+      "title": "HWO SIG Seminar, 28 Oct 2026",
+      "lead": "Cosmic Origins &hellip; Cosmic Origins Community HWO SIG Seminar, 28… About Community Executive Committee Science Groups Conferences Cosmic Pathfinders Early Career Workshops Opportunities Missions Studies News & Events Resources HWO SIG Se...",
+      "date": "2026-10-20T10:03:04.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/hwo-sig-seminar-28-oct-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1sswsj7",
+      "title": "Cosmic Origins at AAS 249, Jan 2026",
+      "lead": "The 249th AAS meeting (joint with the Historical Astronomy Division) will be held 10–14 January 2027 in Salt Lake City at the Salt Palace Convention Center.",
+      "date": "2026-10-20T10:02:44.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/cosmic-origins-at-aas-249-jan-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/astro/programs/physics-of-the-cosmos/events/2026/aas_jan2026/NASA_Science5.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-12y9m04",
+      "title": "Habitable Worlds Observatory SIG Seminar, 28 Oct 2026",
+      "lead": "Cosmic Origins &hellip; Physics of the Cosmos Community Habitable Worlds Observatory… About Community Executive Committee Science Groups Conferences Cosmic Pathfinders Early Career Workshops Opportunities Missions Studies News & Events Reso...",
+      "date": "2026-10-20T09:58:53.000Z",
+      "category": "teleskop",
+      "source": "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/habitable-worlds-observatory-sig-seminar-28-oct-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "body": ""
+    },
+    {
+      "id": "astronet-crbgns",
+      "title": "Czy Wenus miała księżyc? Nowe badanie omawia jego potencjalne losy",
+      "lead": "Wenus często prezentuje się jako siostrzaną planetę Ziem. Nie bez powodu: powstały w tym samym okresie, mają bardzo podobne rozmiary, masę, strukturę materiałową, a gdyby losy potoczyły się inaczej, może i warunki wenusjańskie przypominałyb...",
+      "date": "2026-10-19T14:03:20.000Z",
+      "category": "odkrycie",
+      "source": "https://astronet.pl/astronomia/czy-wenus-miala-ksiezyc-nowe-badanie-omawia-jego-potencjalne-losy/?utm_source=rss&utm_medium=rss&utm_campaign=czy-wenus-miala-ksiezyc-nowe-badanie-omawia-jego-potencjalne-losy",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
     },
     {
       "id": "astronet-1kkinqz",
@@ -156,26 +178,6 @@
       "date": "2026-10-06T16:59:52.000Z",
       "category": "teleskop",
       "source": "https://astronet.pl/astronomia/ma-tylko-milion-lat-i-cale-zycie-przed-soba-naukowcy-odkryli-najmlodsza-znana-egzoplanete/?utm_source=rss&utm_medium=rss&utm_campaign=ma-tylko-milion-lat-i-cale-zycie-przed-soba-naukowcy-odkryli-najmlodsza-znana-egzoplanete",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-148vx4k",
-      "title": "Gdzie są pierwotne gwiazdy? Nowe dowody w sprawie III populacji",
-      "lead": "W roku 1944 astronom Walter Baade podzielił gwiazdy w Drodze Mlecznej na dwie populacje gwiazdowe. Skategoryzowane zostały ze względu na wiek, gdzie populacja I to gwiazdy młode, o wysokiej metaliczności (zawartości pierwiastków cięższych n...",
-      "date": "2026-10-06T16:39:25.000Z",
-      "category": "teleskop",
-      "source": "https://astronet.pl/astronomia/gdzie-sa-pierwotne-gwiazdy-iii-populacja-nowe-dowody-znalezione/?utm_source=rss&utm_medium=rss&utm_campaign=gdzie-sa-pierwotne-gwiazdy-iii-populacja-nowe-dowody-znalezione",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-msjzyf",
-      "title": "Podział rakiet na stopnie – dlaczego i jak to działa?",
-      "lead": "Im mniejsza masa, tym większe przyspieszenie. Dlatego warto jak najszybciej pozbyć się zbędnych elementów konstrukcji. Dzielenie rakiet na stopnie pomaga zrealizować ten cel.",
-      "date": "2026-10-06T15:00:54.000Z",
-      "category": "sprzet",
-      "source": "https://astronet.pl/astronautyka/podzial-rakiet-na-stopnie-dlaczego-i-jak-to-dziala/?utm_source=rss&utm_medium=rss&utm_campaign=podzial-rakiet-na-stopnie-dlaczego-i-jak-to-dziala",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
