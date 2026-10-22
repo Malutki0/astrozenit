@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T10:16:16.691Z",
+  "updated": "2026-10-22T10:17:10.572Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,40 +19,26 @@
   ],
   "posts": [
     {
-      "id": "apod-2026-10-21",
-      "title": "NASA Science",
-      "lead": "Jinkies, look at all those ghosts! It took 100 hours of observation and a special oxygen filter for today’s image to capture three faint nebulas hidden in the Cassiopeia constellation.",
-      "body": "",
-      "date": "2026-10-21T04:05:00.000Z",
-      "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap261021.html",
-      "sourceLabel": "NASA APOD",
-      "language": "en",
-      "image": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-      "credit": "NASA"
-    },
-    {
-      "id": "nasa-1thrqp7",
-      "title": "Blood Vessel Printing, Cancer Research, and Spacewalk Preps Keep Crew Busy",
-      "lead": "Expedition 75 spent Tuesday advancing human health on and off the Earth with 3D bioprinting, cancer research, and exercise studies.",
-      "date": "2026-10-20T20:43:18.000Z",
+      "id": "nasa-3ltqy3",
+      "title": "Faster to Science: A Letter to the Science Community",
+      "lead": "NASA Science wants to deliver science faster, so we’re changing how we compete and select missions. On Monday, October 26, we will host a virtual NASA Science Town Hall.",
+      "date": "2026-10-22T00:00:16.000Z",
       "category": "misja",
-      "source": "https://www.nasa.gov/blogs/spacestation/2026/10/20/blood-vessel-printing-cancer-research-and-spacewalk-preps-keep-crew-busy/",
+      "source": "https://science.nasa.gov/directorates/smd/faster-to-science-a-letter-to-the-science-community/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://images-assets.nasa.gov/image/iss075e0070083/iss075e0070083~large.jpg?w=1200&fit=clip",
       "body": ""
     },
     {
-      "id": "nasa-adgyzl",
-      "title": "CT Chamaeleontis b",
-      "lead": "CT Chamaeleontis b is a gas giant exoplanet that orbits a K-type star. Its mass is 17 Jupiters, it takes 365 days to complete one orbit of its star, and is 440 AU from its star. Its discovery was announced in 2007.",
-      "date": "2026-10-20T20:27:49.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/exoplanet-catalog/ct-chamaeleontis-b/",
+      "id": "nasa-a0ihrr",
+      "title": "NASA Conducts RS-25 Engine Test in Support of Future Artemis Missions",
+      "lead": "NASA tested RS-25 engine No. 10001 on Oct. 21 on the Fred Haise Test Stand at NASA’s Stennis Space Center near Bay St. Louis, Mississippi.",
+      "date": "2026-10-21T20:51:50.000Z",
+      "category": "sprzet",
+      "source": "https://www.nasa.gov/image-article/rs-25-engine-test-in-support-of-future-artemis-missions/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/ssc-20261021-s00947h.jpg?w=1200&fit=clip",
       "body": ""
     },
     {
