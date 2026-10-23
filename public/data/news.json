@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T10:17:10.572Z",
+  "updated": "2026-10-23T10:10:17.081Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,26 +19,63 @@
   ],
   "posts": [
     {
-      "id": "nasa-3ltqy3",
-      "title": "Faster to Science: A Letter to the Science Community",
-      "lead": "NASA Science wants to deliver science faster, so we’re changing how we compete and select missions. On Monday, October 26, we will host a virtual NASA Science Town Hall.",
-      "date": "2026-10-22T00:00:16.000Z",
+      "id": "apod-2026-10-23",
+      "title": "NASA Science",
+      "lead": "Looking toward the north from Mullion, New South Wales, Australia, the Andromeda Galaxy never gets more than a few degrees above the horizon. During the southern hemisphere spring, Andromeda is highest in the sky around midnight though.",
+      "body": "",
+      "date": "2026-10-23T04:05:00.000Z",
+      "category": "wydarzenie",
+      "source": "https://apod.nasa.gov/apod/ap261023.html",
+      "sourceLabel": "NASA APOD",
+      "language": "en",
+      "image": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+      "credit": "NASA"
+    },
+    {
+      "id": "nasa-gcm8ie",
+      "title": "NASA’s Mike Lippert Takes Controls of X-59 for First Time",
+      "lead": "NASA test pilot Mike Lippert put months of simulator training and ground preparation into practice, completing his first flight in the agency’s X-59 quiet supersonic research aircraft. Lippert took off Oct.",
+      "date": "2026-10-22T20:48:56.000Z",
       "category": "misja",
-      "source": "https://science.nasa.gov/directorates/smd/faster-to-science-a-letter-to-the-science-community/",
+      "source": "https://www.nasa.gov/blogs/quesst/2026/10/22/nasas-mike-lippert-takes-controls-of-x-59-for-first-time/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/afrc2026-0227-15.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1ubitqv",
+      "title": "NASA’s Roman Space Telescope Enters Final Commissioning Phase",
+      "lead": "NASA’s Nancy Grace Roman Space Telescope mission has now entered the science commissioning phase, having successfully completed a comprehensive checkout and refinement of the observatory and primary instrument performance.",
+      "date": "2026-10-22T19:43:51.000Z",
+      "category": "teleskop",
+      "source": "https://science.nasa.gov/blogs/roman/2026/10/22/nasas-roman-space-telescope-enters-final-commissioning-phase/",
       "sourceLabel": "NASA Science",
       "language": "en",
       "body": ""
     },
     {
-      "id": "nasa-a0ihrr",
-      "title": "NASA Conducts RS-25 Engine Test in Support of Future Artemis Missions",
-      "lead": "NASA tested RS-25 engine No. 10001 on Oct. 21 on the Fred Haise Test Stand at NASA’s Stennis Space Center near Bay St. Louis, Mississippi.",
-      "date": "2026-10-21T20:51:50.000Z",
-      "category": "sprzet",
-      "source": "https://www.nasa.gov/image-article/rs-25-engine-test-in-support-of-future-artemis-missions/",
+      "id": "nasa-emjwzg",
+      "title": "Realizing Rapid Reduced-cost high Risk Research (R5)",
+      "lead": "Rapid, Low-Cost, High-Capability CubeSats for Technology Demonstrations NASA’s Realizing Rapid, Reduced-cost high-Risk Research project, or R5, is a series of CubeSat technology demonstration missions intended to rapidly and affordably demo...",
+      "date": "2026-10-22T18:51:30.000Z",
+      "category": "odkrycie",
+      "source": "https://www.nasa.gov/smallspacecraft/what-is-r5/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/ssc-20261021-s00947h.jpg?w=1200&fit=clip",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/jsc2026e390449.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-fhip99",
+      "title": "Busy Station Day with Bioprinting, Spacesuit Check, Robotics, and Photography",
+      "lead": "The Expedition 75 crew had a busy day on Thursday bioprinting blood vessels and trying on a spacesuit aboard the International Space Station.",
+      "date": "2026-10-22T17:37:14.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/10/22/busy-station-day-with-bioprinting-spacesuit-check-robotics-and-photography/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://images-assets.nasa.gov/image/jsc2026e037789/jsc2026e037789~large.jpg?w=1200&fit=clip",
       "body": ""
     },
     {
