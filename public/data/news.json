@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27T10:39:44.571Z",
+  "updated": "2026-10-28T11:24:07.105Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,6 +19,42 @@
   ],
   "posts": [
     {
+      "id": "nasa-1gwezk7",
+      "title": "NASA Invites Media to Crew Completion of Yearlong Mars Simulation",
+      "lead": "The four volunteers who lived and worked in a simulated NASA Mars mission for more than a year will exit their habitat on Saturday, Oct. 31, after 378 days of isolation in a facility at the agency’s Johnson Space Center in Houston.",
+      "date": "2026-10-27T19:27:22.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/news-release/nasa-invites-media-to-crew-completion-of-yearlong-mars-simulation/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/chapeamission2.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-eo4wqm",
+      "title": "Spacewalk Preps, Robotics Jobs, and Science Duties Fill Tuesday Schedule",
+      "lead": "Spacewalking tools and a pair of robotics jobs topped Tuesday’s schedule aboard the International Space Station. The Expedition 75 crew members also kept up their scientific duties configuring botany research hardware and setting up advance...",
+      "date": "2026-10-27T19:14:28.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/10/27/spacewalk-preps-robotics-jobs-and-science-duties-fill-tuesday-schedule/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://images-assets.nasa.gov/image/iss075e0250247/iss075e0250247~large.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-f58yny",
+      "title": "NASA’s UVEX Space Telescope Successfully Passes Key Milestone",
+      "lead": "Agency officials have confirmed NASA’s UVEX space telescope after completing a technical and programmatic review known as Key Decision Point C.",
+      "date": "2026-10-27T17:59:30.000Z",
+      "category": "teleskop",
+      "source": "https://science.nasa.gov/blogs/uvex/2026/10/27/nasas-uvex-space-telescope-successfully-passes-key-milestone/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/astro/universe/news-images/UVEX%20Artists%20Concept_Oct%202026.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
       "id": "astronet-8izo5s",
       "title": "Mars w Krakowie, czyli European Rover Challenge 2026",
       "lead": "W dzisiejszych czasach sektor kosmiczny coraz wyraźniej wychodzi z bańki środowisk zarezerwowanych tylko dla nielicznych. Na całym świecie, również w Polsce, powstają kolejne prywatne firmy zajmujące się kosmosem, a młodzi ludzie coraz częś...",
@@ -27,67 +63,6 @@
       "source": "https://astronet.pl/polska-w-kosmosie/mars-w-krakowie-czyli-european-rover-challenge-2026/?utm_source=rss&utm_medium=rss&utm_campaign=mars-w-krakowie-czyli-european-rover-challenge-2026",
       "sourceLabel": "AstroNET",
       "language": "pl"
-    },
-    {
-      "id": "apod-2026-10-27",
-      "title": "NASA Science",
-      "lead": "Sometimes it's night on the ground but day in the air. As the Earth rotates to eclipse the Sun, sunset rises upfrom the ground. Therefore, at sunset on the ground, sunlight still shines on clouds above.",
-      "body": "",
-      "date": "2026-10-27T04:05:00.000Z",
-      "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap261027.html",
-      "sourceLabel": "NASA APOD",
-      "language": "en",
-      "image": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-      "credit": "NASA"
-    },
-    {
-      "id": "nasa-17u8ryi",
-      "title": "NASA’s Perseverance Views Dust at Neretva Vallis",
-      "lead": "Description This 360-degree look at Neretva Vallis within Mars’ Jezero Crater was stitched together using 217 images acquired by the rover’s Mastcam-Z on May 20, 2024, the 1,155th Martian day, or sol, of the mission.",
-      "date": "2026-10-26T22:48:12.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/photojournal/nasas-perseverance-views-dust-at-neretva-vallis/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia26/pia26816/PIA26816_low_res.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-p2v7l6",
-      "title": "NASA’s Perseverance Offers Clues to Protect Crews From Mars Dust",
-      "lead": "Over 1,645 Martian days, NASA’s Perseverance Mars rover measured the fine and ultrafine Martian dust particles found clinging to samples of spacesuit materials that are carried aboard the rover, including some that are small enough to penet...",
-      "date": "2026-10-26T21:07:28.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/missions/mars-2020-perseverance/nasas-perseverance-offers-clues-to-protect-crews-from-mars-dust/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/1-pia26816-pano-resized-for-web-feature.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-mv6h8h",
-      "title": "NEO Surveyor’s Sunshade Gets Inspected",
-      "lead": "Description The large sunshade of NASA’s Near-Earth Object (NEO) Surveyor is mounted on an assembly ring during inspections in a clean room at BAE Systems Space & Mission Systems in Boulder, Colorado, in July 2026.",
-      "date": "2026-10-26T20:53:13.000Z",
-      "category": "teleskop",
-      "source": "https://science.nasa.gov/photojournal/neo-surveyors-sunshade-gets-inspected/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia26/pia26780/PIA26780.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1jfdzf",
-      "title": "Solar Cells Inspected on NASA’s NEO Surveyor",
-      "lead": "Description The large sunshade of NASA’s Near-Earth Object (NEO) Surveyor mission is inspected by a technician at BAE Systems Space & Mission Systems in Boulder, Colorado, in late July.",
-      "date": "2026-10-26T20:52:24.000Z",
-      "category": "teleskop",
-      "source": "https://science.nasa.gov/photojournal/solar-cells-inspected-on-nasas-neo-surveyor/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia26/pia26715/PIA26715.jpg?w=1200&fit=clip",
-      "body": ""
     },
     {
       "id": "astronet-15ew953",
