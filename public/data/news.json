@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T11:26:34.423Z",
+  "updated": "2026-10-31T10:57:43.817Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,65 +19,62 @@
   ],
   "posts": [
     {
-      "id": "nasa-1lm17g1",
-      "title": "AI/ML STIG Lecture Series, 2 Nov 2026",
-      "lead": "Cosmic Origins &hellip; Cosmic Origins Community AI/ML STIG Lecture Series, 2… About Community Executive Committee Science Groups Conferences Cosmic Pathfinders Early Career Workshops Opportunities Missions Studies News & Events Resources A...",
-      "date": "2026-10-30T10:38:23.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-2-nov-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1bmoyi3",
-      "title": "Galaxies SIG Seminar, 3 Nov 2026",
-      "lead": "Roman eXtreme Deep Field (RXDF): What it is and What it Will Do. Speaker: Haojing Yan",
-      "date": "2026-10-30T10:37:41.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/galaxies-sig-seminar-3-nov-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1qod1ko",
-      "title": "AI/ML STIG Lecture Series, 9 Nov 2026",
-      "lead": "Tool Use and MCP. Speakers: Dan Gause, Adele Plunkett (NRAO)",
-      "date": "2026-10-30T10:37:13.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-9-nov-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1sswsj7",
-      "title": "Cosmic Origins at AAS 249, Jan 2026",
-      "lead": "The 249th AAS meeting (joint with the Historical Astronomy Division) will be held 10–14 January 2027 in Salt Lake City at the Salt Palace Convention Center.",
-      "date": "2026-10-30T10:35:40.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/cosmic-origins-at-aas-249-jan-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/astro/programs/physics-of-the-cosmos/events/2026/aas_jan2026/NASA_Science5.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "apod-2026-10-30",
-      "title": "NASA Science",
-      "lead": "Spooky shapes seem to haunt this dusty expanse, drifting through the night in the royal constellation Cepheus. Of course, the shapes are cosmic dust clouds visible in dimly reflected starlight.",
-      "body": "",
-      "date": "2026-10-30T04:05:00.000Z",
+      "id": "astronet-12ydkcd",
+      "title": "Niebo w listopadzie 2026 roku",
+      "lead": "Listopad przynosi ze sobą przypieczętowanie jesiennej aury; dni stają się coraz krótsze, a ciemność zapada zdecydowanie wcześniej, zwiastując nieuchronne nadejście zimy.",
+      "date": "2026-10-31T06:00:03.000Z",
       "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap261030.html",
-      "sourceLabel": "NASA APOD",
+      "source": "https://astronet.pl/obserwacje/na-niebie/niebo-w-listopadzie-2026-roku/?utm_source=rss&utm_medium=rss&utm_campaign=niebo-w-listopadzie-2026-roku",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "nasa-6cxc7r",
+      "title": "Cosmic Origins Announcements, 30 Oct 2026",
+      "lead": "Cosmic Origins Announcements: COR at AAS249, SIG Seminars, and Farewell Swift!",
+      "date": "2026-10-30T20:08:53.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/cosmic-origins-announcements-30-oct-2026/",
+      "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-      "credit": "NASA"
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1rrh6l8",
+      "title": "NASA Releases MAX POWER Key Events for Media, Participants",
+      "lead": "America’s newest aerospace expo and air show – MAX POWER – is fast approaching, and NASA has announced key events beginning Friday, Nov. 6, and running through Sunday, Nov.",
+      "date": "2026-10-30T19:31:02.000Z",
+      "category": "teleskop",
+      "source": "https://www.nasa.gov/news-release/nasa-releases-max-power-key-events-for-media-participants/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/grc-2026-c-06389large.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-zxqt5r",
+      "title": "Space Crops and Advanced Tech Wrap Up Week Following Spacewalk",
+      "lead": "Space crops research wrapped up the week following the completion of the first of two power upgrade spacewalks at the International Space Station.",
+      "date": "2026-10-30T17:50:49.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/10/30/space-crops-and-advanced-tech-wrap-up-week-following-spacewalk/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://images-assets.nasa.gov/image/iss075e0227271/iss075e0227271~large.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-16u5gdo",
+      "title": "NASA’s James Webb Space Telescope Captures Eerie Cat’s Head",
+      "lead": "Intricate structures within the Cat’s Head Nebula are illuminated in this mid-infrared view from NASA’s James Webb Space Telescope released on Oct. 29, 2026.",
+      "date": "2026-10-30T15:56:26.000Z",
+      "category": "teleskop",
+      "source": "https://www.nasa.gov/image-article/nasas-james-webb-space-telescope-captures-eerie-cats-head/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/full-res-for-display.png?w=1200&fit=clip",
+      "body": ""
     },
     {
       "id": "astronet-44044u",
@@ -166,16 +163,6 @@
       "date": "2026-10-20T15:49:34.000Z",
       "category": "misja",
       "source": "https://astronet.pl/astronautyka/japonska-misja-mmx-na-ksiezyc-marsa-wystartowala/?utm_source=rss&utm_medium=rss&utm_campaign=japonska-misja-mmx-na-ksiezyc-marsa-wystartowala",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-1uzrnjd",
-      "title": "Europejski łazik marsjański przetestowany na polskim systemie zjazdowym",
-      "lead": "Nękany opóźnieniami drugi etap misji ExoMars zdaje się rzeczywiście zbliżać do startu. Wskaźnikiem tego są chociażby pierwsze testy na systemie zjazdowym, który umożliwi łazikowi zjechanie z lądownika na powierzchnię Czerwonej Planety, a do...",
-      "date": "2026-10-20T11:22:38.000Z",
-      "category": "misja",
-      "source": "https://astronet.pl/astronautyka/europejski-lazik-marsjanski-przetestowany-na-polskim-systemie-zjazdowym/?utm_source=rss&utm_medium=rss&utm_campaign=europejski-lazik-marsjanski-przetestowany-na-polskim-systemie-zjazdowym",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
