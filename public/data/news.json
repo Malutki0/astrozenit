@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T10:57:43.817Z",
+  "updated": "2026-11-01T11:53:27.208Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -18,6 +18,29 @@
     }
   ],
   "posts": [
+    {
+      "id": "apod-2026-11-01",
+      "title": "NASA Science",
+      "lead": "What color is the Moon? It depends on the night -- and the time. Outside of the Earth's atmosphere, the dark Moon, which shines by reflected sunlight, appears a magnificently brown-tinged gray.",
+      "body": "",
+      "date": "2026-11-01T04:05:00.000Z",
+      "category": "wydarzenie",
+      "source": "https://apod.nasa.gov/apod/ap261101.html",
+      "sourceLabel": "NASA APOD",
+      "language": "en",
+      "image": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+      "credit": "NASA"
+    },
+    {
+      "id": "astronet-1ld3wr1",
+      "title": "NASA wprowadza zmiany w programie Artemis",
+      "lead": "Od misji Artemis II minęło już kilka miesięcy, a NASA nie spowalnia tempa w przygotowaniach do lotów na Księżyc. Według planu, Amerykanie powrócą na naszego naturalnego satelitę już w 2028 roku.",
+      "date": "2026-10-31T18:47:23.000Z",
+      "category": "misja",
+      "source": "https://astronet.pl/astronautyka/nasa-wprowadza-zmiany-w-programie-artemis/?utm_source=rss&utm_medium=rss&utm_campaign=nasa-wprowadza-zmiany-w-programie-artemis",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
     {
       "id": "astronet-12ydkcd",
       "title": "Niebo w listopadzie 2026 roku",
@@ -62,18 +85,6 @@
       "sourceLabel": "NASA Science",
       "language": "en",
       "image": "https://images-assets.nasa.gov/image/iss075e0227271/iss075e0227271~large.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-16u5gdo",
-      "title": "NASA’s James Webb Space Telescope Captures Eerie Cat’s Head",
-      "lead": "Intricate structures within the Cat’s Head Nebula are illuminated in this mid-infrared view from NASA’s James Webb Space Telescope released on Oct. 29, 2026.",
-      "date": "2026-10-30T15:56:26.000Z",
-      "category": "teleskop",
-      "source": "https://www.nasa.gov/image-article/nasas-james-webb-space-telescope-captures-eerie-cats-head/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/full-res-for-display.png?w=1200&fit=clip",
       "body": ""
     },
     {
@@ -153,16 +164,6 @@
       "date": "2026-10-23T16:25:17.000Z",
       "category": "odkrycie",
       "source": "https://astronet.pl/recenzje/przed-wielkim-wybuchem-o-poczatkach-wszechswiata-i-o-tym-co-jest-poza-nim-recenzja-ksiazki/?utm_source=rss&utm_medium=rss&utm_campaign=przed-wielkim-wybuchem-o-poczatkach-wszechswiata-i-o-tym-co-jest-poza-nim-recenzja-ksiazki",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-14714p3",
-      "title": "Japońska misja MMX na księżyc Marsa wystartowała",
-      "lead": "W dniu 19 października 2026 roku o godzinie 21:41 czasu polskiego wyruszyła pierwsza od 15 lat misja na księżyc Marsa - Fobos.",
-      "date": "2026-10-20T15:49:34.000Z",
-      "category": "misja",
-      "source": "https://astronet.pl/astronautyka/japonska-misja-mmx-na-ksiezyc-marsa-wystartowala/?utm_source=rss&utm_medium=rss&utm_campaign=japonska-misja-mmx-na-ksiezyc-marsa-wystartowala",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
