@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T12:51:14.911Z",
+  "updated": "2026-11-04T13:03:27.622Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,61 +19,64 @@
   ],
   "posts": [
     {
-      "id": "nasa-16drczz",
-      "title": "Hubble’s Galaxies",
-      "lead": "A collection of galaxy images from the Hubble Space Telescope.",
-      "date": "2026-11-02T22:46:27.000Z",
-      "category": "teleskop",
-      "source": "https://science.nasa.gov/gallery/hubbles-galaxies/",
-      "sourceLabel": "NASA Science",
-      "language": "en"
-    },
-    {
-      "id": "nasa-165mx0t",
-      "title": "Week Starts with Spacewalk Preps and Life Science",
-      "lead": "Preparations continue for the second in the final series of spacewalks to upgrade the International Space Station’s power generation system on Thursday.",
-      "date": "2026-11-02T19:14:48.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/blogs/spacestation/2026/11/02/week-starts-with-spacewalk-preps-and-life-science/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://images-assets.nasa.gov/image/iss075e0253155/iss075e0253155~large.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-7i3aep",
-      "title": "NASA’s Twin ESCAPADE Spacecraft to Slingshot Past Earth on Way to Mars",
-      "lead": "In a few days, NASA’s ESCAPADE (Escape and Plasma Acceleration and Dynamics Explorers) will perform a maneuver that no agency spacecraft has flown before — and do it twice.",
-      "date": "2026-11-02T19:11:28.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/escapade/Boulder-star-chart-ESCAPADE-Nov7.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1t3pbbk",
-      "title": "NASA’s CHAPEA Crew “Returns” to Earth",
-      "lead": "The four-member Crew Health and Performance Exploration Analog (CHAPEA) crew poses outside for the first time in more than a year following the end of their simulated Mars journey on Oct. 31, 2026.",
-      "date": "2026-11-02T18:50:42.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/image-article/nasas-chapea-crew-returns-to-earth/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/jsc2026e424293orig.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-j5wbh",
-      "title": "What’s Up: November 2026 Skywatching Tips from NASA",
-      "lead": "Meteor Showers, a Spacecraft Milestone, and a Supermoon Catch Taurid and Leonid meteors, spot Mars near Jupiter, celebrate Voyager 1’s light-day milestone, and watch November’s supermoon.",
-      "date": "2026-11-02T18:19:58.000Z",
+      "id": "apod-2026-11-04",
+      "title": "NASA Science",
+      "lead": "“I see” IC 342, the Hidden Galaxy! Today’s image peers through the plane of the Milky Way, through all its gas, dust and stars, to unveil this spiral galaxy.",
+      "body": "",
+      "date": "2026-11-04T04:05:00.000Z",
       "category": "wydarzenie",
-      "source": "https://science.nasa.gov/solar-system/skywatching/whats-up-november-2026-skywatching-tips-from-nasa/",
+      "source": "https://apod.nasa.gov/apod/ap261104.html",
+      "sourceLabel": "NASA APOD",
+      "language": "en",
+      "image": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+      "credit": "NASA"
+    },
+    {
+      "id": "nasa-ghzky6",
+      "title": "NASA-Funded SSPICY Mission Experiences Communications Loss",
+      "lead": "A NASA-supported small satellite launched in October as a technology demonstration has lost contact with its owner and operator, Starfish Space.",
+      "date": "2026-11-03T22:18:25.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/smallsatellites/2026/11/03/nasa-funded-sspicy-mission-experiences-communications-loss/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://science.nasa.gov/wp-content/uploads/2023/07/moonrise-at-vasquez-rocks-credit-nasa-preston-dyches-cc-by-nc-2.0.jpg?w=1200&fit=clip",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/08/leo-otter-solo-master.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-h1vlv8",
+      "title": "Cosmic Origins Announcements, 3 Nov 2026",
+      "lead": "Cosmic Origins About Community Executive Committee Science Groups Conferences Cosmic Pathfinders Early Career Workshops Opportunities Missions Studies News & Events Resources SAVE THE DATE: Joint PAG and COPAG Activities at AAS 249 3 Novemb...",
+      "date": "2026-11-03T20:22:19.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/cosmic-origins-announcements-3-nov-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1rxjkkl",
+      "title": "Crew Keeps Up Spacewalk Preps, Research, and Cargo Operations",
+      "lead": "Expedition 75 is continuing preparations for the second and final spacewalk in a series of two to upgrade the International Space Station’s power generation system.",
+      "date": "2026-11-03T18:22:21.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/11/03/crew-keeps-up-spacewalk-preps-research-and-cargo-operations/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://images-assets.nasa.gov/image/iss075e0253663/iss075e0253663~large.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-15nzxii",
+      "title": "Astronaut and Earth",
+      "lead": "CSA (Canadian Space Agency) astronaut Joshua Kutryk is pictured during the Oct. 29, 2026, spacewalk. The International Space Station was soaring 267 miles above the South Atlantic Ocean at the time of this photograph.",
+      "date": "2026-11-03T16:37:42.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/image-article/astronaut-and-earth/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/iss075e0253663orig.jpg?w=1200&fit=clip",
       "body": ""
     },
     {
