@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T13:16:47.448Z",
+  "updated": "2026-11-06T13:00:03.195Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,77 +19,27 @@
   ],
   "posts": [
     {
-      "id": "nasa-1v4hm8i",
-      "title": "Hubble Learns Galactic History From Stars",
-      "lead": "This Hubble image features the sparkling collection of stars named Messier 30 (M30), also called NGC 7099.",
-      "date": "2026-11-05T12:56:21.000Z",
-      "category": "teleskop",
-      "source": "https://science.nasa.gov/missions/hubble/hubble-learns-galactic-history-from-stars/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/stars/globular-clusters/Hubble_M30_potm2610a.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-9pg8zo",
-      "title": "Astronauts Suit Up for Final Power Upgrade Spacewalk",
-      "lead": "NASA is streaming live coverage as two astronauts prepare for a spacewalk outside the International Space Station. The spacewalk is scheduled to begin at approximately 8:30 a.m. EST and last about more than six and a half hours.",
-      "date": "2026-11-05T12:02:48.000Z",
+      "id": "astronet-od7r8n",
+      "title": "Tajkonauci na Księżycu przed misją Artremis? Szczegóły chińskiego planu",
+      "lead": "W 2023 roku, mogliśmy usłyszeć o ambitnym planie Chińskiej Agencji Kosmicznej. Mowa o lądowaniu Chińczyków na Księżycu przed 2030 rokiem.",
+      "date": "2026-11-06T11:46:21.000Z",
       "category": "misja",
-      "source": "https://www.nasa.gov/blogs/spacestation/2026/11/05/astronauts-suit-up-for-final-power-upgrade-spacewalk/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/preview-useva-101-110526b.jpg?w=1200&fit=clip",
-      "body": ""
+      "source": "https://astronet.pl/astronautyka/tajkonauci-na-ksiezycu-przed-misja-artremis-szczegoly-chinskiego-planu/?utm_source=rss&utm_medium=rss&utm_campaign=tajkonauci-na-ksiezycu-przed-misja-artremis-szczegoly-chinskiego-planu",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
     },
     {
-      "id": "apod-2026-11-05",
+      "id": "apod-2026-11-06",
       "title": "NASA Science",
-      "lead": "One of our Solar System's most tantalizing worlds, Enceladus is backlit by the Sun in this Cassini spacecraft image from November 1, 2009.",
+      "lead": "It is time to say goodbye to NASA's Neil Gehrels Swift Observatory. After nearly 22 years of service, the satellite re-entered Earth's atmosphere on November 4 at 7:39 EST over the North Sumatra region of Indonesia.",
       "body": "",
-      "date": "2026-11-05T04:05:00.000Z",
+      "date": "2026-11-06T04:05:00.000Z",
       "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap261105.html",
+      "source": "https://apod.nasa.gov/apod/ap261106.html",
       "sourceLabel": "NASA APOD",
       "language": "en",
       "image": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
       "credit": "NASA"
-    },
-    {
-      "id": "nasa-19yw5co",
-      "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
-      "lead": "On Wednesday, NASA unveiled its newest experimental aircraft, the X-70 Fractal, during the UP.Summit at the agency’s Kennedy Space Center in Florida.",
-      "date": "2026-11-05T01:43:21.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/news-release/nasa-announces-x-70-experimental-aircraft-to-advance-flight-research/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/nasa-x-70-image.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-uvcyrd",
-      "title": "NASA Shares Plans to Accelerate Artemis, Return to Moon",
-      "lead": "In an update on Oct. 23, NASA Administrator Jared Isaacman and other agency leaders shared the agency’s path to returning Americans to the lunar surface in 2028.",
-      "date": "2026-11-04T21:04:10.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/missions/artemis/nasa-shares-plans-to-accelerate-artemis-return-to-moon/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/2-artemis-iii-con-ops-oct2026.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-16r1ks",
-      "title": "Sean Gregory",
-      "lead": "Sean Gregory is the project manager for NASA’s Satellite Needs Working Group (SNWG) Management Office within the SNWG implementation team.",
-      "date": "2026-11-04T17:30:26.000Z",
-      "category": "odkrycie",
-      "source": "https://www.nasa.gov/people/sean-gregory/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/05/sean-gregory.png?w=1200&fit=clip",
-      "body": ""
     },
     {
       "id": "astronet-u2h41a",
@@ -178,16 +128,6 @@
       "date": "2026-10-26T12:56:24.000Z",
       "category": "odkrycie",
       "source": "https://astronet.pl/wydarzenia/rozpoczela-sie-iv-edycja-olimpijskiej-ligi-astronomicznej/?utm_source=rss&utm_medium=rss&utm_campaign=rozpoczela-sie-iv-edycja-olimpijskiej-ligi-astronomicznej",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-2d1fn5",
-      "title": "Inauguracyjne spotkanie WARP już 27 października",
-      "lead": "Dwudziestego siódmego października odbędzie się pierwsze spotkanie WARP (Warsaw AstRo-Physics meetings)! W programie przewidziano kolokwium oraz otwartą debatę na Wydziale Fizyki UW.",
-      "date": "2026-10-25T18:15:32.000Z",
-      "category": "teleskop",
-      "source": "https://astronet.pl/wydarzenia/inauguracyjne-spotkanie-warp/?utm_source=rss&utm_medium=rss&utm_campaign=inauguracyjne-spotkanie-warp",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
