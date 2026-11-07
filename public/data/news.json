@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T13:00:03.195Z",
+  "updated": "2026-11-07T11:47:06.948Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,6 +19,90 @@
   ],
   "posts": [
     {
+      "id": "nasa-1qod1ko",
+      "title": "AI/ML STIG Lecture Series, 9 Nov 2026",
+      "lead": "AI Tool Use for Astronomy, and MCP for Data Archives. Speakers: Dan Gause, Adele Plunkett (NRAO)",
+      "date": "2026-11-06T22:08:27.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-9-nov-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1nqxaj8",
+      "title": "IR STIG Seminar, 10 Nov 2026",
+      "lead": "Towards Population-Level Exo-Geology: Characterizing the Surfaces, Atmospheres, and Reflective Properties of Hot Rocky Exoplanets. Speaker: Brandon Coy, U Chicago",
+      "date": "2026-11-06T22:08:05.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ir-stig-seminar-10-nov-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1vrvzh2",
+      "title": "AI/ML STIG Lecture Series, 16 Nov 2026",
+      "lead": "Multi-Agent Systems and Orchestration. Speaker: Boris Bolliet, University of Cambridge",
+      "date": "2026-11-06T22:07:26.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-16-nov-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-16yxtxf",
+      "title": "AGN SIG Spotlight Series, 17 Nov 2026",
+      "lead": "Our Spotlight Series highlights recent advances in AGN science, with a strong emphasis on participation from early-career researchers, and includes plenty of time for community discussion following the presentations.",
+      "date": "2026-11-06T22:06:27.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/agn-sig-spotlight-series-17-nov-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1khv6hs",
+      "title": "IR STIG Seminar, 8 Dec 2026",
+      "lead": "Superconducting Nanowire Single Photon Detector Arrays for Time-Resolved Imaging and Infrared Detection. Speaker: Matthew Shaw, JPL",
+      "date": "2026-11-06T22:06:01.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ir-stig-seminar-8-dec-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1sswsj7",
+      "title": "Cosmic Origins at AAS 249, Jan 2026",
+      "lead": "The 249th AAS meeting (joint with the Historical Astronomy Division) will be held 10–14 January 2027 in Salt Lake City at the Salt Palace Convention Center.",
+      "date": "2026-11-06T22:05:11.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/cosmic-origins-at-aas-249-jan-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/astro/programs/physics-of-the-cosmos/events/2026/aas_jan2026/NASA_Science5.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-z983ya",
+      "title": "Spacewalk Cleanup, Biomedical Science, and Maintenance Wrap Up Week",
+      "lead": "The seven Expedition 75 crew members cleaned up after a spacewalk, conducted biomedical assessments, and maintained orbital systems to wrap up a busy week aboard the International Space Station.",
+      "date": "2026-11-06T17:48:13.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/11/06/spacewalk-cleanup-biomedical-science-and-maintenance-wrap-up-week/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/blog-useva101-110526d-1.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
       "id": "astronet-od7r8n",
       "title": "Tajkonauci na Księżycu przed misją Artremis? Szczegóły chińskiego planu",
       "lead": "W 2023 roku, mogliśmy usłyszeć o ambitnym planie Chińskiej Agencji Kosmicznej. Mowa o lądowaniu Chińczyków na Księżycu przed 2030 rokiem.",
@@ -27,19 +111,6 @@
       "source": "https://astronet.pl/astronautyka/tajkonauci-na-ksiezycu-przed-misja-artremis-szczegoly-chinskiego-planu/?utm_source=rss&utm_medium=rss&utm_campaign=tajkonauci-na-ksiezycu-przed-misja-artremis-szczegoly-chinskiego-planu",
       "sourceLabel": "AstroNET",
       "language": "pl"
-    },
-    {
-      "id": "apod-2026-11-06",
-      "title": "NASA Science",
-      "lead": "It is time to say goodbye to NASA's Neil Gehrels Swift Observatory. After nearly 22 years of service, the satellite re-entered Earth's atmosphere on November 4 at 7:39 EST over the North Sumatra region of Indonesia.",
-      "body": "",
-      "date": "2026-11-06T04:05:00.000Z",
-      "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap261106.html",
-      "sourceLabel": "NASA APOD",
-      "language": "en",
-      "image": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-      "credit": "NASA"
     },
     {
       "id": "astronet-u2h41a",
