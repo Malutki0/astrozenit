@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T11:47:06.948Z",
+  "updated": "2026-11-08T11:58:58.765Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -18,6 +18,62 @@
     }
   ],
   "posts": [
+    {
+      "id": "astronet-1plfimm",
+      "title": "Nowy kandydat na planetę karłowatą! Odkrycie 2026 ED138",
+      "lead": "Astronomowie pracujący w Obserwatorium Vera C. Rubin, które znajduje się w Chile, dokonali ogromnie znaczącego odkrycia. Podczas wieczornej pracy 13 października, Matthew Holman przepuszczał dane zebrane w 2026 roku przez algorytm wyszukiwa...",
+      "date": "2026-11-08T06:00:07.000Z",
+      "category": "teleskop",
+      "source": "https://astronet.pl/astronomia/nowy-kandydat-na-planete-karlowata-odkrycie-2026-ed138/?utm_source=rss&utm_medium=rss&utm_campaign=nowy-kandydat-na-planete-karlowata-odkrycie-2026-ed138",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "nasa-12tv5yv",
+      "title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
+      "lead": "NASA announced a suite of awards and mission updates on Saturday to expand the agency’s Moon Base exploration, science, and infrastructure capabilities.",
+      "date": "2026-11-07T22:47:03.000Z",
+      "category": "odkrycie",
+      "source": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/moon-base-artists-concept.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-khl3en",
+      "title": "PROMISE",
+      "lead": "Explore the PROMISE Lunar Rover’s Payload The PROMISE Payload The PROMISE rover will carry an extensive payload of science instruments and technology demonstrations sponsored by NASA’s Science Mission Directorate, Research and Technology Mi...",
+      "date": "2026-11-07T21:05:12.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/mission/promise/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2019/11/pia23305-16_0.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1yb67xf",
+      "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
+      "lead": "NASA is looking for the explorers who will help write the next chapter of human spaceflight. Applications are now open for the agency’s next class of astronauts, who will join NASA as America returns to the Moon, builds the Moon Base, and l...",
+      "date": "2026-11-07T18:11:57.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/jsc2025e076292large.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "astronet-11ms43r",
+      "title": "Fabryka w kosmosie i powrót na Ziemię – Starfall od SpaceX",
+      "lead": "Dnia 20 października 2026 roku, firma SpaceX wyniosła na LEO (Niską Orbitę Okołoziemską) kapsułę „Starfall”, która była jednym z 32 ładunków na pokładzie misji Bandwagon-5. Jest to drugi lot tej kapsuły.",
+      "date": "2026-11-07T17:17:39.000Z",
+      "category": "misja",
+      "source": "https://astronet.pl/astronautyka/fabryka-w-kosmosie-i-powrot-na-ziemie-starfall-od-spacex/?utm_source=rss&utm_medium=rss&utm_campaign=fabryka-w-kosmosie-i-powrot-na-ziemie-starfall-od-spacex",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
     {
       "id": "nasa-1qod1ko",
       "title": "AI/ML STIG Lecture Series, 9 Nov 2026",
@@ -55,56 +111,8 @@
       "body": ""
     },
     {
-      "id": "nasa-16yxtxf",
-      "title": "AGN SIG Spotlight Series, 17 Nov 2026",
-      "lead": "Our Spotlight Series highlights recent advances in AGN science, with a strong emphasis on participation from early-career researchers, and includes plenty of time for community discussion following the presentations.",
-      "date": "2026-11-06T22:06:27.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/agn-sig-spotlight-series-17-nov-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1khv6hs",
-      "title": "IR STIG Seminar, 8 Dec 2026",
-      "lead": "Superconducting Nanowire Single Photon Detector Arrays for Time-Resolved Imaging and Infrared Detection. Speaker: Matthew Shaw, JPL",
-      "date": "2026-11-06T22:06:01.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ir-stig-seminar-8-dec-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1sswsj7",
-      "title": "Cosmic Origins at AAS 249, Jan 2026",
-      "lead": "The 249th AAS meeting (joint with the Historical Astronomy Division) will be held 10–14 January 2027 in Salt Lake City at the Salt Palace Convention Center.",
-      "date": "2026-11-06T22:05:11.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/cosmic-origins-at-aas-249-jan-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/astro/programs/physics-of-the-cosmos/events/2026/aas_jan2026/NASA_Science5.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-z983ya",
-      "title": "Spacewalk Cleanup, Biomedical Science, and Maintenance Wrap Up Week",
-      "lead": "The seven Expedition 75 crew members cleaned up after a spacewalk, conducted biomedical assessments, and maintained orbital systems to wrap up a busy week aboard the International Space Station.",
-      "date": "2026-11-06T17:48:13.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/blogs/spacestation/2026/11/06/spacewalk-cleanup-biomedical-science-and-maintenance-wrap-up-week/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/blog-useva101-110526d-1.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
       "id": "astronet-od7r8n",
-      "title": "Tajkonauci na Księżycu przed misją Artremis? Szczegóły chińskiego planu",
+      "title": "Tajkonauci na Księżycu przed misją Artemis? Szczegóły chińskiego planu",
       "lead": "W 2023 roku, mogliśmy usłyszeć o ambitnym planie Chińskiej Agencji Kosmicznej. Mowa o lądowaniu Chińczyków na Księżycu przed 2030 rokiem.",
       "date": "2026-11-06T11:46:21.000Z",
       "category": "misja",
@@ -179,26 +187,6 @@
       "date": "2026-10-27T09:44:39.000Z",
       "category": "misja",
       "source": "https://astronet.pl/polska-w-kosmosie/mars-w-krakowie-czyli-european-rover-challenge-2026/?utm_source=rss&utm_medium=rss&utm_campaign=mars-w-krakowie-czyli-european-rover-challenge-2026",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-15ew953",
-      "title": "Przełom na horyzoncie. SpaceX zamierza złapać Starshipa w całości",
-      "lead": "Obrazek wyróżniający: SpaceX Sektor kosmiczny znajduje się obecnie w punkcie zwrotnym, a tempo, w jakim rozwijana jest technologia rakietowa, nie przestaje zadziwiać.",
-      "date": "2026-10-26T18:30:02.000Z",
-      "category": "misja",
-      "source": "https://astronet.pl/astronautyka/przelom-na-horyzoncie-spacex-zamierza-zlapac-starshipa-w-calosci/?utm_source=rss&utm_medium=rss&utm_campaign=przelom-na-horyzoncie-spacex-zamierza-zlapac-starshipa-w-calosci",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-1xt51f9",
-      "title": "Rozpoczęła się IV edycja Olimpijskiej Ligi Astronomicznej",
-      "lead": "Obrazek wyróżniający: Olimpijska Liga Astronomiczna Rozpoczęła się IV Olimpijska Liga Astronomiczna. To kolejna edycja konkursu organizowanego przez Klub Astronomiczny Almukantarat dla uczniów, którzy w roku szkolnym 2026/2027 uczęszczają d...",
-      "date": "2026-10-26T12:56:24.000Z",
-      "category": "odkrycie",
-      "source": "https://astronet.pl/wydarzenia/rozpoczela-sie-iv-edycja-olimpijskiej-ligi-astronomicznej/?utm_source=rss&utm_medium=rss&utm_campaign=rozpoczela-sie-iv-edycja-olimpijskiej-ligi-astronomicznej",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
