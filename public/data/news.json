@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T11:58:58.765Z",
+  "updated": "2026-11-09T13:59:09.893Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -18,6 +18,75 @@
     }
   ],
   "posts": [
+    {
+      "id": "nasa-14xvakw",
+      "title": "CHAPEA Mission 2 Crew Reflects After 378 Days on Simulated Mars",
+      "lead": "After 378 days without windows, the sounds of the outside world, or real-time calls with family and friends, four research volunteers stepped out of NASA’s Mars Dune Alpha habitat on Oct.",
+      "date": "2026-11-09T11:00:00.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/centers-and-facilities/johnson/chapea-mission-2-crew-reflects-after-378-days-on-simulated-mars/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/jsc2026e424286.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1niyhi2",
+      "title": "Missing Links in Planet Formation: From Embedded Disks to Planets",
+      "lead": "ExEP &hellip; Meetings/Events Missing Links in Planet… ExEP Home Overview Team Missions Science Overview Decadal Surveys ExoExplorers Technology Technology Overview Needs and Gap Lists Strategic Astrophysics Technology (SAT) Awards ExEP Tec...",
+      "date": "2026-11-09T06:52:00.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/exep/resources/exoplanet-meetings/missing-links-in-planet-formation-from-embedded-disks-to-planets/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/astro/exo-explore/internal_resources/1804/download_48.jpeg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "astronet-1l7u41y",
+      "title": "Kosmiczna rekrutacja – recenzja książki",
+      "lead": "Każdy z nas, miłośników astronautyki, kiedyś zastanawiał się, dlaczego astronautami zostają tacy, a nie inni ludzie. W każdym naborze zgłaszają się tysiące chętnych, lecz wybranych zostaje tylko kilkoro z nich.",
+      "date": "2026-11-09T06:00:36.000Z",
+      "category": "misja",
+      "source": "https://astronet.pl/recenzje/ksiazka/kosmiczna-rekrutacja-recenzja-ksiazki/?utm_source=rss&utm_medium=rss&utm_campaign=kosmiczna-rekrutacja-recenzja-ksiazki",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "apod-2026-11-09",
+      "title": "NASA Science",
+      "lead": "Does the blue nebula look like the head of a witch? The nebula is known popularly as the Witch Head Nebula because, it is said, the nebula's shape resembles a Halloween-style caricature of a witch's head.",
+      "body": "",
+      "date": "2026-11-09T04:05:00.000Z",
+      "category": "wydarzenie",
+      "source": "https://apod.nasa.gov/apod/ap261109.html",
+      "sourceLabel": "NASA APOD",
+      "language": "en",
+      "image": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+      "credit": "NASA"
+    },
+    {
+      "id": "astronet-retemz",
+      "title": "Poradnik OA. Mechanika nieba 8: Punkty Lagrange’a",
+      "lead": "Dotychczas rozpatrywaliśmy ruch dwóch ciał pod wpływem ich wzajemnej siły przyciągania. Gdy jedno z tych ciał było znacznie bardziej masywne, mówiliśmy o orbitach keplerowskich. Ogólne równania opisujące taki ruch wyprowadził już Newton.",
+      "date": "2026-11-08T20:28:13.000Z",
+      "category": "odkrycie",
+      "source": "https://astronet.pl/oa/poradnik-oa-mechanika-nieba-8-punkty-lagrangea/?utm_source=rss&utm_medium=rss&utm_campaign=poradnik-oa-mechanika-nieba-8-punkty-lagrangea",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "nasa-7xi1yt",
+      "title": "NASA Announces $1 Million to Students for Moon Base Challenge",
+      "lead": "On Sunday, NASA announced the opening of its $1 million Moon Base Student Challenge during a MAX POWER event at Kennedy Space Center Visitor Complex in Florida.",
+      "date": "2026-11-08T15:26:38.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/news-release/nasa-announces-1-million-to-students-for-moon-base-challenge/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/stmd-exteriorlunarbase-hdlandscapeversion-2026-0521.png?w=1200&fit=clip",
+      "body": ""
+    },
     {
       "id": "astronet-1plfimm",
       "title": "Nowy kandydat na planetę karłowatą! Odkrycie 2026 ED138",
@@ -73,42 +142,6 @@
       "source": "https://astronet.pl/astronautyka/fabryka-w-kosmosie-i-powrot-na-ziemie-starfall-od-spacex/?utm_source=rss&utm_medium=rss&utm_campaign=fabryka-w-kosmosie-i-powrot-na-ziemie-starfall-od-spacex",
       "sourceLabel": "AstroNET",
       "language": "pl"
-    },
-    {
-      "id": "nasa-1qod1ko",
-      "title": "AI/ML STIG Lecture Series, 9 Nov 2026",
-      "lead": "AI Tool Use for Astronomy, and MCP for Data Archives. Speakers: Dan Gause, Adele Plunkett (NRAO)",
-      "date": "2026-11-06T22:08:27.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-9-nov-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1nqxaj8",
-      "title": "IR STIG Seminar, 10 Nov 2026",
-      "lead": "Towards Population-Level Exo-Geology: Characterizing the Surfaces, Atmospheres, and Reflective Properties of Hot Rocky Exoplanets. Speaker: Brandon Coy, U Chicago",
-      "date": "2026-11-06T22:08:05.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ir-stig-seminar-10-nov-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1vrvzh2",
-      "title": "AI/ML STIG Lecture Series, 16 Nov 2026",
-      "lead": "Multi-Agent Systems and Orchestration. Speaker: Boris Bolliet, University of Cambridge",
-      "date": "2026-11-06T22:07:26.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-16-nov-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
     },
     {
       "id": "astronet-od7r8n",
@@ -167,26 +200,6 @@
       "date": "2026-10-31T06:00:03.000Z",
       "category": "wydarzenie",
       "source": "https://astronet.pl/obserwacje/na-niebie/niebo-w-listopadzie-2026-roku/?utm_source=rss&utm_medium=rss&utm_campaign=niebo-w-listopadzie-2026-roku",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-44044u",
-      "title": "Nowa kometa odkryta przez europejskiego satelitę Euclid",
-      "lead": "Teleskop kosmiczny Euclid należący do ESA odkrył nową nieznaną dotąd kometę. Na zdjęciach zrobionych między 16 a 24 września 2026 roku i dzięki oprogramowaniu do wykrywania ruchomych obiektów zauważono smugę sugerującą szybko poruszające si...",
-      "date": "2026-10-29T15:46:09.000Z",
-      "category": "odkrycie",
-      "source": "https://astronet.pl/astronomia/nowa-kometa-odkryta-przez-europejskiego-satelite-euclid/?utm_source=rss&utm_medium=rss&utm_campaign=nowa-kometa-odkryta-przez-europejskiego-satelite-euclid",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-8izo5s",
-      "title": "Mars w Krakowie, czyli European Rover Challenge 2026",
-      "lead": "W dzisiejszych czasach sektor kosmiczny coraz wyraźniej wychodzi z bańki środowisk zarezerwowanych tylko dla nielicznych. Na całym świecie, również w Polsce, powstają kolejne prywatne firmy zajmujące się kosmosem, a młodzi ludzie coraz częś...",
-      "date": "2026-10-27T09:44:39.000Z",
-      "category": "misja",
-      "source": "https://astronet.pl/polska-w-kosmosie/mars-w-krakowie-czyli-european-rover-challenge-2026/?utm_source=rss&utm_medium=rss&utm_campaign=mars-w-krakowie-czyli-european-rover-challenge-2026",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
