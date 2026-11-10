@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T13:59:09.893Z",
+  "updated": "2026-11-10T13:33:25.437Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,27 +19,106 @@
   ],
   "posts": [
     {
-      "id": "nasa-14xvakw",
-      "title": "CHAPEA Mission 2 Crew Reflects After 378 Days on Simulated Mars",
-      "lead": "After 378 days without windows, the sounds of the outside world, or real-time calls with family and friends, four research volunteers stepped out of NASA’s Mars Dune Alpha habitat on Oct.",
-      "date": "2026-11-09T11:00:00.000Z",
+      "id": "astronet-1cohmz",
+      "title": "Virgin Galactic wraca po przerwie i prezentuje nowy samolot kosmiczny Apeiron",
+      "lead": "28 października 2026 roku Virgin Galactic zaprezentowało swój najnowszy pojazd - samolot kosmiczny Apeiron. Jest to pierwsza konstrukcja klasy Delta, zaprojektowana z myślą o zwiększeniu skali komercyjnych lotów suborbitalnych i skróceniu p...",
+      "date": "2026-11-10T08:00:35.000Z",
       "category": "misja",
-      "source": "https://www.nasa.gov/centers-and-facilities/johnson/chapea-mission-2-crew-reflects-after-378-days-on-simulated-mars/",
+      "source": "https://astronet.pl/astronautyka/virgin-galactic-wraca-po-przerwie-i-prezentuje-nowy-samolot-kosmiczny-apeiron/?utm_source=rss&utm_medium=rss&utm_campaign=virgin-galactic-wraca-po-przerwie-i-prezentuje-nowy-samolot-kosmiczny-apeiron",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "astronet-3ewur2",
+      "title": "Najstarszy fragment marsjańskiej skały",
+      "lead": "Ostatnie badania NASA ujawniły nowe informacje na temat meteorytu, który spadł w 2022 roku na obszarze Sahary. Skała ważąca 800 gramów uformowała się ponad 4,1 miliarda lat temu.",
+      "date": "2026-11-10T06:00:36.000Z",
+      "category": "wydarzenie",
+      "source": "https://astronet.pl/astronomia/najstarszy-fragment-marsjanskiej-skaly/?utm_source=rss&utm_medium=rss&utm_campaign=najstarszy-fragment-marsjanskiej-skaly",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "nasa-1nqxaj8",
+      "title": "IR STIG Seminar, 10 Nov 2026",
+      "lead": "Towards Population-Level Exo-Geology: Characterizing the Surfaces, Atmospheres, and Reflective Properties of Hot Rocky Exoplanets. Speaker: Brandon Coy, U Chicago",
+      "date": "2026-11-10T02:03:20.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ir-stig-seminar-10-nov-2026/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/jsc2026e424286.jpg?w=1200&fit=clip",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
       "body": ""
     },
     {
-      "id": "nasa-1niyhi2",
-      "title": "Missing Links in Planet Formation: From Embedded Disks to Planets",
-      "lead": "ExEP &hellip; Meetings/Events Missing Links in Planet… ExEP Home Overview Team Missions Science Overview Decadal Surveys ExoExplorers Technology Technology Overview Needs and Gap Lists Strategic Astrophysics Technology (SAT) Awards ExEP Tec...",
-      "date": "2026-11-09T06:52:00.000Z",
+      "id": "nasa-1kllwdf",
+      "title": "NASA Astrophysics Town Hall, 13 Nov 2026",
+      "lead": "This two-hour community meeting will be hosted virtually and is open to all Astrophysics community members, academia, and the public..",
+      "date": "2026-11-10T02:02:58.000Z",
       "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/exep/resources/exoplanet-meetings/missing-links-in-planet-formation-from-embedded-disks-to-planets/",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/nasa-astrophysics-town-hall-13-nov-2026/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/astro/exo-explore/internal_resources/1804/download_48.jpeg?w=1200&fit=clip",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1vrvzh2",
+      "title": "AI/ML STIG Lecture Series, 16 Nov 2026",
+      "lead": "Multi-Agent Systems and Orchestration. Speaker: Boris Bolliet, University of Cambridge",
+      "date": "2026-11-10T02:02:36.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-16-nov-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-16yxtxf",
+      "title": "AGN SIG Spotlight Series, 17 Nov 2026",
+      "lead": "Our Spotlight Series highlights recent advances in AGN science, with a strong emphasis on participation from early-career researchers, and includes plenty of time for community discussion following the presentations.",
+      "date": "2026-11-10T02:02:16.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/agn-sig-spotlight-series-17-nov-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1khv6hs",
+      "title": "IR STIG Seminar, 8 Dec 2026",
+      "lead": "Superconducting Nanowire Single Photon Detector Arrays for Time-Resolved Imaging and Infrared Detection. Speaker: Matthew Shaw, JPL",
+      "date": "2026-11-10T02:01:44.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ir-stig-seminar-8-dec-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1sswsj7",
+      "title": "Cosmic Origins at AAS 249, Jan 2026",
+      "lead": "The 249th AAS meeting (joint with the Historical Astronomy Division) will be held 10–14 January 2027 in Salt Lake City at the Salt Palace Convention Center.",
+      "date": "2026-11-10T02:01:28.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/cosmic-origins-at-aas-249-jan-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/astro/programs/physics-of-the-cosmos/events/2026/aas_jan2026/NASA_Science5.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-e9ot7t",
+      "title": "NASA Astrophysics Town Hall, 13 Nov 2026",
+      "lead": "This two-hour community meeting will be hosted virtually and is open to all Astrophysics community members, academia, and the public.",
+      "date": "2026-11-10T01:51:57.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/nasa-astrophysics-town-hall-13-nov-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
       "body": ""
     },
     {
@@ -53,19 +132,6 @@
       "language": "pl"
     },
     {
-      "id": "apod-2026-11-09",
-      "title": "NASA Science",
-      "lead": "Does the blue nebula look like the head of a witch? The nebula is known popularly as the Witch Head Nebula because, it is said, the nebula's shape resembles a Halloween-style caricature of a witch's head.",
-      "body": "",
-      "date": "2026-11-09T04:05:00.000Z",
-      "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap261109.html",
-      "sourceLabel": "NASA APOD",
-      "language": "en",
-      "image": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-      "credit": "NASA"
-    },
-    {
       "id": "astronet-retemz",
       "title": "Poradnik OA. Mechanika nieba 8: Punkty Lagrange’a",
       "lead": "Dotychczas rozpatrywaliśmy ruch dwóch ciał pod wpływem ich wzajemnej siły przyciągania. Gdy jedno z tych ciał było znacznie bardziej masywne, mówiliśmy o orbitach keplerowskich. Ogólne równania opisujące taki ruch wyprowadził już Newton.",
@@ -76,18 +142,6 @@
       "language": "pl"
     },
     {
-      "id": "nasa-7xi1yt",
-      "title": "NASA Announces $1 Million to Students for Moon Base Challenge",
-      "lead": "On Sunday, NASA announced the opening of its $1 million Moon Base Student Challenge during a MAX POWER event at Kennedy Space Center Visitor Complex in Florida.",
-      "date": "2026-11-08T15:26:38.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/news-release/nasa-announces-1-million-to-students-for-moon-base-challenge/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/stmd-exteriorlunarbase-hdlandscapeversion-2026-0521.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
       "id": "astronet-1plfimm",
       "title": "Nowy kandydat na planetę karłowatą! Odkrycie 2026 ED138",
       "lead": "Astronomowie pracujący w Obserwatorium Vera C. Rubin, które znajduje się w Chile, dokonali ogromnie znaczącego odkrycia. Podczas wieczornej pracy 13 października, Matthew Holman przepuszczał dane zebrane w 2026 roku przez algorytm wyszukiwa...",
@@ -96,42 +150,6 @@
       "source": "https://astronet.pl/astronomia/nowy-kandydat-na-planete-karlowata-odkrycie-2026-ed138/?utm_source=rss&utm_medium=rss&utm_campaign=nowy-kandydat-na-planete-karlowata-odkrycie-2026-ed138",
       "sourceLabel": "AstroNET",
       "language": "pl"
-    },
-    {
-      "id": "nasa-12tv5yv",
-      "title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
-      "lead": "NASA announced a suite of awards and mission updates on Saturday to expand the agency’s Moon Base exploration, science, and infrastructure capabilities.",
-      "date": "2026-11-07T22:47:03.000Z",
-      "category": "odkrycie",
-      "source": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/moon-base-artists-concept.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-khl3en",
-      "title": "PROMISE",
-      "lead": "Explore the PROMISE Lunar Rover’s Payload The PROMISE Payload The PROMISE rover will carry an extensive payload of science instruments and technology demonstrations sponsored by NASA’s Science Mission Directorate, Research and Technology Mi...",
-      "date": "2026-11-07T21:05:12.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/mission/promise/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2019/11/pia23305-16_0.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1yb67xf",
-      "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
-      "lead": "NASA is looking for the explorers who will help write the next chapter of human spaceflight. Applications are now open for the agency’s next class of astronauts, who will join NASA as America returns to the Moon, builds the Moon Base, and l...",
-      "date": "2026-11-07T18:11:57.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/jsc2025e076292large.jpg?w=1200&fit=clip",
-      "body": ""
     },
     {
       "id": "astronet-11ms43r",
@@ -180,26 +198,6 @@
       "date": "2026-11-01T16:28:17.000Z",
       "category": "odkrycie",
       "source": "https://astronet.pl/oa/poradnik-oa-mechanika-nieba-7-uklady-podwojne/?utm_source=rss&utm_medium=rss&utm_campaign=poradnik-oa-mechanika-nieba-7-uklady-podwojne",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-1ld3wr1",
-      "title": "NASA wprowadza zmiany w programie Artemis",
-      "lead": "Od misji Artemis II minęło już kilka miesięcy, a NASA nie spowalnia tempa w przygotowaniach do lotów na Księżyc. Według planu, Amerykanie powrócą na naszego naturalnego satelitę już w 2028 roku.",
-      "date": "2026-10-31T18:47:23.000Z",
-      "category": "misja",
-      "source": "https://astronet.pl/astronautyka/nasa-wprowadza-zmiany-w-programie-artemis/?utm_source=rss&utm_medium=rss&utm_campaign=nasa-wprowadza-zmiany-w-programie-artemis",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-12ydkcd",
-      "title": "Niebo w listopadzie 2026 roku",
-      "lead": "Listopad przynosi ze sobą przypieczętowanie jesiennej aury; dni stają się coraz krótsze, a ciemność zapada zdecydowanie wcześniej, zwiastując nieuchronne nadejście zimy.",
-      "date": "2026-10-31T06:00:03.000Z",
-      "category": "wydarzenie",
-      "source": "https://astronet.pl/obserwacje/na-niebie/niebo-w-listopadzie-2026-roku/?utm_source=rss&utm_medium=rss&utm_campaign=niebo-w-listopadzie-2026-roku",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
