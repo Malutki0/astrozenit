@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T13:49:44.277Z",
+  "updated": "2026-11-13T13:11:56.729Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,16 +19,59 @@
   ],
   "posts": [
     {
-      "id": "nasa-1wqejet",
-      "title": "NASA’s Hubble Offers Cosmic Sampler of Targets for Roman",
-      "lead": "A gallery of gravitational lenses captured by NASA’s Hubble Space Telescope showcases the diversity of this cosmic phenomenon and lays the groundwork for follow-up observations by the Nancy Grace Roman Space Telescope.",
-      "date": "2026-11-12T13:18:40.000Z",
-      "category": "teleskop",
-      "source": "https://science.nasa.gov/missions/hubble/nasas-hubble-offers-cosmic-sampler-of-targets-for-roman/",
+      "id": "nasa-e9ot7t",
+      "title": "NASA Astrophysics Town Hall, 13 November 2026",
+      "lead": "This two-hour community meeting will be hosted virtually and is open to all Astrophysics community members, academia, and the public.",
+      "date": "2026-11-13T11:43:08.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/nasa-astrophysics-town-hall-13-nov-2026/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/general/images/2023/07/hubble-space-telescope-hst-6.jpg?w=1200&fit=clip",
       "body": ""
+    },
+    {
+      "id": "nasa-rreqrh",
+      "title": "Crew Packs Dragon with Science and Cleans Spacesuits",
+      "lead": "Expedition 75 had a busy shift on Thursday primarily focusing on packing a U.S. cargo craft for its upcoming departure and cleaning a pair of spacesuits.",
+      "date": "2026-11-12T22:07:49.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/11/12/dragon-science-spacesuits/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://images-assets.nasa.gov/image/iss075e0252441/iss075e0252441~large.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1tfetxs",
+      "title": "HIP 105707 b",
+      "lead": "HIP 105707 b is a gas giant exoplanet that orbits a -type star. Its mass is 24.55 Jupiters, it takes 1.8 years to complete one orbit of its star, and is 1.34 AU from its star. Its discovery was announced in 2026.",
+      "date": "2026-11-12T21:32:40.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/exoplanet-catalog/hip-105707-b/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "astronet-a21slt",
+      "title": "Spotkanie online dla nauczycieli i dyrektorów szkół w sprawie nowego przedmiotu „astronomia”",
+      "lead": "Obrazek wyróżniający: PTA 3 grudnia 2026 roku zapraszamy nauczycieli i dyrektorów szkół na spotkanie online organizowane przez Polskie Towarzystwo Astronomiczne (PTA) i Polskie Towarzystwo Miłośników Astronomii (PTMA).",
+      "date": "2026-11-12T17:20:45.000Z",
+      "category": "odkrycie",
+      "source": "https://astronet.pl/wydarzenia/spotkanie-online-dla-nauczycieli-i-dyrektorow-szkol-w-sprawie-nowego-przedmiotu-astronomia/?utm_source=rss&utm_medium=rss&utm_campaign=spotkanie-online-dla-nauczycieli-i-dyrektorow-szkol-w-sprawie-nowego-przedmiotu-astronomia",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "astronet-eq9gx",
+      "title": "spACE conference 2026: Technologie kosmiczne, projekty dual-use i spotkanie ze Sławoszem Uznańskim-Wiśniewskim w Warszawie",
+      "lead": "W dniach 25-26 listopada 2026 roku na Wydziale Psychologii Uniwersytetu Warszawskiego (ul. Stefana Banacha 2D) odbędzie się ogólnopolska konferencja spACE conference 2026 oraz warsztaty branżowe.",
+      "date": "2026-11-12T16:43:18.000Z",
+      "category": "odkrycie",
+      "source": "https://astronet.pl/wydarzenia/space-conference-2026-technologie-kosmiczne-projekty-dual-use-i-spotkanie-ze-slawoszem-uznanskim-wisniewskim-w-warszawie/?utm_source=rss&utm_medium=rss&utm_campaign=space-conference-2026-technologie-kosmiczne-projekty-dual-use-i-spotkanie-ze-slawoszem-uznanskim-wisniewskim-w-warszawie",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
     },
     {
       "id": "astronet-27mcby",
@@ -39,18 +82,6 @@
       "source": "https://astronet.pl/astronomia/nowy-sposob-na-klasyfikacje-ukladow-planetarnych/?utm_source=rss&utm_medium=rss&utm_campaign=nowy-sposob-na-klasyfikacje-ukladow-planetarnych",
       "sourceLabel": "AstroNET",
       "language": "pl"
-    },
-    {
-      "id": "nasa-1190zko",
-      "title": "Honoring NASA’s X-59 Test Pilots on Veterans Day",
-      "lead": "Seasoned pilots, aerospace engineers, and U.S. military veterans, NASA’s X-59 test pilots bring decades of service, technical expertise, and flight experience to the agency’s Quesst mission.",
-      "date": "2026-11-11T14:00:00.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/blogs/quesst/2026/11/11/x-59-test-pilots-veterans-day/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/vets-day-quesst.jpg?w=1200&fit=clip",
-      "body": ""
     },
     {
       "id": "astronet-1cohmz",
@@ -119,26 +150,6 @@
       "date": "2026-11-06T11:46:21.000Z",
       "category": "misja",
       "source": "https://astronet.pl/astronautyka/tajkonauci-na-ksiezycu-przed-misja-artremis-szczegoly-chinskiego-planu/?utm_source=rss&utm_medium=rss&utm_campaign=tajkonauci-na-ksiezycu-przed-misja-artremis-szczegoly-chinskiego-planu",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-u2h41a",
-      "title": "Odległe światy o dwóch słońcach w mikrosoczewkowaniu grawitacyjnym",
-      "lead": "Co może być piękniejszego niż bezchmurny dzień z pięknie widocznym słońcem na niebie? Piękny bezchmurny dzień z dwoma słońcami na niebie! Okazuje się, że podwójne wschody słońca nie występują jedynie na Tatooine z Gwiezdnych Wojen.",
-      "date": "2026-11-02T17:23:25.000Z",
-      "category": "odkrycie",
-      "source": "https://astronet.pl/astronomia/odlegle-swiaty-o-dwoch-sloncach-w-mikrosoczewkowaniu-grawitacyjnym/?utm_source=rss&utm_medium=rss&utm_campaign=odlegle-swiaty-o-dwoch-sloncach-w-mikrosoczewkowaniu-grawitacyjnym",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-2movk3",
-      "title": "Kosmiczny przegląd miesiąca AstroNETu – październik 2026 roku",
-      "lead": "Październik to miesiąc, który jest już blisko końca roku. Zaczynają się podsumowania, kończą konkursy, ale jak pokazał ten miesiąc, dalej rozpoczynają się ambitne misje kosmiczne czy trwają prace nad przełomowymi zmianami w świecie kosmosu....",
-      "date": "2026-11-01T22:59:59.000Z",
-      "category": "misja",
-      "source": "https://astronet.pl/astronautyka/podsumowania/kosmiczny-przeglad-miesiaca-astronetu-pazdziernik-2026-roku/?utm_source=rss&utm_medium=rss&utm_campaign=kosmiczny-przeglad-miesiaca-astronetu-pazdziernik-2026-roku",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
