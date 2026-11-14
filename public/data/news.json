@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T13:11:56.729Z",
+  "updated": "2026-11-14T12:15:49.756Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,6 +19,75 @@
   ],
   "posts": [
     {
+      "id": "astronet-o10re9",
+      "title": "Czy uda się odzysk górnego stopnia? Start piętnastego lotu Starshipa",
+      "lead": "Rozpoczął się piętnasty lot Starshipa - choć niestety z hukiem. Misja trwa, lecz już w tym momencie wiadomo, że za sprawą tego lotu Starship nie osiągnie statusu w pełni odzyskiwalnej rakiety.",
+      "date": "2026-11-13T23:32:21.000Z",
+      "category": "misja",
+      "source": "https://astronet.pl/astronautyka/czy-uda-sie-odzysk-gornego-stopnia-start-pietnastego-lotu-starshipa/?utm_source=rss&utm_medium=rss&utm_campaign=czy-uda-sie-odzysk-gornego-stopnia-start-pietnastego-lotu-starshipa",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "nasa-ket7os",
+      "title": "Instruments on NASA’s Roman Space Telescope Get in Sync for Science",
+      "lead": "NASA’s Nancy Grace Roman Space Telescope has completed a key milestone, bringing its instruments into precise alignment and moving the observatory another step closer to science operations.",
+      "date": "2026-11-13T18:54:51.000Z",
+      "category": "teleskop",
+      "source": "https://science.nasa.gov/blogs/roman/2026/11/13/instruments-on-nasas-roman-space-telescope-get-in-sync-for-science/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "body": ""
+    },
+    {
+      "id": "nasa-yz4l1a",
+      "title": "Botany, Biomedicine, and Cargo Ops Wrap Up Week Aboard Station",
+      "lead": "Space botany and biomedical research filled the scientific schedule aboard the International Space Station at the end of the week. Expedition 75 is also continuing to load a U.S.",
+      "date": "2026-11-13T18:00:58.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/11/13/botany-biomedicine-and-cargo-ops-wrap-up-week-aboard-station/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://images-assets.nasa.gov/image/iss075e0254975/iss075e0254975~large.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1dv3vtw",
+      "title": "Outbursts from a Massive Star",
+      "lead": "Using NASA’s Chandra X-ray Observatory, astronomers have discovered what is triggering repeated outbursts from a giant, unstable star located in the galaxy shown in this image released on Nov. 9, 2026.",
+      "date": "2026-11-13T16:39:33.000Z",
+      "category": "odkrycie",
+      "source": "https://www.nasa.gov/image-article/outbursts-from-a-massive-star/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/at2016blu.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-uerlm9",
+      "title": "Gemini Astronaut Photos Inspired Early Earth Observation Program",
+      "lead": "Astronauts James A. Lovell Jr. and Edwin E. “Buzz” Aldrin Jr. orbited Earth from November 11 to 15, 1966, on Gemini XII, the final mission of NASA’s Gemini program.",
+      "date": "2026-11-13T16:05:54.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/image-article/gemini-astronaut-photos-inspired-early-earth-observation-program/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/s66-63535-f.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1dn9jfl",
+      "title": "Apply to be a Moonwalker",
+      "lead": "NASA astronaut Nichole Stilwell and Acting Human Resources Director Tamsin Abotteen discuss the astronaut application process and what it takes to join NASA’s next class of explorers. Episode 445.",
+      "date": "2026-11-13T14:54:47.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/podcasts/houston-we-have-a-podcast/apply-to-be-a-moonwalker/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/ep445-apply-to-be-a-moonwalker-thumbnail.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
       "id": "nasa-e9ot7t",
       "title": "NASA Astrophysics Town Hall, 13 November 2026",
       "lead": "This two-hour community meeting will be hosted virtually and is open to all Astrophysics community members, academia, and the public.",
@@ -27,30 +96,6 @@
       "source": "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/nasa-astrophysics-town-hall-13-nov-2026/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "body": ""
-    },
-    {
-      "id": "nasa-rreqrh",
-      "title": "Crew Packs Dragon with Science and Cleans Spacesuits",
-      "lead": "Expedition 75 had a busy shift on Thursday primarily focusing on packing a U.S. cargo craft for its upcoming departure and cleaning a pair of spacesuits.",
-      "date": "2026-11-12T22:07:49.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/blogs/spacestation/2026/11/12/dragon-science-spacesuits/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://images-assets.nasa.gov/image/iss075e0252441/iss075e0252441~large.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1tfetxs",
-      "title": "HIP 105707 b",
-      "lead": "HIP 105707 b is a gas giant exoplanet that orbits a -type star. Its mass is 24.55 Jupiters, it takes 1.8 years to complete one orbit of its star, and is 1.34 AU from its star. Its discovery was announced in 2026.",
-      "date": "2026-11-12T21:32:40.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/exoplanet-catalog/hip-105707-b/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://science.nasa.gov/wp-content/uploads/2023/06/dusty-universe.png?w=1200&fit=clip",
       "body": ""
     },
     {
@@ -140,16 +185,6 @@
       "date": "2026-11-07T17:17:39.000Z",
       "category": "misja",
       "source": "https://astronet.pl/astronautyka/fabryka-w-kosmosie-i-powrot-na-ziemie-starfall-od-spacex/?utm_source=rss&utm_medium=rss&utm_campaign=fabryka-w-kosmosie-i-powrot-na-ziemie-starfall-od-spacex",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-od7r8n",
-      "title": "Tajkonauci na Księżycu przed misją Artemis? Szczegóły chińskiego planu",
-      "lead": "W 2023 roku, mogliśmy usłyszeć o ambitnym planie Chińskiej Agencji Kosmicznej. Mowa o lądowaniu Chińczyków na Księżycu przed 2030 rokiem.",
-      "date": "2026-11-06T11:46:21.000Z",
-      "category": "misja",
-      "source": "https://astronet.pl/astronautyka/tajkonauci-na-ksiezycu-przed-misja-artremis-szczegoly-chinskiego-planu/?utm_source=rss&utm_medium=rss&utm_campaign=tajkonauci-na-ksiezycu-przed-misja-artremis-szczegoly-chinskiego-planu",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
