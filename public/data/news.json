@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T12:15:49.756Z",
+  "updated": "2026-11-15T12:48:20.500Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -18,6 +18,29 @@
     }
   ],
   "posts": [
+    {
+      "id": "astronet-pkgzj",
+      "title": "Historyczny lot Starshipa: górny stopień po raz pierwszy odzyskany",
+      "lead": "Po raz pierwszy w historii SpaceX pomyślnie odzyskało górny stopień Starshipa. 14 listopada o godz. 22:20 czasu polskiego w ramionach wieży startowej Mechazilla zakończył się piętnasty lot tej rakiety.",
+      "date": "2026-11-15T11:16:33.000Z",
+      "category": "misja",
+      "source": "https://astronet.pl/astronautyka/historyczny-lot-starshipa-gorny-stopien-po-raz-pierwszy-odzyskany/?utm_source=rss&utm_medium=rss&utm_campaign=historyczny-lot-starshipa-gorny-stopien-po-raz-pierwszy-odzyskany",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "apod-2026-11-15",
+      "title": "NASA Science",
+      "lead": "Where will the next meteor appear? Even during a meteor shower, it is practically impossible to know. Therefore, a good way to enjoy a meteor shower is to find a place where you can sit comfortably and monitor a great expanse of dark sky.",
+      "body": "",
+      "date": "2026-11-15T04:05:00.000Z",
+      "category": "wydarzenie",
+      "source": "https://apod.nasa.gov/apod/ap261115.html",
+      "sourceLabel": "NASA APOD",
+      "language": "en",
+      "image": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+      "credit": "NASA"
+    },
     {
       "id": "astronet-o10re9",
       "title": "Czy uda się odzysk górnego stopnia? Start piętnastego lotu Starshipa",
@@ -175,16 +198,6 @@
       "date": "2026-11-08T06:00:07.000Z",
       "category": "teleskop",
       "source": "https://astronet.pl/astronomia/nowy-kandydat-na-planete-karlowata-odkrycie-2026-ed138/?utm_source=rss&utm_medium=rss&utm_campaign=nowy-kandydat-na-planete-karlowata-odkrycie-2026-ed138",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-11ms43r",
-      "title": "Fabryka w kosmosie i powrót na Ziemię – Starfall od SpaceX",
-      "lead": "Dnia 20 października 2026 roku, firma SpaceX wyniosła na LEO (Niską Orbitę Okołoziemską) kapsułę „Starfall”, która była jednym z 32 ładunków na pokładzie misji Bandwagon-5. Jest to drugi lot tej kapsuły.",
-      "date": "2026-11-07T17:17:39.000Z",
-      "category": "misja",
-      "source": "https://astronet.pl/astronautyka/fabryka-w-kosmosie-i-powrot-na-ziemie-starfall-od-spacex/?utm_source=rss&utm_medium=rss&utm_campaign=fabryka-w-kosmosie-i-powrot-na-ziemie-starfall-od-spacex",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
