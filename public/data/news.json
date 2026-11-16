@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T12:48:20.500Z",
+  "updated": "2026-11-16T13:45:04.605Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,6 +19,91 @@
   ],
   "posts": [
     {
+      "id": "nasa-1vrvzh2",
+      "title": "AI/ML STIG Lecture Series, 16 Nov 2026",
+      "lead": "Multi-Agent Systems and Orchestration. Speaker: Boris Bolliet, University of Cambridge",
+      "date": "2026-11-16T12:04:22.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-16-nov-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-16yxtxf",
+      "title": "AGN SIG Spotlight Series, 17 Nov 2026",
+      "lead": "Our Spotlight Series highlights recent advances in AGN science, with a strong emphasis on participation from early-career researchers, and includes plenty of time for community discussion following the presentations.",
+      "date": "2026-11-16T12:04:09.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/agn-sig-spotlight-series-17-nov-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-119emj2",
+      "title": "AI/ML STIG Lecture Series, 30 Nov 2026",
+      "lead": "Ethics and Challenges of Agentic AI Speaker Paul Ginsparg, Cornell University Meeting Connection Join the Lecture",
+      "date": "2026-11-16T12:04:00.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-30-nov-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1no6lv7",
+      "title": "AGN Coffee, 3 Dec 2026",
+      "lead": "AGN Coffee is designed to be a monthly, low-pressure, informal environment where early-career astronomers can discuss recent AGN papers, research ideas, and broader developments in the field.",
+      "date": "2026-11-16T12:04:00.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/agn-coffee-3-dec-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1khv6hs",
+      "title": "IR STIG Seminar, 8 Dec 2026",
+      "lead": "Superconducting Nanowire Single Photon Detector Arrays for Time-Resolved Imaging and Infrared Detection. Speaker: Matthew Shaw, JPL",
+      "date": "2026-11-16T12:03:07.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ir-stig-seminar-8-dec-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-1sswsj7",
+      "title": "Cosmic Origins at AAS 249, Jan 2026",
+      "lead": "The 249th AAS meeting (joint with the Historical Astronomy Division) will be held 10–14 January 2027 in Salt Lake City at the Salt Palace Convention Center.",
+      "date": "2026-11-16T12:02:29.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/cosmic-origins-at-aas-249-jan-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/astro/programs/physics-of-the-cosmos/events/2026/aas_jan2026/NASA_Science5.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "apod-2026-11-16",
+      "title": "NASA Science",
+      "lead": "How do stars form? To help answer this question, NASA used the James Webb Space Telescope to take the featured detailed image of the star-forming region NGC 7129 in infrared light.",
+      "body": "",
+      "date": "2026-11-16T04:05:00.000Z",
+      "category": "wydarzenie",
+      "source": "https://apod.nasa.gov/apod/ap261116.html",
+      "sourceLabel": "NASA APOD",
+      "language": "en",
+      "image": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+      "credit": "NASA"
+    },
+    {
       "id": "astronet-pkgzj",
       "title": "Historyczny lot Starshipa: górny stopień po raz pierwszy odzyskany",
       "lead": "Po raz pierwszy w historii SpaceX pomyślnie odzyskało górny stopień Starshipa. 14 listopada o godz. 22:20 czasu polskiego w ramionach wieży startowej Mechazilla zakończył się piętnasty lot tej rakiety.",
@@ -29,19 +114,6 @@
       "language": "pl"
     },
     {
-      "id": "apod-2026-11-15",
-      "title": "NASA Science",
-      "lead": "Where will the next meteor appear? Even during a meteor shower, it is practically impossible to know. Therefore, a good way to enjoy a meteor shower is to find a place where you can sit comfortably and monitor a great expanse of dark sky.",
-      "body": "",
-      "date": "2026-11-15T04:05:00.000Z",
-      "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap261115.html",
-      "sourceLabel": "NASA APOD",
-      "language": "en",
-      "image": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-      "credit": "NASA"
-    },
-    {
       "id": "astronet-o10re9",
       "title": "Czy uda się odzysk górnego stopnia? Start piętnastego lotu Starshipa",
       "lead": "Rozpoczął się piętnasty lot Starshipa - choć niestety z hukiem. Misja trwa, lecz już w tym momencie wiadomo, że za sprawą tego lotu Starship nie osiągnie statusu w pełni odzyskiwalnej rakiety.",
@@ -50,76 +122,6 @@
       "source": "https://astronet.pl/astronautyka/czy-uda-sie-odzysk-gornego-stopnia-start-pietnastego-lotu-starshipa/?utm_source=rss&utm_medium=rss&utm_campaign=czy-uda-sie-odzysk-gornego-stopnia-start-pietnastego-lotu-starshipa",
       "sourceLabel": "AstroNET",
       "language": "pl"
-    },
-    {
-      "id": "nasa-ket7os",
-      "title": "Instruments on NASA’s Roman Space Telescope Get in Sync for Science",
-      "lead": "NASA’s Nancy Grace Roman Space Telescope has completed a key milestone, bringing its instruments into precise alignment and moving the observatory another step closer to science operations.",
-      "date": "2026-11-13T18:54:51.000Z",
-      "category": "teleskop",
-      "source": "https://science.nasa.gov/blogs/roman/2026/11/13/instruments-on-nasas-roman-space-telescope-get-in-sync-for-science/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "body": ""
-    },
-    {
-      "id": "nasa-yz4l1a",
-      "title": "Botany, Biomedicine, and Cargo Ops Wrap Up Week Aboard Station",
-      "lead": "Space botany and biomedical research filled the scientific schedule aboard the International Space Station at the end of the week. Expedition 75 is also continuing to load a U.S.",
-      "date": "2026-11-13T18:00:58.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/blogs/spacestation/2026/11/13/botany-biomedicine-and-cargo-ops-wrap-up-week-aboard-station/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://images-assets.nasa.gov/image/iss075e0254975/iss075e0254975~large.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1dv3vtw",
-      "title": "Outbursts from a Massive Star",
-      "lead": "Using NASA’s Chandra X-ray Observatory, astronomers have discovered what is triggering repeated outbursts from a giant, unstable star located in the galaxy shown in this image released on Nov. 9, 2026.",
-      "date": "2026-11-13T16:39:33.000Z",
-      "category": "odkrycie",
-      "source": "https://www.nasa.gov/image-article/outbursts-from-a-massive-star/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/at2016blu.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-uerlm9",
-      "title": "Gemini Astronaut Photos Inspired Early Earth Observation Program",
-      "lead": "Astronauts James A. Lovell Jr. and Edwin E. “Buzz” Aldrin Jr. orbited Earth from November 11 to 15, 1966, on Gemini XII, the final mission of NASA’s Gemini program.",
-      "date": "2026-11-13T16:05:54.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/image-article/gemini-astronaut-photos-inspired-early-earth-observation-program/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/s66-63535-f.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1dn9jfl",
-      "title": "Apply to be a Moonwalker",
-      "lead": "NASA astronaut Nichole Stilwell and Acting Human Resources Director Tamsin Abotteen discuss the astronaut application process and what it takes to join NASA’s next class of explorers. Episode 445.",
-      "date": "2026-11-13T14:54:47.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/podcasts/houston-we-have-a-podcast/apply-to-be-a-moonwalker/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/ep445-apply-to-be-a-moonwalker-thumbnail.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-e9ot7t",
-      "title": "NASA Astrophysics Town Hall, 13 November 2026",
-      "lead": "This two-hour community meeting will be hosted virtually and is open to all Astrophysics community members, academia, and the public.",
-      "date": "2026-11-13T11:43:08.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/nasa-astrophysics-town-hall-13-nov-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "body": ""
     },
     {
       "id": "astronet-a21slt",
