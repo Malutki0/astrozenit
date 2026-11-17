@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T13:45:04.605Z",
+  "updated": "2026-11-17T14:34:35.854Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,89 +19,51 @@
   ],
   "posts": [
     {
-      "id": "nasa-1vrvzh2",
-      "title": "AI/ML STIG Lecture Series, 16 Nov 2026",
-      "lead": "Multi-Agent Systems and Orchestration. Speaker: Boris Bolliet, University of Cambridge",
-      "date": "2026-11-16T12:04:22.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-16-nov-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-16yxtxf",
-      "title": "AGN SIG Spotlight Series, 17 Nov 2026",
-      "lead": "Our Spotlight Series highlights recent advances in AGN science, with a strong emphasis on participation from early-career researchers, and includes plenty of time for community discussion following the presentations.",
-      "date": "2026-11-16T12:04:09.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/agn-sig-spotlight-series-17-nov-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-119emj2",
-      "title": "AI/ML STIG Lecture Series, 30 Nov 2026",
-      "lead": "Ethics and Challenges of Agentic AI Speaker Paul Ginsparg, Cornell University Meeting Connection Join the Lecture",
-      "date": "2026-11-16T12:04:00.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-30-nov-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1no6lv7",
-      "title": "AGN Coffee, 3 Dec 2026",
-      "lead": "AGN Coffee is designed to be a monthly, low-pressure, informal environment where early-career astronomers can discuss recent AGN papers, research ideas, and broader developments in the field.",
-      "date": "2026-11-16T12:04:00.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/agn-coffee-3-dec-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1khv6hs",
-      "title": "IR STIG Seminar, 8 Dec 2026",
-      "lead": "Superconducting Nanowire Single Photon Detector Arrays for Time-Resolved Imaging and Infrared Detection. Speaker: Matthew Shaw, JPL",
-      "date": "2026-11-16T12:03:07.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ir-stig-seminar-8-dec-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1sswsj7",
-      "title": "Cosmic Origins at AAS 249, Jan 2026",
-      "lead": "The 249th AAS meeting (joint with the Historical Astronomy Division) will be held 10–14 January 2027 in Salt Lake City at the Salt Palace Convention Center.",
-      "date": "2026-11-16T12:02:29.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/cosmic-origins-at-aas-249-jan-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/astro/programs/physics-of-the-cosmos/events/2026/aas_jan2026/NASA_Science5.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "apod-2026-11-16",
+      "id": "apod-2026-11-17",
       "title": "NASA Science",
-      "lead": "How do stars form? To help answer this question, NASA used the James Webb Space Telescope to take the featured detailed image of the star-forming region NGC 7129 in infrared light.",
+      "lead": "Are these two giant arches battling for control of the sky? No, but it sure looks like it! The arch on the left is the central band of our Milky Way Galaxy, an ancient system of stars, gas, and dust that predates our Earth and is very far a...",
       "body": "",
-      "date": "2026-11-16T04:05:00.000Z",
+      "date": "2026-11-17T04:05:00.000Z",
       "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap261116.html",
+      "source": "https://apod.nasa.gov/apod/ap261117.html",
       "sourceLabel": "NASA APOD",
       "language": "en",
       "image": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
       "credit": "NASA"
+    },
+    {
+      "id": "nasa-1lq24qp",
+      "title": "Biotechnology, Spacesuit Work, and Dragon Packing Start Week Aboard Station",
+      "lead": "Biotechnology research including growing human lung cells and managing blood flow in space awaited the Expedition 75 crew on Monday.",
+      "date": "2026-11-16T22:24:06.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/11/16/biotechnology-spacesuit-work-and-dragon-packing-start-week-aboard-station/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://images-assets.nasa.gov/image/iss075e0266049/iss075e0266049~large.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-ct4ynf",
+      "title": "A Collage Showing 49 Drill Holes Made by NASA’s Curiosity Mars Rover",
+      "lead": "Description This collage shows 49 drill holes captured by NASA’s Curiosity Mars rover as of November 2026. Each hole represents a sample collected from rocks on the Martian surface; Curiosity’s drill, located on the end of its robotic arm,...",
+      "date": "2026-11-16T22:05:23.000Z",
+      "category": "misja",
+      "source": "https://science.nasa.gov/photojournal/a-collage-showing-49-drill-holes-made-by-nasas-curiosity-mars-rover/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia26804/PIA26804.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "astronet-1ktxby7",
+      "title": "Poradnik OA. Mechanika nieba 9: Księżyc",
+      "lead": "[latexpage] Księżyc towarzyszy Ziemi niemal od jej początków. Swoim oddziaływaniem stabilizuje nachylenie osi obrotu planety, a zatem i klimat całej planety.",
+      "date": "2026-11-16T16:39:23.000Z",
+      "category": "wydarzenie",
+      "source": "https://astronet.pl/oa/poradnik-oa-mechanika-nieba-9-ksiezyc/?utm_source=rss&utm_medium=rss&utm_campaign=poradnik-oa-mechanika-nieba-9-ksiezyc",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
     },
     {
       "id": "astronet-pkgzj",
@@ -190,16 +152,6 @@
       "date": "2026-11-08T20:28:13.000Z",
       "category": "odkrycie",
       "source": "https://astronet.pl/oa/poradnik-oa-mechanika-nieba-8-punkty-lagrangea/?utm_source=rss&utm_medium=rss&utm_campaign=poradnik-oa-mechanika-nieba-8-punkty-lagrangea",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-1plfimm",
-      "title": "Nowy kandydat na planetę karłowatą! Odkrycie 2026 ED138",
-      "lead": "Astronomowie pracujący w Obserwatorium Vera C. Rubin, które znajduje się w Chile, dokonali ogromnie znaczącego odkrycia. Podczas wieczornej pracy 13 października, Matthew Holman przepuszczał dane zebrane w 2026 roku przez algorytm wyszukiwa...",
-      "date": "2026-11-08T06:00:07.000Z",
-      "category": "teleskop",
-      "source": "https://astronet.pl/astronomia/nowy-kandydat-na-planete-karlowata-odkrycie-2026-ed138/?utm_source=rss&utm_medium=rss&utm_campaign=nowy-kandydat-na-planete-karlowata-odkrycie-2026-ed138",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
