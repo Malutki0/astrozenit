@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T14:11:48.196Z",
+  "updated": "2026-11-19T14:29:18.539Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,81 +19,10 @@
   ],
   "posts": [
     {
-      "id": "nasa-1auxf6i",
-      "title": "NASA, SpaceX Stand Down from Dragon’s Undocking on Wednesday",
-      "lead": "NASA and SpaceX are standing down from Wednesday’s Dragon undocking opportunity from the International Space Station due to unfavorable weather conditions at the splashdown sites off the coast of California.",
-      "date": "2026-11-18T06:44:57.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/blogs/spacestation/2026/11/18/nasa-spacex-stand-down-from-dragons-undocking-on-wednesday/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://images-assets.nasa.gov/image/iss075e0226575/iss075e0226575~large.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "apod-2026-11-18",
-      "title": "NASA Science",
-      "lead": "What a flare for the chromatic! Today’s image captures a piece of the Sun’s chromosphere, the layer of the Sun’s atmosphere above its surface where the temperature rises. Why would the Sun become hotter farther away from its core?",
-      "body": "",
-      "date": "2026-11-18T04:05:00.000Z",
-      "category": "wydarzenie",
-      "source": "https://apod.nasa.gov/apod/ap261118.html",
-      "sourceLabel": "NASA APOD",
-      "language": "en",
-      "image": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-      "credit": "NASA"
-    },
-    {
-      "id": "nasa-wjnx2g",
-      "title": "NASA Launches Nuclear Power Systems Student Contest",
-      "lead": "NASA’s Power to Explore Student Challenge kicked off Tuesday, Nov. 17. The science, engineering, technology, and mathematics (STEM) challenge invites kindergarten through 12th grade students in the United States to learn about space nuclear...",
-      "date": "2026-11-17T22:02:48.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/centers-and-facilities/glenn/nasa-launches-nuclear-power-systems-student-contest/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/planetary-science-division/radioisotope-power-systems/power-to-explore-contest/2027-power-to-explore/PTE_2026-2027_X%20-%201200x675-80.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "astronet-ux22vy",
-      "title": "Rozbłyski gwiazdy AT 2016blu wyjaśnione. Przyczyną obiekt zwarty",
-      "lead": "AT 2016blu to niestabilna gwiazda znajdująca się w galaktyce spiralnej NGC 4559 w gwiazdozbiorze Warkocza Bereniki, oddalonej od Ziemi o około 30 milionów lat świetlnych. Szacowana masa gwiazdy to około 33 masy Słońca.",
-      "date": "2026-11-17T20:45:53.000Z",
-      "category": "teleskop",
-      "source": "https://astronet.pl/astronomia/rozblyski-gwiazdy-at-2016blu-wyjasnione-przyczyna-obiekt-zwarty/?utm_source=rss&utm_medium=rss&utm_campaign=rozblyski-gwiazdy-at-2016blu-wyjasnione-przyczyna-obiekt-zwarty",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "nasa-1pjror9",
-      "title": "BPS Digital AVATAR Challenge",
-      "lead": "The NASA Space Biology Program within the Biological and Physical Sciences (BPS) Division investigates how living systems respond across the full spectrum of biological organization to advance understanding of how living systems respond to...",
-      "date": "2026-11-17T20:39:38.000Z",
-      "category": "misja",
-      "source": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/bps-digital-avatar-challenge/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://images-assets.nasa.gov/image/EMU_CHIP_GLOVE_DYE_L2/EMU_CHIP_GLOVE_DYE_L2~large.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1yt9no2",
-      "title": "New Album of Baby Star Sounds Shared by NASA’s Chandra",
-      "lead": "A new album from NASA’s Chandra X-ray Observatory collects snapshots of baby stars across the galaxy and beyond and transforms that data into sound.",
-      "date": "2026-11-17T20:26:17.000Z",
-      "category": "teleskop",
-      "source": "https://science.nasa.gov/missions/chandra/new-album-of-baby-star-sounds-shared-by-nasas-chandra/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/chandra/2026/sonify12_rho.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
       "id": "nasa-119emj2",
       "title": "AI/ML STIG Lecture Series, 30 Nov 2026",
       "lead": "Ethics and Challenges of Agentic AI. Speaker: Paul Ginsparg, Cornell University",
-      "date": "2026-11-17T20:08:31.000Z",
+      "date": "2026-11-19T12:08:50.000Z",
       "category": "odkrycie",
       "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-30-nov-2026/",
       "sourceLabel": "NASA Science",
@@ -105,7 +34,7 @@
       "id": "nasa-1no6lv7",
       "title": "AGN Coffee, 3 Dec 2026",
       "lead": "AGN Coffee is designed to be a monthly, low-pressure, informal environment where early-career astronomers can discuss recent AGN papers, research ideas, and broader developments in the field.",
-      "date": "2026-11-17T20:08:17.000Z",
+      "date": "2026-11-19T12:08:26.000Z",
       "category": "odkrycie",
       "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/agn-coffee-3-dec-2026/",
       "sourceLabel": "NASA Science",
@@ -117,13 +46,68 @@
       "id": "nasa-1khv6hs",
       "title": "IR STIG Seminar, 8 Dec 2026",
       "lead": "Superconducting Nanowire Single Photon Detector Arrays for Time-Resolved Imaging and Infrared Detection. Speaker: Matthew Shaw, JPL",
-      "date": "2026-11-17T20:08:04.000Z",
+      "date": "2026-11-19T12:07:36.000Z",
       "category": "odkrycie",
       "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ir-stig-seminar-8-dec-2026/",
       "sourceLabel": "NASA Science",
       "language": "en",
       "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
       "body": ""
+    },
+    {
+      "id": "nasa-mvc3fu",
+      "title": "ASTRA Initiative Presentation, 11 Dec 2026",
+      "lead": "The chairs of the three associated Program Analysis Groups – PhysPAG, COPAG, and ExoPAG – will jointly present community prioritizations to the head of the NASA Astrophysics Division.",
+      "date": "2026-11-19T12:06:49.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/astra-initiative-presentation-11-dec-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-5qz9vq",
+      "title": "HWO SIG Seminar, 16 Dec 2026",
+      "lead": "Cosmic Origins &hellip; Cosmic Origins Community HWO SIG Seminar, 16… About Community Executive Committee Science Groups Conferences Cosmic Pathfinders Early Career Workshops Opportunities Missions Studies News & Events Resources HWO SIG Se...",
+      "date": "2026-11-19T12:06:32.000Z",
+      "category": "odkrycie",
+      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/hwo-sig-seminar-16-dec-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-k3ixb9",
+      "title": "Habitable Worlds Observatory SIG Seminar, 16 Dec 2026",
+      "lead": "Physics of the Cosmos &hellip; Physics of the Cosmos Community Habitable Worlds Observatory… About Community Program Analysis Group (PhysPAG) Science Groups Meetings Cosmic Pathfinders Science Gaps Early Career Workshops Opportunities Missi...",
+      "date": "2026-11-19T11:58:00.000Z",
+      "category": "teleskop",
+      "source": "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/habitable-worlds-observatory-sig-seminar-16-dec-2026/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "body": ""
+    },
+    {
+      "id": "astronet-hdp2lt",
+      "title": "Młode talenty w kosmosie: podsumowanie NASA Space Apps Challenge 2026 w Stalowej Woli",
+      "lead": "241 uczestników, dwa dni intensywnej pracy i 20 000 zł w puli nagród – tak wyglądała tegoroczna edycja NASA Space Apps Challenge w Stalowej Woli. W dniach 14–15 listopada 2026 roku Liceum Ogólnokształcące im.",
+      "date": "2026-11-18T16:59:41.000Z",
+      "category": "odkrycie",
+      "source": "https://astronet.pl/wydarzenia/mlode-talenty-w-kosmosie-podsumowanie-nasa-space-apps-challenge-2026-w-stalowej-woli/?utm_source=rss&utm_medium=rss&utm_campaign=mlode-talenty-w-kosmosie-podsumowanie-nasa-space-apps-challenge-2026-w-stalowej-woli",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
+    },
+    {
+      "id": "astronet-ux22vy",
+      "title": "Rozbłyski gwiazdy AT 2016blu wyjaśnione. Przyczyną obiekt zwarty",
+      "lead": "AT 2016blu to niestabilna gwiazda znajdująca się w galaktyce spiralnej NGC 4559 w gwiazdozbiorze Warkocza Bereniki, oddalonej od Ziemi o około 30 milionów lat świetlnych. Szacowana masa gwiazdy to około 33 masy Słońca.",
+      "date": "2026-11-17T20:45:53.000Z",
+      "category": "teleskop",
+      "source": "https://astronet.pl/astronomia/rozblyski-gwiazdy-at-2016blu-wyjasnione-przyczyna-obiekt-zwarty/?utm_source=rss&utm_medium=rss&utm_campaign=rozblyski-gwiazdy-at-2016blu-wyjasnione-przyczyna-obiekt-zwarty",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
     },
     {
       "id": "astronet-1ktxby7",
@@ -202,16 +186,6 @@
       "date": "2026-11-10T06:00:36.000Z",
       "category": "wydarzenie",
       "source": "https://astronet.pl/astronomia/najstarszy-fragment-marsjanskiej-skaly/?utm_source=rss&utm_medium=rss&utm_campaign=najstarszy-fragment-marsjanskiej-skaly",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-1l7u41y",
-      "title": "Kosmiczna rekrutacja – recenzja książki",
-      "lead": "Każdy z nas, miłośników astronautyki, kiedyś zastanawiał się, dlaczego astronautami zostają tacy, a nie inni ludzie. W każdym naborze zgłaszają się tysiące chętnych, lecz wybranych zostaje tylko kilkoro z nich.",
-      "date": "2026-11-09T06:00:36.000Z",
-      "category": "misja",
-      "source": "https://astronet.pl/recenzje/ksiazka/kosmiczna-rekrutacja-recenzja-ksiazki/?utm_source=rss&utm_medium=rss&utm_campaign=kosmiczna-rekrutacja-recenzja-ksiazki",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
