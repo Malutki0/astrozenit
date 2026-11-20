@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T14:29:18.539Z",
+  "updated": "2026-11-20T14:06:14.170Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,75 +19,34 @@
   ],
   "posts": [
     {
-      "id": "nasa-119emj2",
-      "title": "AI/ML STIG Lecture Series, 30 Nov 2026",
-      "lead": "Ethics and Challenges of Agentic AI. Speaker: Paul Ginsparg, Cornell University",
-      "date": "2026-11-19T12:08:50.000Z",
+      "id": "astronet-1t4fb4h",
+      "title": "Polska z dwoma srebrnymi medalami na Międzynarodowej Olimpiadzie Astronomicznej Juniorów",
+      "lead": "W dniach 1–8 listopada 2026 r. w Ubon Ratchathani w Tajlandii odbyła się 5. Międzynarodowa Olimpiada z Astronomii i Astrofizyki Juniorów (IOAA-Jr). Polska reprezentacja zdobyła dwa srebrne medale i dwa wyróżnienia honorowe.",
+      "date": "2026-11-20T09:29:18.000Z",
       "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-30-nov-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
+      "source": "https://astronet.pl/wydarzenia/polska-z-dwoma-srebrnymi-medalami-na-miedzynarodowej-olimpiadzie-astronomicznej-juniorow/?utm_source=rss&utm_medium=rss&utm_campaign=polska-z-dwoma-srebrnymi-medalami-na-miedzynarodowej-olimpiadzie-astronomicznej-juniorow",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
     },
     {
-      "id": "nasa-1no6lv7",
-      "title": "AGN Coffee, 3 Dec 2026",
-      "lead": "AGN Coffee is designed to be a monthly, low-pressure, informal environment where early-career astronomers can discuss recent AGN papers, research ideas, and broader developments in the field.",
-      "date": "2026-11-19T12:08:26.000Z",
+      "id": "astronet-4zrw7i",
+      "title": "Zagadka najdziwniejszej chmury na Marsie rozwiązana",
+      "lead": "Po latach badań naukowcy z Europejskiej Agencji Kosmicznej (ESA) rozwiązali największą zagadkę atmosfery Marsa, którą stanowi Arsia Mons Elongated Cloud (AMEC) – obiekt okrzyknięty najdziwniejszą chmurą Czerwonej Planety.",
+      "date": "2026-11-20T08:00:06.000Z",
       "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/agn-coffee-3-dec-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
+      "source": "https://astronet.pl/astronomia/planety/zagadka-najdziwniejszej-chmury-na-marsie-rozwiazana/?utm_source=rss&utm_medium=rss&utm_campaign=zagadka-najdziwniejszej-chmury-na-marsie-rozwiazana",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
     },
     {
-      "id": "nasa-1khv6hs",
-      "title": "IR STIG Seminar, 8 Dec 2026",
-      "lead": "Superconducting Nanowire Single Photon Detector Arrays for Time-Resolved Imaging and Infrared Detection. Speaker: Matthew Shaw, JPL",
-      "date": "2026-11-19T12:07:36.000Z",
+      "id": "astronet-1bo2wby",
+      "title": "Zagadka planet okołopodwójnych",
+      "lead": "Dotychczasowe badania egzoplanetarne sugerują, że planety są powszechne w naszej Galaktyce. Z drugiej strony szacuje się, że blisko połowa gwiazd w pobliżu Słońca znajduje się w układach podwójnych.",
+      "date": "2026-11-19T15:44:52.000Z",
       "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ir-stig-seminar-8-dec-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-mvc3fu",
-      "title": "ASTRA Initiative Presentation, 11 Dec 2026",
-      "lead": "The chairs of the three associated Program Analysis Groups – PhysPAG, COPAG, and ExoPAG – will jointly present community prioritizations to the head of the NASA Astrophysics Division.",
-      "date": "2026-11-19T12:06:49.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/astra-initiative-presentation-11-dec-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-5qz9vq",
-      "title": "HWO SIG Seminar, 16 Dec 2026",
-      "lead": "Cosmic Origins &hellip; Cosmic Origins Community HWO SIG Seminar, 16… About Community Executive Committee Science Groups Conferences Cosmic Pathfinders Early Career Workshops Opportunities Missions Studies News & Events Resources HWO SIG Se...",
-      "date": "2026-11-19T12:06:32.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/hwo-sig-seminar-16-dec-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2025/03/STScI-01JNP8W5NRMR5WD6MR37F9GEGK.png?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-k3ixb9",
-      "title": "Habitable Worlds Observatory SIG Seminar, 16 Dec 2026",
-      "lead": "Physics of the Cosmos &hellip; Physics of the Cosmos Community Habitable Worlds Observatory… About Community Program Analysis Group (PhysPAG) Science Groups Meetings Cosmic Pathfinders Science Gaps Early Career Workshops Opportunities Missi...",
-      "date": "2026-11-19T11:58:00.000Z",
-      "category": "teleskop",
-      "source": "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/habitable-worlds-observatory-sig-seminar-16-dec-2026/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "body": ""
+      "source": "https://astronet.pl/astronomia/zagadka-planet-okolopodwojnych/?utm_source=rss&utm_medium=rss&utm_campaign=zagadka-planet-okolopodwojnych",
+      "sourceLabel": "AstroNET",
+      "language": "pl"
     },
     {
       "id": "astronet-hdp2lt",
@@ -146,46 +105,6 @@
       "date": "2026-11-12T17:20:45.000Z",
       "category": "odkrycie",
       "source": "https://astronet.pl/wydarzenia/spotkanie-online-dla-nauczycieli-i-dyrektorow-szkol-w-sprawie-nowego-przedmiotu-astronomia/?utm_source=rss&utm_medium=rss&utm_campaign=spotkanie-online-dla-nauczycieli-i-dyrektorow-szkol-w-sprawie-nowego-przedmiotu-astronomia",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-eq9gx",
-      "title": "spACE conference 2026: Technologie kosmiczne, projekty dual-use i spotkanie ze Sławoszem Uznańskim-Wiśniewskim w Warszawie",
-      "lead": "W dniach 25-26 listopada 2026 roku na Wydziale Psychologii Uniwersytetu Warszawskiego (ul. Stefana Banacha 2D) odbędzie się ogólnopolska konferencja spACE conference 2026 oraz warsztaty branżowe.",
-      "date": "2026-11-12T16:43:18.000Z",
-      "category": "odkrycie",
-      "source": "https://astronet.pl/wydarzenia/space-conference-2026-technologie-kosmiczne-projekty-dual-use-i-spotkanie-ze-slawoszem-uznanskim-wisniewskim-w-warszawie/?utm_source=rss&utm_medium=rss&utm_campaign=space-conference-2026-technologie-kosmiczne-projekty-dual-use-i-spotkanie-ze-slawoszem-uznanskim-wisniewskim-w-warszawie",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-27mcby",
-      "title": "Nowy sposób na klasyfikację układów planetarnych",
-      "lead": "Spis egzoplanet obecnie obejmuje ponad 1000 układów wieloplanetarnych. Wykazują one różnorodność zarówno względem siebie jak i w odniesieniu do Układu Słonecznego.",
-      "date": "2026-11-11T20:03:35.000Z",
-      "category": "odkrycie",
-      "source": "https://astronet.pl/astronomia/nowy-sposob-na-klasyfikacje-ukladow-planetarnych/?utm_source=rss&utm_medium=rss&utm_campaign=nowy-sposob-na-klasyfikacje-ukladow-planetarnych",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-1cohmz",
-      "title": "Virgin Galactic wraca po przerwie i prezentuje nowy samolot kosmiczny Apeiron",
-      "lead": "28 października 2026 roku Virgin Galactic zaprezentowało swój najnowszy pojazd - samolot kosmiczny Apeiron. Jest to pierwsza konstrukcja klasy Delta, zaprojektowana z myślą o zwiększeniu skali komercyjnych lotów suborbitalnych i skróceniu p...",
-      "date": "2026-11-10T08:00:35.000Z",
-      "category": "misja",
-      "source": "https://astronet.pl/astronautyka/virgin-galactic-wraca-po-przerwie-i-prezentuje-nowy-samolot-kosmiczny-apeiron/?utm_source=rss&utm_medium=rss&utm_campaign=virgin-galactic-wraca-po-przerwie-i-prezentuje-nowy-samolot-kosmiczny-apeiron",
-      "sourceLabel": "AstroNET",
-      "language": "pl"
-    },
-    {
-      "id": "astronet-3ewur2",
-      "title": "Najstarszy fragment marsjańskiej skały",
-      "lead": "Ostatnie badania NASA ujawniły nowe informacje na temat meteorytu, który spadł w 2022 roku na obszarze Sahary. Skała ważąca 800 gramów uformowała się ponad 4,1 miliarda lat temu.",
-      "date": "2026-11-10T06:00:36.000Z",
-      "category": "wydarzenie",
-      "source": "https://astronet.pl/astronomia/najstarszy-fragment-marsjanskiej-skaly/?utm_source=rss&utm_medium=rss&utm_campaign=najstarszy-fragment-marsjanskiej-skaly",
       "sourceLabel": "AstroNET",
       "language": "pl"
     }
