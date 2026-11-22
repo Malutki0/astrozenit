@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T13:31:51.874Z",
+  "updated": "2026-11-22T13:25:20.004Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -18,6 +18,18 @@
     }
   ],
   "posts": [
+    {
+      "id": "nasa-1fwpq2w",
+      "title": "Dragon Returns to Earth Packed With Science and Cargo",
+      "lead": "At 2:03 p.m. PST, the unpiloted SpaceX Dragon spacecraft splashed down in the Pacific Ocean near Los Angeles, completing NASA’s 35th SpaceX commercial resupply services mission to the International Space Station.",
+      "date": "2026-11-21T22:10:07.000Z",
+      "category": "misja",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/11/21/dragon-returns-to-earth-packed-with-science-and-cargo/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://images-assets.nasa.gov/image/iss075e0226573/iss075e0226573~large.jpg?w=1200&fit=clip",
+      "body": ""
+    },
     {
       "id": "nasa-kqqcaz",
       "title": "Curiosity Spots Drifting Twilight Clouds",
