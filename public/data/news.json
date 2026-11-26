@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T15:43:43.692Z",
+  "updated": "2026-11-26T15:25:00.134Z",
   "sources": [
     {
       "label": "NASA Science",
@@ -19,51 +19,39 @@
   ],
   "posts": [
     {
-      "id": "nasa-17ingjl",
-      "title": "NASA’s Hubble Views Ocean of Stars in Groundwork for Roman",
-      "lead": "These Hubble observations are part of a survey that will help researchers better interpret upcoming Nancy Grace Roman Space Telescope observations as they seek to characterize the stars and search for exoplanets in this busy region of our g...",
-      "date": "2026-11-25T14:56:54.000Z",
-      "category": "teleskop",
-      "source": "https://science.nasa.gov/missions/hubble/nasas-hubble-views-ocean-of-stars-in-groundwork-for-roman/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/galaxies/milky-way/Hubble_GalacticBulge_HD70_1_FINAL.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-663a4j",
-      "title": "Teams Lock in Mission Architecture for NASA’s SR-1 Freedom",
-      "lead": "NASA completed a major review for Space Reactor-1 (SR-1) Freedom and locked in key elements of the spacecraft, which is targeted to launch in 2028 and demonstrate nuclear electric propulsion in deep space for the first time.",
-      "date": "2026-11-24T21:04:32.000Z",
+      "id": "nasa-b93f2h",
+      "title": "Progress Cargo Craft Docks to Station on Thanksgiving Day",
+      "lead": "The Roscosmos Progress 97 spacecraft docked to the Earth-facing port of the International Space Station’s Rassvet module at 7:08 a.m. EST Thursday.",
+      "date": "2026-11-26T12:19:44.000Z",
       "category": "misja",
-      "source": "https://www.nasa.gov/general/nasa-locks-in-sr1-freedom-mission-architecture/",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/11/26/progress-cargo-craft-docks-to-station-on-thanksgiving-day/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/06/sr-1-freedom-11-6-2026.png?w=1200&fit=clip",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/blog-progress97-dock-112626.png?w=1200&fit=clip",
       "body": ""
     },
     {
-      "id": "nasa-1eae3f2",
-      "title": "Amateur Astronomer? Be a Kilonova Catcher!",
-      "lead": "Neutron stars are the ultra-dense, city-sized leftovers of dead stars. When they collide, they can release a brief flash of light called a kilonova.",
-      "date": "2026-11-24T19:19:52.000Z",
-      "category": "odkrycie",
-      "source": "https://science.nasa.gov/get-involved/citizen-science/amateur-astronomer-be-a-kilonova-catcher/",
-      "sourceLabel": "NASA Science",
-      "language": "en",
-      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/citizen-science/highlights/2026/NGC_4993.jpg?w=1200&fit=clip",
-      "body": ""
-    },
-    {
-      "id": "nasa-1a6ussz",
-      "title": "NASA’s Northrop Grumman CRS-25 Mission Overview",
-      "lead": "NASA’s Northrop Grumman Commercial Resupply Services 25 mission, or Northrop Grumman CRS-25, will deliver about 11,000 pounds of science and supplies to the International Space Station.",
-      "date": "2026-11-24T19:09:16.000Z",
+      "id": "nasa-1jts8cp",
+      "title": "Progress Cargo Craft Approaching Station With Space Delivery",
+      "lead": "NASA is streaming live rendezvous and docking coverage as the Roscosmos Progress 97 cargo spacecraft makes its way to the International Space Station.",
+      "date": "2026-11-26T11:32:37.000Z",
       "category": "misja",
-      "source": "https://www.nasa.gov/missions/station/nasas-northrop-grumman-crs-25-mission-overview/",
+      "source": "https://www.nasa.gov/blogs/spacestation/2026/11/26/progress-cargo-craft-approaching-station-with-space-delivery/",
       "sourceLabel": "NASA Science",
       "language": "en",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/ntv-ng-crs-25-falcon9-cygnus-overview-2160-dark.png?w=1200&fit=clip",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/03/progress-94-approaches-station.jpg?w=1200&fit=clip",
+      "body": ""
+    },
+    {
+      "id": "nasa-13tbf4",
+      "title": "NASA Eyes Crop Candidates for Future Menus",
+      "lead": "As NASA prepares for future missions to the Moon and Mars, researchers are studying crops that could provide astronauts with fresh food, nutrition, and variety far from Earth.",
+      "date": "2026-11-25T17:53:42.000Z",
+      "category": "misja",
+      "source": "https://science.nasa.gov/directorates/smd/nasa-eyes-crop-candidates-for-future-menus/",
+      "sourceLabel": "NASA Science",
+      "language": "en",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/bps/space-crops/SpaceCrops_thanksgiving.jpg?w=1200&fit=clip",
       "body": ""
     },
     {
